@@ -1,0 +1,626 @@
+[
+ {
+  "id": "r001-8x8-01",
+  "titel": "Rätsel 1 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r002-8x8-01",
+  "titel": "Rätsel 2 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r003-8x8-01",
+  "titel": "Rätsel 3 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r004-8x8-02",
+  "titel": "Rätsel 4 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r005-8x8-02",
+  "titel": "Rätsel 5 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r006-8x8-02",
+  "titel": "Rätsel 6 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r007-8x8-03",
+  "titel": "Rätsel 7 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r008-8x8-03",
+  "titel": "Rätsel 8 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r009-8x8-03",
+  "titel": "Rätsel 9 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r010-9x9-01",
+  "titel": "Rätsel 10 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r011-9x9-01",
+  "titel": "Rätsel 11 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r012-9x9-01",
+  "titel": "Rätsel 12 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r013-9x9-02",
+  "titel": "Rätsel 13 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r014-9x9-02",
+  "titel": "Rätsel 14 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r015-9x9-02",
+  "titel": "Rätsel 15 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r016-9x9-03",
+  "titel": "Rätsel 16 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r017-9x9-03",
+  "titel": "Rätsel 17 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r018-9x9-03",
+  "titel": "Rätsel 18 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r019-9x13-01",
+  "titel": "Rätsel 19 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r020-9x13-01",
+  "titel": "Rätsel 20 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r021-9x13-01",
+  "titel": "Rätsel 21 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r022-9x13-02",
+  "titel": "Rätsel 22 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r023-9x13-02",
+  "titel": "Rätsel 23 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r024-9x13-02",
+  "titel": "Rätsel 24 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r025-9x13-03",
+  "titel": "Rätsel 25 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r026-9x13-03",
+  "titel": "Rätsel 26 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r027-9x13-03",
+  "titel": "Rätsel 27 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r028-10x10-01",
+  "titel": "Rätsel 28 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r029-10x10-01",
+  "titel": "Rätsel 29 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r030-10x10-01",
+  "titel": "Rätsel 30 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r031-10x10-02",
+  "titel": "Rätsel 31 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r032-10x10-02",
+  "titel": "Rätsel 32 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r033-10x10-02",
+  "titel": "Rätsel 33 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r034-10x10-03",
+  "titel": "Rätsel 34 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r035-10x10-03",
+  "titel": "Rätsel 35 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r036-10x10-03",
+  "titel": "Rätsel 36 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r037-10x10-04",
+  "titel": "Rätsel 37 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r038-10x10-04",
+  "titel": "Rätsel 38 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r039-10x10-04",
+  "titel": "Rätsel 39 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r040-11x11-01",
+  "titel": "Rätsel 40 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r041-11x11-01",
+  "titel": "Rätsel 41 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r042-11x11-01",
+  "titel": "Rätsel 42 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r043-11x11-02",
+  "titel": "Rätsel 43 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r044-11x11-02",
+  "titel": "Rätsel 44 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r045-11x11-02",
+  "titel": "Rätsel 45 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r046-11x11-03",
+  "titel": "Rätsel 46 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r047-11x11-03",
+  "titel": "Rätsel 47 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r048-11x11-03",
+  "titel": "Rätsel 48 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r049-12x12-01",
+  "titel": "Rätsel 49 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r050-12x12-01",
+  "titel": "Rätsel 50 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r051-12x12-01",
+  "titel": "Rätsel 51 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r052-12x12-02",
+  "titel": "Rätsel 52 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r053-12x12-02",
+  "titel": "Rätsel 53 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r054-12x12-02",
+  "titel": "Rätsel 54 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r055-12x12-03",
+  "titel": "Rätsel 55 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r056-12x12-03",
+  "titel": "Rätsel 56 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r057-12x12-03",
+  "titel": "Rätsel 57 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r058-12x12-04",
+  "titel": "Rätsel 58 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r059-12x12-04",
+  "titel": "Rätsel 59 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r060-12x12-04",
+  "titel": "Rätsel 60 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r061-13x13-01",
+  "titel": "Rätsel 61 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r062-13x13-01",
+  "titel": "Rätsel 62 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r063-13x13-01",
+  "titel": "Rätsel 63 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r064-13x13-02",
+  "titel": "Rätsel 64 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r065-13x13-02",
+  "titel": "Rätsel 65 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r066-13x13-02",
+  "titel": "Rätsel 66 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r067-13x13-03",
+  "titel": "Rätsel 67 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r068-13x13-03",
+  "titel": "Rätsel 68 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r069-13x13-03",
+  "titel": "Rätsel 69 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r070-15x15-01",
+  "titel": "Rätsel 70 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r071-15x15-01",
+  "titel": "Rätsel 71 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r072-15x15-01",
+  "titel": "Rätsel 72 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r073-15x15-02",
+  "titel": "Rätsel 73 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r074-15x15-02",
+  "titel": "Rätsel 74 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r075-15x15-02",
+  "titel": "Rätsel 75 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r076-15x15-03",
+  "titel": "Rätsel 76 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r077-15x15-03",
+  "titel": "Rätsel 77 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r078-15x15-03",
+  "titel": "Rätsel 78 · 15×15",
+  "rows": 15,
+  "cols": 15,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ }
+]

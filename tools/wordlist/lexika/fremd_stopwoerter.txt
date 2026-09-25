@@ -1,0 +1,8 @@
+# Funktionswoerter anderer Sprachen, die KEINE deutschen Woerter sind (haeufig in Zitaten, Titeln, Namen).
+# Von Hand kuratiert; nur Woerter, die im Deutschen nicht vorkommen (deshalb z. B. NICHT: was, will, all, see, las, los, per, du, die, den).
+# Englisch
+the and for you not but from they with that this have your our his her their which would can are one two new out
+how now hey yes any may day way get got let put she him has had did does more than then them these those what when
+where who why into over about after just only very also some such much many each been were there here like love good time
+# Franzoesisch / Spanisch / Italienisch / Niederlaendisch / Latein
+van del della dei degli les une que qui pour avec dans sur par cum quo ius ars con por para que

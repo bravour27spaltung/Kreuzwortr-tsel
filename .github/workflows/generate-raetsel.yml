@@ -1,0 +1,64 @@
+name: Neue Rätsel erzeugen
+
+on:
+  schedule:
+    # jeden Montag 06:00 UTC. Zeiten in GitHub Actions können sich um bis zu einige
+    # Minuten verschieben (keine Garantie für die exakte Minute).
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}   # manuell über den "Actions"-Tab auslösbar, z.B. zum Testen
+
+# Nötig, damit der Job die neuen Rätsel-Dateien zurück ins Repo committen darf.
+permissions:
+  contents: write
+
+# Verhindert, dass zwei Läufe gleichzeitig an derselben Rätsel-Nummerierung arbeiten.
+concurrency:
+  group: raetsel-generieren
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Solver kompilieren
+        run: g++ -O2 -std=c++17 -o /tmp/fill_solver tools/solver/fill_solver.cpp
+
+      - name: psql installieren
+        run: |
+          sudo apt-get update -y -qq
+          sudo apt-get install -y -qq postgresql-client
+
+      - name: Rätsel erzeugen (hängt an den bestehenden Bestand an)
+        run: |
+          python3 tools/generator/generate_raetsel.py \
+            --solver /tmp/fill_solver \
+            --vorlagen data/gitter/vorlagen.json \
+            --fragen data/fragen/fragen.tsv \
+            --pro-vorlage 1 \
+            --nur-veroeffentlichbare \
+            --anhaengen \
+            --seed ${{ github.run_number }} \
+            --json-dir public/raetsel \
+            --sql /tmp/inkrement.sql
+
+      - name: Neue Rätsel in Supabase einspielen
+        env:
+          DATABASE_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f /tmp/inkrement.sql
+
+      - name: Änderungen committen und pushen
+        run: |
+          git config user.name "raetsel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          # Kumulative Seed-Datei fortschreiben, damit ein frisch aufgesetztes Supabase-Projekt
+          # (README, Abschnitt 3) weiterhin per einer Datei den vollständigen Bestand bekommt.
+          cat /tmp/inkrement.sql >> supabase/seed/raetsel_seed.sql
+          git add public/raetsel/ supabase/seed/raetsel_seed.sql
+          if git diff --cached --quiet; then
+            echo "Keine neuen Rätsel (alle Versuche verworfen) – nichts zu committen."
+          else
+            git commit -m "Neue Rätsel: $(date -u +%F)"
+            git push
+          fi

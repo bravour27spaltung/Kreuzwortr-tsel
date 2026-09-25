@@ -1,0 +1,2 @@
+# Manuell WIEDER ZUGELASSENE Woerter (hebt die automatischen Ausschlussregeln 1-7 auf, nicht manual_drop). Eine Wortform pro Zeile.
+# Beispiel: Ortsnamen einzeln zulassen (oder pauschal per --keep-places).

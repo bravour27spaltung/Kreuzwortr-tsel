@@ -1,0 +1,48 @@
+== clues/b01.txt: 500 Einträge, 2 übersprungen, 0 Fehler, 0 Warnungen
+== clues/b02.txt: 500 Einträge, 1 übersprungen, 0 Fehler, 0 Warnungen
+== clues/b03.txt: 500 Einträge, 2 übersprungen, 0 Fehler, 1 Warnungen
+   W1 Studium: langes Wort 'Hochschulzeit'
+== clues/b04.txt: 500 Einträge, 3 übersprungen, 0 Fehler, 0 Warnungen
+== clues/b05.txt: 500 Einträge, 3 übersprungen, 0 Fehler, 1 Warnungen
+   W1 digitale: langes Wort 'elektronische'
+== clues/b06.txt: 500 Einträge, 7 übersprungen, 0 Fehler, 1 Warnungen
+   W1 Witwe: langes Wort 'Hinterbliebene'
+== clues/b07.txt: 500 Einträge, 6 übersprungen, 0 Fehler, 0 Warnungen
+== clues/b08.txt: 500 Einträge, 8 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Hut: langes Wort 'Kopfbedeckung'
+   W1 Chemnitz: langes Wort 'Karl-Marx-Stadt'
+== clues/b09.txt: 500 Einträge, 6 übersprungen, 0 Fehler, 0 Warnungen
+== clues/b10.txt: 500 Einträge, 6 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Falter: langes Wort 'Schmetterling'
+   W1 Auktion: langes Wort 'Versteigerung'
+== clues/b11.txt: 500 Einträge, 15 übersprungen, 0 Fehler, 1 Warnungen
+   W1 Premier: langes Wort 'Regierungschef'
+== clues/b12.txt: 500 Einträge, 17 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Schweiß: langes Wort 'Transpiration'
+   W1 Luzern: langes Wort 'Leuchtenstadt'
+== clues/b13.txt: 500 Einträge, 17 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Mechanik: langes Wort 'Bewegungslehre'
+   W1 Hotline: langes Wort 'Kundentelefon'
+== clues/b14.txt: 500 Einträge, 16 übersprungen, 0 Fehler, 0 Warnungen
+== clues/b15.txt: 500 Einträge, 26 übersprungen, 0 Fehler, 1 Warnungen
+   W1 blinden: langes Wort 'nichtsehenden'
+== clues/b16.txt: 500 Einträge, 35 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Geologie: langes Wort 'Gesteinskunde'
+   W1 Arizona: langes Wort 'Grand-Canyon-Staat'
+== clues/b17.txt: 500 Einträge, 39 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Eliten: langes Wort 'Oberschichten'
+   W1 Wehen: langes Wort 'Kontraktionen'
+== clues/b18.txt: 500 Einträge, 36 übersprungen, 0 Fehler, 2 Warnungen
+   W1 Klerus: langes Wort 'Priesterstand'
+   W1 Caritas: langes Wort 'Nächstenliebe'
+== clues/b19.txt: 500 Einträge, 40 übersprungen, 0 Fehler, 3 Warnungen
+   W1 eitel: langes Wort 'gefallsüchtig'
+   W1 Odenwald: langes Wort 'Mittelgebirge'
+   W1 Propst: langes Wort 'Kirchenoberer'
+== clues/b20.txt: 500 Einträge, 41 übersprungen, 0 Fehler, 4 Warnungen
+   W1 blinder: langes Wort 'nichtsehender'
+   W1 Utah: langes Wort 'Mormonenstaat'
+   W1 Prior: langes Wort 'Klosteroberer'
+   W1 Sintflut: langes Wort 'Überschwemmung'
+W2 'Ende des ...' bei 17 Lösungen: Jahres Lebens Krieges Spiels Films Reiches Studiums Monats Amtes Dienstes Baus Kampfes
+W2 'Mitte des ...' bei 10 Lösungen: Landes Dorfes Kreises Platzes Raumes Zentrums Hofes Winters Sommers Raums

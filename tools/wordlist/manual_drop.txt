@@ -1,0 +1,11 @@
+# Manuell ausgeschlossene Woerter (immer ausgeschlossen, egal was die Regeln sagen). Eine Wortform pro Zeile.
+# Herkunft: Vollpruefung der gefilterten Listen fuer Laenge 3 und 4 (Standardeinstellung 10/20, beide Korpora),
+# Stand 2026-09-24, Einzelbewertung durch Claude (kein zweiter Rater). Ausgeschlossen wurden Personennamen,
+# Marken/Indizes/Kuerzel, fremdsprachige Woerter (Englisch/Franzoesisch/Latein/Spanisch) und Fragmente.
+# Bewusst BEHALTEN: Fluesse und Laender (Elbe, Ruhr, Main, Iran ...) sowie eingedeutschte Lehnwoerter (Job, Team, Deal, Show ...).
+# Laenge 3
+Max Dax dpa Old Rue Rau Ben Rex Val ibn nen nad dos Mao Mia Ala Pia Lac bog est bek oö ots Che Ten ACE Ifa Mob Off Net Run
+# Laenge 4
+Alma Anni Anno Army Arte Audi Bois Casa dato East Ebay Edge Free Game Gros Haag Keep Kids Lake Mare MDax Mose Navy Runs SDAX Seat Site Suco Task Town Ward Wars Xbox Xena Zeus Rome Luke Mont Page Type Eger
+# Nachtrag: Vollpruefung der zusaetzlich zugelassenen Woerter Laenge <= 4 (Untergrenze bei starkem Beleg 10 statt 20)
+Asta Asus aux BAe Balz Bath Boca Borg Cima Copa Cube Depp Disc Dome Emmy grte Guts hats Heat Hofs Hyde Icon Kfor Kia Keys Lago Lig Map Moto Nez nich Penn Raja Reds Rega Renz Ruta Sana Sega spe Sold Sure Swan Tao Taxa Tees Turn Twin Ufa Viag Yale jetz Eros Juno

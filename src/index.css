@@ -1,0 +1,420 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #f3f1ea;
+  --panel: #ffffff;
+  --ink: #20242b;
+  --muted: #6b7280;
+  --clue-bg: #e3e8f1;
+  --clue-ink: #131926;
+  --clue-accent: #2f4fc4;
+  --clue-line: rgba(19, 25, 38, 0.22);
+  --clue-hl: #c3d3f6;
+  --cell-border: #c7ccd6;
+  --active-word: #dbe9ff;
+  --active-cell: #ffd166;
+  --correct: #bfe6c1;
+  --incorrect: #f6b3ae;
+  --revealed-mark: #d9822b;
+  --accent: #3457d5;
+  --cell: 56px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #14161c;
+    --panel: #1d212b;
+    --ink: #e8eaf0;
+    --muted: #9aa1b0;
+    --clue-bg: #2b3345;
+    --clue-ink: #eef1f7;
+    --clue-accent: #8fb0ff;
+    --clue-line: rgba(238, 241, 247, 0.22);
+    --clue-hl: #3b4f7d;
+    --cell-border: #3a4152;
+    --active-word: #233457;
+    --active-cell: #c98a2b;
+    --correct: #2f5b39;
+    --incorrect: #6b2f2b;
+    --revealed-mark: #f0a24a;
+    --accent: #7c9aff;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #14161c;
+  --panel: #1d212b;
+  --ink: #e8eaf0;
+  --muted: #9aa1b0;
+  --clue-bg: #2b3345;
+  --clue-ink: #eef1f7;
+  --clue-accent: #8fb0ff;
+  --clue-line: rgba(238, 241, 247, 0.22);
+  --clue-hl: #3b4f7d;
+  --cell-border: #3a4152;
+  --active-word: #233457;
+  --active-cell: #c98a2b;
+  --correct: #2f5b39;
+  --incorrect: #6b2f2b;
+  --revealed-mark: #f0a24a;
+  --accent: #7c9aff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+.app-header h1 {
+  font-size: 1.25rem;
+  margin: 0 0 4px;
+  text-wrap: balance;
+}
+
+.app-header p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 20px;
+  line-height: 1.55;
+  max-width: 65ch;
+}
+
+.app-hinweis {
+  color: var(--revealed-mark) !important;
+}
+
+.app-fehler {
+  color: #c0392b;
+}
+
+.cw-panel {
+  background: var(--panel);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Aktuelle Frage – groß und oberhalb des Gitters, damit sie auch bei sehr
+   kleinen Fragezellen im Raster immer vollständig lesbar ist. */
+.cw-cluebar {
+  position: sticky;
+  top: 8px;
+  z-index: 5;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-height: 52px;
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 10px;
+  padding: 8px 10px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.cw-board-scroll {
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.cw-board {
+  display: grid;
+  gap: 2px;
+  background: var(--cell-border);
+  width: max-content;
+  margin: 0 auto;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.cw-cell {
+  width: var(--cell);
+  height: var(--cell);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: calc(var(--cell) * 0.4);
+  font-weight: 600;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.cw-bg {
+  background: transparent;
+}
+
+.cw-white {
+  background: var(--panel);
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.cw-white input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  outline: none;
+  caret-color: transparent;
+  padding: 0;
+}
+
+.cw-white.cw-inword {
+  background: var(--active-word);
+}
+
+.cw-white.cw-active {
+  background: var(--active-cell);
+}
+
+.cw-white.cw-correct {
+  background: var(--correct) !important;
+}
+
+.cw-white.cw-incorrect {
+  background: var(--incorrect) !important;
+}
+
+/* Per Tipp aufgedeckter Buchstabe: farbiger Text + kleines Eck-Dreieck,
+   damit er sich vom selbst eingetippten Buchstaben unterscheidet. */
+.cw-white.cw-revealed input {
+  color: var(--accent);
+}
+
+.cw-white.cw-revealed::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 0;
+  border-color: transparent var(--revealed-mark) transparent transparent;
+  pointer-events: none;
+}
+
+/* Fragezellen: dunkle Schrift auf hellem Grund (positive Polarität) statt
+   heller Schrift auf dunkel – laut Legge & Bigelow (2011) sowie Piepenbrock,
+   Mayr & Buchner (2013/2014) bei kleiner Schrift deutlich besser lesbar. */
+.cw-clue {
+  background: var(--clue-bg);
+  color: var(--clue-ink);
+  font-weight: 500;
+  text-transform: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.cw-clue-slot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cw-half {
+  flex: 1 1 0;
+  min-height: 0;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 2px 3px;
+}
+
+.cw-half.cw-split-top {
+  border-bottom: 1px solid var(--clue-line);
+}
+
+.cw-half.cw-dir-a {
+  padding-right: 8px;
+}
+
+.cw-half.cw-dir-d {
+  padding-bottom: 8px;
+}
+
+.cw-half.cw-hl {
+  background: var(--clue-hl);
+}
+
+.cw-clue-txt {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  font-size: 13px;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  hyphens: manual;
+  overflow-wrap: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cw-clue-txt span {
+  display: block;
+  max-width: 100%;
+}
+
+.cw-clue-txt.cw-brk {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* Richtungspfeil am Rand der Fragezelle, zeigt auf das erste Lösungsfeld. */
+.cw-arrow {
+  position: absolute;
+  color: var(--clue-accent);
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.cw-half.cw-dir-a .cw-arrow {
+  right: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cw-half.cw-dir-d .cw-arrow {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cw-entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 7px;
+}
+
+.cw-entry.cw-entry-active {
+  background: rgba(157, 187, 255, 0.22);
+}
+
+.cw-arrow-big {
+  color: var(--clue-accent);
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.cw-len {
+  color: var(--clue-accent);
+  font-size: 0.85rem;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+.cw-empty {
+  opacity: 0.75;
+  font-size: 0.95rem;
+  align-self: center;
+  padding: 0 4px;
+}
+
+.cw-controls {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cw-controls .cw-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cw-controls .cw-group-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+.cw-controls .cw-sep {
+  width: 1px;
+  align-self: stretch;
+  background: var(--cell-border);
+  margin: 0 4px;
+}
+
+.cw-controls button {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cw-controls button:focus-visible,
+.cw-white:focus-within,
+.cw-half:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.cw-controls button.cw-secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+}
+
+.cw-controls button.cw-hint {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid var(--revealed-mark);
+}
+
+.cw-status {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  min-height: 18px;
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    padding: 16px 12px 40px;
+  }
+  .cw-panel {
+    padding: 12px;
+  }
+  .cw-cluebar {
+    font-size: 1rem;
+  }
+  .cw-controls .cw-sep {
+    display: none;
+  }
+}
