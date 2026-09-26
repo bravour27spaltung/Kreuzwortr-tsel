@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { Session } from '@supabase/supabase-js';
 import AuthPanel from '@/components/AuthPanel';
 import DuellPanel from '@/components/DuellPanel';
@@ -97,25 +97,107 @@ export default function StartPage({ session, liste, hinweis, onSelect, einladung
       )}
 
       <div className="puzzle-catalog">
-        <h2>Alle Rätsel</h2>
+        <h2>Rätsel auswählen</h2>
         {hinweis && <p className="app-hinweis">{hinweis}</p>}
-        <ul className="puzzle-grid">
-          {liste.map((s) => {
-            const f = fortschrittByRaetsel.get(s.id);
-            return (
-              <li key={s.id}>
-                <button className="puzzle-card" onClick={() => onSelect(s.id)}>
-                  <span className="puzzle-card-titel">{s.titel}</span>
-                  <span className="puzzle-card-meta">
-                    {s.rows}×{s.cols} {s.schwierigkeit ? `· ${SCHWIERIGKEIT[s.schwierigkeit] ?? s.schwierigkeit}` : ''}
-                  </span>
-                  {f && <span className={f.fertig ? 'puzzle-card-badge puzzle-card-badge-fertig' : 'puzzle-card-badge'}>{f.fertig ? 'gelöst' : 'angefangen'}</span>}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+        <RaetselAuswahl liste={liste} fortschritt={fortschrittByRaetsel} onSelect={onSelect} />
       </div>
+    </div>
+  );
+}
+
+/** Auswahl nach Größe und Schwierigkeit statt langer Kachelliste. */
+function RaetselAuswahl({
+  liste,
+  fortschritt,
+  onSelect,
+}: {
+  liste: PuzzleSummary[];
+  fortschritt: Map<string, FortschrittEintrag>;
+  onSelect: (id: string) => void;
+}) {
+  const [groesse, setGroesse] = useState<string>(''); // '' = egal, sonst "8×8"
+  const [schwierigkeit, setSchwierigkeit] = useState<number | null>(null);
+  const [nurNeue, setNurNeue] = useState(true);
+  const [keineTreffer, setKeineTreffer] = useState(false);
+
+  const groessen = useMemo(() => {
+    const m = new Map<string, number>();
+    for (const r of liste) m.set(`${r.rows}×${r.cols}`, r.rows * r.cols);
+    return [...m.entries()].sort((a, b) => a[1] - b[1]).map(([k]) => k);
+  }, [liste]);
+
+  const passend = liste.filter(
+    (r) => (!groesse || `${r.rows}×${r.cols}` === groesse) && (schwierigkeit === null || r.schwierigkeit === schwierigkeit)
+  );
+  // "neu" = weder angefangen noch gelöst
+  const neue = passend.filter((r) => !fortschritt.has(r.id));
+  const kandidaten = nurNeue && neue.length > 0 ? neue : passend;
+
+  function zufaellig() {
+    if (kandidaten.length === 0) {
+      setKeineTreffer(true);
+      return;
+    }
+    setKeineTreffer(false);
+    onSelect(kandidaten[Math.floor(Math.random() * kandidaten.length)].id);
+  }
+
+  const chip = (aktiv: boolean, text: string, onClick: () => void, key: string) => (
+    <button key={key} type="button" className={aktiv ? 'auswahl-chip auswahl-chip-aktiv' : 'auswahl-chip'} aria-pressed={aktiv} onClick={onClick}>
+      {text}
+    </button>
+  );
+
+  return (
+    <div className="auswahl">
+      <div className="auswahl-gruppe">
+        <span className="auswahl-label">Größe</span>
+        <div className="auswahl-chips">
+          {chip(groesse === '', 'egal', () => setGroesse(''), 'g-egal')}
+          {groessen.map((g) => chip(groesse === g, g, () => setGroesse(g), `g-${g}`))}
+        </div>
+      </div>
+      <div className="auswahl-gruppe">
+        <span className="auswahl-label">Schwierigkeit</span>
+        <div className="auswahl-chips">
+          {chip(schwierigkeit === null, 'egal', () => setSchwierigkeit(null), 's-egal')}
+          {Object.entries(SCHWIERIGKEIT).map(([k, v]) => chip(schwierigkeit === Number(k), v, () => setSchwierigkeit(Number(k)), `s-${k}`))}
+        </div>
+      </div>
+      <label className="auswahl-check">
+        <input type="checkbox" checked={nurNeue} onChange={(e) => setNurNeue(e.target.checked)} />
+        Lieber ein Rätsel, das ich noch nicht angefangen habe
+      </label>
+      <div className="auswahl-aktion">
+        <button type="button" className="auswahl-start" onClick={zufaellig} disabled={passend.length === 0}>
+          Rätsel starten
+        </button>
+        <span className="auswahl-anzahl">
+          {passend.length === 0 ? 'Kein Rätsel passt zu dieser Auswahl.' : `${passend.length} passend, davon ${neue.length} neu`}
+        </span>
+      </div>
+      {keineTreffer && <p className="app-hinweis">Kein Rätsel passt zu dieser Auswahl.</p>}
+      {passend.length > 0 && (
+        <details className="auswahl-liste">
+          <summary>Bestimmtes Rätsel wählen ({passend.length})</summary>
+          <ul className="puzzle-grid">
+            {passend.map((s) => {
+              const f = fortschritt.get(s.id);
+              return (
+                <li key={s.id}>
+                  <button className="puzzle-card" onClick={() => onSelect(s.id)}>
+                    <span className="puzzle-card-titel">{s.titel}</span>
+                    <span className="puzzle-card-meta">
+                      {s.rows}×{s.cols} {s.schwierigkeit ? `· ${SCHWIERIGKEIT[s.schwierigkeit] ?? s.schwierigkeit}` : ''}
+                    </span>
+                    {f && <span className={f.fertig ? 'puzzle-card-badge puzzle-card-badge-fertig' : 'puzzle-card-badge'}>{f.fertig ? 'gelöst' : 'angefangen'}</span>}
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </details>
+      )}
     </div>
   );
 }

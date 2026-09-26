@@ -932,3 +932,103 @@ body {
   font-size: 0.82rem;
   color: #b3261e;
 }
+
+/* ---- Rätsel-Auswahl ---- */
+
+.auswahl {
+  background: var(--panel);
+  border: 1px solid var(--cell-border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auswahl-gruppe {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auswahl-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.auswahl-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.auswahl-chip {
+  border: 1.5px solid var(--cell-border);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.auswahl-chip-aktiv {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.auswahl-chip:focus-visible,
+.auswahl-start:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.auswahl-check {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.auswahl-aktion {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.auswahl-start {
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auswahl-start:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.auswahl-anzahl {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.auswahl-liste summary {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.auswahl-liste .puzzle-grid {
+  margin-top: 10px;
+}
