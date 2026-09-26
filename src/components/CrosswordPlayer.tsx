@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { Direction, Puzzle, PuzzleEntry } from '@/types';
 import { formatZeit, type Regeln, type Zaehler } from '@/lib/duell';
+import AbschlussDialog, { type Abschluss } from '@/components/AbschlussDialog';
 
 function key(r: number, c: number): string {
   return `${r},${c}`;
@@ -48,6 +49,13 @@ interface Props {
   /** Wird gedämpft (debounced) bei jeder Änderung aufgerufen, z.B. um in Supabase zu speichern. */
   onFortschritt?: (userGrid: Record<string, string>, fertig: boolean) => void;
   duell?: DuellModus;
+  /** Anzeige im Abschluss-Popup (nur Solo-Modus). */
+  titel?: string;
+  schwierigkeit?: string;
+  /** Popup nach dem Lösen: „Zurück zum Menü“. Ohne diese Funktion gibt es kein Popup. */
+  onZumMenue?: () => void;
+  /** Popup nach dem Lösen: „Nächstes Rätsel“. Ohne diese Funktion entfällt der Knopf. */
+  onNaechstes?: () => void;
 }
 
 /** Kopfleiste im Duell: Gegner, Uhr (Serverzeit), Strafen, Aufgeben. Eigene Komponente, damit nur sie jede Sekunde neu zeichnet. */
@@ -119,7 +127,7 @@ function DuellLeiste({
   );
 }
 
-export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt, duell }: Props) {
+export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt, duell, titel, schwierigkeit, onZumMenue, onNaechstes }: Props) {
   const { rows, cols, solution, entries } = puzzle;
 
   const whiteSet = useMemo(() => new Set(Object.keys(solution)), [solution]);
@@ -162,6 +170,19 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
   const [pruefungen, setPruefungen] = useState(duell?.start.pruefungen ?? 0);
   const [duellHinweis, setDuellHinweis] = useState<string | null>(null);
   const [abgabe, setAbgabe] = useState<{ art: 'offen' | 'laeuft' | 'fehler'; text?: string }>({ art: 'offen' });
+  // Solo-Abschluss: Zähler, Lösezeit und das Ergebnis-Popup.
+  const [fehleingaben, setFehleingaben] = useState(0);
+  const [loesungGezeigt, setLoesungGezeigt] = useState(false);
+  const [abschluss, setAbschluss] = useState<Abschluss | null>(null);
+  const [popupOffen, setPopupOffen] = useState(false);
+  // Aktive Lösezeit: läuft nur, solange der Tab sichtbar ist (Pausen im Hintergrund zählen nicht).
+  const aktivMs = useRef(0);
+  const zeitGestoppt = useRef(false);
+  const laeuftSeit = useRef<number | null>(typeof document !== 'undefined' && document.visibilityState === 'hidden' ? null : Date.now());
+  // War das Gitter schon beim Öffnen vollständig gelöst (gespeicherter Fortschritt)? Dann kein Popup beim Laden.
+  const warBeimStartFertig = useRef(
+    Object.keys(solution).length > 0 && Object.keys(solution).every((k) => (initialUserGrid?.[k] || '') === solution[k])
+  );
 
   const inputRefs = useRef<Record<string, HTMLInputElement | null>>({});
   const clueTextRefs = useRef<Record<string, HTMLSpanElement | null>>({});
@@ -261,13 +282,14 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
       if (revealed[k]) return; // aufgedecktes Feld ist read-only
       let v = raw.toUpperCase().replace(/[^A-ZÄÖÜ]/g, '');
       v = v.slice(-1);
+      if (v && v !== solution[k]) setFehleingaben((n) => n + 1);
       setUserGrid((g) => ({ ...g, [k]: v }));
       setCheckState({});
       if (v) {
         moveInDirection(r, c, 1);
       }
     },
-    [moveInDirection, revealed]
+    [moveInDirection, revealed, solution]
   );
 
   const handleKey = useCallback(
@@ -329,9 +351,9 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     setCheckState(next);
     const hintTxt = hintLetters ? ` – davon ${hintLetters} per Tipp aufgedeckt` : '';
     let strafTxt = '';
-    if (duell && falsch > 0) {
+    if (falsch > 0) {
       setPruefungen((n) => n + 1);
-      strafTxt = ` Prüfen mit Fehlern: +${duell.regeln.sek_pro_fehlpruefung} s.`;
+      if (duell) strafTxt = ` Prüfen mit Fehlern: +${duell.regeln.sek_pro_fehlpruefung} s.`;
     }
     setStatus(
       (correct === total
@@ -347,6 +369,7 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
       next[k] = solution[k];
     });
     setUserGrid(next);
+    setLoesungGezeigt(true); // eingeblendete Lösung ist kein Erfolg: kein Popup
     setStatus('Lösung eingeblendet.');
   }, [whiteSet, solution]);
 
@@ -359,6 +382,15 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     setUserGrid(next);
     setRevealed({});
     setHintLetters(0);
+    setFehleingaben(0);
+    setPruefungen(0);
+    setLoesungGezeigt(false);
+    setAbschluss(null);
+    setPopupOffen(false);
+    warBeimStartFertig.current = false;
+    aktivMs.current = 0;
+    zeitGestoppt.current = false;
+    laeuftSeit.current = document.visibilityState === 'hidden' ? null : Date.now();
     setStatus('Zurückgesetzt.');
   }, [whiteSet]);
 
@@ -420,6 +452,50 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     setHintLetters((h) => h + n);
     setStatus(`Wort aufgedeckt (${n} Buchstabe${n === 1 ? '' : 'n'}).`);
   }, [currentEntry, isRight, revealed, solution]);
+
+  // ---- Solo: Lösezeit. Läuft nur bei sichtbarem Tab; gespeichert wird sie nicht (nutzer_fortschritt hat keine Zeitspalte),
+  // bei einem fortgesetzten Rätsel zählt also nur die Zeit seit dem Öffnen. ----
+  useEffect(() => {
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') {
+        if (laeuftSeit.current != null) {
+          aktivMs.current += Date.now() - laeuftSeit.current;
+          laeuftSeit.current = null;
+        }
+      } else if (!zeitGestoppt.current && laeuftSeit.current == null) {
+        laeuftSeit.current = Date.now();
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => document.removeEventListener('visibilitychange', onVis);
+  }, []);
+
+  // ---- Solo: Sobald jedes Feld stimmt, Zeit stoppen und das Abschluss-Popup zeigen. Nicht bei eingeblendeter Lösung und nicht,
+  // wenn das Rätsel schon beim Öffnen komplett war. Der Fortschritt wird sofort gespeichert (nicht erst nach 700 ms), damit er
+  // beim Klick auf „Nächstes Rätsel“ nicht verloren geht. ----
+  useEffect(() => {
+    if (duell || !onZumMenue) return;
+    const felder = Object.keys(solution);
+    const komplett = felder.length > 0 && felder.every((k) => (userGrid[k] || '') === solution[k]);
+    if (!komplett) {
+      warBeimStartFertig.current = false;
+      return;
+    }
+    if (abschluss || loesungGezeigt || warBeimStartFertig.current) return;
+    if (laeuftSeit.current != null) aktivMs.current += Date.now() - laeuftSeit.current;
+    laeuftSeit.current = null;
+    zeitGestoppt.current = true;
+    setAbschluss({
+      sekunden: Math.max(1, Math.round(aktivMs.current / 1000)),
+      felder: felder.length,
+      woerter: entries.length,
+      fehleingaben,
+      pruefungenMitFehlern: pruefungen,
+      tipps: hintLetters,
+    });
+    setPopupOffen(true);
+    onFortschritt?.(userGrid, true);
+  }, [duell, onZumMenue, solution, userGrid, abschluss, loesungGezeigt, entries.length, fehleingaben, pruefungen, hintLetters, onFortschritt]);
 
   // ---- Fortschritt speichern: gedämpft (700ms nach der letzten Eingabe), nicht beim
   // ersten Rendern (das wäre nur der geladene Fortschritt selbst). ----
@@ -710,6 +786,16 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
         </div>
         <div className="cw-status">{status}</div>
       </div>
+      {popupOffen && abschluss && onZumMenue && (
+        <AbschlussDialog
+          ergebnis={abschluss}
+          titel={titel}
+          schwierigkeit={schwierigkeit}
+          onNaechstes={onNaechstes}
+          onMenue={onZumMenue}
+          onSchliessen={() => setPopupOffen(false)}
+        />
+      )}
     </div>
   );
 }

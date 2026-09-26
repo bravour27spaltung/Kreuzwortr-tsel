@@ -6,7 +6,7 @@ import StartPage from '@/components/StartPage';
 import { getSession, onAuthChange } from '@/lib/auth';
 import { codeAusUrl } from '@/lib/duell';
 import { seedPuzzle } from '@/lib/seedPuzzle';
-import { listPuzzles, loadPuzzle, type PuzzleSummary } from '@/lib/puzzleSource';
+import { listPuzzles, loadPuzzle, SCHWIERIGKEIT, type PuzzleSummary } from '@/lib/puzzleSource';
 import { loadProgress, saveProgress } from '@/lib/progress';
 import type { Puzzle } from '@/types';
 
@@ -99,6 +99,16 @@ function App() {
   const aktuelleAuswahl = liste.find((x) => x.id === auswahl);
   const kannSpeichern = !!session && aktuelleAuswahl?.quelle === 'supabase';
 
+  // „Nächstes Rätsel“ im Abschluss-Popup: das folgende in der Katalogreihenfolge. Beim letzten gibt es keins (der Knopf entfällt).
+  const aktuellerIndex = liste.findIndex((x) => x.id === auswahl);
+  const naechstes = aktuellerIndex >= 0 ? liste[aktuellerIndex + 1] : undefined;
+
+  function zumMenue() {
+    setAnsicht('start');
+    setAuswahl(null);
+    setZustand({ art: 'laedt' });
+  }
+
   return (
     <div className="app-shell">
       {ansicht === 'start' && (
@@ -133,14 +143,7 @@ function App() {
 
       {ansicht === 'spiel' && (
         <>
-          <button
-            className="cw-secondary cw-back"
-            onClick={() => {
-              setAnsicht('start');
-              setAuswahl(null);
-              setZustand({ art: 'laedt' });
-            }}
-          >
+          <button className="cw-secondary cw-back" onClick={zumMenue}>
             ← Zur Startseite
           </button>
           {zustand.art === 'laedt' && <p>Rätsel wird geladen …</p>}
@@ -150,6 +153,18 @@ function App() {
               key={auswahl ?? 'beispiel'}
               puzzle={zustand.puzzle}
               initialUserGrid={zustand.initialUserGrid}
+              titel={aktuelleAuswahl?.titel}
+              schwierigkeit={aktuelleAuswahl?.schwierigkeit != null ? SCHWIERIGKEIT[aktuelleAuswahl.schwierigkeit] : undefined}
+              onZumMenue={zumMenue}
+              onNaechstes={
+                naechstes
+                  ? () => {
+                      setZustand({ art: 'laedt' });
+                      setAuswahl(naechstes.id);
+                      window.scrollTo(0, 0);
+                    }
+                  : undefined
+              }
               onFortschritt={
                 kannSpeichern && session
                   ? (userGrid, fertig) => {

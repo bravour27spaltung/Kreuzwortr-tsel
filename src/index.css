@@ -1032,3 +1032,93 @@ body {
 .auswahl-liste .puzzle-grid {
   margin-top: 10px;
 }
+
+/* ---- Abschluss-Popup (Solo) ---- */
+.cw-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(10, 12, 18, 0.55);
+}
+
+.cw-modal {
+  width: 100%;
+  max-width: 440px;
+  max-height: calc(100vh - 32px);
+  overflow-y: auto;
+  background: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--cell-border);
+  border-radius: 14px;
+  padding: 22px 20px 16px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cw-modal h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.cw-modal-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.cw-modal-fazit {
+  margin: 0;
+  font-weight: 600;
+}
+
+.cw-modal-tabelle {
+  max-width: none;
+}
+
+.cw-modal-aktionen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.cw-modal-aktionen button {
+  flex: 1 1 150px;
+  padding: 10px 14px;
+  font: inherit;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1.5px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.cw-modal-aktionen button.cw-secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.cw-modal-aktionen button:focus-visible,
+.cw-modal-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.cw-modal-link {
+  align-self: center;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 6px;
+}
