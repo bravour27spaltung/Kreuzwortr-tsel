@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import type { Direction, Puzzle, PuzzleEntry } from '@/types';
+import { formatZeit, type Regeln, type Zaehler } from '@/lib/duell';
 
 function key(r: number, c: number): string {
   return `${r},${c}`;
@@ -24,11 +25,101 @@ interface Selection {
   dir: Direction;
 }
 
-interface Props {
-  puzzle: Puzzle;
+/** Duell-Modus: Serveruhr, Strafen und Rückmeldungen an die Datenbank. Ohne dieses Objekt läuft der Player wie gewohnt. */
+export interface DuellModus {
+  gegnerName: string | null;
+  /** Start der eigenen Runde (Serverzeit, ms seit 1970). */
+  gestartetMs: number;
+  /** Serverzeit minus Uhr dieses Geräts (ms), damit die Anzeige der Serveruhr folgt. */
+  versatzMs: number;
+  regeln: Regeln;
+  /** Bereits gezählte Tipps/Prüfungen (bei Wiederaufnahme einer laufenden Runde). */
+  start: Zaehler;
+  onSpeichern: (userGrid: Record<string, string>, zaehler: Zaehler) => Promise<void>;
+  /** Wird einmal aufgerufen, sobald das Gitter vollständig richtig ist. */
+  onFertig: (userGrid: Record<string, string>, zaehler: Zaehler) => Promise<void>;
+  onAufgeben: () => Promise<void>;
 }
 
-export default function CrosswordPlayer({ puzzle }: Props) {
+interface Props {
+  puzzle: Puzzle;
+  /** Gespeicherter Fortschritt, mit dem der Player startet (z.B. aus nutzer_fortschritt geladen). */
+  initialUserGrid?: Record<string, string>;
+  /** Wird gedämpft (debounced) bei jeder Änderung aufgerufen, z.B. um in Supabase zu speichern. */
+  onFortschritt?: (userGrid: Record<string, string>, fertig: boolean) => void;
+  duell?: DuellModus;
+}
+
+/** Kopfleiste im Duell: Gegner, Uhr (Serverzeit), Strafen, Aufgeben. Eigene Komponente, damit nur sie jede Sekunde neu zeichnet. */
+function DuellLeiste({
+  duell,
+  zaehler,
+  hinweis,
+  abgabe,
+  onErneutAbgeben,
+}: {
+  duell: DuellModus;
+  zaehler: Zaehler;
+  hinweis: string | null;
+  abgabe: { art: 'offen' | 'laeuft' | 'fehler'; text?: string };
+  onErneutAbgeben: () => void;
+}) {
+  const [jetzt, setJetzt] = useState(() => Date.now());
+  const [frage, setFrage] = useState(false);
+  const [aufgebenFehler, setAufgebenFehler] = useState<string | null>(null);
+  useEffect(() => {
+    const t = setInterval(() => setJetzt(Date.now()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  const dauer = (jetzt + duell.versatzMs - duell.gestartetMs) / 1000;
+  const strafe = zaehler.tipps * duell.regeln.sek_pro_tipp + zaehler.pruefungen * duell.regeln.sek_pro_fehlpruefung;
+  return (
+    <div className="cw-duellbar">
+      <div className="cw-duellbar-zeile">
+        <span className="cw-duellbar-gegner">Duell gegen {duell.gegnerName ?? 'Gegner'}</span>
+        <span className="cw-duellbar-uhr" aria-label="Zeit inklusive Strafsekunden">
+          {formatZeit(dauer)}
+          {strafe > 0 && <span className="cw-duellbar-strafe"> + {formatZeit(strafe)} Strafe</span>}
+        </span>
+        {!frage ? (
+          <button className="cw-secondary" onClick={() => setFrage(true)}>
+            Aufgeben
+          </button>
+        ) : (
+          <span className="cw-duellbar-frage">
+            Wirklich aufgeben? Dein Gegner gewinnt sofort.
+            <button
+              onClick={() => {
+                setAufgebenFehler(null);
+                duell.onAufgeben().catch((e: unknown) => setAufgebenFehler(e instanceof Error ? e.message : 'Aufgeben fehlgeschlagen.'));
+              }}
+            >
+              Ja, aufgeben
+            </button>
+            <button className="cw-secondary" onClick={() => setFrage(false)}>
+              Abbrechen
+            </button>
+          </span>
+        )}
+      </div>
+      <div className="cw-duellbar-regeln">
+        Jeder aufgedeckte Buchstabe kostet {duell.regeln.sek_pro_tipp} s, jedes „Prüfen“ mit Fehler {duell.regeln.sek_pro_fehlpruefung} s. Deine Uhr läuft weiter,
+        auch wenn du die Seite verlässt.
+      </div>
+      {aufgebenFehler && <div className="cw-duellbar-warn">{aufgebenFehler}</div>}
+      {hinweis && <div className="cw-duellbar-warn">Speichern fehlgeschlagen: {hinweis}</div>}
+      {abgabe.art === 'laeuft' && <div className="cw-duellbar-info">Gitter vollständig – Abgabe wird geprüft …</div>}
+      {abgabe.art === 'fehler' && (
+        <div className="cw-duellbar-warn">
+          Abgabe fehlgeschlagen: {abgabe.text}{' '}
+          <button onClick={onErneutAbgeben}>Erneut versuchen</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt, duell }: Props) {
   const { rows, cols, solution, entries } = puzzle;
 
   const whiteSet = useMemo(() => new Set(Object.keys(solution)), [solution]);
@@ -60,13 +151,17 @@ export default function CrosswordPlayer({ puzzle }: Props) {
     return map;
   }, [entries, whiteSet]);
 
-  const [userGrid, setUserGrid] = useState<Record<string, string>>({});
+  const [userGrid, setUserGrid] = useState<Record<string, string>>(() => initialUserGrid ?? {});
   const [sel, setSel] = useState<Selection | null>(null);
   const [checkState, setCheckState] = useState<Record<string, 'correct' | 'incorrect'>>({});
   const [status, setStatus] = useState('');
   // Per Tipp aufgedeckte Felder: nicht mehr überschreibbar, zählen fürs Ergebnis.
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
-  const [hintLetters, setHintLetters] = useState(0);
+  const [hintLetters, setHintLetters] = useState(duell?.start.tipps ?? 0);
+  // Duell: Prüfungen, bei denen mindestens ein Feld falsch war (kosten Strafsekunden).
+  const [pruefungen, setPruefungen] = useState(duell?.start.pruefungen ?? 0);
+  const [duellHinweis, setDuellHinweis] = useState<string | null>(null);
+  const [abgabe, setAbgabe] = useState<{ art: 'offen' | 'laeuft' | 'fehler'; text?: string }>({ art: 'offen' });
 
   const inputRefs = useRef<Record<string, HTMLInputElement | null>>({});
   const clueTextRefs = useRef<Record<string, HTMLSpanElement | null>>({});
@@ -217,6 +312,7 @@ export default function CrosswordPlayer({ puzzle }: Props) {
     let total = 0;
     let correct = 0;
     let filled = 0;
+    let falsch = 0;
     const next: Record<string, 'correct' | 'incorrect'> = {};
     whiteSet.forEach((k) => {
       total++;
@@ -227,16 +323,22 @@ export default function CrosswordPlayer({ puzzle }: Props) {
         next[k] = 'correct';
       } else if (val) {
         next[k] = 'incorrect';
+        falsch++;
       }
     });
     setCheckState(next);
     const hintTxt = hintLetters ? ` – davon ${hintLetters} per Tipp aufgedeckt` : '';
+    let strafTxt = '';
+    if (duell && falsch > 0) {
+      setPruefungen((n) => n + 1);
+      strafTxt = ` Prüfen mit Fehlern: +${duell.regeln.sek_pro_fehlpruefung} s.`;
+    }
     setStatus(
-      correct === total
+      (correct === total
         ? `Fertig! Alle ${total} Felder korrekt${hintTxt}.`
-        : `${correct} von ${total} Feldern korrekt (${filled} ausgefüllt)${hintTxt}.`
+        : `${correct} von ${total} Feldern korrekt (${filled} ausgefüllt)${hintTxt}.`) + strafTxt
     );
-  }, [whiteSet, userGrid, solution, hintLetters]);
+  }, [whiteSet, userGrid, solution, hintLetters, duell]);
 
   const handleSolve = useCallback(() => {
     setCheckState({});
@@ -319,6 +421,68 @@ export default function CrosswordPlayer({ puzzle }: Props) {
     setStatus(`Wort aufgedeckt (${n} Buchstabe${n === 1 ? '' : 'n'}).`);
   }, [currentEntry, isRight, revealed, solution]);
 
+  // ---- Fortschritt speichern: gedämpft (700ms nach der letzten Eingabe), nicht beim
+  // ersten Rendern (das wäre nur der geladene Fortschritt selbst). ----
+  const ersterRender = useRef(true);
+  useEffect(() => {
+    if (!onFortschritt) return;
+    if (ersterRender.current) {
+      ersterRender.current = false;
+      return;
+    }
+    const t = setTimeout(() => {
+      const felder = Object.keys(solution);
+      const fertig = felder.length > 0 && felder.every((k) => (userGrid[k] || '') === solution[k]);
+      onFortschritt(userGrid, fertig);
+    }, 700);
+    return () => clearTimeout(t);
+  }, [userGrid, onFortschritt, solution]);
+
+  // ---- Duell: Zwischenstand sichern. Tipps und Prüfungen kosten Zeit und gehen sofort raus (sonst ließe sich die Strafe
+  // durch Schließen des Tabs umgehen), reine Eingaben gedämpft. Die Rückrufe liegen in Refs, damit ein neues
+  // duell-Objekt des Elternbauteils den Timer nicht zurücksetzt. ----
+  const duellSpeichernRef = useRef(duell?.onSpeichern);
+  const duellFertigRef = useRef(duell?.onFertig);
+  useEffect(() => {
+    duellSpeichernRef.current = duell?.onSpeichern;
+    duellFertigRef.current = duell?.onFertig;
+  }, [duell]);
+  const letzteZaehler = useRef<Zaehler>({ tipps: hintLetters, pruefungen });
+  const duellErsterRender = useRef(true);
+  useEffect(() => {
+    if (!duellSpeichernRef.current) return;
+    if (duellErsterRender.current) {
+      duellErsterRender.current = false;
+      return;
+    }
+    const zaehlerGeaendert = letzteZaehler.current.tipps !== hintLetters || letzteZaehler.current.pruefungen !== pruefungen;
+    letzteZaehler.current = { tipps: hintLetters, pruefungen };
+    const t = setTimeout(
+      () => {
+        duellSpeichernRef.current?.(userGrid, { tipps: hintLetters, pruefungen })
+          .then(() => setDuellHinweis(null))
+          .catch((e: unknown) => setDuellHinweis(e instanceof Error ? e.message : 'unbekannter Fehler'));
+      },
+      zaehlerGeaendert ? 0 : 700
+    );
+    return () => clearTimeout(t);
+  }, [userGrid, hintLetters, pruefungen]);
+
+  // ---- Duell: Sobald jedes Feld stimmt, wird abgegeben (die Datenbank prüft das Gitter noch einmal und stoppt die Zeit). ----
+  const sendeAbgabe = useCallback((grid: Record<string, string>, z: Zaehler) => {
+    const fn = duellFertigRef.current;
+    if (!fn) return;
+    setAbgabe({ art: 'laeuft' });
+    fn(grid, z).catch((e: unknown) => setAbgabe({ art: 'fehler', text: e instanceof Error ? e.message : 'unbekannter Fehler' }));
+  }, []);
+  useEffect(() => {
+    if (!duell || abgabe.art !== 'offen') return;
+    const felder = Object.keys(solution);
+    if (felder.length > 0 && felder.every((k) => (userGrid[k] || '') === solution[k])) {
+      sendeAbgabe(userGrid, { tipps: hintLetters, pruefungen });
+    }
+  }, [duell, abgabe.art, userGrid, solution, hintLetters, pruefungen, sendeAbgabe]);
+
   // ---- Fragetext an die Zellgröße anpassen: größtmögliche Schrift (max. 13px)
   // ohne Abschneiden, sonst wird ein 2-Wort-Begriff wie "Erkundigung" auf den
   // ersten Blick unlesbar. Fällt bei sehr kleinen Zellen auf Silbentrennung
@@ -384,6 +548,15 @@ export default function CrosswordPlayer({ puzzle }: Props) {
   return (
     <div className="cw-wrap">
       <div className="cw-panel">
+        {duell && (
+          <DuellLeiste
+            duell={duell}
+            zaehler={{ tipps: hintLetters, pruefungen }}
+            hinweis={duellHinweis}
+            abgabe={abgabe}
+            onErneutAbgeben={() => sendeAbgabe(userGrid, { tipps: hintLetters, pruefungen })}
+          />
+        )}
         <div className="cw-cluebar" aria-live="polite">
           {!sel && <span className="cw-empty">Tippe auf eine Frage oder ein weißes Feld – die Frage erscheint dann hier in voller Größe.</span>}
           {sel &&
@@ -505,7 +678,7 @@ export default function CrosswordPlayer({ puzzle }: Props) {
 
         <div className="cw-controls">
           <div className="cw-group">
-            <span className="cw-group-label">Tipp:</span>
+            <span className="cw-group-label">Tipp{duell ? ` (+${duell.regeln.sek_pro_tipp} s je Buchstabe)` : ''}:</span>
             <button
               className="cw-hint"
               title="Deckt den Buchstaben im gewählten Feld auf (Tastenkürzel: ?)"
@@ -520,13 +693,19 @@ export default function CrosswordPlayer({ puzzle }: Props) {
           </div>
           <span className="cw-sep" aria-hidden="true" />
           <div className="cw-group">
-            <button onClick={handleCheck}>Prüfen</button>
-            <button className="cw-secondary" onClick={handleSolve}>
-              Lösung zeigen
+            <button onClick={handleCheck} title={duell ? `Mit Fehlern: +${duell.regeln.sek_pro_fehlpruefung} s` : undefined}>
+              Prüfen
             </button>
-            <button className="cw-secondary" onClick={handleReset}>
-              Zurücksetzen
-            </button>
+            {!duell && (
+              <>
+                <button className="cw-secondary" onClick={handleSolve}>
+                  Lösung zeigen
+                </button>
+                <button className="cw-secondary" onClick={handleReset}>
+                  Zurücksetzen
+                </button>
+              </>
+            )}
           </div>
         </div>
         <div className="cw-status">{status}</div>

@@ -56,6 +56,8 @@ Im **Supabase-Dashboard → SQL Editor** nacheinander ausführen (oder mit `psql
 | 4 | `supabase/seed/woerter_seed.sql` | 41.385 Wörter (1,3 MB – im SQL-Editor ggf. mit psql einspielen) |
 | 5 | `supabase/seed/fragen_varianten_seed.sql` | 9.674 Fragen |
 | 6 | `supabase/seed/raetsel_seed.sql` | erzeugte Rätsel |
+| 7 | `supabase/migrations/20260926000000_fortschritt_zugriff.sql` | Rechte für eingeloggte Nutzer auf `nutzer_fortschritt`, Übersichtsfunktion `fortschritt_liste()` |
+| 8 | `supabase/migrations/20260927000000_duelle.sql` | Duelle: Tabellen `profile`, `duelle`, `duell_teilnahme`, `duell_versuche` und die Funktionen `duell_*` (siehe „Duelle“) |
 
 Alle Seeds sind wiederholbar (bereits vorhandene Zeilen werden übersprungen).
 Die App liest ausschließlich über die beiden Funktionen und sieht nur Rätsel mit
@@ -69,6 +71,23 @@ npm run dev
 
 Die App läuft danach unter `http://localhost:5173`.
 
+## Duelle (asynchroner Zweikampf)
+
+Zwei Spieler lösen dasselbe Rätsel zeitversetzt, es gewinnt die kürzere Gesamtzeit.
+
+- **Ablauf:** Einladung erstellen → Link/Code verschicken → Gegner tritt bei (dabei wird ein Rätsel gewählt, das keiner von beiden
+  bearbeitet hat) → jeder startet für sich (Serveruhr) → beim vollständig richtigen Gitter wird automatisch abgegeben, die Datenbank prüft es
+  noch einmal → Ergebnis, danach optional eine Revanche mit neuem Rätsel.
+- **Wertung:** Dauer + Strafsekunden: 20 s je per Tipp aufgedecktem Buchstaben, 15 s je „Prüfen“ mit mindestens einem Fehler.
+  Frist: 7 Tage ab Beitritt (danach gewinnt, wer als Einziger abgegeben hat). Einladungen verfallen nach 14 Tagen, höchstens 5 offene je Nutzer.
+  **Alle Werte stehen an einer Stelle** am Anfang von `20260927000000_duelle.sql` (`_duell_sek_pro_tipp()` usw.); die App liest sie von dort.
+- **Sichtbarkeit:** Vom Gegner sieht man nichts, bis man selbst abgegeben (oder aufgegeben) hat oder das Duell beendet ist.
+  Zugriff nur über `security definer`-Funktionen (RLS an, keine direkten Tabellenrechte).
+- **Bekannte Grenze:** Die Lösung liegt wie bei normalen Rätseln im Browser (`raetsel_laden`), und Tipp-/Prüfzähler meldet der Client.
+  Für Duelle unter Bekannten reicht das; wer die Entwicklerwerkzeuge nutzt, kann schummeln. Für öffentliche Bestenlisten müssten Tipps und
+  Prüfen serverseitig laufen.
+- **Tests:** `supabase/tests/` (siehe dortige README).
+
 ## Rätsel erzeugen
 
 ```bash
@@ -81,6 +100,17 @@ Schreibt `public/raetsel/*.json` (für die App ohne Datenbank) und
 Rätsel mit mehr als 3 Funktionswörtern oder doppelten Fragetexten werden verworfen
 (ohne `--nur-veroeffentlichbare`: als Entwurf gespeichert). Optionen: `--help`.
 `woerter_seed.sql` neu erzeugen: `python3 tools/generator/woerter_seed.py`.
+
+### Automatisch, wöchentlich (GitHub Actions)
+
+`.github/workflows/generate-raetsel.yml` erzeugt jeden Montag (und manuell per
+"Run workflow") 1 neues Rätsel je Vorlage (`--anhaengen --pro-vorlage 1`), spielt es direkt
+per `psql` in Supabase ein (Repository-Secret `SUPABASE_DB_URL`) und committed die neuen
+`public/raetsel/*.json` sowie die fortgeschriebene `supabase/seed/raetsel_seed.sql` zurück ins
+Repo. `--anhaengen` liest den bestehenden Bestand aus `public/raetsel/index.json`, vermeidet
+doppelte Wortkombinationen und setzt die Rätsel-Nummerierung fort. Einmaliges Setup:
+Repository-Secret `SUPABASE_DB_URL` (dieselbe Verbindungszeichenfolge wie oben) und unter
+*Settings → Actions → General → Workflow permissions* "Read and write permissions" aktivieren.
 
 ## Weitere Skripte
 
@@ -96,10 +126,17 @@ npm run typecheck   # TypeScript-Prüfung ohne Build
 ```
 src/
   components/
-    CrosswordPlayer.tsx   # Die eigentliche Rätsel-Spiellogik (Gitter, Eingabe, Prüfen/Lösen)
+    CrosswordPlayer.tsx   # Die eigentliche Rätsel-Spiellogik (Gitter, Eingabe, Prüfen/Lösen, Autosave)
+    StartPage.tsx          # Startseite: App-Vorstellung, Login, Duelle, "Meine Rätsel", Rätsel-Katalog
+    DuellPanel.tsx         # Duelle auf der Startseite: Anzeigename, Einladen, Beitreten, Liste
+    DuellView.tsx          # Ein Duell: Lobby, Spiel (Player im Duell-Modus), Warten, Ergebnis, Revanche
+    AuthPanel.tsx           # Login-/Registrierungsformular bzw. "Eingeloggt als …"
   lib/
     supabase.ts           # Supabase-Client (null, wenn .env fehlt)
     puzzleSource.ts       # Rätselliste/Rätsel laden: Supabase-RPC oder public/raetsel/, Strukturprüfung
+    auth.ts                # Supabase-Auth-Wrapper (Login/Registrierung/Logout/Session)
+    progress.ts             # Fortschritt laden/speichern über nutzer_fortschritt + fortschritt_liste()
+    duell.ts                # Duell-Funktionen (RPC), Fehlertexte, Zeit-/Code-Formatierung
     seedPuzzle.ts         # Beispielrätsel (Notfall, wenn nichts geladen werden kann)
   types.ts                # Gemeinsame Typen (Puzzle, PuzzleEntry, Direction)
   App.tsx
@@ -112,6 +149,7 @@ tools/
   generator/               # Rätsel-Generator, Wörter-Seed
   solver/, templates/, wordlist/, fragen/   # Werkzeuge der Phasen 1–4
 data/                      # Wortliste, Vorlagen, Fragen
+.github/workflows/         # Wöchentliche automatische Rätsel-Generierung (GitHub Actions)
 ```
 
 ## Offene nächste Schritte
@@ -120,5 +158,3 @@ data/                      # Wortliste, Vorlagen, Fragen
   78 Rätsel vor (nur 163 dreibuchstabige Wörter mit Frage bei entsprechend vielen
   3-Buchstaben-Feldern in den Vorlagen). Ließe sich durch mehr kurze Wörter mit Frage
   und/oder eine noch stärkere `--abwechslung`-Gewichtung im Generator verbessern.
-- Nutzer-Login (Supabase Auth) und Fortschritt speichern über `nutzer_fortschritt`
-  (Tabelle und RLS-Policies existieren, die App nutzt sie noch nicht).
