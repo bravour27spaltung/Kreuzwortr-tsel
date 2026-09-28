@@ -203,47 +203,9 @@ body {
   background: var(--incorrect) !important;
 }
 
-/* Sofortiges Feedback beim Tippen, unabhängig vom „Prüfen“-Knopf: kurzer Puls in Grün bzw. Rot,
-   verschwindet nach der Animation wieder von selbst (kein dauerhafter Zustand, siehe CrosswordPlayer). */
-@keyframes cw-pop-ok {
-  0% {
-    transform: scale(1);
-  }
-  35% {
-    transform: scale(1.16);
-    background: var(--correct);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes cw-pop-bad {
-  0% {
-    transform: scale(1);
-  }
-  25% {
-    transform: scale(0.94) rotate(-3deg);
-    background: var(--incorrect);
-  }
-  60% {
-    transform: scale(1.05) rotate(2deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-.cw-white.cw-pulse-ok {
-  animation: cw-pop-ok 0.42s ease-out;
-}
-
-.cw-white.cw-pulse-bad {
-  animation: cw-pop-bad 0.42s ease-out;
-}
-
-/* Größerer Jubel-Puls über alle Felder eines Worts, sobald es komplett richtig ist – macht das
-   Ausfüllen selbst schon zu einem kleinen Erfolgsmoment, nicht erst die Endabrechnung. */
+/* Jubel-Puls über alle Felder eines Worts, aber erst sobald das ganze Wort selbst getippt und komplett
+   richtig ist (nicht schon pro einzelnem Buchstaben – das wäre zu häufig/zu leicht verdient) und nicht,
+   wenn es per Tipp oder „Wort aufdecken“ komplettiert wurde (dann bleibt es neutral, siehe CrosswordPlayer). */
 @keyframes cw-jubel {
   0% {
     transform: scale(1);
@@ -265,8 +227,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .cw-white.cw-pulse-ok,
-  .cw-white.cw-pulse-bad,
   .cw-white.cw-jubel {
     animation: none !important;
   }

@@ -65,12 +65,8 @@ function piep(frequenzHz: number, dauerMs: number, verzoegerungMs = 0, lautstaer
   }
 }
 
-/** Kurzer, dezenter Ton bei jedem richtig eingetippten Buchstaben. */
-export function spieleRichtig() {
-  piep(880, 90);
-}
-
-/** Zweiklang, wenn ein ganzes Wort fertig und richtig ist. */
+/** Zweiklang, wenn ein ganzes Wort selbst getippt fertig und richtig ist (kein Ton pro Buchstabe – das wäre
+    zu häufig/zu leicht verdient). */
 export function spieleWortFertig() {
   piep(660, 90);
   piep(990, 110, 90);
