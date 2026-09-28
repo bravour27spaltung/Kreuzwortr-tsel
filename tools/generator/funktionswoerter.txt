@@ -1,8 +1,22 @@
 # Artikel, Pronomen, Zahlwörter, Fragewörter: werden beim Füllen seltener gewählt (siehe generate_raetsel.py)
+# Ergaenzung 2026-09-28 (Phase 6): Konjunktionen, Praepositionen (inkl. Verschmelzungen wie ZUM/BEIM),
+# Pronomen SIE/SICH und finite Formen von sein/haben/werden/koennen/muessen/sollen. Diese Klassen waren
+# im urspruenglichen Dateizweck (Artikel/Pronomen/Zahlwoerter/Fragewoerter) mitgemeint, aber nicht erfasst
+# -- siehe phase6-wortwiederholung-und-fragensubtilitaet.md. Echte Inhaltswoerter (Nomen/Adjektive/Vollverben)
+# bleiben bewusst aussen vor, auch wenn sie haeufig sind (z.B. AUCH, NOCH, JAHR, ZEIT, GUT).
+ABER
 ACHT
 ACHTZEHN
 ACHTZIG
+ALS
+ANS
+AUF
+AUS
+BEI
+BEIM
+BIS
 DAS
+DASS
 DEIN
 DEINE
 DEINEM
@@ -16,6 +30,7 @@ DES
 DICH
 DIE
 DIR
+DOCH
 DREI
 DREISSIG
 EIN
@@ -34,11 +49,17 @@ EUREN
 EURER
 FUENF
 FUENFZIG
+GIBT
+HABE
+HAT
 HUNDERT
 ICH
 IHM
 IHN
 IHR
+INS
+IST
+KANN
 MEIN
 MEINE
 MEINEM
@@ -46,15 +67,28 @@ MEINER
 MEINES
 MICH
 MIR
+MIT
+MUSS
+NACH
 NEUN
+ODER
+OHNE
 SECHS
 SECHZEHN
 SECHZIG
+SEI
+SEIN
+SEIT
 SICH
+SIE
 SIEBEN
 SIEBZEHN
 SIEBZIG
+SIND
+SOLL
 TAUSEND
+UMS
+UND
 UNS
 UNSER
 UNSERE
@@ -65,7 +99,11 @@ UNSERES
 VIER
 VIERZEHN
 VIERZIG
+VOM
+VON
+VOR
 WANN
+WAR
 WARUM
 WAS
 WELCHE
@@ -76,7 +114,9 @@ WELCHES
 WEM
 WEN
 WER
+WIE
 WIR
+WIRD
 WOHER
 WOHIN
 WORAN
@@ -85,5 +125,7 @@ WORUEBER
 WORUM
 WOZU
 ZEHN
+ZUM
+ZUR
 ZWANZIG
 ZWEI

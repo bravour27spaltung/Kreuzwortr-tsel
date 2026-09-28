@@ -165,7 +165,20 @@ def main():
                     help='Rätsel mit Prüfhinweisen verwerfen statt als Entwurf speichern')
     ap.add_argument('--seed', type=int, default=1)
     ap.add_argument('--abwechslung', type=float, default=3,
-                    help='Abwertung bereits verwendeter Wörter: Häufigkeit / (1 + x·Anzahl bisheriger Verwendungen); 0 = aus')
+                    help='Abwertung bereits verwendeter Wörter: Häufigkeit / (1 + x)^(Anzahl bisheriger Verwendungen); '
+                         '0 = aus. Exponentiell statt linear seit Phase 6 (siehe '
+                         'phase6-wortwiederholung-und-fragensubtilitaet.md). Wichtig: reines Abwerten reicht bei sehr '
+                         'kleinen Pools (Länge 3-4) allein NICHT aus, siehe --max-verwendung.')
+    ap.add_argument('--max-verwendung', type=int, default=15,
+                    help='Hartes Limit: ein Wort wird ab dieser Anzahl Verwendungen komplett aus dem Pool genommen '
+                         '(Gewicht 0, nicht nur abgewertet), 0 = aus. Nötig zusätzlich zu --abwechslung, weil eine reine '
+                         'Abwertung ein Wort nie auf 0 senkt: bei sehr kleinen Pools (Länge 3, nur ~120 Inhaltswörter für '
+                         '~280 Felder je Durchlauf) ist ein Wort wie EHE für manche Kreuzungsmuster einer der wenigen '
+                         'passenden Kandidaten und wird trotz starker Abwertung immer wieder gewählt (empirisch: mit '
+                         'reiner exponentieller Abwertung stieg EHE in einem Testlauf sogar auf 35 % statt zu sinken, '
+                         'siehe phase6-wortwiederholung-und-fragensubtilitaet.md). Das harte Limit erzwingt, dass der '
+                         'Solver für die verbleibenden Versuche ein anderes Wort finden muss oder der Versuch scheitert '
+                         'und ein anderer Seed/Skelett probiert wird.')
     ap.add_argument('--hart-anteil', type=float, default=1 / 3,
                     help='Anteil der Versuche mit umgekehrter (seltenheits-basierter) Wortgewichtung, '
                          'damit auch "schwer" eingestufte Rätsel entstehen (0 = aus). Zufällig je Versuch statt '
@@ -199,11 +212,13 @@ def main():
         with open(pool, 'w', encoding='utf-8') as f:
             f.write('wort\tlaenge\thaeufigkeit\tschreibweise\n')
             for w, fl in fragen.items():
+                if a.max_verwendung and verwendet[w] >= a.max_verwendung:
+                    continue  # hartes Limit erreicht: Wort komplett aus dem Pool nehmen (siehe --max-verwendung)
                 h = int(fl[0]['rang']) if modus == 'hart' else int(fl[0]['haeufigkeit'])
                 if w in funktionswoerter and a.funktionswort_haeufigkeit:
                     h = min(h, a.funktionswort_haeufigkeit)
                 if a.abwechslung and verwendet[w]:
-                    h = max(2, int(h / (1 + a.abwechslung * verwendet[w])))
+                    h = max(2, int(h / (1 + a.abwechslung) ** verwendet[w]))
                 f.write(f"{w}\t{fl[0]['laenge']}\t{h}\t{w}\n")
 
     alle, gesehen, statistik = [], set(), Counter()
