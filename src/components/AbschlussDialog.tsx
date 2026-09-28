@@ -1,5 +1,34 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useMemo, useRef } from 'react';
 import { formatZeit } from '@/lib/duell';
+
+const KONFETTI_FARBEN = ['#f6b3ae', '#bfe6c1', '#ffd166', '#7c9aff', '#3457d5', '#e3e8f1'];
+
+interface KonfettiStueck {
+  id: number;
+  linksProzent: number;
+  verzoegerungS: number;
+  dauerS: number;
+  farbe: string;
+  drehungGrad: number;
+  groessePx: number;
+}
+
+/** Feste Zufallswerte pro Popup-Öffnung (nicht bei jedem Re-Render neu), rein dekorativ. */
+function useKonfetti(anzahl: number): KonfettiStueck[] {
+  return useMemo(
+    () =>
+      Array.from({ length: anzahl }, (_, i) => ({
+        id: i,
+        linksProzent: Math.random() * 100,
+        verzoegerungS: Math.random() * 0.35,
+        dauerS: 1.5 + Math.random() * 0.9,
+        farbe: KONFETTI_FARBEN[i % KONFETTI_FARBEN.length],
+        drehungGrad: Math.random() * 360,
+        groessePx: 6 + Math.random() * 6,
+      })),
+    [anzahl]
+  );
+}
 
 /** Ergebnis einer Solo-Runde, wie es das Popup anzeigt. */
 export interface Abschluss {
@@ -42,6 +71,7 @@ function fazit(e: Abschluss): string {
 export default function AbschlussDialog({ ergebnis: e, titel, schwierigkeit, onNaechstes, onMenue, onSchliessen }: Props) {
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const primaerRef = useRef<HTMLButtonElement | null>(null);
+  const konfetti = useKonfetti(36);
 
   // Fokus in den Dialog holen und danach wieder dorthin zurückgeben, wo er vorher war.
   useEffect(() => {
@@ -81,6 +111,23 @@ export default function AbschlussDialog({ ergebnis: e, titel, schwierigkeit, onN
 
   return (
     <div className="cw-modal-overlay" onClick={onSchliessen}>
+      <div className="cw-konfetti" aria-hidden="true">
+        {konfetti.map((s) => (
+          <span
+            key={s.id}
+            className="cw-konfetti-stueck"
+            style={{
+              left: `${s.linksProzent}%`,
+              width: s.groessePx,
+              height: s.groessePx * 0.6,
+              background: s.farbe,
+              animationDuration: `${s.dauerS}s`,
+              animationDelay: `${s.verzoegerungS}s`,
+              transform: `rotate(${s.drehungGrad}deg)`,
+            }}
+          />
+        ))}
+      </div>
       <div
         ref={dialogRef}
         className="cw-modal"

@@ -180,6 +180,13 @@ body {
   padding: 0;
 }
 
+/* Beim Fokussieren wird der vorhandene Buchstabe ausgewählt (siehe CrosswordPlayer), damit Tippen ihn
+   ersetzt. Eigene Auswahlfarbe statt der grellen Standard-Markierung, passend zum restlichen Farbschema. */
+.cw-white input::selection {
+  background: var(--active-cell);
+  color: inherit;
+}
+
 .cw-white.cw-inword {
   background: var(--active-word);
 }
@@ -194,6 +201,79 @@ body {
 
 .cw-white.cw-incorrect {
   background: var(--incorrect) !important;
+}
+
+/* Sofortiges Feedback beim Tippen, unabhängig vom „Prüfen“-Knopf: kurzer Puls in Grün bzw. Rot,
+   verschwindet nach der Animation wieder von selbst (kein dauerhafter Zustand, siehe CrosswordPlayer). */
+@keyframes cw-pop-ok {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.16);
+    background: var(--correct);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes cw-pop-bad {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.94) rotate(-3deg);
+    background: var(--incorrect);
+  }
+  60% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.cw-white.cw-pulse-ok {
+  animation: cw-pop-ok 0.42s ease-out;
+}
+
+.cw-white.cw-pulse-bad {
+  animation: cw-pop-bad 0.42s ease-out;
+}
+
+/* Größerer Jubel-Puls über alle Felder eines Worts, sobald es komplett richtig ist – macht das
+   Ausfüllen selbst schon zu einem kleinen Erfolgsmoment, nicht erst die Endabrechnung. */
+@keyframes cw-jubel {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.22) rotate(-4deg);
+    background: var(--correct);
+  }
+  70% {
+    transform: scale(0.97) rotate(3deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.cw-white.cw-jubel {
+  animation: cw-jubel 0.6s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cw-white.cw-pulse-ok,
+  .cw-white.cw-pulse-bad,
+  .cw-white.cw-jubel {
+    animation: none !important;
+  }
+}
+
+.cw-controls button.cw-ton {
+  font-size: 0.9rem;
 }
 
 /* Per Tipp aufgedeckter Buchstabe: farbiger Text + kleines Eck-Dreieck,
@@ -1121,4 +1201,38 @@ body {
   text-decoration: underline;
   cursor: pointer;
   padding: 6px;
+}
+
+/* Konfetti beim Abschluss-Popup: rein dekorativ, nimmt keine Klicks entgegen (pointer-events: none),
+   damit der Klick auf den abgedunkelten Hintergrund weiterhin das Popup schließt. */
+.cw-konfetti {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 51;
+}
+
+.cw-konfetti-stueck {
+  position: absolute;
+  top: -16px;
+  border-radius: 2px;
+  animation: cw-konfetti-fall linear forwards;
+}
+
+@keyframes cw-konfetti-fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(105vh) rotate(540deg);
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cw-konfetti {
+    display: none;
+  }
 }

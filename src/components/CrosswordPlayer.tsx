@@ -2,6 +2,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 import type { Direction, Puzzle, PuzzleEntry } from '@/types';
 import { formatZeit, type Regeln, type Zaehler } from '@/lib/duell';
 import AbschlussDialog, { type Abschluss } from '@/components/AbschlussDialog';
+import { spieleFertig, spieleRichtig, spieleWortFertig, tonAktiviert, tonUmschalten } from '@/lib/sound';
 
 function key(r: number, c: number): string {
   return `${r},${c}`;
@@ -165,6 +166,22 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
   const [status, setStatus] = useState('');
   // Per Tipp aufgedeckte Felder: nicht mehr überschreibbar, zählen fürs Ergebnis.
   const [revealed, setRevealed] = useState<Record<string, boolean>>({});
+  // Kurzer Puls je Feld direkt beim Tippen (richtig/falsch) – sofortiges Feedback, ohne auf „Prüfen“ zu warten.
+  const [pulse, setPulse] = useState<Record<string, 'ok' | 'bad'>>({});
+  const pulseTimer = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
+  // Wörter, die schon einmal gefeiert wurden (kurzer Jubel-Puls über alle Feldzellen), damit das nicht bei
+  // jedem Tastendruck erneut auslöst, solange das Wort fertig bleibt.
+  const gefeierteWoerter = useRef<Set<string>>(new Set());
+  const [jubelZellen, setJubelZellen] = useState<Set<string>>(new Set());
+  const jubelTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [tonAn, setTonAn] = useState(() => tonAktiviert());
+  useEffect(() => {
+    const timers = pulseTimer.current;
+    return () => {
+      Object.values(timers).forEach(clearTimeout);
+      if (jubelTimer.current) clearTimeout(jubelTimer.current);
+    };
+  }, []);
   const [hintLetters, setHintLetters] = useState(duell?.start.tipps ?? 0);
   // Duell: Prüfungen, bei denen mindestens ein Feld falsch war (kosten Strafsekunden).
   const [pruefungen, setPruefungen] = useState(duell?.start.pruefungen ?? 0);
@@ -282,7 +299,23 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
       if (revealed[k]) return; // aufgedecktes Feld ist read-only
       let v = raw.toUpperCase().replace(/[^A-ZÄÖÜ]/g, '');
       v = v.slice(-1);
-      if (v && v !== solution[k]) setFehleingaben((n) => n + 1);
+      if (v) {
+        const richtig = v === solution[k];
+        if (!richtig) setFehleingaben((n) => n + 1);
+        else spieleRichtig();
+        // Sofortiger kurzer Puls (grün/rot) direkt beim Tippen – das eigentliche „Prüfen“-Ergebnis
+        // (checkState) bleibt davon unberührt und wird weiterhin nur über den Prüfen-Knopf gesetzt.
+        setPulse((p) => ({ ...p, [k]: richtig ? 'ok' : 'bad' }));
+        clearTimeout(pulseTimer.current[k]);
+        pulseTimer.current[k] = setTimeout(() => {
+          setPulse((p) => {
+            if (!(k in p)) return p;
+            const rest = { ...p };
+            delete rest[k];
+            return rest;
+          });
+        }, 420);
+      }
       setUserGrid((g) => ({ ...g, [k]: v }));
       setCheckState({});
       if (v) {
@@ -387,6 +420,9 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     setLoesungGezeigt(false);
     setAbschluss(null);
     setPopupOffen(false);
+    setPulse({});
+    setJubelZellen(new Set());
+    gefeierteWoerter.current.clear();
     warBeimStartFertig.current = false;
     aktivMs.current = 0;
     zeitGestoppt.current = false;
@@ -453,6 +489,38 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     setStatus(`Wort aufgedeckt (${n} Buchstabe${n === 1 ? '' : 'n'}).`);
   }, [currentEntry, isRight, revealed, solution]);
 
+  // ---- Sofortiger Jubel, sobald ein einzelnes Wort komplett richtig ist – nicht erst beim ganzen Rätsel.
+  // Das macht das Ausfüllen selbst schon zu einem kleinen Erfolgsmoment statt nur der Endabrechnung.
+  // Ein reines Aufdecken per Tipp oder „Lösung zeigen“ löst keinen Jubel aus (kein eigener Verdienst).
+  // gefeierteWoerter merkt sich pro Wort, ob es schon gefeiert wurde, damit es bei weiteren Tastendrücken
+  // nicht erneut auslöst, solange das Wort fertig bleibt; wird das Wort wieder unvollständig, darf es beim
+  // nächsten Komplettieren erneut feiern. ----
+  useEffect(() => {
+    if (loesungGezeigt) return;
+    // Erst alle neu fertigen Wörter dieses Durchlaufs sammeln, dann einmal gesammelt feiern – falls durch
+    // „Wort aufdecken“ o.Ä. mehrere Wörter im selben Rendern fertig werden, sonst würde nur das letzte zählen.
+    const neuFertig: string[] = [];
+    entries.forEach((e) => {
+      const id = `${e.dir}:${e.r},${e.c}`;
+      const cells = entryCells(e).map(([r, c]) => key(r, c));
+      const vollstaendig = cells.length > 0 && cells.every((k) => (userGrid[k] || '') === solution[k]);
+      if (!vollstaendig) {
+        gefeierteWoerter.current.delete(id);
+        return;
+      }
+      if (gefeierteWoerter.current.has(id)) return;
+      gefeierteWoerter.current.add(id);
+      const selbstGetippt = cells.some((k) => !revealed[k]);
+      if (!selbstGetippt) return; // komplett per Tipp aufgedeckt – kein Jubel
+      neuFertig.push(...cells);
+    });
+    if (neuFertig.length === 0) return;
+    spieleWortFertig();
+    setJubelZellen(new Set(neuFertig));
+    if (jubelTimer.current) clearTimeout(jubelTimer.current);
+    jubelTimer.current = setTimeout(() => setJubelZellen(new Set()), 650);
+  }, [userGrid, entries, solution, revealed, loesungGezeigt]);
+
   // ---- Solo: Lösezeit. Läuft nur bei sichtbarem Tab; gespeichert wird sie nicht (nutzer_fortschritt hat keine Zeitspalte),
   // bei einem fortgesetzten Rätsel zählt also nur die Zeit seit dem Öffnen. ----
   useEffect(() => {
@@ -485,6 +553,7 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     if (laeuftSeit.current != null) aktivMs.current += Date.now() - laeuftSeit.current;
     laeuftSeit.current = null;
     zeitGestoppt.current = true;
+    spieleFertig();
     setAbschluss({
       sekunden: Math.max(1, Math.round(aktivMs.current / 1000)),
       felder: felder.length,
@@ -672,6 +741,8 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
                   if (sel && sel.r === r && sel.c === c) classes.push('cw-active');
                   if (checkState[k]) classes.push(`cw-${checkState[k]}`);
                   if (revealed[k]) classes.push('cw-revealed');
+                  if (pulse[k]) classes.push(`cw-pulse-${pulse[k]}`);
+                  if (jubelZellen.has(k)) classes.push('cw-jubel');
                   return (
                     <div
                       key={k}
@@ -693,6 +764,10 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
                         value={userGrid[k] || ''}
                         onChange={(ev) => handleInput(r, c, ev.target.value)}
                         onKeyDown={(ev) => handleKey(r, c, ev)}
+                        // Markiert den vorhandenen Buchstaben beim Fokussieren, damit die nächste Eingabe ihn
+                        // ersetzt statt (wegen maxLength=1) manchmal wirkungslos zu bleiben: ohne Auswahl blockiert
+                        // der Browser eine Eingabe, die das Limit überschreiten würde, auch wenn sie nur ersetzen soll.
+                        onFocus={(ev) => ev.currentTarget.select()}
                       />
                     </div>
                   );
@@ -783,6 +858,15 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
               </>
             )}
           </div>
+          <span className="cw-sep" aria-hidden="true" />
+          <button
+            className="cw-secondary cw-ton"
+            aria-pressed={tonAn}
+            title={tonAn ? 'Klangrückmeldung ausschalten' : 'Klangrückmeldung einschalten'}
+            onClick={() => setTonAn(tonUmschalten())}
+          >
+            {tonAn ? '🔊 Ton' : '🔇 Ton'}
+          </button>
         </div>
         <div className="cw-status">{status}</div>
       </div>
