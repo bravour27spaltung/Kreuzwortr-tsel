@@ -1,7 +1,9 @@
 // Experimenteller Fuell-Solver fuer geschlossene Schwedenraetsel-Raster (Phase 2).
 // Aufruf: solver <wortliste.tsv> <skelette.txt> <zeitlimit_s> <optionen...>
 // Optionen (key=value): val=random|freq   alpha=<float>   var=mrv|wdeg   restart=<nodes|0>   seed=<int>
-// Wortliste: TSV mit Kopfzeile, Spalten wort, laenge, haeufigkeit, ...
+// Wortliste: TSV mit Kopfzeile, Spalten wort, laenge, haeufigkeit, schreibweise, gruppe (optional).
+// Gruppe: Wörter mit gleicher Gruppen-ID (gleicher Wortstamm, siehe tools/generator/staemme.py) dürfen in einem Raster nicht
+// zusammen vorkommen. Fehlt die Spalte oder ist sie leer, bildet jedes Wort eine eigene Gruppe (altes Verhalten).
 // Skelette:  je Skelett: "S ncells nents" dann je Eintrag "L c0 c1 ... cL-1" (eine Zeile)
 // Ausgabe je Skelett: idx status nodes sekunden mean_logfreq min_freq restarts
 #include <bits/stdc++.h>
@@ -11,12 +13,13 @@ static double now() { return chrono::duration<double>(chrono::steady_clock::now(
 
 struct LenIdx {
     int L = 0, n = 0, W = 0;
-    vector<string> words; vector<double> lf; vector<int> freq;
+    vector<string> words; vector<double> lf; vector<int> freq; vector<int> gid;
     vector<u64> bits;                 // [pos][letter][W]
     u64* B(int pos, int ch) { return &bits[((size_t)pos * 26 + ch) * W]; }
     vector<u64> all;
 };
 static LenIdx idxs[16];
+static vector<vector<pair<int, int>>> gmem;   // Gruppen-ID -> Mitglieder (Länge, Index)
 
 struct Opt { bool freqOrder = false; double alpha = 1.0; bool wdeg = false; long restart = 0; unsigned seed = 1; };
 
@@ -79,10 +82,10 @@ struct Solver {
             vector<int> changed;
             const string& wd = X.words[v];
             for (int i = 0; i < L; i++) if (!cell[e[i]]) { cell[e[i]] = wd[i] - 'A' + 1; changed.push_back(e[i]); }
-            assigned[best] = v; used[L][v >> 6] |= 1ULL << (v & 63);
+            assigned[best] = v; for (auto& m : gmem[X.gid[v]]) used[m.first][m.second >> 6] |= 1ULL << (m.second & 63);  // ganze Stamm-Gruppe sperren
             if (rec(depth + 1)) return true;
             for (int c : changed) cell[c] = 0;
-            assigned[best] = -1; used[L][v >> 6] &= ~(1ULL << (v & 63));
+            assigned[best] = -1; for (auto& m : gmem[X.gid[v]]) used[m.first][m.second >> 6] &= ~(1ULL << (m.second & 63));
         }
         if (opt.wdeg) wt[best] += 1;
         return false;
@@ -115,15 +118,21 @@ int main(int argc, char** argv) {
         else if (k == "seed") opt.seed = atoi(v.c_str());
     }
     { ifstream f(wl); string line; getline(f, line);
-      map<int, vector<pair<string, int>>> byl;
-      while (getline(f, line)) { stringstream ss(line); string w, l, fr; getline(ss, w, '\t'); getline(ss, l, '\t'); getline(ss, fr, '\t');
+      map<int, vector<tuple<string, int, string>>> byl;
+      while (getline(f, line)) { stringstream ss(line); string w, l, fr, sw, gr; getline(ss, w, '\t'); getline(ss, l, '\t'); getline(ss, fr, '\t'); getline(ss, sw, '\t'); getline(ss, gr, '\t');
+          while (!gr.empty() && (gr.back() == '\r' || gr.back() == '\n')) gr.pop_back();
           bool okc = true; for (char c : w) if (c < 'A' || c > 'Z') okc = false;
-          if (!okc || w.size() < 2 || w.size() > 15) continue; byl[w.size()].push_back({w, atoi(fr.c_str())}); }
+          if (!okc || w.size() < 2 || w.size() > 15) continue; byl[w.size()].push_back({w, atoi(fr.c_str()), gr}); }
+      map<string, int> gids;
       for (auto& [L, v] : byl) { LenIdx& X = idxs[L]; X.L = L; X.n = v.size(); X.W = (X.n + 63) / 64;
           X.bits.assign((size_t)L * 26 * X.W, 0); X.all.assign(X.W, 0);
-          for (int i = 0; i < X.n; i++) { X.words.push_back(v[i].first); X.freq.push_back(v[i].second); X.lf.push_back(log((double)v[i].second));
+          for (int i = 0; i < X.n; i++) { X.words.push_back(get<0>(v[i])); X.freq.push_back(get<1>(v[i])); X.lf.push_back(log((double)get<1>(v[i])));
+              const string& g = get<2>(v[i]); int id;
+              if (g.empty()) { id = gmem.size(); gmem.push_back({}); }
+              else { auto it = gids.find(g); if (it == gids.end()) { id = gmem.size(); gmem.push_back({}); gids[g] = id; } else id = it->second; }
+              X.gid.push_back(id); gmem[id].push_back({L, i});
               X.all[i >> 6] |= 1ULL << (i & 63);
-              for (int p = 0; p < L; p++) X.B(p, v[i].first[p] - 'A')[i >> 6] |= 1ULL << (i & 63); } } }
+              for (int p = 0; p < L; p++) X.B(p, get<0>(v[i])[p] - 'A')[i >> 6] |= 1ULL << (i & 63); } } }
     ifstream f(sk); string tag; int idx = 0;
     while (f >> tag) {
         Skel S; int nents; f >> S.ncells >> nents; S.ents.resize(nents);

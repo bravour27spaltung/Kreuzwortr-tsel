@@ -6,6 +6,8 @@ Ablauf je Vorlage und Seed:
   2. Lösung unabhängig prüfen (Wort im Pool, Länge, keine Doppelten, Kreuzungen, alle weißen Zellen belegt).
   3. Frage je Wort wählen, Qualitätsprüfung (zu viele Funktionswörter, doppelte Fragetexte) -> Status 'veroeffentlicht'
      oder 'entwurf' (mit --nur-veroeffentlichbare werden solche Rätsel verworfen und weitere Seeds probiert).
+  Wörter mit gleichem Stamm (ENDE/ENDEN/ENDET, siehe staemme.py) dürfen nicht im selben Rätsel stehen: der Solver bekommt eine
+  Gruppen-Spalte im Pool und sperrt pro Rätsel die ganze Gruppe; pruefe_loesung() kontrolliert es unabhängig (--ohne-staemme = aus).
   Funktionswörter (tools/generator/funktionswoerter.txt) bekommen für die Wortwahl eine gedeckelte Häufigkeit,
   damit die häufigkeitsgewichtete Suche nicht bevorzugt DIE/DER/ICH einsetzt.
   4. Ausgabe als JSON für die App (public/raetsel/) und als SQL-Seed für Supabase (supabase/seed/raetsel_seed.sql).
@@ -19,8 +21,11 @@ GitHub-Actions-Job, siehe .github/workflows/generate-raetsel.yml): --anhaengen z
 Dann enthält --sql nur die NEU erzeugten Rätsel (zum direkten Einspielen), während public/raetsel/index.json
 den vollständigen, kumulativen Bestand bekommt.
 """
-import argparse, csv, json, os, random, re, subprocess, sys, tempfile
+import argparse, csv, json, os, random, re, subprocess, sys, tempfile, time
 from collections import Counter
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import staemme
 
 MAX_FUNKTIONSWOERTER = 3   # mehr Artikel/Pronomen/Zahl-/Fragewörter pro Rätsel -> Entwurf
 SCHWIERIGKEIT_TEXT = {1: 'leicht', 2: 'mittel', 3: 'schwer'}
@@ -67,7 +72,7 @@ def loese(solver, pool, v, seed, sekunden, tmp):
     return teile[1:]  # erstes Feld = Index der Vorlage
 
 
-def pruefe_loesung(v, woerter, pool_woerter):
+def pruefe_loesung(v, woerter, pool_woerter, grp=None):
     """Unabhängige Prüfung; gibt Liste von Fehlern zurück (leer = ok)."""
     fehler = []
     E = v['eintraege']
@@ -75,6 +80,10 @@ def pruefe_loesung(v, woerter, pool_woerter):
         return ['Anzahl Wörter passt nicht']
     if len(set(woerter)) != len(woerter):
         fehler.append('doppelte Wörter')
+    if grp:
+        _, k = staemme.kollisionen(woerter, grp)
+        if k:
+            fehler.append('gleicher Wortstamm: ' + '; '.join('/'.join(ws) for ws in k.values()))
     belegung = {}
     for e, w in zip(E, woerter):
         if w not in pool_woerter:
@@ -188,6 +197,14 @@ def main():
                          'bereits verwendete Wörter (für --abwechslung) und Wort-Kombinationen (Duplikatsprüfung) werden '
                          'aus den vorhandenen Dateien fortgeführt, statt bei 0 neu anzufangen. Für wiederkehrende Läufe '
                          '(z. B. wöchentlich per GitHub Actions), die den bestehenden Rätselbestand ergänzen.')
+    ap.add_argument('--zeitbudget', type=float, default=0,
+                    help='Nach so vielen Sekunden keine neuen Versuche mehr beginnen und sauber beenden (0 = unbegrenzt). '
+                         'Zusammen mit --anhaengen --fortsetzen für lange Läufe in Abschnitten.')
+    ap.add_argument('--fortsetzen', action='store_true',
+                    help='Mit --anhaengen: bereits vorhandene Rätsel je Vorlage zählen auf --pro-vorlage an, d. h. denselben '
+                         'Befehl wiederholen, bis alle Vorlagen voll sind (Abbruch/Zeitbudget ohne Verlust).')
+    ap.add_argument('--ohne-staemme', action='store_true',
+                    help='Stamm-Gruppen abschalten (altes Verhalten: nur identische Wörter werden ausgeschlossen)')
     ap.add_argument('--funktionswoerter', default='tools/generator/funktionswoerter.txt')
     ap.add_argument('--funktionswort-haeufigkeit', type=int, default=30,
                     help='Korpushäufigkeit, auf die Funktionswörter für die Wortwahl gedeckelt werden (0 = aus)')
@@ -198,6 +215,7 @@ def main():
     V = json.load(open(a.vorlagen, encoding='utf-8'))
     fragen = lade_fragen(a.fragen)
     funktionswoerter = lade_funktionswoerter(a.funktionswoerter)
+    grp = {} if a.ohne_staemme else staemme.gruppen(fragen.keys())
     rng = random.Random(a.seed)
     os.makedirs(a.json_dir, exist_ok=True)
     tmp = tempfile.mkdtemp()
@@ -210,7 +228,7 @@ def main():
         # modus='hart': Gewicht kommt aus dem Häufigkeits-RANG statt der Häufigkeit selbst, also umgekehrt –
         # seltene Wörter (hoher Rang) werden bevorzugt, damit überhaupt "schwere" Rätsel entstehen können.
         with open(pool, 'w', encoding='utf-8') as f:
-            f.write('wort\tlaenge\thaeufigkeit\tschreibweise\n')
+            f.write('wort\tlaenge\thaeufigkeit\tschreibweise\tgruppe\n')
             for w, fl in fragen.items():
                 if a.max_verwendung and verwendet[w] >= a.max_verwendung:
                     continue  # hartes Limit erreicht: Wort komplett aus dem Pool nehmen (siehe --max-verwendung)
@@ -219,9 +237,11 @@ def main():
                     h = min(h, a.funktionswort_haeufigkeit)
                 if a.abwechslung and verwendet[w]:
                     h = max(2, int(h / (1 + a.abwechslung) ** verwendet[w]))
-                f.write(f"{w}\t{fl[0]['laenge']}\t{h}\t{w}\n")
+                f.write(f"{w}\t{fl[0]['laenge']}\t{h}\t{w}\t{grp.get(w, '')}\n")
 
     alle, gesehen, statistik = [], set(), Counter()
+    vorhanden = Counter()   # Rätsel je Vorlage aus dem bestehenden Bestand (für --fortsetzen)
+    t_start = time.time()
     nr = 0
     alt_index = []
     if a.anhaengen:
@@ -234,6 +254,7 @@ def main():
                 continue
             nr = max(nr, int(m.group(1)))
             vorlage_name = m.group(2)
+            vorhanden[vorlage_name] += 1
             pfad = os.path.join(a.json_dir, eintrag['id'] + '.json')
             if not os.path.exists(pfad):
                 continue
@@ -245,9 +266,12 @@ def main():
     for v in V:
         if not v.get('validiert', True):
             continue
-        gefunden = 0
+        gefunden = vorhanden[v['name']] if (a.anhaengen and a.fortsetzen) else 0
         for s in range(a.seed, a.seed + a.max_versuche):
             if gefunden >= a.pro_vorlage:
+                break
+            if a.zeitbudget and time.time() - t_start > a.zeitbudget:
+                statistik['zeitbudget_erreicht'] = 1
                 break
             modus = 'hart' if a.hart_anteil and rng.random() < a.hart_anteil else 'normal'
             schreibe_pool(modus)
@@ -255,7 +279,7 @@ def main():
             statistik['versuche'] += 1
             if woerter is None:
                 statistik['ohne_loesung'] += 1; continue
-            fehler = pruefe_loesung(v, woerter, fragen)
+            fehler = pruefe_loesung(v, woerter, fragen, grp)
             if fehler:
                 statistik['pruefung_fehlgeschlagen'] += 1
                 print('VERWORFEN', v['name'], s, fehler[:3], file=sys.stderr); continue
