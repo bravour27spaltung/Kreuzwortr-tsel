@@ -9420,3 +9420,1351 @@ join woerter w on w.wort = v.wort
 left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
 
 commit;
+-- Automatisch erzeugt von tools/generator/generate_raetsel.py – nicht von Hand bearbeiten.
+-- Voraussetzung: Migrationen, gitter_vorlagen.sql, woerter_seed.sql, fragen_varianten_seed.sql eingespielt.
+-- Idempotent über raetsel.slug. Rätsel mit Prüfhinweisen werden als Entwurf angelegt.
+
+begin;
+
+-- r183-8x8-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r183-8x8-01', 'Rätsel 183 · 8×8', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '8x8-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('LEER', 'hohl', 'A', 1, 1, 4),
+    ('ANLAGE', 'Einrichtung', 'A', 2, 1, 6),
+    ('SOFERN', 'falls', 'A', 3, 1, 6),
+    ('TAGE', 'je 24 Stunden', 'A', 4, 4, 4),
+    ('OMA', 'Großmutter', 'A', 5, 1, 3),
+    ('BEI', 'nahe an', 'A', 5, 5, 3),
+    ('STERN', 'Gestirn', 'A', 6, 3, 5),
+    ('TAT', 'Handlung', 'A', 7, 1, 3),
+    ('SEE', 'Gewässer', 'A', 7, 5, 3),
+    ('LAS', 'schmökerte', 'D', 1, 1, 3),
+    ('ORT', 'Stelle', 'D', 5, 1, 3),
+    ('ENORM', 'gewaltig', 'D', 1, 2, 5),
+    ('ELF', 'Zahl (10+1)', 'D', 1, 3, 3),
+    ('AST', 'Zweig', 'D', 5, 3, 3),
+    ('RAET', 'empfiehlt', 'D', 1, 4, 4),
+    ('GRABES', 'Stille des ...', 'D', 2, 5, 6),
+    ('ENGERE', 'schmalere', 'D', 2, 6, 6),
+    ('EINE', 'unbest. Artikel (w.)', 'D', 4, 7, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r184-8x8-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r184-8x8-02', 'Rätsel 184 · 8×8', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '8x8-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('WIRD', 'entsteht', 'A', 1, 4, 4),
+    ('PARIS', 'Seine-Stadt', 'A', 2, 1, 5),
+    ('AGENT', 'Spion', 'A', 3, 1, 5),
+    ('NETZ', 'Geflecht', 'A', 4, 1, 4),
+    ('TEILT', 'trennt', 'A', 5, 3, 5),
+    ('ERNTE', 'Lese', 'A', 6, 3, 5),
+    ('WAR', 'existierte', 'A', 7, 1, 3),
+    ('SEE', 'Gewässer', 'A', 7, 5, 3),
+    ('PANKOW', 'Berliner Bezirk', 'D', 2, 1, 6),
+    ('LAGE', 'Position', 'D', 1, 2, 4),
+    ('RETTER', 'Erlöser', 'D', 2, 3, 6),
+    ('WINZER', 'Weinbauer', 'D', 1, 4, 6),
+    ('IST', 'befindet sich', 'D', 1, 5, 3),
+    ('INS', 'in das', 'D', 5, 5, 3),
+    ('ALTE', 'betagte', 'D', 4, 6, 4),
+    ('DAR', 'stellt ... (zeigt)', 'D', 1, 7, 3),
+    ('TEE', 'Heißgetränk', 'D', 5, 7, 3)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r185-8x8-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r185-8x8-03', 'Rätsel 185 · 8×8', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '8x8-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('KAPSEL', 'Hülse', 'A', 1, 1, 6),
+    ('BUEROS', 'Kanzleien', 'A', 2, 2, 6),
+    ('STREBE', 'trachte', 'A', 3, 1, 6),
+    ('NAHT', 'kommt näher', 'A', 4, 4, 4),
+    ('HOB', 'stemmte', 'A', 5, 1, 3),
+    ('UNI', 'Hochschule', 'A', 5, 5, 3),
+    ('NEU', 'frisch', 'A', 6, 1, 3),
+    ('TEE', 'Heißgetränk', 'A', 6, 5, 3),
+    ('ELBE', 'Strom durch Dresden', 'A', 7, 1, 4),
+    ('SAHNE', 'Rahm', 'D', 3, 1, 5),
+    ('ABT', 'Klosterchef', 'D', 1, 2, 3),
+    ('OEL', 'Schmierstoff', 'D', 5, 2, 3),
+    ('PUR', 'rein', 'D', 1, 3, 3),
+    ('BUB', 'Knabe', 'D', 5, 3, 3),
+    ('SEEN', 'Gewässer', 'D', 1, 4, 4),
+    ('ERBAUT', 'errichtet', 'D', 1, 5, 6),
+    ('LOEHNE', 'Gehälter', 'D', 1, 6, 6),
+    ('TIER', 'Lebewesen', 'D', 4, 7, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r186-9x9-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r186-9x9-01', 'Rätsel 186 · 9×9', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '9x9-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('EGAL', 'gleichgültig', 'A', 1, 1, 4),
+    ('UNS', 'Akk./Dat. von wir', 'A', 1, 6, 3),
+    ('IRRE', 'Verrückte', 'A', 2, 1, 4),
+    ('MIT', 'samt', 'A', 2, 6, 3),
+    ('NAME', 'Bezeichnung', 'A', 3, 1, 4),
+    ('SEI', 'existiere', 'A', 3, 6, 3),
+    ('TUER', 'Pforte', 'A', 4, 1, 4),
+    ('WAHL', 'Abstimmung', 'A', 5, 5, 4),
+    ('ANTEILE', 'Aktien', 'A', 6, 1, 7),
+    ('FUEHRTE', 'leitete', 'A', 7, 1, 7),
+    ('REEDER', 'Schiffsherr', 'A', 8, 2, 6),
+    ('EINTRAF', 'ankam', 'D', 1, 1, 7),
+    ('GRAU', 'farblos', 'D', 1, 2, 4),
+    ('NUR', 'lediglich', 'D', 6, 2, 3),
+    ('ARME', 'Mittellose', 'D', 1, 3, 4),
+    ('TEE', 'Heißgetränk', 'D', 6, 3, 3),
+    ('LEER', 'hohl', 'D', 1, 4, 4),
+    ('EHE', 'Bund fürs Leben', 'D', 6, 4, 3),
+    ('WIRD', 'entsteht', 'D', 5, 5, 4),
+    ('UMS', 'um das', 'D', 1, 6, 3),
+    ('ALTE', 'betagte', 'D', 5, 6, 4),
+    ('NIE', 'nimmer', 'D', 1, 7, 3),
+    ('HEER', 'Armee', 'D', 5, 7, 4),
+    ('STILL', 'ruhig', 'D', 1, 8, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r187-9x9-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r187-9x9-02', 'Rätsel 187 · 9×9', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '9x9-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('URNE', 'Aschengefäß', 'A', 1, 1, 4),
+    ('WAR', 'existierte', 'A', 1, 6, 3),
+    ('NAEHE', 'Umgebung', 'A', 2, 1, 5),
+    ('STUETZE', 'Hilfe', 'A', 3, 1, 7),
+    ('WIRD', 'entsteht', 'A', 4, 5, 4),
+    ('HEIMAT', 'Vaterland', 'A', 5, 1, 6),
+    ('AURA', 'Ausstrahlung', 'A', 6, 1, 4),
+    ('ABT', 'Klosterchef', 'A', 6, 6, 3),
+    ('SEIT', 'ab', 'A', 7, 1, 4),
+    ('TEE', 'Heißgetränk', 'A', 7, 6, 3),
+    ('ERST', 'zunächst', 'A', 8, 1, 4),
+    ('EIN', 'unbest. Artikel', 'A', 8, 6, 3),
+    ('UNS', 'Akk./Dat. von wir', 'D', 1, 1, 3),
+    ('HASE', 'Meister Lampe', 'D', 5, 1, 4),
+    ('RAT', 'Tipp', 'D', 1, 2, 3),
+    ('EUER', 'Possessiv (ihr)', 'D', 5, 2, 4),
+    ('NEU', 'frisch', 'D', 1, 3, 3),
+    ('IRIS', 'Schwertlilie', 'D', 5, 3, 4),
+    ('EHE', 'Bund fürs Leben', 'D', 1, 4, 3),
+    ('MATT', 'Schachende', 'D', 5, 4, 4),
+    ('ETWA', 'ungefähr', 'D', 2, 5, 4),
+    ('ZITATE', 'Aussprüche', 'D', 3, 6, 6),
+    ('ABER', 'jedoch', 'D', 1, 7, 4),
+    ('BEI', 'nahe an', 'D', 6, 7, 3),
+    ('DATEN', 'Angaben', 'D', 4, 8, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r188-9x9-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r188-9x9-03', 'Rätsel 188 · 9×9', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '9x9-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('HING', 'baumelte', 'A', 1, 1, 4),
+    ('AKT', 'Aufzug', 'A', 1, 6, 3),
+    ('ARIE', 'Sologesang', 'A', 2, 1, 4),
+    ('GAU', 'Landstrich', 'A', 2, 6, 3),
+    ('BREI', 'Mus', 'A', 3, 1, 4),
+    ('EIN', 'unbest. Artikel', 'A', 3, 6, 3),
+    ('GANS', 'Federvieh', 'A', 4, 4, 4),
+    ('WELTEN', 'Planeten', 'A', 5, 3, 6),
+    ('HEU', 'Trockengras', 'A', 6, 1, 3),
+    ('PURE', 'reine', 'A', 6, 5, 4),
+    ('IHR', 'Pronomen (2. Pl.)', 'A', 7, 1, 3),
+    ('ERST', 'zunächst', 'A', 7, 5, 4),
+    ('OEFEN', 'Herde', 'A', 8, 1, 5),
+    ('HAB', '... und Gut', 'D', 1, 1, 3),
+    ('OHIO', 'Staat um Cleveland', 'D', 5, 1, 4),
+    ('IRRT', 'täuscht sich', 'D', 1, 2, 4),
+    ('EHE', 'Bund fürs Leben', 'D', 6, 2, 3),
+    ('NIE', 'nimmer', 'D', 1, 3, 3),
+    ('WURF', 'Schleudern', 'D', 5, 3, 4),
+    ('GEIGE', 'Violine', 'D', 1, 4, 5),
+    ('ALPEN', 'Hochgebirge', 'D', 4, 5, 5),
+    ('AGENTUR', 'Vermittlung', 'D', 1, 6, 7),
+    ('KAISERS', 'Bart des ...', 'D', 1, 7, 7),
+    ('TUN', 'machen', 'D', 1, 8, 3),
+    ('NETT', 'freundlich', 'D', 5, 8, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r189-9x13-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r189-9x13-01', 'Rätsel 189 · 9×13', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '9x13-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('SAGA', 'Heldensage', 'A', 1, 1, 4),
+    ('STREBTE', 'trachtete', 'A', 1, 6, 7),
+    ('ALLE', 'sämtliche', 'A', 2, 1, 4),
+    ('ASIEN', 'Erdteil', 'A', 2, 8, 5),
+    ('ALASKA', 'Staat am Yukon', 'A', 3, 1, 6),
+    ('ESSIG', 'Würzmittel', 'A', 3, 8, 5),
+    ('STAEDTE', 'Kommunen', 'A', 4, 3, 7),
+    ('ENTE', 'Wasservogel', 'A', 5, 4, 4),
+    ('ZUM', 'zu dem', 'A', 6, 1, 3),
+    ('TEST', 'Prüfung', 'A', 6, 5, 4),
+    ('UND', 'sowie', 'A', 6, 10, 3),
+    ('UNI', 'Hochschule', 'A', 7, 1, 3),
+    ('ORTE', 'Plätze', 'A', 7, 5, 4),
+    ('SIE', 'Anrede', 'A', 7, 10, 3),
+    ('RITEN', 'Bräuche', 'A', 8, 1, 5),
+    ('OEFTER', 'häufiger', 'A', 8, 7, 6),
+    ('SAAT', 'Samen', 'D', 1, 1, 4),
+    ('ZUR', 'zu der', 'D', 6, 1, 3),
+    ('ALL', 'Weltraum', 'D', 1, 2, 3),
+    ('JUNI', '6. Monat', 'D', 5, 2, 4),
+    ('GLAS', 'Trinkgefäß', 'D', 1, 3, 4),
+    ('MIT', 'samt', 'D', 6, 3, 3),
+    ('AESTE', 'Zweige', 'D', 1, 4, 5),
+    ('KANTON', 'Schweizer Gliedstaat', 'D', 3, 5, 6),
+    ('SPAETER', 'danach', 'D', 1, 6, 7),
+    ('DESTO', 'umso', 'D', 4, 7, 5),
+    ('RAET', 'empfiehlt', 'D', 1, 8, 4),
+    ('TEE', 'Heißgetränk', 'D', 6, 8, 3),
+    ('ESSE', 'speise', 'D', 1, 9, 4),
+    ('BIS', 'nicht später als', 'D', 1, 10, 3),
+    ('LUST', 'Verlangen', 'D', 5, 10, 4),
+    ('TEIL', 'Stück', 'D', 1, 11, 4),
+    ('NIE', 'nimmer', 'D', 6, 11, 3),
+    ('ENG', 'schmal', 'D', 1, 12, 3),
+    ('ODER', 'bzw.', 'D', 5, 12, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r190-9x13-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r190-9x13-02', 'Rätsel 190 · 9×13', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '9x13-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('WAR', 'existierte', 'A', 1, 1, 3),
+    ('MAG', 'liebt', 'A', 1, 6, 3),
+    ('SEE', 'Gewässer', 'A', 1, 10, 3),
+    ('AUE', 'Talwiese', 'A', 2, 1, 3),
+    ('GUTE', 'prima', 'A', 2, 5, 4),
+    ('INS', 'in das', 'A', 2, 10, 3),
+    ('STIL', 'Machart', 'A', 3, 1, 4),
+    ('SOLANGE', 'während', 'A', 3, 6, 7),
+    ('SOFA', 'Couch', 'A', 4, 1, 4),
+    ('EMDEN', 'ostfries. Stadt', 'A', 4, 6, 5),
+    ('NEUE', 'frische', 'A', 5, 4, 4),
+    ('RUNDUM', 'völlig', 'A', 6, 1, 6),
+    ('STAAT', 'Nation', 'A', 6, 8, 5),
+    ('HIER', 'an diesem Ort', 'A', 7, 2, 4),
+    ('ZIELTE', 'visierte', 'A', 7, 7, 6),
+    ('TRESOR', 'Safe', 'A', 8, 1, 6),
+    ('ERSTE', 'anfängliche', 'A', 8, 8, 5),
+    ('WASSER', 'H2O', 'D', 1, 1, 6),
+    ('AUTO', 'Pkw', 'D', 1, 2, 4),
+    ('UHR', 'Zeitmesser', 'D', 6, 2, 3),
+    ('REIF', 'erntefertig', 'D', 1, 3, 4),
+    ('NIE', 'nimmer', 'D', 6, 3, 3),
+    ('LANDES', 'Mitte des ...', 'D', 3, 4, 6),
+    ('EURO', 'Währung', 'D', 5, 5, 4),
+    ('MUSEUM', 'Galerie', 'D', 1, 6, 6),
+    ('ATOME', 'Teilchen', 'D', 1, 7, 5),
+    ('GELD', 'Moneten', 'D', 1, 8, 4),
+    ('SIE', 'Anrede', 'D', 6, 8, 3),
+    ('AELTER', 'betagter', 'D', 3, 9, 6),
+    ('SINN', 'Bedeutung', 'D', 1, 10, 4),
+    ('ALS', 'da, während', 'D', 6, 10, 3),
+    ('ENG', 'schmal', 'D', 1, 11, 3),
+    ('WATT', 'Schlickküste', 'D', 5, 11, 4),
+    ('ESEL', 'Grautier', 'D', 1, 12, 4),
+    ('TEE', 'Heißgetränk', 'D', 6, 12, 3)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r191-9x13-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r191-9x13-03', 'Rätsel 191 · 9×13', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '9x13-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('OASE', 'Wüsteninsel', 'A', 1, 1, 4),
+    ('GASTHOF', 'Wirtshaus', 'A', 1, 6, 7),
+    ('HUERDE', 'Hindernis', 'A', 2, 1, 6),
+    ('TEUFE', 'Tiefe (Bergbau)', 'A', 2, 8, 5),
+    ('REIZEN', 'locken', 'A', 3, 1, 6),
+    ('UEBTE', 'trainierte', 'A', 3, 8, 5),
+    ('VIER', 'Zahl (2×2)', 'A', 4, 5, 4),
+    ('GIER', 'Habsucht', 'A', 5, 4, 4),
+    ('HABE', 'besitze', 'A', 5, 9, 4),
+    ('RATES', 'Mitglied des ...', 'A', 6, 1, 5),
+    ('BEIRUT', 'libanes. Hauptstadt', 'A', 6, 7, 6),
+    ('IKONE', 'Heiligenbild', 'A', 7, 1, 5),
+    ('RIGA', 'lett. Hauptstadt', 'A', 7, 9, 4),
+    ('STRENGE', 'rigorose', 'A', 8, 1, 7),
+    ('NEST', 'Horst', 'A', 8, 9, 4),
+    ('OHR', 'Hörorgan', 'D', 1, 1, 3),
+    ('IRIS', 'Schwertlilie', 'D', 5, 1, 4),
+    ('AUE', 'Talwiese', 'D', 1, 2, 3),
+    ('AKT', 'Aufzug', 'D', 6, 2, 3),
+    ('SEIL', 'Tau', 'D', 1, 3, 4),
+    ('TOR', 'Treffer', 'D', 6, 3, 3),
+    ('ERZ', 'Gestein', 'D', 1, 4, 3),
+    ('GENE', 'Erbanlagen', 'D', 5, 4, 4),
+    ('DEVISEN', 'Fremdwährung', 'D', 2, 5, 7),
+    ('GENIE', 'Talent', 'D', 1, 6, 5),
+    ('ERBTE', 'übernahm', 'D', 4, 7, 5),
+    ('STUR', 'starrsinnig', 'D', 1, 8, 4),
+    ('TEE', 'Heißgetränk', 'D', 1, 9, 3),
+    ('HIRN', 'Verstand', 'D', 5, 9, 4),
+    ('HUB', 'Hebung', 'D', 1, 10, 3),
+    ('ARIE', 'Sologesang', 'D', 5, 10, 4),
+    ('OFT', 'häufig', 'D', 1, 11, 3),
+    ('BUGS', 'Fehler', 'D', 5, 11, 4),
+    ('FEE', 'Zauberin', 'D', 1, 12, 3),
+    ('ETAT', 'Budget', 'D', 5, 12, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r192-10x10-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r192-10x10-01', 'Rätsel 192 · 10×10', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '10x10-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('PRO', 'je', 'A', 1, 1, 3),
+    ('BREI', 'Mus', 'A', 1, 6, 4),
+    ('RAMPE', 'Auffahrt', 'A', 2, 1, 5),
+    ('EIS', 'Gefrorenes', 'A', 2, 7, 3),
+    ('ABER', 'jedoch', 'A', 3, 1, 4),
+    ('AHNT', 'vermutet', 'A', 3, 6, 4),
+    ('GENOSS', 'kostete aus', 'A', 4, 1, 6),
+    ('PISTEN', 'Abfahrten', 'A', 5, 4, 6),
+    ('SIEHE', 'vgl.', 'A', 6, 1, 5),
+    ('RIO', 'Stadt in Brasilien', 'A', 6, 7, 3),
+    ('ARIE', 'Sologesang', 'A', 7, 1, 4),
+    ('WELT', 'Erde', 'A', 7, 6, 4),
+    ('GALT', 'zählte', 'A', 8, 1, 4),
+    ('ENTE', 'Wasservogel', 'A', 8, 6, 4),
+    ('AKT', 'Aufzug', 'A', 9, 1, 3),
+    ('EMDEN', 'ostfries. Stadt', 'A', 9, 5, 5),
+    ('PRAG', 'Moldau-Stadt', 'D', 1, 1, 4),
+    ('SAGA', 'Heldensage', 'D', 6, 1, 4),
+    ('RABE', 'Krähenvogel', 'D', 1, 2, 4),
+    ('IRAK', 'Land am Tigris', 'D', 6, 2, 4),
+    ('OMEN', 'Vorzeichen', 'D', 1, 3, 4),
+    ('EILT', 'hastet', 'D', 6, 3, 4),
+    ('PROPHET', 'Seher', 'D', 2, 4, 7),
+    ('SIE', 'Anrede', 'D', 4, 5, 3),
+    ('ASS', 'speiste', 'D', 3, 6, 3),
+    ('WEM', 'Fragewort (Dativ)', 'D', 7, 6, 3),
+    ('REH', 'Waldtier', 'D', 1, 7, 3),
+    ('TREND', 'Tendenz', 'D', 5, 7, 5),
+    ('EIN', 'unbest. Artikel', 'D', 1, 8, 3),
+    ('EILTE', 'hastete', 'D', 5, 8, 5),
+    ('IST', 'befindet sich', 'D', 1, 9, 3),
+    ('NOTEN', 'Zensuren', 'D', 5, 9, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r193-10x10-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r193-10x10-02', 'Rätsel 193 · 10×10', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '10x10-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('ANS', 'an das', 'A', 1, 1, 3),
+    ('WARST', 'du ... dort', 'A', 1, 5, 5),
+    ('BUERO', 'Kanzlei', 'A', 2, 1, 5),
+    ('OPA', 'Großvater', 'A', 2, 7, 3),
+    ('TRIEB', 'schwamm', 'A', 3, 1, 5),
+    ('TON', 'Klang', 'A', 3, 7, 3),
+    ('GESETZ', 'Vorschrift', 'A', 4, 4, 6),
+    ('HEKTIK', 'Hast', 'A', 5, 1, 6),
+    ('EIN', 'unbest. Artikel', 'A', 6, 1, 3),
+    ('ARGE', 'schlimme', 'A', 6, 6, 4),
+    ('UNI', 'Hochschule', 'A', 7, 1, 3),
+    ('ALIAS', 'auch genannt', 'A', 7, 5, 5),
+    ('TEE', 'Heißgetränk', 'A', 8, 1, 3),
+    ('SAELE', 'Hallen', 'A', 8, 5, 5),
+    ('ERNST', 'Seriosität', 'A', 9, 1, 5),
+    ('TAL', 'Senke', 'A', 9, 7, 3),
+    ('ABT', 'Klosterchef', 'D', 1, 1, 3),
+    ('HEUTE', 'jetzt', 'D', 5, 1, 5),
+    ('NUR', 'lediglich', 'D', 1, 2, 3),
+    ('EINER', 'unbest. Art. (w.)', 'D', 5, 2, 5),
+    ('SEI', 'existiere', 'D', 1, 3, 3),
+    ('KNIEN', 'auf den ...', 'D', 5, 3, 5),
+    ('REGT', 'bewegt', 'D', 2, 4, 4),
+    ('WOBEI', 'während', 'D', 1, 5, 5),
+    ('AST', 'Zweig', 'D', 7, 5, 3),
+    ('SKALA', 'Stufenleiter', 'D', 4, 6, 5),
+    ('ROTE', 'purpurne', 'D', 1, 7, 4),
+    ('RIET', 'empfahl', 'D', 6, 7, 4),
+    ('SPOT', 'Werbeclip', 'D', 1, 8, 4),
+    ('GALA', 'Festabend', 'D', 6, 8, 4),
+    ('TANZ', 'Ball', 'D', 1, 9, 4),
+    ('ESEL', 'Grautier', 'D', 6, 9, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r194-10x10-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r194-10x10-03', 'Rätsel 194 · 10×10', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '10x10-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('PHASE', 'Abschnitt', 'A', 1, 1, 5),
+    ('WEG', 'Pfad', 'A', 1, 7, 3),
+    ('AULA', 'Festsaal', 'A', 2, 1, 4),
+    ('EHE', 'Bund fürs Leben', 'A', 2, 7, 3),
+    ('SEIN', 'existieren', 'A', 3, 1, 4),
+    ('WIEN', 'österr. Hauptstadt', 'A', 3, 6, 4),
+    ('STAFFELN', 'Serienteile', 'A', 4, 1, 8),
+    ('TESTEN', 'prüfen', 'A', 5, 1, 6),
+    ('EINMAL', 'früher', 'A', 6, 4, 6),
+    ('SEINE', 'ihre', 'A', 7, 1, 5),
+    ('ULM', 'Münsterstadt', 'A', 7, 7, 3),
+    ('EIN', 'unbest. Artikel', 'A', 8, 1, 3),
+    ('RENTE', 'Pension', 'A', 8, 5, 5),
+    ('ISST', 'speist', 'A', 9, 1, 4),
+    ('DER', 'Artikel (männl.)', 'A', 9, 7, 3),
+    ('PASST', 'sitzt', 'D', 1, 1, 5),
+    ('SEI', 'existiere', 'D', 7, 1, 3),
+    ('HUETE', 'Kappen', 'D', 1, 2, 5),
+    ('EIS', 'Gefrorenes', 'D', 7, 2, 3),
+    ('ALIAS', 'auch genannt', 'D', 1, 3, 5),
+    ('INS', 'in das', 'D', 7, 3, 3),
+    ('SANFTEN', 'milden', 'D', 1, 4, 7),
+    ('FEIER', 'Fest', 'D', 4, 5, 5),
+    ('WENN', 'falls', 'D', 3, 6, 4),
+    ('WEIL', 'da', 'D', 1, 7, 4),
+    ('MUND', 'Maul', 'D', 6, 7, 4),
+    ('EHEN', 'Bündnisse', 'D', 1, 8, 4),
+    ('ALTE', 'betagte', 'D', 6, 8, 4),
+    ('GEN', 'nach', 'D', 1, 9, 3),
+    ('ULMER', '... Münster', 'D', 5, 9, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r195-10x10-04
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r195-10x10-04', 'Rätsel 195 · 10×10', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '10x10-04' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('PLAN', 'Absicht', 'A', 1, 1, 4),
+    ('ZEIT', 'Dauer', 'A', 1, 6, 4),
+    ('OEL', 'Schmierstoff', 'A', 2, 1, 3),
+    ('HYMNE', 'Lobgesang', 'A', 2, 5, 5),
+    ('LEID', 'Kummer', 'A', 3, 1, 4),
+    ('KANU', 'Paddelboot', 'A', 3, 6, 4),
+    ('ERBE', 'Nachlass', 'A', 4, 1, 4),
+    ('LIEF', 'rannte', 'A', 4, 6, 4),
+    ('EINZELNE', 'separate', 'A', 5, 2, 8),
+    ('VON', 'ab, aus', 'A', 6, 4, 3),
+    ('UMWEG', 'Abstecher', 'A', 7, 1, 5),
+    ('VIA', 'über', 'A', 7, 7, 3),
+    ('PAARE', 'Duos', 'A', 8, 1, 5),
+    ('OHR', 'Hörorgan', 'A', 8, 7, 3),
+    ('EIS', 'Gefrorenes', 'A', 9, 1, 3),
+    ('NIMMT', 'greift', 'A', 9, 5, 5),
+    ('POLE', 'Slawe', 'D', 1, 1, 4),
+    ('LUPE', 'Brennglas', 'D', 6, 1, 4),
+    ('LEERE', 'Vakuum', 'D', 1, 2, 5),
+    ('MAI', '5. Monat', 'D', 7, 2, 3),
+    ('ALIBI', 'Entlastung', 'D', 1, 3, 5),
+    ('WAS', 'Fragewort (Sache)', 'D', 7, 3, 3),
+    ('DENVER', 'Stadt in Colorado', 'D', 3, 4, 6),
+    ('ZOGEN', 'zerrten', 'D', 5, 5, 5),
+    ('ZYKLEN', 'Kreisläufe', 'D', 1, 6, 6),
+    ('EMAIL', 'elektr. Post', 'D', 1, 7, 5),
+    ('VOM', 'von dem', 'D', 7, 7, 3),
+    ('INNEN', 'intern', 'D', 1, 8, 5),
+    ('IHM', 'Dativ von er', 'D', 7, 8, 3),
+    ('TEUFE', 'Tiefe (Bergbau)', 'D', 1, 9, 5),
+    ('ART', 'Sorte', 'D', 7, 9, 3)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r196-11x11-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r196-11x11-01', 'Rätsel 196 · 11×11', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '11x11-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('BURG', 'Festung', 'A', 1, 1, 4),
+    ('MAUER', 'Wand', 'A', 1, 6, 5),
+    ('OMA', 'Großmutter', 'A', 2, 1, 3),
+    ('NIE', 'nimmer', 'A', 2, 8, 3),
+    ('THRONT', 'sitzt erhaben', 'A', 3, 1, 6),
+    ('SEI', 'existiere', 'A', 3, 8, 3),
+    ('KERN', 'Mittelpunkt', 'A', 4, 7, 4),
+    ('BREAK', 'Pause', 'A', 5, 1, 5),
+    ('URNE', 'Aschengefäß', 'A', 5, 7, 4),
+    ('BLUME', 'Pflanze', 'A', 6, 3, 5),
+    ('EHE', 'Bund fürs Leben', 'A', 7, 1, 3),
+    ('HASST', 'verabscheut', 'A', 7, 5, 5),
+    ('SONG', 'Lied', 'A', 8, 1, 4),
+    ('STARK', 'kräftig', 'A', 8, 6, 5),
+    ('ERDE', 'Welt', 'A', 9, 1, 4),
+    ('KENIA', 'Staat in Ostafrika', 'A', 9, 6, 5),
+    ('STANGE', 'Stab', 'A', 10, 1, 6),
+    ('DOM', 'Kathedrale', 'A', 10, 8, 3),
+    ('BOT', 'offerierte', 'D', 1, 1, 3),
+    ('BOESES', 'gemeines', 'D', 5, 1, 6),
+    ('UMHER', 'herum', 'D', 1, 2, 5),
+    ('HORT', 'Schatz', 'D', 7, 2, 4),
+    ('RAR', 'selten', 'D', 1, 3, 3),
+    ('EBENDA', 'dort', 'D', 5, 3, 6),
+    ('OVAL', 'eiförmig', 'D', 3, 4, 4),
+    ('GEN', 'nach', 'D', 8, 4, 3),
+    ('KUH', 'Rind', 'D', 5, 5, 3),
+    ('MUT', 'Courage', 'D', 1, 6, 3),
+    ('MASKE', 'Larve', 'D', 6, 6, 5),
+    ('KUESTE', 'Gestade', 'D', 4, 7, 6),
+    ('UNSER', 'Possessiv (wir)', 'D', 1, 8, 5),
+    ('SAND', 'Wüstenboden', 'D', 7, 8, 4),
+    ('EIERN', 'auf ... gehen', 'D', 1, 9, 5),
+    ('TRIO', 'Dreiergruppe', 'D', 7, 9, 4),
+    ('REINEN', 'puren', 'D', 1, 10, 6),
+    ('KAM', 'nahte', 'D', 8, 10, 3)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r197-11x11-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r197-11x11-02', 'Rätsel 197 · 11×11', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '11x11-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('EID', 'Schwur', 'A', 1, 1, 3),
+    ('ABGASE', 'Emissionen', 'A', 1, 5, 6),
+    ('URIN', 'Harn', 'A', 2, 1, 4),
+    ('RAUEN', 'groben', 'A', 2, 6, 5),
+    ('RAN', 'heran', 'A', 3, 1, 3),
+    ('LASTET', 'drückt', 'A', 3, 5, 6),
+    ('ENG', 'schmal', 'A', 4, 1, 3),
+    ('ECHO', 'Widerhall', 'A', 5, 4, 4),
+    ('KRACH', 'Lärm', 'A', 6, 1, 5),
+    ('BAND', 'Musikgruppe', 'A', 6, 7, 4),
+    ('SKELETTE', 'Gerippe', 'A', 7, 3, 8),
+    ('ASS', 'speiste', 'A', 8, 1, 3),
+    ('FIRMEN', 'Betriebe', 'A', 8, 5, 6),
+    ('RIET', 'empfahl', 'A', 9, 1, 4),
+    ('MEERE', 'Ozeane', 'A', 9, 6, 5),
+    ('GEN', 'nach', 'A', 10, 1, 3),
+    ('PANNEN', 'Defekte', 'A', 10, 5, 6),
+    ('EURE', 'Possessiv (ihr)', 'D', 1, 1, 4),
+    ('ARG', 'schlimm', 'D', 8, 1, 3),
+    ('IRANER', 'Perser', 'D', 1, 2, 6),
+    ('SIE', 'Anrede', 'D', 8, 2, 3),
+    ('DING', 'Sache', 'D', 1, 3, 4),
+    ('ASSEN', 'speisten', 'D', 6, 3, 5),
+    ('ECK', 'Winkel', 'D', 5, 4, 3),
+    ('CHEF', 'Boss', 'D', 5, 5, 4),
+    ('BRACH', 'barst', 'D', 1, 6, 5),
+    ('LIMA', 'peruan. Hauptstadt', 'D', 7, 6, 4),
+    ('GAS', 'Brennstoff', 'D', 1, 7, 3),
+    ('OBEREN', 'höher gelegenen', 'D', 5, 7, 6),
+    ('AUTO', 'Pkw', 'D', 1, 8, 4),
+    ('ATMEN', 'Luft holen', 'D', 6, 8, 5),
+    ('SEE', 'Gewässer', 'D', 1, 9, 3),
+    ('UNTERE', 'tiefere', 'D', 5, 9, 6),
+    ('ENTE', 'Wasservogel', 'D', 1, 10, 4),
+    ('DENEN', 'Relativ (Dat. Pl.)', 'D', 6, 10, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r198-11x11-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r198-11x11-03', 'Rätsel 198 · 11×11', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '11x11-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('ARIE', 'Sologesang', 'A', 1, 1, 4),
+    ('GANS', 'Federvieh', 'A', 1, 7, 4),
+    ('BIS', 'nicht später als', 'A', 2, 1, 3),
+    ('PARTIE', 'Spiel', 'A', 2, 5, 6),
+    ('BOTE', 'Kurier', 'A', 3, 1, 4),
+    ('KOMET', 'Schweifstern', 'A', 3, 6, 5),
+    ('SAUBER', 'rein', 'A', 4, 4, 6),
+    ('UMWELT', 'Natur', 'A', 5, 1, 6),
+    ('TEE', 'Heißgetränk', 'A', 5, 8, 3),
+    ('EILT', 'hastet', 'A', 6, 2, 4),
+    ('MIR', 'Dat. (1. Pers.)', 'A', 7, 1, 3),
+    ('EHE', 'Bund fürs Leben', 'A', 7, 5, 3),
+    ('ALT', 'betagt', 'A', 8, 1, 3),
+    ('SATZES', 'Ende des ...', 'A', 8, 5, 6),
+    ('MEER', 'See', 'A', 9, 1, 4),
+    ('STUTE', 'weibl. Pferd', 'A', 9, 6, 5),
+    ('ANS', 'an das', 'A', 10, 1, 3),
+    ('SORTE', 'Art', 'A', 10, 6, 5),
+    ('ABBAU', 'Förderung', 'D', 1, 1, 5),
+    ('MAMA', 'Mutti', 'D', 7, 1, 4),
+    ('RIO', 'Stadt in Brasilien', 'D', 1, 2, 3),
+    ('MEILEN', 'Längenmaße', 'D', 5, 2, 6),
+    ('IST', 'befindet sich', 'D', 1, 3, 3),
+    ('WIRTES', 'Gäste des ...', 'D', 5, 3, 6),
+    ('ESEL', 'Grautier', 'D', 3, 4, 4),
+    ('ALTES', 'betagtes', 'D', 4, 5, 5),
+    ('AKUT', 'dringend', 'D', 2, 6, 4),
+    ('HASS', 'Abscheu', 'D', 7, 6, 4),
+    ('GROB', 'rau', 'D', 1, 7, 4),
+    ('NETTO', 'ohne Steuern', 'D', 6, 7, 5),
+    ('ATMET', 'holt Luft', 'D', 1, 8, 5),
+    ('ZUR', 'zu der', 'D', 8, 8, 3),
+    ('NIERE', 'Organ', 'D', 1, 9, 5),
+    ('BETT', 'Schlafstätte', 'D', 7, 9, 4),
+    ('SET', 'Satz', 'D', 1, 10, 3),
+    ('SEE', 'Gewässer', 'D', 8, 10, 3)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r199-12x12-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r199-12x12-01', 'Rätsel 199 · 12×12', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '12x12-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('SAH', 'erblickte', 'A', 1, 1, 3),
+    ('BROT', 'Laib', 'A', 1, 8, 4),
+    ('TRAUMA', 'Schock', 'A', 2, 1, 6),
+    ('EUER', 'Possessiv (ihr)', 'A', 2, 8, 4),
+    ('AMT', 'Behörde', 'A', 3, 1, 3),
+    ('FEINDE', 'Gegner', 'A', 3, 6, 6),
+    ('FINDET', 'entdeckt', 'A', 4, 6, 6),
+    ('KOMETEN', 'Haarsterne', 'A', 5, 1, 7),
+    ('MENUE', 'Speisenfolge', 'A', 6, 2, 5),
+    ('KATAR', 'Golfstaat', 'A', 7, 1, 5),
+    ('AREAL', 'Gelände', 'A', 7, 7, 5),
+    ('ZUM', 'zu dem', 'A', 8, 3, 3),
+    ('GINGE', 'liefe', 'A', 8, 7, 5),
+    ('ENG', 'schmal', 'A', 9, 1, 3),
+    ('SAENGER', 'Vokalist', 'A', 9, 5, 7),
+    ('LEER', 'hohl', 'A', 10, 1, 4),
+    ('UNGERN', 'widerwillig', 'A', 10, 6, 6),
+    ('NUR', 'lediglich', 'A', 11, 1, 3),
+    ('STERNE', 'Gestirne', 'A', 11, 6, 6),
+    ('STARK', 'kräftig', 'D', 1, 1, 5),
+    ('KOELN', 'Domstadt', 'D', 7, 1, 5),
+    ('ARM', 'Gliedmaße', 'D', 1, 2, 3),
+    ('OMA', 'Großmutter', 'D', 5, 2, 3),
+    ('NEU', 'frisch', 'D', 9, 2, 3),
+    ('HAT', 'besitzt', 'D', 1, 3, 3),
+    ('METZGER', 'Fleischer', 'D', 5, 3, 7),
+    ('GENAU', 'exakt', 'D', 4, 4, 5),
+    ('TURMS', 'Spitze des ...', 'D', 5, 5, 5),
+    ('KAFFEE', 'Mokka', 'D', 1, 6, 6),
+    ('AUS', 'vorbei', 'D', 9, 6, 3),
+    ('EIN', 'unbest. Artikel', 'D', 3, 7, 3),
+    ('AGENT', 'Spion', 'D', 7, 7, 5),
+    ('BEIN', 'Stelze', 'D', 1, 8, 4),
+    ('BRINGE', 'liefere', 'D', 6, 8, 6),
+    ('RUNDE', 'Durchgang', 'D', 1, 9, 5),
+    ('ENGER', 'schmaler', 'D', 7, 9, 5),
+    ('OEDE', 'langweilig', 'D', 1, 10, 4),
+    ('LAGERN', 'Depots', 'D', 6, 10, 6),
+    ('TRETE', 'kicke', 'D', 1, 11, 5),
+    ('LERNE', 'pauke', 'D', 7, 11, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r200-12x12-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r200-12x12-02', 'Rätsel 200 · 12×12', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '12x12-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('GEBT', 'reicht', 'A', 1, 1, 4),
+    ('GAGE', 'Honorar', 'A', 1, 8, 4),
+    ('ARIE', 'Sologesang', 'A', 2, 1, 4),
+    ('IRAKER', 'Mann aus Bagdad', 'A', 2, 6, 6),
+    ('ELTERN', 'Vater und Mutter', 'A', 3, 1, 6),
+    ('RUSS', 'Rauchstaub', 'A', 3, 8, 4),
+    ('BAT', 'ersuchte', 'A', 4, 1, 3),
+    ('TUT', 'macht', 'A', 4, 9, 3),
+    ('EUER', 'Possessiv (ihr)', 'A', 5, 1, 4),
+    ('GABEN', 'reichten', 'A', 5, 6, 5),
+    ('BRAUT', 'Verlobte', 'A', 6, 2, 5),
+    ('ENDE', 'Schluss', 'A', 6, 8, 4),
+    ('STERNE', 'Gestirne', 'A', 7, 1, 6),
+    ('RAT', 'Tipp', 'A', 8, 7, 3),
+    ('LEBE', 'existiere', 'A', 9, 1, 4),
+    ('NOTE', 'Zensur', 'A', 9, 8, 4),
+    ('CHARTA', 'Urkunde', 'A', 10, 1, 6),
+    ('KRAN', 'Hebezeug', 'A', 10, 8, 4),
+    ('HERZ', 'Pumpe', 'A', 11, 1, 4),
+    ('HOTELS', 'Herbergen', 'A', 11, 6, 6),
+    ('GAEBE', 'reichte', 'D', 1, 1, 5),
+    ('SOLCH', 'derartig', 'D', 7, 1, 5),
+    ('ERLAUBT', 'gestattet', 'D', 1, 2, 7),
+    ('EHE', 'Bund fürs Leben', 'D', 9, 2, 3),
+    ('BITTERE', 'herbe', 'D', 1, 3, 7),
+    ('BAR', 'Theke', 'D', 9, 3, 3),
+    ('TEE', 'Heißgetränk', 'D', 1, 4, 3),
+    ('RAR', 'selten', 'D', 5, 4, 3),
+    ('ERZ', 'Gestein', 'D', 9, 4, 3),
+    ('UNI', 'Hochschule', 'D', 6, 5, 3),
+    ('EINIGTE', 'verständigte', 'D', 1, 6, 7),
+    ('NAH', 'dicht', 'D', 9, 6, 3),
+    ('GAR', 'durchgekocht', 'D', 1, 8, 3),
+    ('BEDANKT', 'erkenntlich', 'D', 5, 8, 7),
+    ('AKUTEN', 'dringenden', 'D', 1, 9, 6),
+    ('TORE', 'Treffer', 'D', 8, 9, 4),
+    ('GESUND', 'fit', 'D', 1, 10, 6),
+    ('TAL', 'Senke', 'D', 9, 10, 3),
+    ('ERST', 'zunächst', 'D', 1, 11, 4),
+    ('EIGENS', 'extra', 'D', 6, 11, 6)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r201-12x12-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r201-12x12-03', 'Rätsel 201 · 12×12', g.id, 'veroeffentlicht', 3, now()
+  from gitter g where g.name = '12x12-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('PARAT', 'bereit', 'A', 1, 1, 5),
+    ('NARBE', 'Wundmal', 'A', 1, 7, 5),
+    ('ANALOGE', 'ähnliche', 'A', 2, 1, 7),
+    ('OEL', 'Schmierstoff', 'A', 2, 9, 3),
+    ('PAUSE', 'Rast', 'A', 3, 1, 5),
+    ('MIT', 'samt', 'A', 3, 9, 3),
+    ('ALB', 'Gebirge', 'A', 4, 1, 3),
+    ('NEST', 'Horst', 'A', 4, 5, 4),
+    ('EIS', 'Gefrorenes', 'A', 5, 5, 3),
+    ('KUR', 'Erholung', 'A', 5, 9, 3),
+    ('IGEL', 'Stacheltier', 'A', 6, 1, 4),
+    ('GEHEGE', 'Käfig', 'A', 7, 5, 6),
+    ('IHR', 'Pronomen (2. Pl.)', 'A', 8, 1, 3),
+    ('ALABAMA', 'Südstaat', 'A', 8, 5, 7),
+    ('RAETE', 'Gremien', 'A', 9, 1, 5),
+    ('HERDE', 'Schar', 'A', 9, 7, 5),
+    ('ABGABEN', 'Steuern', 'A', 10, 1, 7),
+    ('DER', 'Artikel (männl.)', 'A', 10, 9, 3),
+    ('KETTE', 'Halsschmuck', 'A', 11, 1, 5),
+    ('JENA', 'Saalestadt', 'A', 11, 8, 4),
+    ('PAPA', 'Vater', 'D', 1, 1, 4),
+    ('IRAK', 'Land am Tigris', 'D', 8, 1, 4),
+    ('ANALOG', 'entsprechend', 'D', 1, 2, 6),
+    ('HABE', 'besitze', 'D', 8, 2, 4),
+    ('RAUB', 'Diebstahl', 'D', 1, 3, 4),
+    ('ERREGT', 'nervös', 'D', 6, 3, 6),
+    ('ALS', 'da, während', 'D', 1, 4, 3),
+    ('TAT', 'Handlung', 'D', 9, 4, 3),
+    ('TOENE', 'Klänge', 'D', 1, 5, 5),
+    ('GAEBE', 'reichte', 'D', 7, 5, 5),
+    ('EITEL', 'gefallsüchtig', 'D', 4, 6, 5),
+    ('NEUSS', 'Stadt am Rhein', 'D', 1, 7, 5),
+    ('HAHN', 'Gockel', 'D', 7, 7, 4),
+    ('LEBE', 'existiere', 'D', 6, 8, 4),
+    ('ROM', 'Ewige Stadt', 'D', 1, 9, 3),
+    ('GARDE', 'Leibwache', 'D', 7, 9, 5),
+    ('BEI', 'nahe an', 'D', 1, 10, 3),
+    ('EMDEN', 'ostfries. Stadt', 'D', 7, 10, 5),
+    ('ELTERN', 'Vater und Mutter', 'D', 1, 11, 6),
+    ('AERA', 'Epoche', 'D', 8, 11, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r202-12x12-04
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r202-12x12-04', 'Rätsel 202 · 12×12', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '12x12-04' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('ALBANIEN', 'Balkanstaat', 'A', 1, 1, 8),
+    ('KAESE', 'Milchprodukt', 'A', 2, 1, 5),
+    ('NEU', 'frisch', 'A', 2, 7, 3),
+    ('TURIN', 'Stadt am Po', 'A', 3, 1, 5),
+    ('GUNST', 'Wohlwollen', 'A', 3, 7, 5),
+    ('ENGEN', 'schmalen', 'A', 4, 1, 5),
+    ('EGAL', 'gleichgültig', 'A', 4, 8, 4),
+    ('NEUTRALE', 'objektive', 'A', 5, 4, 8),
+    ('RAR', 'selten', 'A', 6, 9, 3),
+    ('NAH', 'dicht', 'A', 7, 2, 3),
+    ('WARNT', 'mahnt', 'A', 7, 6, 5),
+    ('OASE', 'Wüsteninsel', 'A', 8, 1, 4),
+    ('OMA', 'Großmutter', 'A', 8, 6, 3),
+    ('BESUCH', 'Visite', 'A', 9, 1, 6),
+    ('STAU', 'Blechlawine', 'A', 9, 8, 4),
+    ('EHE', 'Bund fürs Leben', 'A', 10, 1, 3),
+    ('SOLO', 'allein', 'A', 10, 8, 4),
+    ('NERV', 'Reizleiter', 'A', 11, 1, 4),
+    ('EVENTS', 'Anlässe', 'A', 11, 6, 6),
+    ('AKTE', 'Dokument', 'D', 1, 1, 4),
+    ('OBEN', 'in der Höhe', 'D', 8, 1, 4),
+    ('LAUNE', 'Stimmung', 'D', 1, 2, 5),
+    ('NAEHE', 'Umgebung', 'D', 7, 2, 5),
+    ('BERG', 'Gipfel', 'D', 1, 3, 4),
+    ('WASSER', 'H2O', 'D', 6, 3, 6),
+    ('ASIEN', 'Erdteil', 'D', 1, 4, 5),
+    ('HEU', 'Trockengras', 'D', 7, 4, 3),
+    ('NENNER', 'Divisor', 'D', 1, 5, 6),
+    ('WOHNE', 'lebe', 'D', 7, 6, 5),
+    ('ENG', 'schmal', 'D', 1, 7, 3),
+    ('TEAM', 'Mannschaft', 'D', 5, 7, 4),
+    ('NEUER', 'frischer', 'D', 1, 8, 5),
+    ('RASSE', 'Zuchtlinie', 'D', 7, 8, 5),
+    ('UNGARN', 'Magyaren', 'D', 2, 9, 6),
+    ('TON', 'Klang', 'D', 9, 9, 3),
+    ('SALAT', 'Rohkost', 'D', 3, 10, 5),
+    ('ALT', 'betagt', 'D', 9, 10, 3),
+    ('BUTLER', 'Diener', 'D', 1, 11, 6),
+    ('DUOS', 'Paare', 'D', 8, 11, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r203-13x13-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r203-13x13-01', 'Rätsel 203 · 13×13', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '13x13-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('WAR', 'existierte', 'A', 1, 1, 3),
+    ('OFT', 'häufig', 'A', 1, 5, 3),
+    ('SEIN', 'existieren', 'A', 1, 9, 4),
+    ('EGAL', 'gleichgültig', 'A', 2, 1, 4),
+    ('ERKER', 'Vorbau', 'A', 2, 6, 5),
+    ('GITARRE', 'Klampfe', 'A', 3, 1, 7),
+    ('EBEN', 'flach', 'A', 3, 9, 4),
+    ('GENUG', 'ausreichend', 'A', 4, 4, 5),
+    ('ART', 'Sorte', 'A', 5, 1, 3),
+    ('SEELEUTE', 'Matrosen', 'A', 5, 5, 8),
+    ('STEHT', 'stockt', 'A', 6, 1, 5),
+    ('NEUE', 'frische', 'A', 6, 7, 4),
+    ('SEI', 'existiere', 'A', 7, 1, 3),
+    ('IRREN', 'sich täuschen', 'A', 7, 8, 5),
+    ('ENGE', 'schmale', 'A', 8, 1, 4),
+    ('LOSE', 'locker', 'A', 8, 6, 4),
+    ('RANG', 'Stellung', 'A', 9, 9, 4),
+    ('MADONNA', 'Muttergottes', 'A', 10, 2, 7),
+    ('EHE', 'Bund fürs Leben', 'A', 10, 10, 3),
+    ('DAUERT', 'währt', 'A', 11, 1, 6),
+    ('REH', 'Waldtier', 'A', 11, 10, 3),
+    ('NETTE', 'freundliche', 'A', 12, 2, 5),
+    ('START', 'Beginn', 'A', 12, 8, 5),
+    ('WEG', 'Pfad', 'D', 1, 1, 3),
+    ('ASSEN', 'speisten', 'D', 5, 1, 5),
+    ('AGIERTEN', 'handelten', 'D', 1, 2, 8),
+    ('MAN', 'jemand', 'D', 10, 2, 3),
+    ('RAT', 'Tipp', 'D', 1, 3, 3),
+    ('TEIG', 'Masse', 'D', 5, 3, 4),
+    ('AUE', 'Talwiese', 'D', 10, 3, 3),
+    ('LAG', 'ruhte', 'D', 2, 4, 3),
+    ('ENDET', 'hört auf', 'D', 8, 4, 5),
+    ('REST', 'Überbleibsel', 'D', 3, 5, 4),
+    ('ORT', 'Stelle', 'D', 10, 5, 3),
+    ('FERNE', 'Weite', 'D', 1, 6, 5),
+    ('PLANTE', 'entwarf', 'D', 7, 6, 6),
+    ('TREUEN', 'loyalen', 'D', 1, 7, 6),
+    ('GLEIS', 'Schiene', 'D', 4, 8, 5),
+    ('AUS', 'vorbei', 'D', 10, 8, 3),
+    ('SEE', 'Gewässer', 'D', 1, 9, 3),
+    ('EURER', 'Possessiv (ihr)', 'D', 5, 9, 5),
+    ('ERBAUER', 'Konstrukteur', 'D', 1, 10, 7),
+    ('AERA', 'Epoche', 'D', 9, 10, 4),
+    ('EINHER', '... gehen', 'D', 7, 11, 6),
+    ('NUN', 'jetzt', 'D', 1, 12, 3),
+    ('EIN', 'unbest. Artikel', 'D', 5, 12, 3),
+    ('GEHT', 'läuft', 'D', 9, 12, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r204-13x13-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r204-13x13-02', 'Rätsel 204 · 13×13', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '13x13-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('SKANDALE', 'Affären', 'A', 1, 1, 8),
+    ('WEH', 'schmerzhaft', 'A', 1, 10, 3),
+    ('BEIDE', 'alle zwei', 'A', 2, 3, 5),
+    ('VITA', 'Lebenslauf', 'A', 2, 9, 4),
+    ('KURVEN', 'Biegungen', 'A', 3, 3, 6),
+    ('LAG', 'ruhte', 'A', 3, 10, 3),
+    ('EHEN', 'Bündnisse', 'A', 4, 1, 4),
+    ('EREILTE', 'traf', 'A', 4, 6, 7),
+    ('NAHT', 'kommt näher', 'A', 5, 1, 4),
+    ('NEUN', 'Zahl (3×3)', 'A', 5, 6, 4),
+    ('DIREKT', 'unmittelbar', 'A', 6, 1, 6),
+    ('ENG', 'schmal', 'A', 6, 8, 3),
+    ('PREISE', 'Tarife', 'A', 7, 7, 6),
+    ('GRAS', 'Rasen', 'A', 8, 3, 4),
+    ('THEORIE', 'Lehre', 'A', 9, 1, 7),
+    ('OSLO', 'norw. Hauptstadt', 'A', 9, 9, 4),
+    ('RASTEN', 'ruhen', 'A', 10, 1, 6),
+    ('RASER', 'Temposünder', 'A', 10, 8, 5),
+    ('INTERNE', 'innere', 'A', 11, 1, 7),
+    ('SEIT', 'ab', 'A', 11, 9, 4),
+    ('ODER', 'bzw.', 'A', 12, 1, 4),
+    ('WENDE', 'Umschwung', 'A', 12, 8, 5),
+    ('STAENDE', 'Buden', 'D', 1, 1, 7),
+    ('TRIO', 'Dreiergruppe', 'D', 9, 1, 4),
+    ('HAI', 'Raubfisch', 'D', 4, 2, 3),
+    ('HAND', 'Greiforgan', 'D', 9, 2, 4),
+    ('ABKEHR', 'Abwendung', 'D', 1, 3, 6),
+    ('GESTE', 'Gebärde', 'D', 8, 3, 5),
+    ('NEUNTE', 'nach der achten', 'D', 1, 4, 6),
+    ('ROTER', 'purpurner', 'D', 8, 4, 5),
+    ('DIR', 'Dat. (2. Pers.)', 'D', 1, 5, 3),
+    ('KLARER', 'deutlicher', 'D', 6, 5, 6),
+    ('ADVENT', 'Vorweihnacht', 'D', 1, 6, 6),
+    ('SINNE', 'im ... von', 'D', 8, 6, 5),
+    ('LEERE', 'Vakuum', 'D', 1, 7, 5),
+    ('NEUERE', 'Jüngere', 'D', 3, 8, 6),
+    ('INNE', '... halten', 'D', 4, 9, 4),
+    ('OASE', 'Wüsteninsel', 'D', 9, 9, 4),
+    ('WILL', 'möchte', 'D', 1, 10, 4),
+    ('GIESSEN', 'Lahnstadt', 'D', 6, 10, 7),
+    ('ETAT', 'Budget', 'D', 1, 11, 4),
+    ('LEID', 'Kummer', 'D', 9, 11, 4),
+    ('HAGELTE', 'prasselte', 'D', 1, 12, 7),
+    ('ORTE', 'Plätze', 'D', 9, 12, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r205-13x13-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r205-13x13-03', 'Rätsel 205 · 13×13', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '13x13-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('ZEUG', 'Kram', 'A', 1, 1, 4),
+    ('SEI', 'existiere', 'A', 1, 6, 3),
+    ('PRO', 'je', 'A', 1, 10, 3),
+    ('UHR', 'Zeitmesser', 'A', 2, 1, 3),
+    ('BONNER', 'Rheinländer', 'A', 2, 5, 6),
+    ('RESSORTS', 'Bereiche', 'A', 3, 1, 8),
+    ('UND', 'sowie', 'A', 3, 10, 3),
+    ('RAENGE', 'Tribünen', 'A', 4, 2, 6),
+    ('SEIN', 'existieren', 'A', 4, 9, 4),
+    ('CENT', 'Hundertstel Euro', 'A', 5, 3, 4),
+    ('FEE', 'Zauberin', 'A', 5, 10, 3),
+    ('NAH', 'dicht', 'A', 6, 1, 3),
+    ('EROBERN', 'einnehmen', 'A', 6, 6, 7),
+    ('TUERE', 'Pforte', 'A', 7, 1, 5),
+    ('EBENE', 'Fläche', 'A', 7, 7, 5),
+    ('GENE', 'Erbanlagen', 'A', 8, 1, 4),
+    ('AKUT', 'dringend', 'A', 8, 6, 4),
+    ('OSTERN', 'christl. Fest', 'A', 9, 7, 6),
+    ('GRAS', 'Rasen', 'A', 10, 1, 4),
+    ('ORT', 'Stelle', 'A', 10, 6, 3),
+    ('WOG', 'schaukelte', 'A', 10, 10, 3),
+    ('EILTE', 'hastete', 'A', 11, 1, 5),
+    ('DEVISE', 'Motto', 'A', 11, 7, 6),
+    ('NOTE', 'Zensur', 'A', 12, 1, 4),
+    ('YEN', 'Währung Japans', 'A', 12, 6, 3),
+    ('GAR', 'durchgekocht', 'A', 12, 10, 3),
+    ('ZUR', 'zu der', 'D', 1, 1, 3),
+    ('ENTGEGEN', 'wider', 'D', 5, 1, 8),
+    ('EHER', 'lieber', 'D', 1, 2, 4),
+    ('AUE', 'Talwiese', 'D', 6, 2, 3),
+    ('RIO', 'Stadt in Brasilien', 'D', 10, 2, 3),
+    ('URSACHEN', 'Gründe', 'D', 1, 3, 8),
+    ('ALT', 'betagt', 'D', 10, 3, 3),
+    ('SEE', 'Gewässer', 'D', 3, 4, 3),
+    ('REISTE', 'fuhr', 'D', 7, 4, 6),
+    ('BONN', 'Ex-Hauptstadt', 'D', 2, 5, 4),
+    ('SORGTE', 'kümmerte sich', 'D', 1, 6, 6),
+    ('ENTE', 'Wasservogel', 'D', 1, 7, 4),
+    ('REKORDE', 'Höchstwerte', 'D', 6, 7, 7),
+    ('INS', 'in das', 'D', 1, 8, 3),
+    ('ROBUSTEN', 'stabilen', 'D', 5, 8, 8),
+    ('BETT', 'Schlafstätte', 'D', 6, 9, 4),
+    ('PRUEFEN', 'testen', 'D', 1, 10, 7),
+    ('EWIG', 'endlos', 'D', 9, 10, 4),
+    ('NIERE', 'Organ', 'D', 3, 11, 5),
+    ('ROSA', 'Pink', 'D', 9, 11, 4),
+    ('ORDNEN', 'sortieren', 'D', 1, 12, 6),
+    ('ENGER', 'schmaler', 'D', 8, 12, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r206-15x15-01
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r206-15x15-01', 'Rätsel 206 · 15×15', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '15x15-01' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('AFFE', 'Primat', 'A', 1, 1, 4),
+    ('OPA', 'Großvater', 'A', 1, 6, 3),
+    ('GRAMM', 'Tausendstel Kilo', 'A', 1, 10, 5),
+    ('BAUHERR', 'Auftraggeber', 'A', 2, 1, 7),
+    ('TRAT', 'schritt', 'A', 2, 9, 4),
+    ('FUER', 'zugunsten', 'A', 3, 1, 4),
+    ('TOR', 'Treffer', 'A', 3, 6, 3),
+    ('ADELS', 'Titel des ...', 'A', 3, 10, 5),
+    ('UNTERE', 'tiefere', 'A', 4, 1, 6),
+    ('DAMIT', 'hiermit', 'A', 4, 10, 5),
+    ('HAT', 'besitzt', 'A', 5, 1, 3),
+    ('UNION', 'Bündnis', 'A', 5, 5, 5),
+    ('WIE', 'gleich', 'A', 6, 12, 3),
+    ('GROSSE', 'riesige', 'A', 7, 2, 6),
+    ('FRAUEN', 'Damen', 'A', 7, 9, 6),
+    ('YEN', 'Währung Japans', 'A', 8, 1, 3),
+    ('TENDIERT', 'neigt', 'A', 8, 5, 8),
+    ('FEE', 'Zauberin', 'A', 9, 4, 3),
+    ('GUT', 'prima', 'A', 9, 9, 3),
+    ('DAVON', 'hiervon', 'A', 10, 1, 5),
+    ('BRUT', 'Nachwuchs', 'A', 10, 7, 4),
+    ('IDOL', 'Vorbild', 'A', 11, 1, 4),
+    ('FAIR', 'gerecht', 'A', 11, 6, 4),
+    ('TAGE', 'je 24 Stunden', 'A', 11, 11, 4),
+    ('SEMINARS', 'Leiter des ...', 'A', 12, 1, 8),
+    ('EUREN', 'Possessiv (ihr)', 'A', 12, 10, 5),
+    ('EINES', 'unbest. Art. (Gen.)', 'A', 13, 4, 5),
+    ('RENNT', 'läuft', 'A', 13, 10, 5),
+    ('ORT', 'Stelle', 'A', 14, 1, 3),
+    ('ESSENZ', 'Kern', 'A', 14, 5, 6),
+    ('TEE', 'Heißgetränk', 'A', 14, 12, 3),
+    ('ABFUHR', 'Absage', 'D', 1, 1, 6),
+    ('DISCO', 'Tanzlokal', 'D', 10, 1, 5),
+    ('FAUNA', 'Tierwelt', 'D', 1, 2, 5),
+    ('GERADE', 'eben', 'D', 7, 2, 6),
+    ('FUETTERN', 'ernähren', 'D', 1, 3, 8),
+    ('VOM', 'von dem', 'D', 10, 3, 3),
+    ('EHRE', 'Würde', 'D', 1, 4, 4),
+    ('FOLIE', 'Film', 'D', 9, 4, 5),
+    ('RUESTEN', 'wappnen', 'D', 4, 5, 7),
+    ('NIE', 'nimmer', 'D', 12, 5, 3),
+    ('ORTEN', 'Stellen', 'D', 1, 6, 5),
+    ('SEE', 'Gewässer', 'D', 7, 6, 3),
+    ('FANS', 'Anhänger', 'D', 11, 6, 4),
+    ('PRO', 'je', 'D', 1, 7, 3),
+    ('IREN', 'Gälen', 'D', 5, 7, 4),
+    ('BARES', '... Geld', 'D', 10, 7, 5),
+    ('RIO', 'Stadt in Brasilien', 'D', 3, 8, 3),
+    ('RISSE', 'Spalten', 'D', 10, 8, 5),
+    ('FIGUR', 'Gestalt', 'D', 7, 9, 5),
+    ('GRAD', 'Stufe', 'D', 1, 10, 4),
+    ('FREUT', 'beglückt', 'D', 6, 10, 5),
+    ('ERZ', 'Gestein', 'D', 12, 10, 3),
+    ('RADAR', 'Ortungsgerät', 'D', 1, 11, 5),
+    ('ART', 'Sorte', 'D', 7, 11, 3),
+    ('TUE', 'mache', 'D', 11, 11, 3),
+    ('ATEM', 'Luft', 'D', 1, 12, 4),
+    ('WUT', 'Zorn', 'D', 6, 12, 3),
+    ('WARNT', 'mahnt', 'D', 10, 12, 5),
+    ('LINIE', 'Strich', 'D', 3, 13, 5),
+    ('GENE', 'Erbanlagen', 'D', 11, 13, 4),
+    ('MAST', 'Pfosten', 'D', 1, 14, 4),
+    ('ENDE', 'Schluss', 'D', 6, 14, 4),
+    ('ENTE', 'Wasservogel', 'D', 11, 14, 4)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r207-15x15-02
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r207-15x15-02', 'Rätsel 207 · 15×15', g.id, 'veroeffentlicht', 1, now()
+  from gitter g where g.name = '15x15-02' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('TIPPS', 'Ratschläge', 'A', 1, 1, 5),
+    ('CHILE', 'Andenstaat', 'A', 1, 10, 5),
+    ('UHR', 'Zeitmesser', 'A', 2, 1, 3),
+    ('COOL', 'lässig', 'A', 2, 5, 4),
+    ('HASEN', 'Langohren', 'A', 2, 10, 5),
+    ('CRASH', 'Unfall', 'A', 3, 1, 5),
+    ('STRITTIG', 'kontrovers', 'A', 3, 7, 8),
+    ('GAESTE', 'Besucher', 'A', 4, 3, 6),
+    ('GUTE', 'prima', 'A', 5, 4, 4),
+    ('SAMT', 'inklusive', 'A', 5, 9, 4),
+    ('FEST', 'stabil', 'A', 6, 1, 4),
+    ('UND', 'sowie', 'A', 6, 6, 3),
+    ('OELE', 'Fette', 'A', 6, 11, 4),
+    ('RIO', 'Stadt in Brasilien', 'A', 7, 1, 3),
+    ('UNION', 'Bündnis', 'A', 7, 10, 5),
+    ('ALL', 'Weltraum', 'A', 8, 1, 3),
+    ('BLICK', 'Aussicht', 'A', 8, 5, 5),
+    ('ALS', 'da, während', 'A', 8, 11, 3),
+    ('GELBE', 'die ... Karte', 'A', 9, 1, 5),
+    ('HAUT', 'Epidermis', 'A', 9, 8, 4),
+    ('ISST', 'speist', 'A', 10, 4, 4),
+    ('VON', 'ab, aus', 'A', 10, 12, 3),
+    ('JENSEITS', 'drüben', 'A', 11, 2, 8),
+    ('MORD', 'Tötung', 'A', 11, 11, 4),
+    ('ZUR', 'zu der', 'A', 12, 1, 3),
+    ('EHE', 'Bund fürs Leben', 'A', 12, 5, 3),
+    ('ORTE', 'Plätze', 'A', 12, 11, 4),
+    ('UNSERER', 'Possessiv (wir)', 'A', 13, 1, 7),
+    ('RENNER', 'Bestseller', 'A', 13, 9, 6),
+    ('MIT', 'samt', 'A', 14, 1, 3),
+    ('EIS', 'Gefrorenes', 'A', 14, 7, 3),
+    ('DENN', 'weil', 'A', 14, 11, 4),
+    ('TUCH', 'Stoff', 'D', 1, 1, 4),
+    ('FRAGE', 'Erkundigung', 'D', 6, 1, 5),
+    ('ZUM', 'zu dem', 'D', 12, 1, 3),
+    ('IHR', 'Pronomen (2. Pl.)', 'D', 1, 2, 3),
+    ('TEILE', 'Stücke', 'D', 5, 2, 5),
+    ('JUNI', '6. Monat', 'D', 11, 2, 4),
+    ('PRAG', 'Moldau-Stadt', 'D', 1, 3, 4),
+    ('SOLL', 'muss', 'D', 6, 3, 4),
+    ('ERST', 'zunächst', 'D', 11, 3, 4),
+    ('SAGT', 'äußert', 'D', 3, 4, 4),
+    ('BIN', 'existiere', 'D', 9, 4, 3),
+    ('SCHEU', 'schüchtern', 'D', 1, 5, 5),
+    ('BESSERE', 'überlegene', 'D', 8, 5, 7),
+    ('STUHL', 'Sitz', 'D', 4, 6, 5),
+    ('SEHE', 'erblicke', 'D', 10, 6, 4),
+    ('OSTEN', 'Richtung O', 'D', 2, 7, 5),
+    ('TIERE', 'Lebewesen', 'D', 10, 7, 5),
+    ('ALTE', 'betagte', 'D', 1, 8, 4),
+    ('DOCH', 'allerdings', 'D', 6, 8, 4),
+    ('KAISERS', 'Bart des ...', 'D', 8, 9, 7),
+    ('CHINA', 'Reich der Mitte', 'D', 1, 10, 5),
+    ('HAT', 'besitzt', 'D', 1, 11, 3),
+    ('MONAT', 'etwa 30 Tage', 'D', 5, 11, 5),
+    ('MOND', 'Erdtrabant', 'D', 11, 11, 4),
+    ('IST', 'befindet sich', 'D', 1, 12, 3),
+    ('TEIL', 'Stück', 'D', 5, 12, 4),
+    ('VORNE', 'an der Spitze', 'D', 10, 12, 5),
+    ('LEIB', 'Körper', 'D', 1, 13, 4),
+    ('LOS', 'frei', 'D', 6, 13, 3),
+    ('ORTEN', 'Stellen', 'D', 10, 13, 5),
+    ('ENG', 'schmal', 'D', 1, 14, 3),
+    ('YEN', 'Währung Japans', 'D', 5, 14, 3),
+    ('ANDERN', 'übrigen', 'D', 9, 14, 6)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+-- r208-15x15-03
+with neu as (
+  insert into raetsel (slug, titel, gitter_id, status, schwierigkeit, veroeffentlicht_am)
+  select 'r208-15x15-03', 'Rätsel 208 · 15×15', g.id, 'veroeffentlicht', 2, now()
+  from gitter g where g.name = '15x15-03' order by g.id limit 1
+  on conflict (slug) do nothing
+  returning id
+)
+insert into fragen (raetsel_id, wort_id, frage_varianten_id, richtung, start_zeile, start_spalte, laenge)
+select neu.id, w.id, fv.id, v.dir, v.r, v.c, v.len
+from neu cross join (values
+    ('SATAN', 'Teufel', 'A', 1, 1, 5),
+    ('HIERFUER', 'dazu', 'A', 1, 7, 8),
+    ('EBEN', 'flach', 'A', 2, 1, 4),
+    ('DANN', 'anschließend', 'A', 2, 6, 4),
+    ('HEIL', 'Wohl', 'A', 3, 1, 4),
+    ('ERST', 'zunächst', 'A', 3, 6, 4),
+    ('TAGE', 'je 24 Stunden', 'A', 3, 11, 4),
+    ('ERLAUBT', 'gestattet', 'A', 4, 1, 7),
+    ('DES', 'Artikel (Genitiv)', 'A', 4, 12, 3),
+    ('GEBE', 'reiche', 'A', 5, 11, 4),
+    ('ENDE', 'Schluss', 'A', 6, 1, 4),
+    ('TYP', 'Kerl', 'A', 6, 6, 3),
+    ('WAREN', 'existierten', 'A', 6, 10, 5),
+    ('REINSTE', 'pureste', 'A', 7, 1, 7),
+    ('RENNT', 'läuft', 'A', 7, 9, 5),
+    ('ZUR', 'zu der', 'A', 8, 1, 3),
+    ('TENDENZ', 'Trend', 'A', 8, 5, 7),
+    ('EBBE', 'Gegenteil der Flut', 'A', 9, 11, 4),
+    ('FARBE', 'Kolorit', 'A', 10, 1, 5),
+    ('AKT', 'Aufzug', 'A', 10, 7, 3),
+    ('SOLL', 'muss', 'A', 10, 11, 4),
+    ('EHE', 'Bund fürs Leben', 'A', 11, 1, 3),
+    ('DOLLAR', 'US-Währung', 'A', 11, 5, 6),
+    ('DOM', 'Kathedrale', 'A', 11, 12, 3),
+    ('TRITT', 'kickt', 'A', 12, 1, 5),
+    ('GAB', 'schenkte', 'A', 12, 7, 3),
+    ('LESE', 'schmökere', 'A', 12, 11, 4),
+    ('HOEHERE', 'größere', 'A', 13, 3, 7),
+    ('ANS', 'an das', 'A', 13, 11, 3),
+    ('EIERN', 'auf ... gehen', 'A', 14, 1, 5),
+    ('LASSEN', 'erlauben', 'A', 14, 9, 6),
+    ('SEHE', 'erblicke', 'D', 1, 1, 4),
+    ('ERZ', 'Gestein', 'D', 6, 1, 3),
+    ('FETTE', 'Öle', 'D', 10, 1, 5),
+    ('ABER', 'jedoch', 'D', 1, 2, 4),
+    ('NEUJAHR', '1. Januar', 'D', 6, 2, 7),
+    ('TEIL', 'Stück', 'D', 1, 3, 4),
+    ('DIR', 'Dat. (2. Pers.)', 'D', 6, 3, 3),
+    ('REIHE', 'Serie', 'D', 10, 3, 5),
+    ('ANLAGEN', 'Beilagen', 'D', 1, 4, 7),
+    ('TOR', 'Treffer', 'D', 12, 4, 3),
+    ('STAEDTEN', 'Kommunen', 'D', 7, 5, 8),
+    ('DEBATTE', 'Diskussion', 'D', 2, 6, 7),
+    ('HART', 'fest', 'D', 1, 7, 4),
+    ('YEN', 'Währung Japans', 'D', 6, 7, 3),
+    ('ALGEN', 'Tang', 'D', 10, 7, 5),
+    ('INS', 'in das', 'D', 1, 8, 3),
+    ('KLAR', 'deutlich', 'D', 10, 8, 4),
+    ('ENTE', 'Wasservogel', 'D', 1, 9, 4),
+    ('RENTABEL', 'lohnend', 'D', 7, 9, 8),
+    ('WEN', 'Fragewort (Akk.)', 'D', 6, 10, 3),
+    ('FIT', 'gesund', 'D', 1, 11, 3),
+    ('GANZES', 'komplettes', 'D', 5, 11, 6),
+    ('LAS', 'schmökerte', 'D', 12, 11, 3),
+    ('ADERN', 'Venen', 'D', 3, 12, 5),
+    ('BODENS', 'Qualität des ...', 'D', 9, 12, 6),
+    ('GEBET', 'Andacht', 'D', 3, 13, 5),
+    ('BLOSSE', 'reine', 'D', 9, 13, 6),
+    ('RIESEN', 'Hünen', 'D', 1, 14, 6),
+    ('HELME', 'Kopfschutz', 'D', 8, 14, 5)
+  ) as v(wort, frage, dir, r, c, len)
+join woerter w on w.wort = v.wort
+left join fragen_varianten fv on fv.wort_id = w.id and fv.frage = v.frage;
+
+commit;
