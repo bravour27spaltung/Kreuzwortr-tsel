@@ -37,8 +37,20 @@ def lade_fragen(pfad):
         for r in csv.DictReader(f, delimiter='\t'):
             fragen.setdefault(r['wort'], []).append(
                 {'frage': r['frage'], 'schwierigkeit': int(r['schwierigkeit']),
-                 'haeufigkeit': r['haeufigkeit'], 'laenge': r['laenge'], 'rang': int(r['rang'])})
+                 'haeufigkeit': r['haeufigkeit'], 'laenge': r['laenge'], 'rang': int(r['rang']),
+                 'quelle': r.get('quelle', '')})
     return fragen
+
+
+# Phase 8: neu formulierte Fragen (bildhaft, mit Sachwissen) werden bevorzugt; die aelteren
+# Einwort-Synonyme bleiben als Rueckfall im Pool (Gewicht 1 gegen 6).
+BEVORZUGTE_QUELLE = 'claude-v3-phase8'
+GEWICHT_BEVORZUGT = 6
+
+
+def waehle_frage(rng, varianten):
+    gewichte = [GEWICHT_BEVORZUGT if v.get('quelle') == BEVORZUGTE_QUELLE else 1 for v in varianten]
+    return rng.choices(varianten, weights=gewichte, k=1)[0]
 
 
 def lade_funktionswoerter(pfad):
@@ -103,7 +115,7 @@ def pruefe_loesung(v, woerter, pool_woerter, grp=None):
 def baue_raetsel(v, woerter, fragen, rng, funktionswoerter):
     eintraege, hinweise = [], []
     for e, w in zip(v['eintraege'], woerter):
-        f = rng.choice(fragen[w])
+        f = waehle_frage(rng, fragen[w])
         eintraege.append({'dir': e['dir'], 'r': e['r'], 'c': e['c'], 'len': e['len'],
                           'clueR': e['clueR'], 'clueC': e['clueC'], 'wort': w,
                           'clue': f['frage'], 'schwierigkeit': f['schwierigkeit']})

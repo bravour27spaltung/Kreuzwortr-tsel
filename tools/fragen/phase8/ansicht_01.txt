@@ -1,0 +1,300 @@
+die|Artikel (weibl.)|4x
+der|Artikel (männl.)|3x
+und|sowie|5x
+das|Artikel (sächl.)|2x
+ist|befindet sich|16x
+den|Artikel (Akkusativ)|7x
+ein|unbest. Artikel|8x
+eine|unbest. Artikel (w.)|4x
+mit|samt|2x
+auf|offen|2x
+Sie|Anrede|13x
+des|Artikel (Genitiv)|5x
+für|zugunsten / Präposition|3x
+dem|Artikel (Dativ)|4x
+auch|ebenfalls / ebenso|1x
+war|existierte|2x
+aus|vorbei|4x
+als|da, während|6x
+bei|nahe an|7x
+einen|unbest. Art. (Akk.)|1x
+einer|unbest. Art. (w.)|1x
+hat|besitzt|2x
+über|oberhalb / Präposition|2x
+noch|bislang / weiterhin|1x
+Wir|Pronomen (1. Pl.)|1x
+zum|zu dem|1x
+aber|jedoch|4x
+bis|nicht später als|2x
+nur|lediglich / bloß|7x
+ich|Pronomen (1. Sg.)|2x
+vor|ehe|1x
+zur|zu der|1x
+hier|an diesem Ort / an dieser Stelle|3x
+dann|anschließend / daraufhin|2x
+haben|besitzen / Verbform|1x
+wie|gleich|4x
+oder|bzw.|5x
+hatte|besaß / Verbform|1x
+unter|inmitten / Präposition|2x
+seine|ihre / Pronomen|1x
+dieser|jener / Pronomen|1x
+ihre|seine / Pronomen|2x
+dass|Konjunktion|1x
+sei|existiere|7x
+mehr|zusätzlich / obendrein|2x
+Euro|Währung / EU-Zahlungsmittel|1x
+ihr|Pronomen (2. Pl.)|10x
+Dies|das hier / Pronomen|3x
+vom|von dem|1x
+Was|Fragewort (Sache)|2x
+sehr|äußerst / überaus|2x
+Dabei|hierbei / Adverb|1x
+man|jemand / Pronomen|7x
+nun|jetzt / inzwischen|8x
+eines|unbest. Art. (Gen.)|1x
+Dort|da / an jenem Ort|1x
+alle|sämtliche / Pronomen|7x
+immer|stets / ständig|2x
+Zeit|Dauer / Frist|1x
+neue|frische / moderne|5x
+Damit|hiermit / Konjunktion|1x
+heute|jetzt / an diesem Tag|2x
+habe|besitze|1x
+drei|Zahl (2+1)|2x
+liegt|ruht / lagert|1x
+ersten|anfänglichen / führenden|2x
+geht|läuft / funktioniert|1x
+gab|schenkte / reichte|7x
+beim|bei dem|1x
+erste|anfängliche / führende|4x
+etwa|ungefähr / vielleicht|5x
+Ende|Schluss / Finale|9x
+ihm|Dativ von er|3x
+Stadt|Kommune / Metropole|2x
+kam|nahte / traf ein|6x
+ihn|Akkusativ von er|4x
+ohne|abzüglich|2x
+neuen|frischen / modernen|1x
+kein|nicht ein / Verneinung|2x
+gut|prima / brauchbar|7x
+uns|Akk./Dat. von wir|5x
+erst|zunächst / anfangs|12x
+Teil|Stück / Fragment|3x
+Uhr|Zeitmesser / Chronometer|9x
+rund|kreisförmig / ungefähr|1x
+sollte|müsste / Verbform|1x
+Leben|Dasein / Existenz|1x
+ihrer|seiner / Pronomen|1x
+will|möchte / Verbform|1x
+hatten|besaßen / Verbform|1x
+seien|wären / Verbform|1x
+einige|manche / diverse|4x
+sollen|müssen / Verbform|1x
+ins|in das|10x
+mal|Zeichen × / einst|5x
+stehen|aufrecht sein / ausharren|1x
+etwas|ein wenig / irgendwas|2x
+ging|lief / wandelte|2x
+Beide|alle zwei / Zahlwort|1x
+gilt|zählt / ist gültig|2x
+Mann|Herr / Gemahl|2x
+Mai|5. Monat / Wonnemonat|10x
+Frau|Dame / Gemahlin|3x
+beträgt|macht aus / summiert sich auf|1x
+Platz|Ort / Areal|1x
+zweiten|nächsten / folgenden|1x
+stand|stockte / befand sich|1x
+April|4. Monat / Frühlingsmonat|1x
+fast|beinahe / annähernd|1x
+Weg|Pfad / Route|5x
+Seite|Flanke / Blatt|1x
+Namen|Benennungen / Kennungen|2x
+Ort|Stelle / Platz|15x
+Denn|weil / Konjunktion|3x
+sehen|erblicken / erkennen|1x
+Welt|Erde / Globus|1x
+oft|häufig / des Öfteren|13x
+Tag|24 Stunden / Kalenderblatt|7x
+August|8. Monat / Spätsommermonat|1x
+mir|Dat. (1. Pers.)|5x
+sieht|erblickt / gewahrt|1x
+Berlin|dt. Hauptstadt / Spree-Metropole|1x
+Juli|7. Monat / Hochsommermonat|1x
+Spiel|Partie / Match|2x
+lange|geraume Zeit / ausgedehnt|1x
+gute|prima / anständige|5x
+einmal|früher / dereinst|1x
+lag|ruhte / befand sich|9x
+starb|verschied / erlag|1x
+geben|reichen / spenden|1x
+Dollar|US-Währung / Greenback|1x
+Wer|Fragewort (Person)|3x
+Geld|Moneten / Kapital|2x
+sechs|Zahl (2×3)|1x
+Kosten|Ausgaben / Auslagen|2x
+bin|existiere / Verbform|6x
+allen|sämtlichen / Pronomen|1x
+deren|dessen / Pronomen|1x
+eigenen|persönlichen / individuellen|1x
+nie|nimmer / zu keiner Zeit|16x
+Titel|Überschrift / Rang|1x
+Land|Staat / Nation|3x
+Film|Kinostreifen / Movie|1x
+neu|frisch / aktuell|17x
+geplant|vorgesehen / avisiert|1x
+Frauen|Damen / Ladys|1x
+Rolle|Walze / Part|1x
+Ziel|Zweck / Absicht|1x
+Meter|Längenmaß / Basiseinheit der Länge|2x
+Schule|Lehranstalt / Penne|1x
+wohl|vermutlich / behaglich|1x
+eigene|persönliche / individuelle|2x
+pro|je / per|11x
+fest|stabil / solide|2x
+zwar|freilich / Konjunktionaladverb|2x
+erstmals|nie zuvor / initial|1x
+kurz|knapp / knackig|1x
+Tod|Ableben / Exitus|5x
+Seiten|Flanken / Blätter|1x
+Band|Musikgruppe / Fessel|2x
+kamen|nahten / trafen ein|1x
+Straße|Fahrweg / Allee|1x
+Art|Sorte / Spezies|16x
+Wasser|H2O / Nass|1x
+gerade|eben / soeben|1x
+unser|Possessiv (wir)|1x
+Frage|Erkundigung / Rätsel|1x
+Sohn|Nachkomme / Filius|1x
+Thema|Gegenstand / Sujet|2x
+Zahl|Ziffer / Nummer|1x
+anders|verschieden / abweichend|1x
+lang|ausgedehnt|1x
+genannt|erwähnt|1x
+erneut|wieder|1x
+Preis|Tarif|1x
+stieg|kletterte|3x
+Name|Bezeichnung / Titel|1x
+denen|Relativ (Dat. Pl.)|1x
+eher|lieber / vielmehr|7x
+jede|alle|1x
+alte|betagte / greise|11x
+nimmt|greift|1x
+Tage|je 24 Stunden|4x
+Wert|Bedeutung|1x
+Eltern|Vater und Mutter|3x
+ebenso|gleichfalls|3x
+hohe|große|1x
+handelt|agiert|1x
+laut|lärmend|1x
+hin|... und her / fort|5x
+setzt|stellt|1x
+Team|Mannschaft / Crew|4x
+Markt|Basar|1x
+müsse|solle|1x
+trat|schritt / stapfte|2x
+Liebe|Zuneigung|1x
+hält|stoppt|1x
+Bau|Gebäude / Konstruktion|11x
+Trotz|Eigensinn|1x
+solche|derartige|2x
+Lage|Position|2x
+Wahl|Abstimmung|2x
+weit|fern|1x
+Raum|Zimmer|1x
+sagte|äußerte|1x
+dar|stellt ... (zeigt) / Verbvorsilbe|5x
+Aktie|Wertpapier|1x
+hätte|besäße|2x
+Regel|Norm|2x
+zog|zerrte / riss|4x
+anderem|unter ...|1x
+weil|da|1x
+Gebiet|Region|1x
+treffen|begegnen|1x
+besten|optimalen|1x
+Amt|Behörde / Dienststelle|9x
+erster|anfänglicher|3x
+Werk|Fabrik|1x
+Opfer|Geschädigter|1x
+gar|durchgekocht / völlig|5x
+kostet|probiert|1x
+Region|Gegend|1x
+hohen|großen|1x
+sagt|äußert|3x
+Abend|Tagesende / Soiree|2x
+Reihe|Serie|1x
+gebe|reiche|2x
+per|mittels / via|7x
+wobei|während|1x
+frei|ungebunden / kostenlos|1x
+Europa|Erdteil|2x
+tun|machen / verrichten|10x
+Spaß|Vergnügen|1x
+genau|exakt|1x
+Montag|Wochenstart|1x
+eben|flach / just|13x
+dritte|nach der zweiten|1x
+alt|betagt / ergraut|11x
+Album|Tonträger|1x
+sowohl|... als auch|1x
+neun|Zahl (3×3)|2x
+ihres|seines|1x
+heutigen|aktuellen|1x
+sah|erblickte / blickte|10x
+Nähe|Umgebung|4x
+Idee|Einfall / Gedanke|7x
+beste|optimale|2x
+Insel|Eiland|4x
+offen|geöffnet|1x
+Gäste|Besucher|1x
+Teile|Stücke|3x
+Tat|Handlung / Werk|11x
+Sieg|Triumph|3x
+Kraft|Stärke|2x
+Klasse|Kategorie|1x
+Mensch|Person|1x
+beendet|erledigt|1x
+Leute|Personen / Volk|2x
+Union|Bündnis|1x
+Serie|Reihe|1x
+tritt|kickt|1x
+erhöht|gesteigert|1x
+nämlich|und zwar|1x
+Linie|Strich|1x
+los|frei / ledig|8x
+trifft|begegnet|1x
+oben|in der Höhe|5x
+Auto|Pkw / Wagen|2x
+Rest|Überbleibsel / Residuum|2x
+Ehe|Bund fürs Leben / Vermählung|19x
+Staat|Nation / Reich|2x
+standen|stockten|1x
+daran|an dem|1x
+König|Monarch|2x
+Obwohl|wenngleich|1x
+Chance|Gelegenheit|1x
+Anteil|Quote|1x
+endet|hört auf / läuft aus|2x
+Natur|Umwelt|1x
+Trainer|Coach|1x
+reicht|genügt|1x
+Kurs|Richtung|3x
+Text|Wortlaut|2x
+Gott|Schöpfer|2x
+Osten|Richtung O / Morgenland|3x
+Antrag|Gesuch|3x
+Schiff|Dampfer|1x
+Luft|Atmosphäre|1x
+Essen|Mahlzeit / Ruhrgebietsstadt|4x
+fort|weg|2x
+befand|urteilte|1x
+Tor|Treffer / Dummkopf|5x
+wächst|gedeiht|1x
+fehlen|mangeln|1x
+Köln|Domstadt|1x
+Aufbau|Struktur|1x
+Hierzu|dazu|1x
+galt|zählte|1x
+Grad|Stufe|2x
+lief|rannte|1x

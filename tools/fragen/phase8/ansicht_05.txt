@@ -1,0 +1,300 @@
+hinab|hinunter|2x
+ließe|erlaubte|1x
+mutig|tapfer|1x
+Asphalt|Straßenbelag|1x
+Blase|Clique (ugs.)|1x
+Blog|Webjournal|2x
+fügt|setzt / ergänzt|1x
+Gebiets|Grenze des ...|1x
+Korn|Getreide|1x
+rar|selten / kostbar|10x
+Reliefs|Flachbilder|1x
+Saft|Most|2x
+Aura|Ausstrahlung / Fluidum|8x
+Ehen|Bündnisse / Verbindungen|12x
+freies|ungebundenes|1x
+Gala|Festabend|5x
+Gier|Habsucht|1x
+hasse|verabscheue|1x
+Knie|Gelenk / Scharniergelenk|3x
+Mais|Kukuruz|1x
+netter|freundlicher|1x
+Oslo|norw. Hauptstadt / Friedenspreis-Stadt|2x
+Weges|Rand des ...|1x
+ziehe|zerre|1x
+Äste|Zweige|2x
+akute|dringende|2x
+Hefte|Broschüren|2x
+lege|platziere|3x
+Pest|Seuche|2x
+regnet|gießt|1x
+Sieb|Filter|2x
+Tabak|Rauchkraut|1x
+Araber|Pferderasse|1x
+Eiche|Laubbaum|2x
+Eile|Hast / Hektik|5x
+haltbar|beständig|1x
+knappe|enge|1x
+läge|ruhte|1x
+längs|entlang|1x
+List|Trick|1x
+Mehl|Backzutat|1x
+Patch|Flicken|1x
+Sarg|Totenschrein|1x
+Traktor|Schlepper|1x
+übten|trainierten|1x
+Kilo|1000 Gramm|2x
+Logos|Embleme|1x
+Mafia|Cosa Nostra|1x
+naht|kommt näher|3x
+Panne|Defekt|1x
+Sofa|Couch|2x
+sonnig|heiter|1x
+Stiel|Griff|2x
+Tieres|Name des ...|1x
+Titels|Gewinn des ...|1x
+Acker|Feld|1x
+hartes|festes|1x
+Haupt|Kopf|1x
+lese|schmökere / studiere|7x
+neigen|tendieren|2x
+Pfanne|Bratgerät|1x
+umher|herum|1x
+Verse|Reime|1x
+Bann|Zauber|1x
+basierte|beruhte|1x
+bindend|zwingend|1x
+blank|glänzend|1x
+Bug|Vorderschiff / Programmfehler|3x
+Erotik|Sinnlichkeit|2x
+Herd|Kochstelle|2x
+Krater|Trichter|1x
+Pater|Mönch|1x
+ragen|aufsteigen|1x
+Referat|Vortrag|1x
+restlos|völlig|2x
+teuren|kostbaren|1x
+andern|übrigen|1x
+betrat|ging hinein|1x
+Examen|Prüfung|1x
+Gasse|Durchgang|1x
+Hanau|Stadt am Main|1x
+Kardinal|Kirchenfürst|1x
+Kerze|Licht|1x
+Knaben|Jungen|1x
+Neid|Missgunst / Eifersucht|4x
+obige|erwähnte|2x
+pure|reine|2x
+ratlos|hilflos|1x
+Sauce|Soße|1x
+Skala|Stufenleiter|1x
+Taler|alte Münze|2x
+Tresor|Safe|1x
+wog|schaukelte / schwankte|3x
+wüst|öde|1x
+zwecks|für|1x
+abholen|mitnehmen|1x
+Affen|Primaten|2x
+Angeln|Fischen|1x
+diene|nütze|1x
+Gassen|Wege|2x
+Gelege|Eier|1x
+Kran|Hebezeug|1x
+Lehm|Ton|1x
+Leine|Seil|1x
+Säure|Gegenteil von Base|1x
+Sekt|Schaumwein|2x
+Algen|Tang|2x
+analoge|ähnliche|1x
+Arie|Sologesang / Opernlied|10x
+Aue|Talwiese / Wiesenland|15x
+Bit|Binärziffer / Dualziffer|4x
+ergebe|resultiere|1x
+Haiti|Karibikstaat|1x
+Kopfes|Inhalt des ...|1x
+Latte|Leiste|1x
+lieb|nett|2x
+linear|geradlinig|1x
+Ohio|Staat um Cleveland / Buckeye-Staat|2x
+Release|Erscheinen|1x
+Akku|Batterie / Stromspeicher|1x
+Dosen|Büchsen|1x
+Flair|Ambiente|1x
+Hundes|Bellen des ...|1x
+Import|Einfuhr|1x
+isst|speist / verzehrt|3x
+Mädels|Girls|1x
+Raub|Diebstahl|1x
+Stile|Machart|1x
+wagte|riskierte|1x
+Adels|Titel des ...|3x
+agiert|handelt|1x
+Akkus|Batterien|1x
+akut|dringend|3x
+Aroma|Geschmack|5x
+Chefin|Leiterin|1x
+Eklat|Skandal|3x
+eurem|Possessiv (ihr)|1x
+Genie|Talent|1x
+Hasen|Langohren|1x
+Mensa|Kantine|1x
+oval|eiförmig / länglich-rund|2x
+Radler|Biker|1x
+traut|wagt|1x
+Atlas|Kartenwerk|1x
+Eiszeit|Glazial|1x
+engere|schmalere|2x
+Fußweg|Gehweg|1x
+Gera|Stadt in Thüringen|5x
+Ghana|Staat in Westafrika|3x
+Hase|Meister Lampe|2x
+malt|pinselt|1x
+Pegel|Wasserstand|1x
+Pole|Slawe|1x
+Rassen|Zuchtlinien|1x
+Rituale|Zeremonien|1x
+Türe|Pforte|1x
+Wiege|Kinderbett|1x
+abrufen|laden|1x
+Clan|Sippe|2x
+Dubai|Emirat|3x
+Esel|Grautier / Dickkopf|10x
+Essay|Aufsatz|1x
+neigt|tendiert|1x
+Opern|Musikdramen / Bühnenwerke|1x
+Ast|Zweig / Knorren|15x
+Bodens|Qualität des ...|1x
+Dekret|Erlass|2x
+fix|schnell / flink|2x
+gemein|fies|1x
+Getränk|Trunk|1x
+Heeres|Führung des ...|2x
+helfe|unterstütze|1x
+Heroin|Rauschgift|1x
+Knopf|Taste|1x
+Krimi|Thriller|2x
+Narren|Toren|1x
+neutrale|objektive|1x
+Reue|Bedauern / Zerknirschung|3x
+Siebter|nach dem Sechsten|1x
+stolze|hochmütige|1x
+Weide|Wiese|2x
+Wölfe|Rudeltiere|1x
+bergab|abwärts|2x
+blöd|doof|1x
+Diabetes|Zuckerleiden|1x
+Diät|Schonkost|1x
+Eid|Schwur / Gelöbnis|6x
+enormes|gewaltiges|1x
+Ente|Wasservogel / Falschmeldung|18x
+Events|Anlässe / Happenings|1x
+Iren|Gälen / Kelten|6x
+lustige|heitere|1x
+Piano|Klavier|1x
+Prosa|Erzähltext|3x
+reizt|lockt|1x
+rennt|läuft / spurtet|3x
+Turin|Stadt am Po|2x
+bekommst|erhältst|1x
+ergeht|widerfährt|1x
+Ernten|Lesen|1x
+Farce|Posse|1x
+Gebete|Andachten|1x
+Inder|Asiate|1x
+Räte|Gremien / Ausschüsse|3x
+Seeleute|Matrosen|1x
+Sekte|Kult|1x
+Tomaten|Paradeiser|1x
+Trauung|Hochzeit|1x
+Triebe|Sprosse|1x
+belaufe|summiere|1x
+drangen|stießen vor|1x
+edle|vornehme / noble|2x
+Fauna|Tierwelt|2x
+Flop|Reinfall|1x
+Hexen|Zauberinnen|1x
+Kenia|Staat in Ostafrika|2x
+Kreml|Moskauer Burg|1x
+melde|zeige an|1x
+testet|prüft|2x
+Ach|Ausruf / Seufzer|4x
+arg|schlimm / übel|13x
+Delta|Mündung|1x
+Gebt|reicht|1x
+Hawaii|Inselstaat der USA|1x
+Krach|Lärm|1x
+Lima|peruan. Hauptstadt|5x
+netten|freundlichen|1x
+Pforte|Tor|1x
+reger|lebhafter / munterer|1x
+Riga|lett. Hauptstadt|5x
+Ritt|Reise zu Pferd|1x
+Sessel|Polstersitz|1x
+Sounds|Klänge|1x
+wertet|beurteilt|1x
+Erosion|Abtragung|2x
+ertönt|erklingt|1x
+Extras|Zusätze|1x
+Funke|Glimmen|1x
+lernten|paukten|1x
+Linse|Objektiv|1x
+Narbe|Wundmal|2x
+Orgeln|Instrumente|1x
+Poster|Plakat|1x
+Resten|Abfällen|2x
+Riegel|Schieber|1x
+Sensor|Fühler|1x
+Sokrates|griech. Philosoph|1x
+trete|kicke|4x
+Zoos|Tierparks|1x
+Abende|Soireen|1x
+Adapter|Stecker|1x
+altem|betagtem|3x
+Break|Pause|1x
+Gase|Dämpfe|3x
+Geige|Violine|1x
+genäht|geschneidert|1x
+Göttern|Himmlischen|1x
+irren|sich täuschen|2x
+Kutsche|Pferdewagen|1x
+Manga|jap. Comic|1x
+Osmanen|Türken|1x
+Reibung|Friktion|1x
+Saale|Fluss durch Halle|4x
+Schere|Schneidgerät|1x
+Tenor|Sängerstimme|2x
+baue|errichte|2x
+Blech|Metallplatte|1x
+Endes|letzten ...|1x
+Genua|Hafenstadt Italiens|1x
+Glied|Kettenteil|1x
+Kansas|Staat um Wichita|1x
+Lamm|Schäfchen|2x
+lebend|atmend|1x
+Netto|ohne Steuern|1x
+Order|Auftrag|1x
+Ostens|Völker des ...|2x
+Segler|Skipper|2x
+Skript|Drehbuch|1x
+Spalt|Ritze|2x
+Tabus|Verbote|1x
+Tribut|Abgabe|1x
+Wade|Beinmuskel|1x
+Armenien|Land am Ararat|1x
+Entgelt|Vergütung|2x
+Kür|freies Programm|3x
+retteten|bargen|1x
+rüber|hinüber|1x
+Ruß|Rauchstaub|1x
+Stammes|Häuptling des ...|1x
+Teufe|Tiefe (Bergbau)|1x
+Ästen|Zweigen|1x
+Alibi|Entlastung|2x
+Atlanta|Stadt in Georgia|1x
+Belag|Überzug|1x
+brav|artig|1x
+Eck|Winkel / Kante|4x
+edlen|vornehmen|2x
+fatale|unheilvolle|1x
+Glossar|Wortliste|1x
+Grabes|Stille des ...|2x

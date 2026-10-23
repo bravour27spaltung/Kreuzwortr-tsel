@@ -1,0 +1,300 @@
+Erde|Welt / Heimatplanet|11x
+gern|mit Freude|2x
+schrieb|verfasste|1x
+starke|kräftige|1x
+paar|einige|4x
+Ernst|Seriosität|1x
+ziehen|zerren|1x
+längst|seit jeher|1x
+Studie|Untersuchung|1x
+Tür|Pforte / Eingang|2x
+Aktien|Wertpapiere|3x
+China|Reich der Mitte|1x
+ständig|dauernd|1x
+erlaubt|gestattet|2x
+elf|Zahl (10+1)|5x
+Pläne|Vorhaben|1x
+sagen|äußern|2x
+unten|am Grund|2x
+Italien|Stiefelland|1x
+Reise|Fahrt|2x
+gaben|reichten|1x
+Leipzig|Messestadt|1x
+Plan|Absicht|2x
+nötig|erforderlich|3x
+Farbe|Kolorit|1x
+Schweiz|Helvetia|1x
+Ursache|Grund|1x
+Aktion|Unternehmung|1x
+Teilen|zu gleichen ...|2x
+Breite|Weite|2x
+trug|schleppte / hatte an|1x
+angelegt|investiert|1x
+See|Gewässer / Weiher|17x
+Armee|Heer|3x
+Dienst|Arbeit|1x
+Sitz|Stuhl|1x
+Karten|Tickets|1x
+Halle|Saal|1x
+legt|platziert / deponiert|2x
+sitzt|hockt|1x
+Stil|Machart|6x
+nahe|dicht bei / benachbart|2x
+Wege|Pfade / Routen|1x
+Fans|Anhänger|3x
+Theater|Bühne|2x
+Zug|Bahn / Sog|3x
+Tore|Treffer|2x
+starken|kräftigen|1x
+Fahrt|Reise|1x
+dienen|nützen|1x
+Hof|Gehöft / Grundstück|5x
+ergab|brachte|1x
+Material|Stoff|1x
+erlitt|erduldete|1x
+Rede|Ansprache / Vortrag|6x
+hast|besitzt|1x
+Zugang|Zufahrt|1x
+Deine|Possessiv (du)|2x
+besitzen|haben|1x
+Karte|Ticket|1x
+lebten|existierten|3x
+Studium|Hochschulzeit|1x
+nennt|bezeichnet|1x
+nennen|bezeichnen|2x
+Autor|Verfasser|1x
+London|Themsestadt|1x
+Kreis|Zirkel|1x
+legen|platzieren|1x
+Werte|Normen|1x
+Ideen|Einfälle / Konzepte|2x
+traf|begegnete / kreuzte|3x
+tief|abgründig|1x
+gehe|laufe / wandle|2x
+Herr|Gebieter / Meister|4x
+roten|purpurnen|1x
+treten|kicken|2x
+hieß|nannte sich|2x
+Toten|Verstorbenen|1x
+Dauer|Zeitspanne|2x
+Szene|Auftritt|1x
+Trend|Tendenz|1x
+benannt|getauft|1x
+Brand|Feuer / Feuersbrunst|1x
+dir|Dat. (2. Pers.)|2x
+Pause|Rast|2x
+Arzt|Mediziner / Doktor|2x
+Netz|Geflecht|1x
+Sieger|Gewinner|1x
+finde|entdecke|1x
+Post|Briefe|1x
+Holz|Werkstoff|1x
+Rat|Tipp / Gremium|15x
+lebte|existierte|1x
+liege|ruhe|1x
+Website|Homepage|1x
+ums|um das|4x
+oberen|höher gelegenen|2x
+bessere|überlegene|1x
+Japan|Nippon|1x
+Firmen|Betriebe|1x
+namens|genannt / mit Namen|1x
+dauern|währen|2x
+Roman|Erzählung|2x
+indem|dadurch dass|2x
+Deswegen|daher|1x
+Feld|Acker|1x
+Sinn|Bedeutung / Verstand|2x
+Herz|Pumpe|1x
+Lied|Song|3x
+erbaut|errichtet|2x
+tut|macht / verrichtet|7x
+beendete|schloss ab|1x
+Tonnen|Fässer|1x
+Ausbau|Erweiterung|1x
+Infos|Auskünfte|1x
+halt|eben|3x
+stehe|ich ... auf|2x
+England|Albion|1x
+Studien|Analysen|1x
+Aufstieg|Karriere|1x
+Ebene|Fläche / Flachland|4x
+Sinne|im ... von|1x
+Städte|Kommunen|1x
+sehe|erblicke / schaue|5x
+Spur|Fährte|1x
+rein|sauber|3x
+Tiefe|Abgrund|1x
+Volk|Nation|1x
+Eure|Possessiv (ihr)|1x
+hart|fest|1x
+rote|purpurne|2x
+leer|hohl / vakant|4x
+siehe|vgl.|2x
+Neubau|frisches Gebäude / moderne Immobilie|1x
+Züge|Bahnen|1x
+früh|zeitig|1x
+Garten|Grünfläche|1x
+Meer|See|3x
+reden|sprechen|1x
+Satz|Sprung|1x
+Termine|Treffen|1x
+Theorie|Lehre|2x
+höheren|größeren|1x
+komme|ich ... an|1x
+klare|deutliche|1x
+Stein|Fels|1x
+Bauern|Landwirte|1x
+bist|existierst|1x
+Senat|Ältestenrat / Stadtregierung|4x
+tot|leblos / verstorben|6x
+rot|purpurn / knallig|6x
+geraten|angezeigt|1x
+innere|interne / inwendige|2x
+Kamera|Fotoapparat|1x
+Traum|Wunschbild|1x
+vierte|nach der dritten|1x
+Friedhof|Gottesacker|1x
+Nein|Ablehnung / Absage|2x
+Berg|Gipfel / Anhöhe|3x
+plant|beabsichtigt|1x
+Steuern|Abgaben|1x
+echt|authentisch|2x
+Umgang|Verkehr|1x
+Strom|Fluss|1x
+eng|schmal / knapp|17x
+ältere|betagtere|1x
+Hektar|Flächenmaß|1x
+Chef|Boss|2x
+Job|Beruf / Anstellung|2x
+Ortes|Name des ...|1x
+Umbau|Renovierung|1x
+Chor|Singgruppe|4x
+Klage|Beschwerde|1x
+teuer|kostspielig|3x
+Tote|Verstorbene|2x
+Baum|Gehölz|1x
+Test|Prüfung / Klausur|4x
+Auge|Sehorgan / Pupille|6x
+Gang|Flur|1x
+Ruf|Leumund / Ansehen|4x
+durfte|konnte|1x
+super|toll|1x
+bot|offerierte / unterbreitete|4x
+erleben|erfahren|1x
+feiert|zelebriert|1x
+Urlaub|Ferien|1x
+Amtszeit|Legislatur|1x
+soweit|insofern|1x
+Foto|Aufnahme / Schnappschuss|2x
+Adresse|Anschrift|1x
+Lauf|Rennen|1x
+leidet|duldet|1x
+Geburt|Entbindung|1x
+Show|Vorstellung|2x
+rasch|schnell|1x
+Kreuz|Rücken|1x
+Geist|Gespenst|1x
+geregelt|geordnet|1x
+Tier|Lebewesen / Kreatur|2x
+echte|authentische|1x
+Index|Verzeichnis|1x
+mag|liebt / hat gern|4x
+erzeugt|hergestellt|1x
+Songs|Lieder|1x
+Herren|Männer|1x
+Sender|Kanal|2x
+Israel|Nahoststaat|1x
+Risiken|Gefahren|1x
+Wand|Mauer|1x
+Ton|Klang / Lehm|11x
+Seele|Psyche|3x
+Blut|Lebenssaft|1x
+Orte|Plätze / Stellen|7x
+Rom|Ewige Stadt / Hauptstadt Italiens|4x
+aufs|auf das|1x
+Typ|Kerl / Exemplar|3x
+Rand|Kante|1x
+traten|schritten|2x
+ans|an das|3x
+Pflege|Fürsorge|1x
+Flammen|Feuer|1x
+Kern|Mittelpunkt|2x
+Regie|Spielleitung|1x
+Bäume|Gehölze|1x
+einst|früher|1x
+Arm|Gliedmaße / Extremität|8x
+rief|schrie|2x
+enorm|gewaltig|1x
+Sturm|Orkan|1x
+total|völlig|2x
+Bett|Schlafstätte|3x
+Lust|Verlangen|2x
+Anwalt|Jurist|1x
+Cent|Hundertstel Euro|3x
+Türen|Pforten|1x
+Mannes|Name des ...|1x
+teilt|trennt|1x
+enden|aufhören / auslaufen|1x
+Radio|Rundfunk|1x
+grün|unreif|2x
+Maß|Größe|1x
+General|Heerführer|1x
+Wein|Rebensaft|1x
+Bier|Gerstensaft|5x
+Grab|Gruft|1x
+planen|vorhaben|1x
+saniert|renoviert|1x
+stolz|hochmütig|1x
+Beine|Gliedmaßen|2x
+Bus|Car (schweiz.) / Nahverkehrsmittel|5x
+Betrag|Summe|1x
+baute|errichtete|1x
+wahre|echte|1x
+Öl|Schmierstoff / Rohstoff|18x
+Waffe|Kampfmittel|1x
+Sänger|Vokalist|1x
+Gewinne|Profite|1x
+festen|stabilen|1x
+Tal|Senke / Niederung|7x
+Messe|Gottesdienst|1x
+Original|Urfassung|1x
+bittet|ersucht|2x
+freue|juble|1x
+Gattung|Art|1x
+Arme|Mittellose / Bedürftige|5x
+Mühle|Mahlwerk|1x
+Alkohol|Weingeist|1x
+blau|betrunken / himmelfarben|3x
+normal|üblich|1x
+Eis|Gefrorenes / Sorbet|9x
+Main|Fluss in Hessen|1x
+Ecke|Winkel|2x
+Taten|Handlungen|1x
+Systems|Teil des ...|1x
+weite|ferne|1x
+All|Weltraum / Kosmos|9x
+Saal|Halle|1x
+Eier|Gelege|3x
+vorne|an der Spitze|1x
+Beute|Raubgut|1x
+trafen|begegneten|1x
+raus|hinweg|1x
+Umzug|Parade|1x
+liefen|rannten|2x
+Liter|Hohlmaß|1x
+langer|ausgedehnter|1x
+Kanada|Ahornland|1x
+Element|Bestandteil|1x
+enge|schmale / knappe|12x
+halbe|zur ... Stunde|1x
+kalt|frostig|1x
+Beamte|Staatsdiener|1x
+Hotels|Herbergen|1x
+seid|existiert|2x
+Chaos|Wirrwarr|1x
+Briten|Engländer|1x
+Klang|Ton|1x
+lokale|örtliche|1x
+warnte|mahnte|1x
+Tieren|Kreaturen|1x

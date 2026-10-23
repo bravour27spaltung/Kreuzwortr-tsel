@@ -216,7 +216,23 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
     return s;
   }, [currentEntry]);
 
+  // Am Kreuzungsfeld: das jeweils andere Wort dezent mitmarkieren, damit beide Richtungen sichtbar sind.
+  const querSet = useMemo(() => {
+    const s = new Set<string>();
+    if (sel) {
+      const ent = cellEntries[key(sel.r, sel.c)];
+      const anderes = ent && ent.A && ent.D ? ent[sel.dir === 'A' ? 'D' : 'A'] : null;
+      if (anderes) entryCells(anderes).forEach(([r, c]) => s.add(key(r, c)));
+    }
+    return s;
+  }, [sel, cellEntries]);
+
   const isRight = useCallback((k: string) => (userGrid[k] || '') === solution[k], [userGrid, solution]);
+
+  const hatLuecke = useCallback(
+    (e: PuzzleEntry | null) => !!e && entryCells(e).some(([r, c]) => !(userGrid[key(r, c)] || '')),
+    [userGrid]
+  );
 
   const selectCell = useCallback(
     (r: number, c: number, forceDir: Direction | null, userClick: boolean) => {
@@ -233,13 +249,27 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
           } else {
             nextDir = ent.A ? 'A' : 'D';
           }
-        } else if (prev && ent[prev.dir]) {
-          nextDir = prev.dir;
+        } else if (ent.A && ent.D) {
+          // Kreuzungsfeld: bisherige Richtung beibehalten – außer dieses Wort ist schon komplett gefüllt,
+          // das andere aber noch nicht. Dann gleich das offene Wort wählen.
+          const bevorzugt: Direction = prev?.dir ?? 'A';
+          const andere: Direction = bevorzugt === 'A' ? 'D' : 'A';
+          nextDir = hatLuecke(ent[bevorzugt]) || !hatLuecke(ent[andere]) ? bevorzugt : andere;
         } else {
           nextDir = ent.A ? 'A' : 'D';
         }
         return { r, c, dir: nextDir };
       });
+    },
+    [cellEntries, hatLuecke]
+  );
+
+  /** Richtung am Kreuzungsfeld umschalten (Leertaste/Enter), ohne das Feld zu wechseln. */
+  const toggleDir = useCallback(
+    (r: number, c: number) => {
+      const ent = cellEntries[key(r, c)];
+      if (!ent || !ent.A || !ent.D) return;
+      setSel((prev) => (prev && prev.r === r && prev.c === c ? { ...prev, dir: prev.dir === 'A' ? 'D' : 'A' } : prev));
     },
     [cellEntries]
   );
@@ -272,6 +302,11 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
       const ent = cellEntries[key(r, c)];
       const wantDir: Direction = dr !== 0 ? 'D' : 'A';
       let dir: Direction = sel?.dir ?? wantDir;
+      if (ent && ent.A && ent.D && wantDir !== dir) {
+        // Kreuzungsfeld: Pfeil quer zur aktuellen Richtung wechselt zuerst nur die Richtung.
+        setSel({ r, c, dir: wantDir });
+        return;
+      }
       if (ent && ent[wantDir] && wantDir !== dir) {
         dir = wantDir;
       }
@@ -282,6 +317,8 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
         nc += dc;
       }
       if (nr >= 0 && nr < rows && nc >= 0 && nc < cols && whiteSet.has(key(nr, nc))) {
+        const ziel = cellEntries[key(nr, nc)];
+        if (ziel && !ziel[dir]) dir = ziel.A ? 'A' : 'D'; // Zielfeld hat die Richtung nicht
         setSel({ r: nr, c: nc, dir });
         focusCell(nr, nc);
       }
@@ -319,6 +356,11 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
         }
         return;
       }
+      if (ev.key === ' ' || ev.key === 'Enter') {
+        ev.preventDefault();
+        toggleDir(r, c);
+        return;
+      }
       if (ev.key === 'ArrowRight') {
         ev.preventDefault();
         moveArrow(r, c, 0, 1);
@@ -340,7 +382,7 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
         return;
       }
     },
-    [moveInDirection, moveArrow]
+    [moveInDirection, moveArrow, toggleDir]
   );
 
   const handleCheck = useCallback(() => {
@@ -683,6 +725,9 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
         )}
         <div className="cw-cluebar" aria-live="polite">
           {!sel && <span className="cw-empty">Tippe auf eine Frage oder ein weißes Feld – die Frage erscheint dann hier in voller Größe.</span>}
+          {sel && selectedCellEntries && selectedCellEntries.A && selectedCellEntries.D && (
+            <span className="cw-kreuz-hinweis">Kreuzungsfeld – Richtung wählen: Frage antippen, Feld erneut antippen oder Leertaste</span>
+          )}
           {sel &&
             selectedCellEntries &&
             (['A', 'D'] as Direction[]).map((d) => {
@@ -717,6 +762,7 @@ export default function CrosswordPlayer({ puzzle, initialUserGrid, onFortschritt
                 if (whiteSet.has(k)) {
                   const classes = ['cw-cell', 'cw-white'];
                   if (inwordSet.has(k)) classes.push('cw-inword');
+                  else if (querSet.has(k)) classes.push('cw-cross');
                   if (sel && sel.r === r && sel.c === c) classes.push('cw-active');
                   if (checkState[k]) classes.push(`cw-${checkState[k]}`);
                   if (revealed[k]) classes.push('cw-revealed');

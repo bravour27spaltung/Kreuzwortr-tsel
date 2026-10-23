@@ -1,0 +1,300 @@
+Krakau|Stadt in Polen|1x
+Leader|Anführer|1x
+legitim|rechtmäßig|1x
+Loge|Theaterrang|2x
+Neuland|Terra incognita|1x
+Paares|Hochzeit des ...|1x
+Pink|Rosa|2x
+Ruin|Untergang|1x
+Sibirien|Region in Russland|1x
+Stätte|Ort|1x
+Urin|Harn / Ausscheidung|4x
+Urne|Aschengefäß / Wahlbehälter|2x
+Wurst|Aufschnitt|1x
+Ableben|Tod|1x
+Absender|Aufgeber|1x
+atmet|holt Luft|2x
+autonome|unabhängige|1x
+Dias|Lichtbilder|1x
+elegante|schicke|3x
+empor|hinauf|1x
+entging|entkam|2x
+Erstere|Vorgenannte|1x
+gehst|läufst|1x
+Guss|Regenschauer|1x
+Hingabe|Aufopferung|1x
+Kelten|Gallier|1x
+losen|lockeren|2x
+Pedal|Fußhebel|1x
+Reh|Waldtier / Waldbewohner|12x
+Senke|Mulde|1x
+stur|starrsinnig / unnachgiebig|7x
+Vers|Reim|1x
+Vita|Lebenslauf|2x
+zäh|hartnäckig|1x
+Abenden|an lauen ...|1x
+Abruf|Anforderung|1x
+Alb|Gebirge / Schwäbische ...|7x
+Angola|Staat in Afrika|3x
+Demos|Kundgebungen|1x
+Gans|Federvieh|1x
+hiesige|örtliche|1x
+Jets|Düsenflieger|1x
+lesbar|entzifferbar|1x
+Lot|Senkblei / Senkrechte|8x
+Omen|Vorzeichen / Vorbote|7x
+Opa|Großvater / Opi|11x
+riet|empfahl|1x
+sangen|trällerten|1x
+Statik|Baulehre|1x
+Tango|argent. Tanz|2x
+Teppiche|Läufer|1x
+Adern|Venen|3x
+Ansage|Durchsage|2x
+autonom|unabhängig|1x
+Beat|Rhythmus|4x
+Bootes|Rumpf des ...|2x
+Deal|Geschäft / Abmachung|2x
+Enten|Wasservögel / Schwimmvögel|8x
+grandios|großartig|1x
+Grat|Kamm|1x
+Kamm|Grat|1x
+Knabe|Junge|1x
+lahm|träge|1x
+Obmann|Vorsitzender|1x
+Pakt|Bündnis|2x
+Ränge|Tribünen|1x
+Reeder|Schiffsherr|1x
+Safe|Tresor / Panzerschrank|2x
+Spagat|Balanceakt|1x
+sperrt|blockiert|1x
+Spuk|Geisterei|1x
+tobte|wütete|2x
+Umweg|Abstecher|1x
+Veto|Einspruch|1x
+winkte|grüßte|1x
+antrat|begann|1x
+Axt|Beil / Tomahawk|3x
+Brei|Mus|3x
+frohe|heitere|1x
+Gilde|Zunft|1x
+Igel|Stacheltier / Winterschläfer|5x
+Karate|Kampfsport|1x
+Meere|Ozeane|1x
+Neige|zur ... gehen|2x
+Nieren|Organe|1x
+Oase|Wüsteninsel|1x
+Pier|Anleger|3x
+Spot|Werbeclip|2x
+Stier|Sternzeichen|1x
+Tales|Grund des ...|2x
+Torf|Moorboden|1x
+Trauma|Schock / seelische Wunde|1x
+Tsunami|Flutwelle|1x
+Adelige|Edelfrau|1x
+Amts|im ... sein / hoheitlich|3x
+Anime|jap. Zeichentrick|3x
+Elster|Rabenvogel|1x
+erhaltet|bekommt|1x
+geniale|brillante|1x
+Hai|Raubfisch / Meeresräuber|12x
+Heu|Trockengras / Viehfutter|14x
+Hieran|daran|1x
+Keil|Dreieckklotz|1x
+milder|sanfter|1x
+Nehmt|greift|1x
+nettes|freundliches|1x
+Perle|Juwel|1x
+Plaza|Platz|1x
+Riese|Hüne|2x
+Scham|Peinlichkeit|1x
+Sendern|Kanälen|1x
+vakant|frei|1x
+ahnt|vermutet / spürt|5x
+Bub|Knabe / Junge|4x
+Diva|Primadonna|1x
+dualen|zweifachen|1x
+Eifer|Emsigkeit|1x
+Eigner|Besitzer|1x
+eilte|hastete|1x
+elfte|nach der zehnten|1x
+Endung|Suffix|1x
+enges|schmales|1x
+Gage|Honorar / Salär|2x
+Gangart|Schritt|1x
+Gau|Landstrich / Landesteil|9x
+Klemme|Zwickmühle|2x
+kreist|zirkuliert|1x
+Kur|Erholung / Heilaufenthalt|4x
+Lähmung|Stillstand|1x
+lagert|ruht|1x
+Loks|Triebwagen|2x
+Malerin|Künstlerin|1x
+Managern|Chefs|1x
+Notlage|Krise|1x
+räumten|leerten|1x
+ratsam|klug|2x
+Regale|Borde|1x
+Schar|Gruppe|1x
+Soest|Stadt in Westfalen|2x
+Sudan|Staat am Nil|1x
+Sünden|Verfehlungen|1x
+anhören|lauschen|1x
+Atemluft|Sauerstoff|1x
+Besen|Kehrgerät|1x
+billige|preiswerte|1x
+Galgen|Richtstätte|1x
+Gehege|Käfig|1x
+Genen|Erbanlagen|2x
+Hecke|Buschwerk|1x
+Kaplan|Vikar|1x
+kostbare|wertvolle|1x
+Lila|Violett|3x
+Menüs|Gänge|1x
+mies|schlecht|3x
+Öle|Fette|2x
+raue|grobe|2x
+Saite|Draht|2x
+trauert|klagt|2x
+Zauberei|Magie|1x
+zielte|visierte|1x
+Abfuhr|Absage|1x
+Altern|Reifen|1x
+atmete|holte Luft|1x
+Bote|Kurier|1x
+endlos|ewig|1x
+esse|speise / verspeise|9x
+geimpft|immunisiert|1x
+Gespenst|Geist|1x
+getrübt|verschleiert|1x
+Helme|Kopfschutz|2x
+irrt|täuscht sich / liegt falsch|2x
+kaufe|erwerbe|1x
+Kiez|Viertel|1x
+leises|gedämpftes|1x
+Lindau|Inselstadt|2x
+Nerv|Reizleiter|1x
+Nuss|Kern|2x
+Öfen|Herde|1x
+Pate|Taufzeuge|1x
+Regalen|Borden|1x
+Rüssel|Tiernase|1x
+träge|faul|2x
+uralte|steinalte|1x
+Yuan|chin. Währung|1x
+Alaska|Staat am Yukon|2x
+aßen|speisten / verzehrten|3x
+Asteroid|Kleinplanet|2x
+Dealer|Händler|1x
+Dreh|Kniff|2x
+ebenda|dort / an selber Stelle|1x
+edel|vornehm / wertvoll|4x
+eitel|gefallsüchtig|1x
+Erbgut|Gene|1x
+Fee|Zauberin / Elfe|14x
+Gerede|Geschwätz|1x
+hegt|pflegt / trägt in sich|2x
+Hort|Schatz|2x
+Idol|Vorbild / Star|2x
+intime|vertraute|1x
+lerne|pauke|1x
+Matte|Unterlage|1x
+Mittler|Makler|2x
+Molkerei|Milchbetrieb|1x
+Saat|Samen|2x
+Säle|Hallen|1x
+starr|steif|1x
+Tasse|Becher|1x
+Torte|Kuchen|3x
+trüben|verdunkeln|1x
+Truhe|Kiste|1x
+vermag|kann|1x
+Affe|Primat / Schimpanse|1x
+alias|auch genannt / vulgo|1x
+Atome|Teilchen|2x
+bange|ängstlich|1x
+Elefant|Dickhäuter|1x
+erfand|ersann|2x
+Erz|Gestein / Bodenschatz|14x
+geehrter|werter|1x
+hagelte|prasselte|1x
+hörst|lauschst|1x
+lade|packe auf / fordere auf|1x
+Lest|studiert / schmökert|2x
+neuste|jüngste|1x
+nickt|stimmt zu|1x
+Niere|Organ / Harnorgan|1x
+ovale|eiförmige|1x
+Palme|tropischer Baum|1x
+Pub|Kneipe / Wirtshaus|3x
+rasten|ruhen|1x
+regnete|goss|1x
+Relikt|Überbleibsel|2x
+Skelette|Gerippe|1x
+Stube|Zimmer|1x
+Wale|Meeressäuger|1x
+beige|sandfarben|1x
+Brettern|Planken|1x
+Bugs|Fehler|1x
+Deponie|Müllplatz|1x
+Ebbe|Gegenteil der Flut / Niedrigwasser|4x
+engem|schmalem|2x
+Essenz|Kern|3x
+Essig|Würzmittel|2x
+hemmt|bremst|1x
+Hub|Hebung / Kolbenweg|4x
+Hufe|Pferdefüße|1x
+Huhn|Henne|3x
+Ikone|Heiligenbild|2x
+interner|innerer|1x
+Käufe|Erwerbe|1x
+Keim|Erreger|1x
+Kriegs|Ende des ...|1x
+Laub|Blätter|1x
+Maut|Gebühr|1x
+Nüsse|Kerne|3x
+Pandemie|Seuche|1x
+ragte|erhob sich|2x
+Saga|Heldensage|5x
+Schilde|Wappen|1x
+Seemann|Matrose|1x
+Seile|Taue|1x
+Senf|Mostrich / Gewürzpaste|1x
+Somalia|Staat in Ostafrika|1x
+Stele|Gedenkstein|2x
+Stute|weibl. Pferd|1x
+Symptom|Anzeichen|1x
+Tals|Grund des ...|1x
+toter|verstorbener|1x
+Ufern|Gestaden|1x
+Weib|Frau (veraltet)|1x
+Würfe|Schüsse|1x
+Zaren|russ. Kaiser|1x
+aß|speiste / verspeiste|9x
+besagte|erwähnte|1x
+Biker|Rocker|1x
+ehrt|würdigt / zollt Respekt|2x
+eigen|seltsam|1x
+Erbes|Wert des ...|1x
+Gemüt|Gefühlsleben|1x
+hole|besorge|1x
+Mietern|Bewohnern|1x
+Pankow|Berliner Bezirk|1x
+Pillen|Tabletten|1x
+Rabe|Krähenvogel / Unglücksvogel|3x
+rauen|groben|3x
+rauer|grober|3x
+Salze|Mineralien|1x
+Ställe|Viehhäuser|1x
+stiften|spenden|1x
+strebe|trachte|1x
+Unis|Hochschulen / Bildungsstätten|2x
+uralten|steinalten|1x
+Urnen|Aschengefäße|2x
+Utah|Mormonenstaat / Salzsee-Staat|7x
+Versen|Reimen|1x
+zündet|entflammt|1x
+Alabama|Südstaat|2x
+Anrede|Begrüßung|1x
+arge|schlimme|5x
+beugt|krümmt|2x

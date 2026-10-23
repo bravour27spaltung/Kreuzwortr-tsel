@@ -10269,3 +10269,1821 @@ ERREICHT	erreicht	erzielt	8	2464	311	1	claude-v2-phase6	false
 ERGEBNIS	Ergebnis	Fazit	8	2345	326	1	claude-v2-phase6	false
 ERSTMALS	erstmals	initial	8	2337	332	1	claude-v2-phase6	false
 PROGRAMM	Programm	Sendeplan	8	2305	334	1	claude-v2-phase6	false
+DIE	die	... Ärzte (Band)	3	465524	1	1	claude-v3-phase8	false
+DER	der	... Pate (Film)	3	404684	2	1	claude-v3-phase8	false
+UND	und	Bonnie ... Clyde	3	181604	3	1	claude-v3-phase8	false
+DAS	das	... Boot (Film)	3	173191	4	1	claude-v3-phase8	false
+IST	ist	Es ... Zeit	3	134456	5	1	claude-v3-phase8	false
+DEN	den	Über ... Wolken	3	123484	6	1	claude-v3-phase8	false
+EIN	ein	... Stück Kuchen	3	102985	7	1	claude-v3-phase8	false
+EINE	eine	... Handvoll	4	99881	9	1	claude-v3-phase8	false
+MIT	mit	Kaffee ... Milch	3	96120	10	1	claude-v3-phase8	false
+AUF	auf	... und davon	3	93198	11	1	claude-v3-phase8	false
+SIE	Sie	Er und ...	3	92199	12	1	claude-v3-phase8	false
+DES	des	Ende ... Jahres	3	82237	13	1	claude-v3-phase8	false
+FUER	für	Danke ... alles	4	78320	14	1	claude-v3-phase8	false
+DEM	dem	Nach ... Spiel	3	65273	17	1	claude-v3-phase8	false
+AUCH	auch	Ich ... nicht	4	61688	19	1	claude-v3-phase8	false
+WAR	war	Es ... einmal	3	48874	23	1	claude-v3-phase8	false
+AUS	aus	Ein und ...	3	44970	24	1	claude-v3-phase8	false
+ALS	als	Mehr ... genug	3	43078	25	1	claude-v3-phase8	false
+BEI	bei	... Licht besehen	3	42935	26	1	claude-v3-phase8	false
+EINEN	einen	... Moment bitte	5	35327	28	1	claude-v3-phase8	false
+EINER	einer	... von beiden	5	34807	29	1	claude-v3-phase8	false
+HAT	hat	Er ... Glück	3	32439	30	1	claude-v3-phase8	false
+UEBER	über	... Nacht berühmt	5	29638	32	1	claude-v3-phase8	false
+NOCH	noch	... nicht	4	28221	33	1	claude-v3-phase8	false
+WIR	Wir	... sind Helden	3	26521	35	1	claude-v3-phase8	false
+ZUM	zum	... Glück	3	26268	36	1	claude-v3-phase8	false
+ABER	aber	Wenn und ...	4	26090	37	1	claude-v3-phase8	false
+BIS	bis	... morgen!	3	25571	38	1	claude-v3-phase8	false
+NUR	nur	... für Mitglieder	3	24045	39	1	claude-v3-phase8	false
+ICH	ich	... bin's!	3	23012	41	1	claude-v3-phase8	false
+VOR	vor	... und zurück	3	22412	42	1	claude-v3-phase8	false
+ZUR	zur	... Not	3	22108	44	1	claude-v3-phase8	false
+HIER	hier	... und jetzt	4	18279	45	1	claude-v3-phase8	false
+DANN	dann	Im Anschluss	4	17061	47	1	claude-v3-phase8	false
+HABEN	haben	Wir ... Spaß	5	16878	48	1	claude-v3-phase8	false
+WIE	wie	... bitte?	3	16574	49	1	claude-v3-phase8	false
+ODER	oder	... was?	4	15569	52	1	claude-v3-phase8	false
+HATTE	hatte	Er ... Pech	5	15279	53	1	claude-v3-phase8	false
+UNTER	unter	... uns gesagt	5	14865	55	1	claude-v3-phase8	false
+SEINE	seine	... Majestät	5	14856	56	1	claude-v3-phase8	false
+DIESER	dieser	... Tage	6	14689	57	1	claude-v3-phase8	false
+IHRE	ihre	... Hoheit	4	13199	61	1	claude-v3-phase8	false
+DASS	dass	Ich hoffe, ...	4	12771	62	1	claude-v3-phase8	false
+SEI	sei	Es ... denn	3	12642	64	1	claude-v3-phase8	false
+MEHR	mehr	... oder weniger	4	12302	67	1	claude-v3-phase8	false
+EURO	Euro	Zahlungsmittel in Wien	4	12173	68	1	claude-v3-phase8	false
+IHR	ihr	... Kinderlein, kommet	3	11945	70	1	claude-v3-phase8	false
+DIES	Dies	... und das	4	11879	71	1	claude-v3-phase8	false
+VOM	vom	... Winde verweht	3	11831	72	1	claude-v3-phase8	false
+WAS	Was	... nun?	3	11784	74	1	claude-v3-phase8	false
+SEHR	sehr	... gut	4	11451	76	1	claude-v3-phase8	false
+DABEI	Dabei	Zugleich	5	11266	77	1	claude-v3-phase8	false
+MAN	man	... weiß nie	3	11150	79	1	claude-v3-phase8	false
+NUN	nun	... denn	3	10976	80	1	claude-v3-phase8	false
+EINES	eines	... Tages	5	10938	81	1	claude-v3-phase8	false
+DORT	Dort	Hier oder ...	4	10454	85	1	claude-v3-phase8	false
+ALLE	alle	... Jahre wieder	4	10384	86	1	claude-v3-phase8	false
+IMMER	immer	... und ewig	5	10102	87	1	claude-v3-phase8	false
+ZEIT	Zeit	... ist Geld	4	9824	90	1	claude-v3-phase8	false
+NEUE	neue	Nicht gebrauchte	4	9603	91	1	claude-v3-phase8	false
+DAMIT	Damit	Mit dem hier	5	9383	95	1	claude-v3-phase8	false
+HEUTE	heute	... oder morgen	5	9375	96	1	claude-v3-phase8	false
+HABE	habe	Ich ... Hunger	4	8845	98	1	claude-v3-phase8	false
+DREI	drei	Zwei plus eins	4	8445	100	1	claude-v3-phase8	false
+LIEGT	liegt	Das ... mir	5	8347	101	1	claude-v3-phase8	false
+ERSTEN	ersten	Am ... Mai	6	8276	102	1	claude-v3-phase8	false
+GEHT	geht	Das ... nicht	4	7987	103	1	claude-v3-phase8	false
+GAB	gab	Er ... Gas	3	7876	104	1	claude-v3-phase8	false
+BEIM	beim	... Essen	4	7852	105	1	claude-v3-phase8	false
+ERSTE	erste	... Hilfe	5	7295	107	1	claude-v3-phase8	false
+ETWA	etwa	Grob gerechnet	4	7172	108	1	claude-v3-phase8	false
+ENDE	Ende	Schlusspunkt	4	7149	109	1	claude-v3-phase8	false
+IHM	ihm	Gib es ...	3	6847	112	1	claude-v3-phase8	false
+STADT	Stadt	Ulm oder Köln	5	6718	115	1	claude-v3-phase8	false
+KAM	kam	Sie ... zuletzt	3	6518	118	1	claude-v3-phase8	false
+IHN	ihn	Ich sehe ...	3	6469	120	1	claude-v3-phase8	false
+OHNE	ohne	... mich	4	6165	123	1	claude-v3-phase8	false
+NEUEN	neuen	Zum ... Jahr	5	6148	124	1	claude-v3-phase8	false
+KEIN	kein	... Problem	4	6033	126	1	claude-v3-phase8	false
+GUT	gut	... gemacht!	3	6002	127	1	claude-v3-phase8	false
+UNS	uns	Lass ... gehen	3	5982	128	1	claude-v3-phase8	false
+ERST	erst	... recht	4	5974	129	1	claude-v3-phase8	false
+TEIL	Teil	Stück vom Ganzen	4	5971	130	1	claude-v3-phase8	false
+UHR	Uhr	Hat Ziffernblatt	3	5960	131	1	claude-v3-phase8	false
+RUND	rund	Ohne Ecken	4	5726	132	1	claude-v3-phase8	false
+SOLLTE	sollte	Er ... kommen	6	5638	137	1	claude-v3-phase8	false
+LEBEN	Leben	... und Tod	5	5567	138	1	claude-v3-phase8	false
+IHRER	ihrer	Wir gedenken ...	5	5344	143	1	claude-v3-phase8	false
+WILL	will	Ich ... mehr	4	5333	144	1	claude-v3-phase8	false
+HATTEN	hatten	Sie ... Glück	6	5230	146	1	claude-v3-phase8	false
+SEIEN	seien	... Sie willkommen	5	5110	149	1	claude-v3-phase8	false
+SOLLEN	sollen	Wir ... helfen	6	5010	153	1	claude-v3-phase8	false
+INS	ins	... Bett	3	4850	155	1	claude-v3-phase8	false
+STEHEN	stehen	Aufrecht verharren	6	4544	163	1	claude-v3-phase8	false
+ETWAS	etwas	... Neues	5	4450	165	1	claude-v3-phase8	false
+GING	ging	Es ... los	4	4364	168	1	claude-v3-phase8	false
+BEIDE	Beide	Das Paar zusammen	5	4321	169	1	claude-v3-phase8	false
+GILT	gilt	Ist in Kraft	4	4144	175	1	claude-v3-phase8	false
+MANN	Mann	... und Frau	4	3925	181	1	claude-v3-phase8	false
+MAI	Mai	Monat vor Juni	3	3896	183	1	claude-v3-phase8	false
+FRAU	Frau	Mann und ...	4	3881	184	1	claude-v3-phase8	false
+BETRAEGT	beträgt	Macht insgesamt	8	3845	185	1	claude-v3-phase8	false
+PLATZ	Platz	... nehmen	5	3836	187	1	claude-v3-phase8	false
+ZWEITEN	zweiten	Am ... Advent	7	3751	194	1	claude-v3-phase8	false
+STAND	stand	Er ... Wache	5	3742	195	1	claude-v3-phase8	false
+APRIL	April	Wechselhafter Monat	5	3740	196	1	claude-v3-phase8	false
+FAST	fast	... nie	4	3720	198	1	claude-v3-phase8	false
+WEG	Weg	Strecke A–B	3	3598	205	1	claude-v3-phase8	false
+SEITE	Seite	Blatt im Buch	5	3528	210	1	claude-v3-phase8	false
+NAMEN	Namen	Im ... Gottes	5	3507	211	1	claude-v3-phase8	false
+ORT	Ort	... des Geschehens	3	3414	215	1	claude-v3-phase8	false
+DENN	Denn	Begründung folgt	4	3386	216	1	claude-v3-phase8	false
+SEHEN	sehen	Hören und ...	5	3319	222	1	claude-v3-phase8	false
+WELT	Welt	Planet Erde	4	3314	224	1	claude-v3-phase8	false
+OFT	oft	Nicht selten	3	3211	229	1	claude-v3-phase8	false
+TAG	Tag	Guten ...	3	3211	230	1	claude-v3-phase8	false
+AUGUST	August	Sommerferien-Monat	6	3189	232	1	claude-v3-phase8	false
+MIR	mir	Gib ... Zeit	3	3164	233	1	claude-v3-phase8	false
+SIEHT	sieht	Er ... schwarz	5	3109	237	1	claude-v3-phase8	false
+BERLIN	Berlin	Deutsche Hauptstadt	6	3101	238	1	claude-v3-phase8	false
+JULI	Juli	Monat nach Juni	4	3097	239	1	claude-v3-phase8	false
+SPIEL	Spiel	Monopoly oder Skat	5	3055	241	1	claude-v3-phase8	false
+LANGE	lange	Eine ... Reise	5	3043	242	1	claude-v3-phase8	false
+GUTE	gute	... Besserung!	4	2987	247	1	claude-v3-phase8	false
+EINMAL	einmal	Es war ...	6	2981	248	1	claude-v3-phase8	false
+LAG	lag	Er ... richtig	3	2908	258	1	claude-v3-phase8	false
+STARB	starb	Ging von uns	5	2878	259	1	claude-v3-phase8	false
+GEBEN	geben	Nehmen und ...	5	2868	260	1	claude-v3-phase8	false
+DOLLAR	Dollar	Währung in Texas	6	2840	264	1	claude-v3-phase8	false
+WER	Wer	... war's?	3	2827	267	1	claude-v3-phase8	false
+GELD	Geld	Zeit ist ...	4	2770	274	1	claude-v3-phase8	false
+SECHS	sechs	Halbes Dutzend	5	2763	275	1	claude-v3-phase8	false
+KOSTEN	Kosten	... und Nutzen	6	2761	276	1	claude-v3-phase8	false
+BIN	bin	Ich ... dabei	3	2716	281	1	claude-v3-phase8	false
+ALLEN	allen	Vor ... Dingen	5	2658	285	1	claude-v3-phase8	false
+DEREN	deren	Eltern, ... Kind	5	2641	286	1	claude-v3-phase8	false
+EIGENEN	eigenen	Mit ... Augen	7	2624	288	1	claude-v3-phase8	false
+NIE	nie	... wieder	3	2619	290	1	claude-v3-phase8	false
+TITEL	Titel	Name eines Buchs	5	2619	291	1	claude-v3-phase8	false
+LAND	Land	... in Sicht	4	2615	292	1	claude-v3-phase8	false
+FILM	Film	Läuft im Kino	4	2584	295	1	claude-v3-phase8	false
+NEU	neu	Gerade erschienen	3	2566	296	1	claude-v3-phase8	false
+GEPLANT	geplant	Auf der Agenda	7	2538	298	1	claude-v3-phase8	false
+FRAUEN	Frauen	Männer und ...	6	2493	304	1	claude-v3-phase8	false
+ROLLE	Rolle	Part im Stück	5	2477	306	1	claude-v3-phase8	false
+ZIEL	Ziel	Ort der Ankunft	4	2467	310	1	claude-v3-phase8	false
+METER	Meter	100 cm	5	2412	317	1	claude-v3-phase8	false
+SCHULE	Schule	Hier lernt man	6	2389	319	1	claude-v3-phase8	false
+WOHL	wohl	Zum ...	4	2386	320	1	claude-v3-phase8	false
+EIGENE	eigene	Das ... Haus	6	2379	321	1	claude-v3-phase8	false
+PRO	pro	... Kopf	3	2370	322	1	claude-v3-phase8	false
+FEST	fest	Hart wie Stein	4	2344	327	1	claude-v3-phase8	false
+ZWAR	zwar	Allerdings	4	2341	330	1	claude-v3-phase8	false
+ERSTMALS	erstmals	Zum 1. Mal	8	2337	332	1	claude-v3-phase8	false
+KURZ	kurz	... und knapp	4	2305	333	1	claude-v3-phase8	false
+TOD	Tod	Ende des Lebens	3	2295	337	1	claude-v3-phase8	false
+SEITEN	Seiten	Blätter im Buch	6	2292	338	1	claude-v3-phase8	false
+BAND	Band	Beatles oder Stones	4	2291	340	1	claude-v3-phase8	false
+KAMEN	kamen	Sie ... vorbei	5	2288	342	1	claude-v3-phase8	false
+STRASSE	Straße	Autos fahren hier	7	2278	344	1	claude-v3-phase8	false
+ART	Art	Auf diese ...	3	2270	345	1	claude-v3-phase8	false
+WASSER	Wasser	Fließt im Bach	6	2259	346	1	claude-v3-phase8	false
+GERADE	gerade	Nicht krumm	6	2252	347	1	claude-v3-phase8	false
+UNSER	unser	... täglich Brot	5	2230	351	1	claude-v3-phase8	false
+FRAGE	Frage	... und Antwort	5	2184	359	1	claude-v3-phase8	false
+SOHN	Sohn	Vater und ...	4	2183	360	1	claude-v3-phase8	false
+THEMA	Thema	Worum es geht	5	2164	363	1	claude-v3-phase8	false
+ZAHL	Zahl	Eins oder zwei	4	2156	367	1	claude-v3-phase8	false
+ANDERS	anders	Ganz ...	6	2150	369	1	claude-v3-phase8	false
+LANG	lang	Nicht kurz	4	2150	370	1	claude-v3-phase8	false
+GENANNT	genannt	Auch ...	7	2103	377	1	claude-v3-phase8	false
+ERNEUT	erneut	Ein weiteres Mal	6	2069	381	1	claude-v3-phase8	false
+PREIS	Preis	Was man zahlt	5	2060	382	1	claude-v3-phase8	false
+STIEG	stieg	Er ... auf	5	2053	383	1	claude-v3-phase8	false
+NAME	Name	Max oder Moritz	4	2043	384	1	claude-v3-phase8	false
+DENEN	denen	Dativ von „die“	5	2006	388	1	claude-v3-phase8	false
+EHER	eher	Je ..., desto	4	2006	389	1	claude-v3-phase8	false
+JEDE	jede	Um ... Wette	4	1954	397	1	claude-v3-phase8	false
+ALTE	alte	... Liebe rostet	4	1878	413	1	claude-v3-phase8	false
+NIMMT	nimmt	Er ... Abschied	5	1866	416	1	claude-v3-phase8	false
+TAGE	Tage	Sieben pro Woche	4	1857	420	1	claude-v3-phase8	false
+WERT	Wert	Wichtigkeit	4	1846	424	1	claude-v3-phase8	false
+ELTERN	Eltern	Mama und Papa	6	1827	428	1	claude-v3-phase8	false
+EBENSO	ebenso	Gleichfalls	6	1825	429	1	claude-v3-phase8	false
+HOHE	hohe	Hochgelegene	4	1807	435	1	claude-v3-phase8	false
+HANDELT	handelt	Kauft und verkauft	7	1759	447	1	claude-v3-phase8	false
+LAUT	laut	Nicht leise	4	1747	450	1	claude-v3-phase8	false
+HIN	hin	Her und ...	3	1740	452	1	claude-v3-phase8	false
+SETZT	setzt	Er ... sich	5	1737	454	1	claude-v3-phase8	false
+TEAM	Team	Gruppe mit Ziel	4	1726	458	1	claude-v3-phase8	false
+MARKT	Markt	Hier wird gehandelt	5	1719	460	1	claude-v3-phase8	false
+MUESSE	müsse	Er ... gehen	6	1703	462	1	claude-v3-phase8	false
+TRAT	trat	Er ... ein	4	1694	464	1	claude-v3-phase8	false
+LIEBE	Liebe	... macht blind	5	1661	473	1	claude-v3-phase8	false
+HAELT	hält	Er ... Wort	5	1659	474	1	claude-v3-phase8	false
+BAU	Bau	Hier entstehen Häuser	3	1653	475	1	claude-v3-phase8	false
+TROTZ	Trotz	Kindliche Sturheit	5	1652	476	1	claude-v3-phase8	false
+SOLCHE	solche	... Leute	6	1636	480	1	claude-v3-phase8	false
+LAGE	Lage	... der Nation	4	1620	482	1	claude-v3-phase8	false
+WAHL	Wahl	Qual der ...	4	1620	483	1	claude-v3-phase8	false
+WEIT	weit	... und breit	4	1564	495	1	claude-v3-phase8	false
+RAUM	Raum	... und Zeit	4	1548	499	1	claude-v3-phase8	false
+SAGTE	sagte	Er ... nichts	5	1536	502	1	claude-v3-phase8	false
+DAR	dar	Er stellt ...	3	1533	503	1	claude-v3-phase8	false
+AKTIE	Aktie	Börsenpapier	5	1516	504	1	claude-v3-phase8	false
+HAETTE	hätte	Er ... gern	6	1510	507	1	claude-v3-phase8	false
+REGEL	Regel	Ausnahme bestätigt sie	5	1488	510	1	claude-v3-phase8	false
+ZOG	zog	Er ... um	3	1482	513	1	claude-v3-phase8	false
+ANDEREM	anderem	Unter ... auch	7	1481	514	1	claude-v3-phase8	false
+WEIL	weil	Ich bleibe, ...	4	1469	520	1	claude-v3-phase8	false
+GEBIET	Gebiet	Fläche mit Grenzen	6	1445	528	1	claude-v3-phase8	false
+TREFFEN	treffen	Sich ...	7	1445	529	1	claude-v3-phase8	false
+BESTEN	besten	Mit ... Grüßen	6	1442	532	1	claude-v3-phase8	false
+AMT	Amt	Gang zum ...	3	1440	534	1	claude-v3-phase8	false
+ERSTER	erster	... Platz	6	1424	538	1	claude-v3-phase8	false
+WERK	Werk	Arbeit des Künstlers	4	1417	544	1	claude-v3-phase8	false
+OPFER	Opfer	Täter und ...	5	1414	545	1	claude-v3-phase8	false
+GAR	gar	Ganz und ...	3	1409	548	1	claude-v3-phase8	false
+KOSTET	kostet	Das ... viel	6	1404	549	1	claude-v3-phase8	false
+REGION	Region	Teil des Landes	6	1393	557	1	claude-v3-phase8	false
+HOHEN	hohen	Auf ... Bergen	5	1392	558	1	claude-v3-phase8	false
+SAGT	sagt	Er ... ja	4	1389	560	1	claude-v3-phase8	false
+ABEND	Abend	Sonne geht unter	5	1372	567	1	claude-v3-phase8	false
+REIHE	Reihe	Der ... nach	5	1362	574	1	claude-v3-phase8	false
+GEBE	gebe	Ich ... Bescheid	4	1355	577	1	claude-v3-phase8	false
+PER	per	... Du	3	1345	582	1	claude-v3-phase8	false
+WOBEI	wobei	Und dabei	5	1345	583	1	claude-v3-phase8	false
+FREI	frei	Nicht besetzt	4	1341	584	1	claude-v3-phase8	false
+EUROPA	Europa	Alter Kontinent	6	1340	585	1	claude-v3-phase8	false
+TUN	tun	Nichts zu ...	3	1315	595	1	claude-v3-phase8	false
+SPASS	Spaß	... muss sein	5	1312	598	1	claude-v3-phase8	false
+GENAU	genau	Nicht ungefähr	5	1308	599	1	claude-v3-phase8	false
+MONTAG	Montag	Start der Woche	6	1305	602	1	claude-v3-phase8	false
+EBEN	eben	Ohne Hügel	4	1283	612	1	claude-v3-phase8	false
+DRITTE	dritte	Der ... Mann	6	1255	625	1	claude-v3-phase8	false
+ALT	alt	Mit Lebenserfahrung	3	1222	641	1	claude-v3-phase8	false
+ALBUM	Album	Fotobuch oder CD	5	1216	643	1	claude-v3-phase8	false
+NEUN	neun	Drei mal drei	4	1208	647	1	claude-v3-phase8	false
+IHRES	ihres	Zeit ... Lebens	5	1192	657	1	claude-v3-phase8	false
+HEUTIGEN	heutigen	Am ... Tag	8	1191	658	1	claude-v3-phase8	false
+SAH	sah	Er ... rot	3	1179	663	1	claude-v3-phase8	false
+NAEHE	Nähe	In der ...	5	1175	665	1	claude-v3-phase8	false
+IDEE	Idee	Geistesblitz	4	1174	667	1	claude-v3-phase8	false
+BESTE	beste	... Freundin	5	1165	673	1	claude-v3-phase8	false
+INSEL	Insel	Rundum Wasser	5	1158	679	1	claude-v3-phase8	false
+OFFEN	offen	Tür steht ...	5	1158	680	1	claude-v3-phase8	false
+GAESTE	Gäste	Eingeladene	6	1157	682	1	claude-v3-phase8	false
+TEILE	Teile	Einzelstücke	5	1157	683	1	claude-v3-phase8	false
+TAT	Tat	Rat und ...	3	1153	686	1	claude-v3-phase8	false
+SIEG	Sieg	Gewinn im Wettkampf	4	1151	687	1	claude-v3-phase8	false
+KRAFT	Kraft	Mit aller ...	5	1139	694	1	claude-v3-phase8	false
+KLASSE	Klasse	Gruppe von Schülern	6	1126	707	1	claude-v3-phase8	false
+MENSCH	Mensch	Homo sapiens	6	1124	709	1	claude-v3-phase8	false
+BEENDET	beendet	Zu Ende gebracht	7	1108	717	1	claude-v3-phase8	false
+LEUTE	Leute	Liebe ...	5	1104	720	1	claude-v3-phase8	false
+UNION	Union	Europäische ...	5	1095	725	1	claude-v3-phase8	false
+SERIE	Serie	Mehrteiler im TV	5	1084	730	1	claude-v3-phase8	false
+TRITT	tritt	Er ... ab	5	1070	737	1	claude-v3-phase8	false
+ERHOEHT	erhöht	Angehoben	7	1052	746	1	claude-v3-phase8	false
+NAEMLICH	nämlich	Genauer gesagt	8	1052	747	1	claude-v3-phase8	false
+LINIE	Linie	Zwischen zwei Punkten	5	1044	753	1	claude-v3-phase8	false
+LOS	los	... geht's!	3	1043	754	1	claude-v3-phase8	false
+TRIFFT	trifft	Er ... Freunde	6	1041	756	1	claude-v3-phase8	false
+OBEN	oben	Von ... herab	4	1037	757	1	claude-v3-phase8	false
+AUTO	Auto	Vier Räder, Motor	4	1033	758	1	claude-v3-phase8	false
+REST	Rest	Bleibt am Ende	4	1032	760	1	claude-v3-phase8	false
+EHE	Ehe	Lebensbund zu zweit	3	1017	770	1	claude-v3-phase8	false
+STAAT	Staat	Land mit Regierung	5	1010	774	1	claude-v3-phase8	false
+STANDEN	standen	Sie ... Spalier	7	1009	776	1	claude-v3-phase8	false
+DARAN	daran	Denk ...	5	1005	779	1	claude-v3-phase8	false
+KOENIG	König	Herrscher mit Krone	6	988	791	1	claude-v3-phase8	false
+OBWOHL	Obwohl	... es regnet	6	962	807	1	claude-v3-phase8	false
+CHANCE	Chance	Zweite ...	6	955	809	1	claude-v3-phase8	false
+ANTEIL	Anteil	Hälfte oder Drittel	6	951	813	1	claude-v3-phase8	false
+ENDET	endet	Es ... hier	5	951	814	1	claude-v3-phase8	false
+NATUR	Natur	Wald und Wiese	5	948	820	1	claude-v3-phase8	false
+TRAINER	Trainer	Chef am Spielfeldrand	7	941	826	1	claude-v3-phase8	false
+REICHT	reicht	Das ... jetzt	6	936	829	1	claude-v3-phase8	false
+KURS	Kurs	Richtung des Schiffs	4	932	833	1	claude-v3-phase8	false
+TEXT	Text	Zeilen und Absätze	4	932	834	1	claude-v3-phase8	false
+GOTT	Gott	Höchstes Wesen	4	921	842	1	claude-v3-phase8	false
+OSTEN	Osten	Richtung Sonnenaufgang	5	920	844	1	claude-v3-phase8	false
+ANTRAG	Antrag	Formular beim Amt	6	919	846	1	claude-v3-phase8	false
+SCHIFF	Schiff	Fährt zur See	6	913	853	1	claude-v3-phase8	false
+LUFT	Luft	Zum Atmen nötig	4	907	861	1	claude-v3-phase8	false
+ESSEN	Essen	Auf dem Teller	5	905	862	1	claude-v3-phase8	false
+FORT	fort	Nicht mehr da	4	898	867	1	claude-v3-phase8	false
+BEFAND	befand	Er ... sich	6	893	875	1	claude-v3-phase8	false
+TOR	Tor	Eingang zum Hof	3	887	879	1	claude-v3-phase8	false
+WAECHST	wächst	Wird größer	7	886	880	1	claude-v3-phase8	false
+FEHLEN	fehlen	Nicht anwesend sein	6	876	888	1	claude-v3-phase8	false
+KOELN	Köln	Rheinstadt mit Dom	5	859	903	1	claude-v3-phase8	false
+AUFBAU	Aufbau	Gliederung	6	853	913	1	claude-v3-phase8	false
+HIERZU	Hierzu	Zu diesem Punkt	6	853	914	1	claude-v3-phase8	false
+GALT	galt	Hatte Gültigkeit	4	852	916	1	claude-v3-phase8	false
+GRAD	Grad	Maß für Winkel	4	852	917	1	claude-v3-phase8	false
+LIEF	lief	Sie ... davon	4	842	932	1	claude-v3-phase8	false
+EINIGE	einige	Vor ... Tagen	6	5024	151	1	claude-v3-phase8	false
+MAL	mal	Zwei ... zwei	3	4705	157	1	claude-v3-phase8	false
+ERDE	Erde	Dritter Planet	4	839	938	1	claude-v3-phase8	false
+GERN	gern	Ich helfe ...	4	838	939	1	claude-v3-phase8	false
+SCHRIEB	schrieb	Er ... Briefe	7	828	948	1	claude-v3-phase8	false
+STARKE	starke	Von großer Kraft	6	828	949	1	claude-v3-phase8	false
+PAAR	paar	Ein ... Tage	4	825	952	1	claude-v3-phase8	false
+ERNST	Ernst	Gegenteil von Spaß	5	820	955	1	claude-v3-phase8	false
+ZIEHEN	ziehen	Am Seil ...	6	817	962	1	claude-v3-phase8	false
+LAENGST	längst	... vergessen	7	814	963	1	claude-v3-phase8	false
+STUDIE	Studie	Forschungsbericht	6	814	964	1	claude-v3-phase8	false
+TUER	Tür	Hat eine Klinke	4	810	967	1	claude-v3-phase8	false
+AKTIEN	Aktien	Dividendenpapiere	6	808	969	1	claude-v3-phase8	false
+CHINA	China	Heimat der Pandas	5	796	988	1	claude-v3-phase8	false
+STAENDIG	ständig	Ohne Unterlass	8	795	991	1	claude-v3-phase8	false
+ERLAUBT	erlaubt	Nicht verboten	7	794	992	1	claude-v3-phase8	false
+ELF	elf	Fußballer pro Team	3	789	998	1	claude-v3-phase8	false
+PLAENE	Pläne	Was man schmiedet	6	784	1003	1	claude-v3-phase8	false
+SAGEN	sagen	Wir ... Danke	5	783	1005	1	claude-v3-phase8	false
+UNTEN	unten	Oben und ...	5	781	1009	1	claude-v3-phase8	false
+ITALIEN	Italien	Land der Pizza	7	774	1015	1	claude-v3-phase8	false
+REISE	Reise	Gute ...	5	774	1016	1	claude-v3-phase8	false
+GABEN	gaben	Wir ... auf	5	771	1019	1	claude-v3-phase8	false
+LEIPZIG	Leipzig	Sachsens größte Stadt	7	771	1021	1	claude-v3-phase8	false
+PLAN	Plan	Strategie	4	770	1024	1	claude-v3-phase8	false
+NOETIG	nötig	Nicht verzichtbar	6	768	1027	1	claude-v3-phase8	false
+FARBE	Farbe	Rot oder Blau	5	767	1028	1	claude-v3-phase8	false
+SCHWEIZ	Schweiz	Land der Eidgenossen	7	767	1030	1	claude-v3-phase8	false
+URSACHE	Ursache	Gegenteil von Wirkung	7	756	1044	1	claude-v3-phase8	false
+AKTION	Aktion	Sonderangebot	6	754	1046	1	claude-v3-phase8	false
+TEILEN	Teilen	Mit anderen ...	6	753	1051	1	claude-v3-phase8	false
+BREITE	Breite	Länge mal ...	6	752	1052	1	claude-v3-phase8	false
+TRUG	trug	Er ... Hut	4	749	1055	1	claude-v3-phase8	false
+ANGELEGT	angelegt	Zinsbringend platziert	8	748	1056	1	claude-v3-phase8	false
+SEE	See	Wasser ohne Gezeiten	3	748	1058	1	claude-v3-phase8	false
+ARMEE	Armee	Streitmacht	5	745	1061	1	claude-v3-phase8	false
+DIENST	Dienst	... nach Vorschrift	6	742	1063	1	claude-v3-phase8	false
+SITZ	Sitz	Ort zum Hinsetzen	4	735	1068	1	claude-v3-phase8	false
+KARTEN	Karten	Pik, Herz, Karo	6	730	1075	1	claude-v3-phase8	false
+HALLE	Halle	Raum für Sport	5	727	1078	1	claude-v3-phase8	false
+LEGT	legt	Huhn ... Eier	4	727	1080	1	claude-v3-phase8	false
+SITZT	sitzt	Er ... fest	5	723	1084	1	claude-v3-phase8	false
+STIL	Stil	Eigene Handschrift	4	721	1085	1	claude-v3-phase8	false
+NAHE	nahe	Nicht weit entfernt	4	718	1088	1	claude-v3-phase8	false
+WEGE	Wege	Pfade und Straßen	4	716	1090	1	claude-v3-phase8	false
+FANS	Fans	Kurve im Stadion	4	712	1094	1	claude-v3-phase8	false
+THEATER	Theater	Ort für Aufführungen	7	711	1097	1	claude-v3-phase8	false
+ZUG	Zug	Fährt auf Schienen	3	696	1107	1	claude-v3-phase8	false
+TORE	Tore	Eingänge der Burg	4	689	1118	1	claude-v3-phase8	false
+STARKEN	starken	Mit ... Nerven	7	683	1126	1	claude-v3-phase8	false
+FAHRT	Fahrt	Freie ...	5	681	1127	1	claude-v3-phase8	false
+DIENEN	dienen	Der Sache ...	6	678	1130	1	claude-v3-phase8	false
+HOF	Hof	Hier gackern Hühner	3	678	1131	1	claude-v3-phase8	false
+ERGAB	ergab	Das ... Sinn	5	677	1133	1	claude-v3-phase8	false
+MATERIAL	Material	Holz, Stahl, Glas	8	670	1140	1	claude-v3-phase8	false
+ERLITT	erlitt	Er ... Schiffbruch	6	669	1144	1	claude-v3-phase8	false
+REDE	Rede	Wort ans Publikum	4	669	1145	1	claude-v3-phase8	false
+HAST	hast	Du ... Recht	4	666	1150	1	claude-v3-phase8	false
+ZUGANG	Zugang	Weg hinein	6	666	1154	1	claude-v3-phase8	false
+DEINE	Deine	Alles Gute, ...	5	660	1166	1	claude-v3-phase8	false
+BESITZEN	besitzen	Sein Eigen nennen	8	658	1167	1	claude-v3-phase8	false
+KARTE	Karte	Gelb oder Rot	5	656	1170	1	claude-v3-phase8	false
+LEBTEN	lebten	Sie ... glücklich	6	656	1171	1	claude-v3-phase8	false
+STUDIUM	Studium	Bachelor und Master	7	655	1173	1	claude-v3-phase8	false
+NENNT	nennt	Er ... Namen	5	651	1178	1	claude-v3-phase8	false
+NENNEN	nennen	Beim Namen ...	6	648	1182	1	claude-v3-phase8	false
+AUTOR	Autor	Urheber des Buchs	5	647	1184	1	claude-v3-phase8	false
+LONDON	London	Hauptstadt Englands	6	644	1189	1	claude-v3-phase8	false
+KREIS	Kreis	Hat einen Radius	5	642	1190	1	claude-v3-phase8	false
+LEGEN	legen	Zur Seite ...	5	642	1191	1	claude-v3-phase8	false
+WERTE	Werte	Ehrlichkeit und Treue	5	638	1198	1	claude-v3-phase8	false
+IDEEN	Ideen	Geistesblitze	5	634	1205	1	claude-v3-phase8	false
+TRAF	traf	Der Ball ...	4	633	1206	1	claude-v3-phase8	false
+TIEF	tief	Weit nach unten	4	631	1208	1	claude-v3-phase8	false
+GEHE	gehe	Ich ... schlafen	4	630	1210	1	claude-v3-phase8	false
+HERR	Herr	Frau und ...	4	627	1214	1	claude-v3-phase8	false
+ROTEN	roten	Mit ... Wangen	5	627	1215	1	claude-v3-phase8	false
+TRETEN	treten	Ins Pedal ...	6	623	1222	1	claude-v3-phase8	false
+HIESS	hieß	Er ... Karl	5	622	1225	1	claude-v3-phase8	false
+TOTEN	Toten	Tag der ...	5	619	1232	1	claude-v3-phase8	false
+DAUER	Dauer	Zeit eines Vorgangs	5	618	1233	1	claude-v3-phase8	false
+SZENE	Szene	Teil eines Akts	5	618	1235	1	claude-v3-phase8	false
+TREND	Trend	Gerade angesagt	5	614	1240	1	claude-v3-phase8	false
+BENANNT	benannt	Mit Namen versehen	7	611	1242	1	claude-v3-phase8	false
+BRAND	Brand	Feuerwehr rückt aus	5	611	1243	1	claude-v3-phase8	false
+DIR	dir	Wie geht's ...?	3	609	1250	1	claude-v3-phase8	false
+PAUSE	Pause	Zeit zum Durchatmen	5	609	1251	1	claude-v3-phase8	false
+ARZT	Arzt	Im weißen Kittel	4	608	1252	1	claude-v3-phase8	false
+NETZ	Netz	Mit Maschen	4	608	1254	1	claude-v3-phase8	false
+SIEGER	Sieger	Erster im Ziel	6	605	1260	1	claude-v3-phase8	false
+FINDE	finde	Ich ... nichts	5	604	1262	1	claude-v3-phase8	false
+POST	Post	Vom Briefträger	4	604	1265	1	claude-v3-phase8	false
+HOLZ	Holz	Brennt im Kamin	4	602	1267	1	claude-v3-phase8	false
+RAT	Rat	... und Tat	3	599	1274	1	claude-v3-phase8	false
+LEBTE	lebte	Er ... allein	5	598	1277	1	claude-v3-phase8	false
+LIEGE	liege	Ich ... krank	5	598	1278	1	claude-v3-phase8	false
+WEBSITE	Website	Seite im Netz	7	597	1280	1	claude-v3-phase8	false
+UMS	ums	... Leben kommen	3	596	1282	1	claude-v3-phase8	false
+OBEREN	oberen	Im ... Stockwerk	6	594	1285	1	claude-v3-phase8	false
+BESSERE	bessere	Die ... Hälfte	7	593	1288	1	claude-v3-phase8	false
+JAPAN	Japan	Heimat von Sushi	5	592	1290	1	claude-v3-phase8	false
+FIRMEN	Firmen	Arbeitgeber	6	590	1294	1	claude-v3-phase8	false
+NAMENS	namens	Ein Hund ...	6	589	1299	1	claude-v3-phase8	false
+DAUERN	dauern	Es kann ...	6	584	1304	1	claude-v3-phase8	false
+ROMAN	Roman	Dickes Buch	5	577	1319	1	claude-v3-phase8	false
+INDEM	indem	Er half, ...	5	576	1323	1	claude-v3-phase8	false
+DESWEGEN	Deswegen	Aus diesem Grund	8	573	1326	1	claude-v3-phase8	false
+FELD	Feld	Weizen wächst hier	4	570	1332	1	claude-v3-phase8	false
+SINN	Sinn	Riechen oder Fühlen	4	569	1334	1	claude-v3-phase8	false
+HERZ	Herz	Schlägt im Brustkorb	4	568	1335	1	claude-v3-phase8	false
+LIED	Lied	Strophe und Refrain	4	568	1336	1	claude-v3-phase8	false
+ERBAUT	erbaut	Hochgezogen	6	567	1337	1	claude-v3-phase8	false
+TUT	tut	Es ... weh	3	566	1338	1	claude-v3-phase8	false
+BEENDETE	beendete	Machte Schluss	8	564	1343	1	claude-v3-phase8	false
+TONNEN	Tonnen	Je tausend Kilo	6	564	1346	1	claude-v3-phase8	false
+AUSBAU	Ausbau	Vergrößerung	6	563	1347	1	claude-v3-phase8	false
+INFOS	Infos	Daten und Fakten	5	558	1352	1	claude-v3-phase8	false
+HALT	halt	... machen	4	555	1360	1	claude-v3-phase8	false
+STEHE	stehe	Ich ... Schlange	5	553	1366	1	claude-v3-phase8	false
+ENGLAND	England	Heimat des Fußballs	7	550	1374	1	claude-v3-phase8	false
+STUDIEN	Studien	Fachberichte	7	549	1376	1	claude-v3-phase8	false
+AUFSTIEG	Aufstieg	Weg nach oben	8	547	1378	1	claude-v3-phase8	false
+EBENE	Ebene	Flaches Land	5	545	1380	1	claude-v3-phase8	false
+SINNE	Sinne	Die fünf ...	5	545	1381	1	claude-v3-phase8	false
+STAEDTE	Städte	Berlin und Hamburg	7	545	1382	1	claude-v3-phase8	false
+SEHE	sehe	Ich ... dich	4	544	1384	1	claude-v3-phase8	false
+SPUR	Spur	Fußabdrücke im Schnee	4	544	1385	1	claude-v3-phase8	false
+REIN	rein	Ohne Zusätze	4	540	1390	1	claude-v3-phase8	false
+TIEFE	Tiefe	Maß nach unten	5	536	1404	1	claude-v3-phase8	false
+VOLK	Volk	Bevölkerung	4	530	1418	1	claude-v3-phase8	false
+EURE	Eure	... Exzellenz	4	528	1424	1	claude-v3-phase8	false
+HART	hart	Wie Beton	4	525	1431	1	claude-v3-phase8	false
+ROTE	rote	... Rübe	4	525	1432	1	claude-v3-phase8	false
+LEER	leer	Ohne Inhalt	4	523	1437	1	claude-v3-phase8	false
+SIEHE	siehe	... oben	5	522	1440	1	claude-v3-phase8	false
+NEUBAU	Neubau	Frisch gebautes Haus	6	520	1442	1	claude-v3-phase8	false
+ZUEGE	Züge	ICE und S-Bahn	5	516	1449	1	claude-v3-phase8	false
+FRUEH	früh	Noch vor Mittag	5	515	1450	1	claude-v3-phase8	false
+GARTEN	Garten	Beet und Rasen	6	515	1451	1	claude-v3-phase8	false
+MEER	Meer	Wasser mit Gezeiten	4	515	1452	1	claude-v3-phase8	false
+REDEN	reden	Das Wort ergreifen	5	513	1456	1	claude-v3-phase8	false
+SATZ	Satz	Endet mit Punkt	4	509	1460	1	claude-v3-phase8	false
+TERMINE	Termine	Im Kalender notiert	7	509	1461	1	claude-v3-phase8	false
+THEORIE	Theorie	Gegenstück zur Praxis	7	508	1464	1	claude-v3-phase8	false
+HOEHEREN	höheren	Im ... Dienst	8	505	1471	1	claude-v3-phase8	false
+KOMME	komme	Ich ... gleich	5	503	1479	1	claude-v3-phase8	false
+KLARE	klare	... Sache!	5	498	1489	1	claude-v3-phase8	false
+STEIN	Stein	Kiesel am Strand	5	496	1495	1	claude-v3-phase8	false
+BAUERN	Bauern	Bestellen die Felder	6	492	1501	1	claude-v3-phase8	false
+BIST	bist	Du ... dran	4	492	1502	1	claude-v3-phase8	false
+SENAT	Senat	Regierung Hamburgs	5	491	1504	1	claude-v3-phase8	false
+TOT	tot	Ohne Puls	3	489	1511	1	claude-v3-phase8	false
+ROT	rot	Farbe der Liebe	3	488	1515	1	claude-v3-phase8	false
+GERATEN	geraten	In Not ...	7	487	1517	1	claude-v3-phase8	false
+INNERE	innere	... Ruhe	6	476	1543	1	claude-v3-phase8	false
+KAMERA	Kamera	Knipst Bilder	6	475	1546	1	claude-v3-phase8	false
+TRAUM	Traum	Im Schlaf erlebt	5	473	1550	1	claude-v3-phase8	false
+VIERTE	vierte	Die ... Dimension	6	472	1551	1	claude-v3-phase8	false
+FRIEDHOF	Friedhof	Ort der Gräber	8	471	1552	1	claude-v3-phase8	false
+NEIN	Nein	... danke!	4	466	1563	1	claude-v3-phase8	false
+BERG	Berg	Zugspitze zum Beispiel	4	460	1570	1	claude-v3-phase8	false
+PLANT	plant	Sie ... Urlaub	5	459	1573	1	claude-v3-phase8	false
+STEUERN	Steuern	Ans Finanzamt	7	459	1574	1	claude-v3-phase8	false
+ECHT	echt	Kein Fake	4	458	1578	1	claude-v3-phase8	false
+UMGANG	Umgang	... pflegen	6	457	1588	1	claude-v3-phase8	false
+STROM	Strom	Aus der Steckdose	5	456	1589	1	claude-v3-phase8	false
+ENG	eng	Wie Sardinen	3	455	1590	1	claude-v3-phase8	false
+AELTERE	ältere	Mit grauen Haaren	7	454	1594	1	claude-v3-phase8	false
+HEKTAR	Hektar	10.000 Quadratmeter	6	451	1598	1	claude-v3-phase8	false
+CHEF	Chef	Hat das Sagen	4	450	1600	1	claude-v3-phase8	false
+JOB	Job	Broterwerb	3	448	1605	1	claude-v3-phase8	false
+ORTES	Ortes	Wahrzeichen des ...	5	448	1606	1	claude-v3-phase8	false
+UMBAU	Umbau	Wegen ... geschlossen	5	448	1607	1	claude-v3-phase8	false
+CHOR	Chor	Sopran, Alt, Tenor	4	445	1615	1	claude-v3-phase8	false
+KLAGE	Klage	Gang vor Gericht	5	435	1631	1	claude-v3-phase8	false
+TEUER	teuer	Hat seinen Preis	5	434	1634	1	claude-v3-phase8	false
+TOTE	Tote	Ruhen in Frieden	4	429	1651	1	claude-v3-phase8	false
+BAUM	Baum	Äste und Blätter	4	426	1658	1	claude-v3-phase8	false
+TEST	Test	Auf dem Prüfstand	4	426	1661	1	claude-v3-phase8	false
+AUGE	Auge	Fenster der Seele	4	424	1668	1	claude-v3-phase8	false
+GANG	Gang	Zwischen Sitzreihen	4	422	1671	1	claude-v3-phase8	false
+RUF	Ruf	Image bei Leuten	3	421	1675	1	claude-v3-phase8	false
+DURFTE	durfte	Er ... nicht	6	419	1680	1	claude-v3-phase8	false
+SUPER	super	Benzinsorte	5	419	1682	1	claude-v3-phase8	false
+BOT	bot	Er ... Hilfe	3	416	1690	1	claude-v3-phase8	false
+ERLEBEN	erleben	Abenteuer ...	7	416	1691	1	claude-v3-phase8	false
+FEIERT	feiert	Er ... Geburtstag	6	416	1692	1	claude-v3-phase8	false
+URLAUB	Urlaub	Zeit zum Abschalten	6	416	1696	1	claude-v3-phase8	false
+AMTSZEIT	Amtszeit	Wahlperiode	8	414	1697	1	claude-v3-phase8	false
+SOWEIT	soweit	... ich weiß	6	413	1703	1	claude-v3-phase8	false
+FOTO	Foto	Aus der Kamera	4	412	1704	1	claude-v3-phase8	false
+ADRESSE	Adresse	Straße und Hausnummer	7	409	1713	1	claude-v3-phase8	false
+LAUF	Lauf	... der Dinge	4	409	1714	1	claude-v3-phase8	false
+LEIDET	leidet	Er ... still	6	404	1727	1	claude-v3-phase8	false
+GEBURT	Geburt	Beginn des Lebens	6	402	1730	1	claude-v3-phase8	false
+SHOW	Show	Bunte Unterhaltung	4	402	1733	1	claude-v3-phase8	false
+RASCH	rasch	Wie der Blitz	5	400	1737	1	claude-v3-phase8	false
+KREUZ	Kreuz	Christliches Symbol	5	397	1744	1	claude-v3-phase8	false
+GEIST	Geist	Spukt im Schloss	5	395	1749	1	claude-v3-phase8	false
+GEREGELT	geregelt	In festen Bahnen	8	395	1750	1	claude-v3-phase8	false
+TIER	Tier	Hund oder Katze	4	395	1755	1	claude-v3-phase8	false
+ECHTE	echte	... Freunde	5	390	1766	1	claude-v3-phase8	false
+INDEX	Index	Register im Buch	5	390	1768	1	claude-v3-phase8	false
+MAG	mag	Ich ... Pizza	3	390	1770	1	claude-v3-phase8	false
+ERZEUGT	erzeugt	Ins Leben gerufen	7	387	1776	1	claude-v3-phase8	false
+SONGS	Songs	Hits und Balladen	5	386	1783	1	claude-v3-phase8	false
+HERREN	Herren	Damen und ...	6	385	1784	1	claude-v3-phase8	false
+SENDER	Sender	ARD oder ZDF	6	385	1785	1	claude-v3-phase8	false
+ISRAEL	Israel	Staat am Mittelmeer	6	384	1790	1	claude-v3-phase8	false
+RISIKEN	Risiken	Chancen und ...	7	382	1798	1	claude-v3-phase8	false
+WAND	Wand	Hier hängen Bilder	4	382	1804	1	claude-v3-phase8	false
+TON	Ton	Macht die Musik	3	381	1808	1	claude-v3-phase8	false
+SEELE	Seele	Sitz der Gefühle	5	380	1810	1	claude-v3-phase8	false
+BLUT	Blut	Fließt durch Adern	4	379	1811	1	claude-v3-phase8	false
+ORTE	Orte	Dörfer und Städte	4	379	1815	1	claude-v3-phase8	false
+ROM	Rom	Stadt der Cäsaren	3	376	1823	1	claude-v3-phase8	false
+AUFS	aufs	... Spiel setzen	4	371	1836	1	claude-v3-phase8	false
+TYP	Typ	Modell oder Bauart	3	369	1844	1	claude-v3-phase8	false
+RAND	Rand	Ende der Fläche	4	368	1847	1	claude-v3-phase8	false
+TRATEN	traten	Sie ... ein	6	365	1858	1	claude-v3-phase8	false
+ANS	ans	... Werk gehen	3	362	1867	1	claude-v3-phase8	false
+PFLEGE	Pflege	Hege und ...	6	362	1870	1	claude-v3-phase8	false
+FLAMMEN	Flammen	Lodernde Zungen	7	359	1874	1	claude-v3-phase8	false
+KERN	Kern	Steckt im Apfel	4	357	1881	1	claude-v3-phase8	false
+REGIE	Regie	Hinter der Kamera	5	356	1886	1	claude-v3-phase8	false
+BAEUME	Bäume	Bilden den Wald	6	355	1890	1	claude-v3-phase8	false
+EINST	einst	Vor langer Zeit	5	353	1901	1	claude-v3-phase8	false
+ARM	Arm	Mit Ellbogen	3	350	1911	1	claude-v3-phase8	false
+RIEF	rief	Sie ... an	4	350	1915	1	claude-v3-phase8	false
+ENORM	enorm	Riesengroß	5	345	1930	1	claude-v3-phase8	false
+STURM	Sturm	Heult ums Haus	5	345	1933	1	claude-v3-phase8	false
+TOTAL	total	Zu hundert Prozent	5	345	1934	1	claude-v3-phase8	false
+BETT	Bett	Mit Matratze	4	342	1944	1	claude-v3-phase8	false
+LUST	Lust	Keine ... mehr	4	340	1950	1	claude-v3-phase8	false
+ANWALT	Anwalt	Vertritt vor Gericht	6	339	1953	1	claude-v3-phase8	false
+CENT	Cent	Kupfermünze	4	339	1954	1	claude-v3-phase8	false
+TUEREN	Türen	Eingänge und Ausgänge	6	339	1955	1	claude-v3-phase8	false
+MANNES	Mannes	Frau des ...	6	337	1963	1	claude-v3-phase8	false
+TEILT	teilt	Er ... alles	5	337	1964	1	claude-v3-phase8	false
+ENDEN	enden	Nicht weitergehen	5	335	1968	1	claude-v3-phase8	false
+RADIO	Radio	Hören statt Sehen	5	335	1972	1	claude-v3-phase8	false
+GRUEN	grün	Farbe der Hoffnung	5	333	1979	1	claude-v3-phase8	false
+MASS	Maß	Meter oder Liter	4	330	1991	1	claude-v3-phase8	false
+GENERAL	General	Hochrangiger Offizier	7	328	1998	1	claude-v3-phase8	false
+WEIN	Wein	Aus Trauben gekeltert	4	328	1999	1	claude-v3-phase8	false
+BIER	Bier	Hopfen und Malz	4	327	2002	1	claude-v3-phase8	false
+GRAB	Grab	Letzte Ruhestätte	4	327	2003	1	claude-v3-phase8	false
+PLANEN	planen	Vorab überlegen	6	327	2004	1	claude-v3-phase8	false
+SANIERT	saniert	Instand gesetzt	7	327	2005	1	claude-v3-phase8	false
+STOLZ	stolz	Hocherhobenen Hauptes	5	326	2010	1	claude-v3-phase8	false
+BEINE	Beine	Tragen den Körper	5	325	2011	1	claude-v3-phase8	false
+BUS	Bus	Hält an Haltestellen	3	325	2012	1	claude-v3-phase8	false
+BETRAG	Betrag	Zahl auf Rechnung	6	324	2015	1	claude-v3-phase8	false
+BAUTE	baute	Er ... Mist	5	323	2021	1	claude-v3-phase8	false
+WAHRE	wahre	Die ... Geschichte	5	322	2029	1	claude-v3-phase8	false
+OEL	Öl	Schwarzes Gold	3	321	2031	1	claude-v3-phase8	false
+WAFFE	Waffe	Schwert oder Bogen	5	321	2033	1	claude-v3-phase8	false
+SAENGER	Sänger	Steht am Mikro	7	320	2036	1	claude-v3-phase8	false
+GEWINNE	Gewinne	Plus unterm Strich	7	319	2039	1	claude-v3-phase8	false
+FESTEN	festen	Auf ... Füßen	6	318	2044	1	claude-v3-phase8	false
+TAL	Tal	Zwischen den Bergen	3	318	2046	1	claude-v3-phase8	false
+MESSE	Messe	Schau für Fachleute	5	316	2056	1	claude-v3-phase8	false
+ORIGINAL	Original	Keine Kopie	8	314	2070	1	claude-v3-phase8	false
+BITTET	bittet	Er ... höflich	6	312	2077	1	claude-v3-phase8	false
+FREUE	freue	Ich ... mich	5	312	2078	1	claude-v3-phase8	false
+GATTUNG	Gattung	Gruppe von Arten	7	310	2084	1	claude-v3-phase8	false
+ARME	Arme	Menschen ohne Geld	4	309	2088	1	claude-v3-phase8	false
+MUEHLE	Mühle	Mahlt das Korn	6	309	2093	1	claude-v3-phase8	false
+ALKOHOL	Alkohol	Promille-Quelle	7	306	2104	1	claude-v3-phase8	false
+BLAU	blau	Farbe des Himmels	4	306	2105	1	claude-v3-phase8	false
+NORMAL	normal	Nichts Besonderes	6	305	2109	1	claude-v3-phase8	false
+EIS	Eis	Zum Schlecken	3	303	2117	1	claude-v3-phase8	false
+MAIN	Main	Fließt durch Frankfurt	4	302	2124	1	claude-v3-phase8	false
+ECKE	Ecke	Um die ...	4	301	2127	1	claude-v3-phase8	false
+TATEN	Taten	Worte und ...	5	301	2130	1	claude-v3-phase8	false
+SYSTEMS	Systems	Zusammenbruch des ...	7	300	2138	1	claude-v3-phase8	false
+WEITE	weite	... Welt	5	300	2139	1	claude-v3-phase8	false
+ALL	All	Sterne und Planeten	3	299	2140	1	claude-v3-phase8	false
+SAAL	Saal	Ball im ...	4	298	2149	1	claude-v3-phase8	false
+EIER	Eier	Zum Frühstück gekocht	4	297	2153	1	claude-v3-phase8	false
+VORNE	vorne	... und hinten	5	294	2170	1	claude-v3-phase8	false
+BEUTE	Beute	Fang der Räuber	5	293	2171	1	claude-v3-phase8	false
+TRAFEN	trafen	Wir ... uns	6	293	2172	1	claude-v3-phase8	false
+RAUS	raus	... hier!	4	292	2176	1	claude-v3-phase8	false
+UMZUG	Umzug	Mit Möbelwagen	5	292	2179	1	claude-v3-phase8	false
+LIEFEN	liefen	Sie ... Schlittschuh	6	290	2193	1	claude-v3-phase8	false
+LITER	Liter	Maß für Milch	5	290	2194	1	claude-v3-phase8	false
+LANGER	langer	Nach ... Zeit	6	289	2199	1	claude-v3-phase8	false
+KANADA	Kanada	Land mit Ahornblatt	6	288	2206	1	claude-v3-phase8	false
+ELEMENT	Element	Eisen oder Gold	7	286	2214	1	claude-v3-phase8	false
+ENGE	enge	Eine ... Gasse	4	286	2215	1	claude-v3-phase8	false
+HALBE	halbe	Die ... Wahrheit	5	286	2217	1	claude-v3-phase8	false
+KALT	kalt	Unter null Grad	4	286	2218	1	claude-v3-phase8	false
+BEAMTE	Beamte	Im Staatsdienst	6	285	2220	1	claude-v3-phase8	false
+HOTELS	Hotels	Mit Rezeption	6	285	2224	1	claude-v3-phase8	false
+SEID	seid	Ihr ... dran	4	283	2234	1	claude-v3-phase8	false
+CHAOS	Chaos	Gegenteil von Ordnung	5	282	2236	1	claude-v3-phase8	false
+BRITEN	Briten	Untertanen des Königs	6	279	2250	1	claude-v3-phase8	false
+KLANG	Klang	Hörbarer Eindruck	5	279	2254	1	claude-v3-phase8	false
+LOKALE	lokale	... Zeitung	6	279	2255	1	claude-v3-phase8	false
+WARNTE	warnte	Er ... eindringlich	6	279	2257	1	claude-v3-phase8	false
+TIEREN	Tieren	Mit ... sprechen	6	277	2264	1	claude-v3-phase8	false
+ANBAU	Anbau	Dran gebaut	5	272	2283	1	claude-v3-phase8	false
+ARMEN	Armen	Almosen für ...	5	272	2284	1	claude-v3-phase8	false
+GLAS	Glas	Aus Sand geschmolzen	4	272	2288	1	claude-v3-phase8	false
+SPAET	spät	Kurz vor Mitternacht	5	272	2291	1	claude-v3-phase8	false
+DESTO	desto	Je eher, ...	5	271	2293	1	claude-v3-phase8	false
+BAUT	baut	Er ... Luftschlösser	4	270	2298	1	claude-v3-phase8	false
+ORGEL	Orgel	Hat viele Pfeifen	5	270	2301	1	claude-v3-phase8	false
+TESTS	Tests	Proben aufs Exempel	5	269	2313	1	claude-v3-phase8	false
+UFER	Ufer	Rand des Flusses	4	268	2315	1	claude-v3-phase8	false
+LETZTERE	Letztere	Das Zweitgenannte	8	264	2336	1	claude-v3-phase8	false
+WAHR	wahr	... oder falsch	4	264	2339	1	claude-v3-phase8	false
+TEURER	teurer	Höher im Preis	6	263	2346	1	claude-v3-phase8	false
+TOLL	toll	Das ist ...!	4	263	2347	1	claude-v3-phase8	false
+DENKT	denkt	Er ... nach	5	261	2354	1	claude-v3-phase8	false
+DANKBAR	dankbar	Voll Anerkennung	7	260	2359	1	claude-v3-phase8	false
+DATEI	Datei	Auf der Festplatte	5	260	2360	1	claude-v3-phase8	false
+MUT	Mut	Was Helden brauchen	3	259	2365	1	claude-v3-phase8	false
+NASE	Nase	Mitten im Gesicht	4	258	2368	1	claude-v3-phase8	false
+STREIK	Streik	Arbeit ruht	6	255	2390	1	claude-v3-phase8	false
+STUFE	Stufe	Teil der Treppe	5	255	2391	1	claude-v3-phase8	false
+TRUGEN	trugen	Sie ... Uniform	6	254	2398	1	claude-v3-phase8	false
+HOHEM	hohem	Mit ... Tempo	5	253	2403	1	claude-v3-phase8	false
+INNEN	innen	Außen und ...	5	253	2404	1	claude-v3-phase8	false
+STAR	Star	Von Fans umjubelt	4	252	2409	1	claude-v3-phase8	false
+STRENG	streng	Mit harter Hand	6	252	2410	1	claude-v3-phase8	false
+ALTAR	Altar	Heiliger Tisch	5	251	2413	1	claude-v3-phase8	false
+RUFT	ruft	Die Pflicht ...	4	250	2421	1	claude-v3-phase8	false
+LOEST	löst	Er ... Probleme	5	249	2428	1	claude-v3-phase8	false
+RING	Ring	Am Finger	4	248	2437	1	claude-v3-phase8	false
+TANZ	Tanz	Walzer oder Tango	4	247	2442	1	claude-v3-phase8	false
+LOB	Lob	Kritik und ...	3	246	2453	1	claude-v3-phase8	false
+MARKIERT	markiert	Mit Leuchtstift	8	246	2454	1	claude-v3-phase8	false
+KASSE	Kasse	Hier wird bezahlt	5	245	2461	1	claude-v3-phase8	false
+SPRUNG	Sprung	Vom Zehnmeterbrett	6	245	2464	1	claude-v3-phase8	false
+GAST	Gast	Bleibt nicht lange	4	244	2466	1	claude-v3-phase8	false
+ERNEUTE	erneute	Nochmalige	7	243	2470	1	claude-v3-phase8	false
+KIEL	Kiel	Hafenstadt im Norden	4	243	2472	1	claude-v3-phase8	false
+STERN	Stern	Funkelt nachts	5	242	2482	1	claude-v3-phase8	false
+OPER	Oper	Aida oder Carmen	4	240	2492	1	claude-v3-phase8	false
+UNGARN	Ungarn	Heimat von Gulasch	6	240	2494	1	claude-v3-phase8	false
+IDEAL	Ideal	Wunschzustand	5	238	2504	1	claude-v3-phase8	false
+TIPPS	Tipps	Hilfreiche Hinweise	5	238	2508	1	claude-v3-phase8	false
+FALLS	Falls	... nötig	5	237	2510	1	claude-v3-phase8	false
+STARKER	starker	Ein ... Kaffee	7	237	2516	1	claude-v3-phase8	false
+EMAIL	Email	Nachricht im Postfach	5	234	2530	1	claude-v3-phase8	false
+JUNGS	Jungs	Männer von morgen	5	233	2544	1	claude-v3-phase8	false
+STOFF	Stoff	Nadel, Faden, ...	5	233	2545	1	claude-v3-phase8	false
+WARF	warf	Er ... Anker	4	233	2547	1	claude-v3-phase8	false
+BAR	Bar	Mit Cocktailkarte	3	232	2549	1	claude-v3-phase8	false
+SEX	Sex	Auch: Geschlecht	3	229	2576	1	claude-v3-phase8	false
+UNTERE	untere	Die ... Schublade	6	229	2578	1	claude-v3-phase8	false
+GEBORENE	geborene	Ein ... Talent	8	226	2600	1	claude-v3-phase8	false
+HEISS	heiß	Wie Lava	5	226	2603	1	claude-v3-phase8	false
+WOZU	Wozu	... das alles?	4	226	2608	1	claude-v3-phase8	false
+YEN	Yen	Währung in Tokio	3	226	2609	1	claude-v3-phase8	false
+FAENGT	fängt	Katze ... Mäuse	6	224	2617	1	claude-v3-phase8	false
+GAS	Gas	Bläht den Ballon	3	223	2623	1	claude-v3-phase8	false
+ANSTELLE	anstelle	Als Ersatz für	8	221	2631	1	claude-v3-phase8	false
+DAME	Dame	Schachfigur	4	221	2634	1	claude-v3-phase8	false
+OBERE	obere	Das ... Ende	5	220	2646	1	claude-v3-phase8	false
+OHREN	Ohren	Spitz die ...	5	220	2647	1	claude-v3-phase8	false
+PFARREI	Pfarrei	Kirchenbezirk	7	220	2648	1	claude-v3-phase8	false
+STILL	still	Kein Mucks	5	218	2665	1	claude-v3-phase8	false
+IRAN	Iran	Land von Teheran	4	217	2669	1	claude-v3-phase8	false
+SAND	Sand	Körner am Strand	4	217	2673	1	claude-v3-phase8	false
+AFRIKA	Afrika	Heimat der Savannen	6	216	2676	1	claude-v3-phase8	false
+HARTEN	harten	Mit ... Bandagen	6	215	2682	1	claude-v3-phase8	false
+AREAL	Areal	Stück Land	5	214	2691	1	claude-v3-phase8	false
+EGAL	egal	Ist mir ...	4	214	2694	1	claude-v3-phase8	false
+INNE	inne	Amt ... haben	4	213	2700	1	claude-v3-phase8	false
+ARMUT	Armut	Gegenteil von Reichtum	5	212	2702	1	claude-v3-phase8	false
+EINS	eins	Zahl vor zwei	4	212	2704	1	claude-v3-phase8	false
+MALEREI	Malerei	Pinsel und Palette	7	212	2705	1	claude-v3-phase8	false
+BAUCH	Bauch	Sitz des Nabels	5	209	2730	1	claude-v3-phase8	false
+RENDITE	Rendite	Gewinn in Prozent	7	208	2741	1	claude-v3-phase8	false
+TROCKEN	trocken	Wie die Wüste	7	208	2742	1	claude-v3-phase8	false
+ENGEL	Engel	Himmlisches Wesen	5	206	2755	1	claude-v3-phase8	false
+HUMOR	Humor	Mit Augenzwinkern	5	205	2765	1	claude-v3-phase8	false
+BUSSE	Busse	Im Linienverkehr	5	204	2772	1	claude-v3-phase8	false
+ERBE	Erbe	Hinterlassenschaft	4	203	2783	1	claude-v3-phase8	false
+STARS	Stars	Leinwandgrößen	5	203	2789	1	claude-v3-phase8	false
+ANTIKE	Antike	Zeit der Griechen	6	202	2790	1	claude-v3-phase8	false
+STAHL	Stahl	Eisen mit Kohlenstoff	5	200	2810	1	claude-v3-phase8	false
+STAMMTE	stammte	Hatte Wurzeln	7	200	2811	1	claude-v3-phase8	false
+STRESS	Stress	Alles auf einmal	6	199	2820	1	claude-v3-phase8	false
+WIDER	wider	... Willen	5	198	2825	1	claude-v3-phase8	false
+MUND	Mund	Unter der Nase	4	197	2830	1	claude-v3-phase8	false
+ENORME	enorme	Eine ... Summe	6	193	2860	1	claude-v3-phase8	false
+PROBEN	Proben	Vor der Premiere	6	193	2868	1	claude-v3-phase8	false
+OEFTER	öfter	Nicht nur einmal	6	192	2879	1	claude-v3-phase8	false
+BERAET	berät	Er ... Kunden	6	191	2883	1	claude-v3-phase8	false
+KABEL	Kabel	Mit Stecker	5	191	2887	1	claude-v3-phase8	false
+LERNT	lernt	Er ... Vokabeln	5	191	2889	1	claude-v3-phase8	false
+UMSO	umso	... besser	4	190	2900	1	claude-v3-phase8	false
+BIBEL	Bibel	Buch der Bücher	5	189	2904	1	claude-v3-phase8	false
+AACHEN	Aachen	Stadt der Printen	6	188	2912	1	claude-v3-phase8	false
+LEBE	lebe	Ich ... allein	4	188	2917	1	claude-v3-phase8	false
+LEGENDE	Legende	Zeichenerklärung	7	188	2919	1	claude-v3-phase8	false
+SAMT	samt	... und sonders	4	188	2923	1	claude-v3-phase8	false
+UEBTE	übte	Er ... Klavier	5	188	2924	1	claude-v3-phase8	false
+UEBRIG	übrig	Es bleibt ...	6	187	2934	1	claude-v3-phase8	false
+WELLE	Welle	Surfer reiten sie	5	187	2936	1	claude-v3-phase8	false
+DRUECKT	drückt	Er ... Daumen	7	186	2937	1	claude-v3-phase8	false
+GITARRE	Gitarre	Hat sechs Saiten	7	186	2939	1	claude-v3-phase8	false
+ASIEN	Asien	Größter Kontinent	5	185	2944	1	claude-v3-phase8	false
+HELL	hell	Wie die Sonne	4	185	2948	1	claude-v3-phase8	false
+LOKAL	Lokal	Kneipe nebenan	5	185	2949	1	claude-v3-phase8	false
+HALF	half	Er ... gern	4	184	2957	1	claude-v3-phase8	false
+HEILIGE	Heilige	Von Gläubigen verehrt	7	184	2958	1	claude-v3-phase8	false
+IMAGE	Image	Öffentliches Bild	5	184	2959	1	claude-v3-phase8	false
+AELTER	älter	Mehr Lebensjahre	6	182	2970	1	claude-v3-phase8	false
+ENGEN	engen	In ... Gassen	5	181	2982	1	claude-v3-phase8	false
+DUO	Duo	Zwei Mann stark	3	180	2987	1	claude-v3-phase8	false
+INTERNE	interne	... Angelegenheit	7	180	2990	1	claude-v3-phase8	false
+SIEBTEN	siebten	Im ... Himmel	7	178	3012	2	claude-v3-phase8	false
+VIA	via	Flug ... Frankfurt	3	178	3014	2	claude-v3-phase8	false
+LEERE	Leere	Gähnende ...	5	177	3023	2	claude-v3-phase8	false
+BAT	bat	Er ... inständig	3	176	3028	2	claude-v3-phase8	false
+ENGER	enger	Gürtel ... schnallen	5	176	3030	2	claude-v3-phase8	false
+HAAR	Haar	Wird geschnitten	4	176	3032	2	claude-v3-phase8	false
+ISLAM	Islam	Religion mit Koran	5	176	3033	2	claude-v3-phase8	false
+BROT	Brot	Vom Bäcker	4	175	3043	2	claude-v3-phase8	false
+EINBAU	Einbau	Fest installiert	6	175	3045	2	claude-v3-phase8	false
+GRAU	grau	Schwarz plus Weiß	4	175	3048	2	claude-v3-phase8	false
+BEIN	Bein	Hat ein Knie	4	174	3059	2	claude-v3-phase8	false
+KENNE	kenne	Ich ... das	5	174	3063	2	claude-v3-phase8	false
+SIEGE	Siege	Gewonnene Spiele	5	174	3066	2	claude-v3-phase8	false
+EIGENS	eigens	Nur dafür	6	173	3073	2	claude-v3-phase8	false
+SAGE	Sage	Mündlich überliefert	4	173	3080	2	claude-v3-phase8	false
+AGENTUR	Agentur	Büro für Werbung	7	171	3089	2	claude-v3-phase8	false
+MAUS	Maus	Jagdbeute der Katze	4	171	3099	2	claude-v3-phase8	false
+WEN	Wen	... interessiert's?	3	171	3102	2	claude-v3-phase8	false
+KUERZER	kürzer	Sich ... fassen	7	170	3107	2	claude-v3-phase8	false
+EUER	Euer	... Ehren	4	169	3118	2	claude-v3-phase8	false
+KULTUREN	Kulturen	Maya und Azteken	8	168	3128	2	claude-v3-phase8	false
+GAERTEN	Gärten	Hängende ...	7	167	3133	2	claude-v3-phase8	false
+LUECKE	Lücke	Zwischen den Zähnen	6	167	3136	2	claude-v3-phase8	false
+PROBE	Probe	Zur ... bestellt	5	167	3139	2	claude-v3-phase8	false
+LITT	litt	Er ... Hunger	4	166	3147	2	claude-v3-phase8	false
+TERRASSE	Terrasse	Sitzplatz im Freien	8	166	3151	2	claude-v3-phase8	false
+HOB	hob	Er ... ab	3	165	3156	2	claude-v3-phase8	false
+ROSE	Rose	Königin der Blumen	4	165	3160	2	claude-v3-phase8	false
+ZEUGE	Zeuge	Sagt vor Gericht	5	165	3162	2	claude-v3-phase8	false
+GELBE	gelbe	Die ... Tonne	5	164	3165	2	claude-v3-phase8	false
+HAMMER	Hammer	Schlägt auf Nägel	6	164	3167	2	claude-v3-phase8	false
+BERN	Bern	Stadt mit Bärengraben	4	163	3176	2	claude-v3-phase8	false
+HEER	Heer	Truppe zu Land	4	163	3182	2	claude-v3-phase8	false
+JENA	Jena	Zeiss-Stadt	4	163	3184	2	claude-v3-phase8	false
+REDET	redet	Er ... Klartext	5	163	3188	2	claude-v3-phase8	false
+AKTEN	Akten	Im Ordner abgeheftet	5	162	3191	2	claude-v3-phase8	false
+DUELL	Duell	Mann gegen Mann	5	162	3195	2	claude-v3-phase8	false
+HERAN	heran	Komm ...	5	162	3198	2	claude-v3-phase8	false
+RISS	riss	Das Seil ...	4	162	3202	2	claude-v3-phase8	false
+LEISTETE	leistete	Er ... Widerstand	8	161	3209	2	claude-v3-phase8	false
+RENTE	Rente	Geld im Alter	5	161	3212	2	claude-v3-phase8	false
+DRAMA	Drama	Ernstes Bühnenstück	5	160	3220	2	claude-v3-phase8	false
+FEIND	Feind	Freund und ...	5	160	3222	2	claude-v3-phase8	false
+SETZE	setze	Ich ... mich	5	160	3228	2	claude-v3-phase8	false
+TRIO	Trio	Zu dritt unterwegs	4	160	3231	2	claude-v3-phase8	false
+HEBT	hebt	Kran ... Lasten	4	159	3242	2	claude-v3-phase8	false
+KETTE	Kette	Aus Gliedern	5	159	3243	2	claude-v3-phase8	false
+TEUFEL	Teufel	Mit Pferdefuß	6	159	3247	2	claude-v3-phase8	false
+MOND	Mond	Umkreist die Erde	4	158	3261	2	claude-v3-phase8	false
+ROSTOCK	Rostock	Warnow-Stadt	7	158	3266	2	claude-v3-phase8	false
+SOBALD	sobald	... du kannst	6	158	3269	2	claude-v3-phase8	false
+WUT	Wut	Rot vor ...	3	158	3273	2	claude-v3-phase8	false
+KONKRET	konkret	Klar und anschaulich	7	157	3286	2	claude-v3-phase8	false
+PRAG	Prag	Goldene Stadt	4	157	3289	2	claude-v3-phase8	false
+RAD	Rad	Mit Speichen	3	157	3290	2	claude-v3-phase8	false
+LEID	Leid	Freud und ...	4	156	3300	2	claude-v3-phase8	false
+BETTEN	Betten	Mit Lattenrost	6	155	3310	2	claude-v3-phase8	false
+ROSA	Rosa	Farbe von Flamingos	4	155	3317	2	claude-v3-phase8	false
+BIRGT	birgt	Es ... Gefahren	5	153	3332	2	claude-v3-phase8	false
+AEMTER	Ämter	Stempel und Formulare	6	152	3343	2	claude-v3-phase8	false
+BEGEGNET	begegnet	Er ... Freunden	8	152	3345	2	claude-v3-phase8	false
+INMITTEN	inmitten	... von Bergen	8	151	3362	2	claude-v3-phase8	false
+LAST	Last	Schwere ...	4	151	3366	2	claude-v3-phase8	false
+RAEDER	Räder	Vier am Auto	6	151	3369	2	claude-v3-phase8	false
+TEE	Tee	Abwarten und ...	3	151	3374	2	claude-v3-phase8	false
+TOENE	Töne	Do, Re, Mi	5	151	3375	2	claude-v3-phase8	false
+ARENA	Arena	Mit Rängen rundum	5	150	3377	2	claude-v3-phase8	false
+KAELTE	Kälte	Eisige ...	6	150	3379	2	claude-v3-phase8	false
+SEEN	Seen	Müritz und Bodensee	4	150	3381	2	claude-v3-phase8	false
+GLEISE	Gleise	Auf Schotter verlegt	6	149	3392	2	claude-v3-phase8	false
+MALE	Male	Mehrere ...	4	149	3395	2	claude-v3-phase8	false
+ABZUG	Abzug	Vom Lohn weg	5	148	3402	2	claude-v3-phase8	false
+ALPEN	Alpen	Hochgebirge in Europa	5	148	3403	2	claude-v3-phase8	false
+STERNE	Sterne	Am Firmament	6	148	3410	2	claude-v3-phase8	false
+ABT	Abt	Leitet ein Kloster	3	147	3416	2	claude-v3-phase8	false
+ERBEN	Erben	Bekommen das Vermögen	5	147	3420	2	claude-v3-phase8	false
+NETT	nett	Gern gesehen	4	147	3426	2	claude-v3-phase8	false
+STEUER	Steuer	Am Ruder	6	147	3429	2	claude-v3-phase8	false
+CODE	Code	PIN oder Passwort	4	145	3447	2	claude-v3-phase8	false
+EHRE	Ehre	Stolz und Würde	4	145	3448	2	claude-v3-phase8	false
+EXAKT	exakt	Auf den Punkt	5	145	3450	2	claude-v3-phase8	false
+AKT	Akt	Aufzug im Theater	3	144	3461	2	claude-v3-phase8	false
+HELD	Held	Rettet den Tag	4	144	3468	2	claude-v3-phase8	false
+ZONE	Zone	Fußgänger-...	4	144	3475	2	claude-v3-phase8	false
+ABSAGE	Absage	Korb bekommen	6	143	3476	2	claude-v3-phase8	false
+GEBUCHT	gebucht	Im Voraus ...	7	143	3480	2	claude-v3-phase8	false
+GRUBE	Grube	Loch im Boden	5	143	3481	2	claude-v3-phase8	false
+KATZEN	Katzen	Schnurren und miauen	6	143	3482	2	claude-v3-phase8	false
+KLARER	klarer	Ein ... Himmel	6	143	3483	2	claude-v3-phase8	false
+STOSSEN	stoßen	Mit Sekt ...	7	143	3488	2	claude-v3-phase8	false
+PASS	Pass	Reisedokument	4	142	3499	2	claude-v3-phase8	false
+DING	Ding	Das ... da	4	141	3508	2	claude-v3-phase8	false
+JENE	jene	Diese und ...	4	141	3511	2	claude-v3-phase8	false
+DOM	Dom	Bischofskirche	3	140	3520	2	claude-v3-phase8	false
+FLUR	Flur	Zwischen den Zimmern	4	140	3523	2	claude-v3-phase8	false
+LASSE	lasse	Ich ... los	5	140	3527	2	claude-v3-phase8	false
+REGIERT	regiert	Der König ...	7	140	3529	2	claude-v3-phase8	false
+STIRN	Stirn	Hier wird gerunzelt	5	140	3530	2	claude-v3-phase8	false
+ZELLE	Zelle	Baustein des Lebens	5	140	3533	2	claude-v3-phase8	false
+ADLER	Adler	Wappentier	5	139	3534	2	claude-v3-phase8	false
+FEINE	feine	Eine ... Sache	5	139	3535	2	claude-v3-phase8	false
+HASS	Hass	Gegenteil von Liebe	4	138	3552	2	claude-v3-phase8	false
+REGE	rege	... Beteiligung	4	138	3556	2	claude-v3-phase8	false
+SKEPSIS	Skepsis	Kritisches Misstrauen	7	138	3557	2	claude-v3-phase8	false
+DRIN	drin	... und draußen	4	137	3566	2	claude-v3-phase8	false
+FIT	fit	In Topform	3	137	3570	2	claude-v3-phase8	false
+DRAENGEN	drängen	Zur Eile ...	8	136	3584	2	claude-v3-phase8	false
+LESUNG	Lesung	Autor liest vor	6	136	3590	2	claude-v3-phase8	false
+NAEHERES	Näheres	Weitere Einzelheiten	8	136	3594	2	claude-v3-phase8	false
+EISEN	Eisen	Rostet gern	5	135	3605	2	claude-v3-phase8	false
+HUT	Hut	Mit Krempe	3	135	3606	2	claude-v3-phase8	false
+GEBOT	Gebot	Eines von zehn	5	134	3614	2	claude-v3-phase8	false
+LABOR	Labor	Mit Reagenzgläsern	5	134	3617	2	claude-v3-phase8	false
+SOFERN	sofern	... möglich	6	134	3621	2	claude-v3-phase8	false
+TREU	treu	Die ... Seele	4	134	3623	2	claude-v3-phase8	false
+VERRATEN	verraten	Das Geheimnis ...	8	134	3627	2	claude-v3-phase8	false
+GEHEIM	geheim	Streng ...	6	133	3632	2	claude-v3-phase8	false
+BOX	Box	Sport mit Handschuhen	3	132	3646	2	claude-v3-phase8	false
+PAARE	Paare	Je zwei zusammen	5	132	3651	2	claude-v3-phase8	false
+PHASEN	Phasen	Stufen im Ablauf	6	132	3652	2	claude-v3-phase8	false
+DEBUET	Debüt	Erstlingswerk	6	131	3659	2	claude-v3-phase8	false
+MISST	misst	Er ... Fieber	5	131	3664	2	claude-v3-phase8	false
+SINGT	singt	Sie ... Lieder	5	131	3670	2	claude-v3-phase8	false
+FEIN	fein	Wie Puderzucker	4	130	3674	2	claude-v3-phase8	false
+FETT	Fett	Butter oder Speck	4	130	3675	2	claude-v3-phase8	false
+LAUNE	Laune	Gute ...	5	130	3678	2	claude-v3-phase8	false
+NETTE	nette	Eine ... Geste	5	130	3680	2	claude-v3-phase8	false
+RUHT	ruht	Der See ...	4	130	3683	2	claude-v3-phase8	false
+ERNTE	Ernte	Zeit der Mähdrescher	5	129	3693	2	claude-v3-phase8	false
+BEZOG	bezog	Er ... Stellung	5	128	3705	2	claude-v3-phase8	false
+ECHO	Echo	Schallt zurück	4	128	3708	2	claude-v3-phase8	false
+HELLE	helle	Eine ... Freude	5	128	3715	2	claude-v3-phase8	false
+HELM	Helm	Schützt den Kopf	4	128	3716	2	claude-v3-phase8	false
+SASSEN	saßen	Sie ... Modell	6	128	3721	2	claude-v3-phase8	false
+WIEGT	wiegt	Mutter ... Kind	5	128	3725	2	claude-v3-phase8	false
+BETON	Beton	Mit Zement angerührt	5	127	3726	2	claude-v3-phase8	false
+BUNTE	bunte	Eine ... Mischung	5	127	3728	2	claude-v3-phase8	false
+ETAGE	Etage	Zwischen zwei Decken	5	127	3730	2	claude-v3-phase8	false
+HORN	Horn	Instrument vom Jäger	4	127	3733	2	claude-v3-phase8	false
+ERFREUT	erfreut	Mit leuchtenden Augen	7	126	3747	2	claude-v3-phase8	false
+KOCHEN	Kochen	Am Herd ...	6	126	3750	2	claude-v3-phase8	false
+STUHL	Stuhl	Hat eine Lehne	5	126	3755	2	claude-v3-phase8	false
+BLUETE	Blüte	Bienen besuchen sie	6	125	3760	2	claude-v3-phase8	false
+ENORMEN	enormen	Mit ... Kräften	7	125	3761	2	claude-v3-phase8	false
+ERLAG	erlag	Er ... Verletzungen	5	125	3762	2	claude-v3-phase8	false
+HEIRAT	Heirat	Vor dem Standesamt	6	125	3765	2	claude-v3-phase8	false
+SEES	Sees	Rand des ...	4	125	3769	2	claude-v3-phase8	false
+ERWARTE	erwarte	Ich ... Besuch	7	124	3776	2	claude-v3-phase8	false
+HOSE	Hose	Hat zwei Beine	4	124	3778	2	claude-v3-phase8	false
+PRAEGEN	prägen	Münzen ...	7	124	3783	2	claude-v3-phase8	false
+STAUB	Staub	Liegt auf Regalen	5	124	3785	2	claude-v3-phase8	false
+ZELT	Zelt	Mit Heringen	4	124	3788	2	claude-v3-phase8	false
+ERRANG	errang	Er ... Gold	6	123	3795	2	claude-v3-phase8	false
+RASEN	Rasen	Wird gemäht	5	123	3802	2	claude-v3-phase8	false
+ATHEN	Athen	Stadt der Akropolis	5	122	3811	2	claude-v3-phase8	false
+CHEMNITZ	Chemnitz	Sächsische Großstadt	8	122	3812	2	claude-v3-phase8	false
+GEBET	Gebet	Wort an Gott	5	122	3816	2	claude-v3-phase8	false
+NEUERE	Neuere	... Geschichte	6	122	3821	2	claude-v3-phase8	false
+MOEBEL	Möbel	Tisch, Stuhl, Schrank	6	121	3839	2	claude-v3-phase8	false
+NEST	Nest	Zuhause der Vögel	4	121	3840	2	claude-v3-phase8	false
+ROEMER	Römer	Einwohner Roms	6	121	3841	2	claude-v3-phase8	false
+SAUER	sauer	Wie Zitronen	5	121	3842	2	claude-v3-phase8	false
+WEH	weh	Ach und ...	3	121	3845	2	claude-v3-phase8	false
+ATEM	Atem	Außer ...	4	120	3846	2	claude-v3-phase8	false
+BIETE	biete	Ich ... Paroli	5	120	3849	2	claude-v3-phase8	false
+LAS	las	Er ... Zeitung	3	120	3856	2	claude-v3-phase8	false
+TABU	tabu	Darüber schweigt man	4	119	3879	2	claude-v3-phase8	false
+AERA	Ära	Goldene ...	4	118	3883	2	claude-v3-phase8	false
+MASSSTAB	Maßstab	Verhältnis auf Karten	8	118	3892	2	claude-v3-phase8	false
+RAUCHEN	Rauchen	Mit Zigarette	7	118	3893	2	claude-v3-phase8	false
+TRENNT	trennt	Er ... Müll	6	118	3897	2	claude-v3-phase8	false
+COOL	cool	Total entspannt	4	117	3905	2	claude-v3-phase8	false
+KLINGEN	klingen	Glocken ...	7	117	3911	2	claude-v3-phase8	false
+REISST	reißt	Er ... Witze	6	117	3913	2	claude-v3-phase8	false
+TEURE	teure	Eine ... Anschaffung	5	117	3916	2	claude-v3-phase8	false
+DEFEKT	Defekt	Muss zur Reparatur	6	116	3921	2	claude-v3-phase8	false
+FELL	Fell	Haarkleid des Tieres	4	116	3923	2	claude-v3-phase8	false
+REIZ	Reiz	Weckt Interesse	4	116	3929	2	claude-v3-phase8	false
+SOVIEL	soviel	... wie möglich	6	116	3931	2	claude-v3-phase8	false
+TERROR	Terror	Angst als Waffe	6	116	3933	2	claude-v3-phase8	false
+WEM	Wem	... gehört das?	3	116	3936	2	claude-v3-phase8	false
+GESPART	gespart	Aufs Konto gelegt	7	115	3942	2	claude-v3-phase8	false
+SANG	sang	Er ... Karaoke	4	115	3948	2	claude-v3-phase8	false
+ZOO	Zoo	Mit Affenhaus	3	115	3956	2	claude-v3-phase8	false
+EXTREME	extreme	... Kälte	7	114	3964	2	claude-v3-phase8	false
+MORDES	Mordes	Verdacht des ...	6	114	3968	2	claude-v3-phase8	false
+REIST	reist	Er ... viel	5	114	3970	2	claude-v3-phase8	false
+TAKT	Takt	Im ... bleiben	4	114	3973	2	claude-v3-phase8	false
+TREUE	Treue	Die ... halten	5	114	3974	2	claude-v3-phase8	false
+RATEN	raten	Beim Quiz ...	5	113	3988	2	claude-v3-phase8	false
+GARAGE	Garage	Parkplatz mit Dach	6	112	3998	2	claude-v3-phase8	false
+GRAZ	Graz	Steirische Hauptstadt	4	112	4002	2	claude-v3-phase8	false
+NAH	nah	Nur ein Katzensprung	3	112	4009	2	claude-v3-phase8	false
+STUDIOS	Studios	Wo gedreht wird	7	112	4013	2	claude-v3-phase8	false
+TYPS	Typs	Bauart eines ...	4	112	4017	2	claude-v3-phase8	false
+WEHT	weht	Der Wind ...	4	112	4019	2	claude-v3-phase8	false
+OSTSEE	Ostsee	Meer bei Rügen	6	111	4031	2	claude-v3-phase8	false
+DEMO	Demo	Marsch mit Plakaten	4	110	4043	2	claude-v3-phase8	false
+MALEN	malen	Mit Pinsel ...	5	110	4049	2	claude-v3-phase8	false
+NEUERUNG	Neuerung	Frischer Wind	8	110	4051	2	claude-v3-phase8	false
+SCHIEF	schief	Wie der Pisa-Turm	6	110	4053	2	claude-v3-phase8	false
+ABSEHBAR	absehbar	In naher Zukunft	8	109	4060	2	claude-v3-phase8	false
+EPISODE	Episode	Teil einer Serie	7	109	4063	2	claude-v3-phase8	false
+OHR	Ohr	Hat eine Muschel	3	109	4075	2	claude-v3-phase8	false
+SEGEN	Segen	Gottes ...	5	109	4079	2	claude-v3-phase8	false
+GENE	Gene	Bauplan der Zellen	4	108	4093	2	claude-v3-phase8	false
+UEBT	übt	Er ... Geduld	4	108	4100	2	claude-v3-phase8	false
+ACHTE	achte	Das ... Weltwunder	5	107	4104	2	claude-v3-phase8	false
+IRRTUM	Irrtum	Falsche Annahme	6	107	4116	2	claude-v3-phase8	false
+TRAGE	trage	Ich ... Brille	5	107	4126	2	claude-v3-phase8	false
+GRAUE	graue	... Eminenz	5	106	4141	2	claude-v3-phase8	false
+HIERVON	hiervon	Von dieser Sache	7	106	4143	2	claude-v3-phase8	false
+HOEFE	Höfe	Bauernanwesen	5	106	4144	2	claude-v3-phase8	false
+ZUNGE	Zunge	Hat Geschmacksknospen	5	106	4164	2	claude-v3-phase8	false
+ALARM	Alarm	Heulende Sirenen	5	105	4165	2	claude-v3-phase8	false
+ALLEMAL	allemal	Auf jeden Fall	7	105	4166	2	claude-v3-phase8	false
+AMTES	Amtes	Inhaber des ...	5	105	4167	2	claude-v3-phase8	false
+FAIR	fair	Ohne Foul	4	105	4170	2	claude-v3-phase8	false
+KUBA	Kuba	Insel der Zigarren	4	105	4176	2	claude-v3-phase8	false
+RASSE	Rasse	Dackel oder Pudel	5	105	4183	2	claude-v3-phase8	false
+SCHAFE	Schafe	Liefern Wolle	6	105	4186	2	claude-v3-phase8	false
+THRON	Thron	Prunkvoller Sessel	5	105	4190	2	claude-v3-phase8	false
+ADEL	Adel	Graf und Baron	4	104	4197	2	claude-v3-phase8	false
+HIT	Hit	In den Charts	3	104	4202	2	claude-v3-phase8	false
+MAJOR	Major	Rang über Hauptmann	5	104	4209	2	claude-v3-phase8	false
+OPTIK	Optik	Linsen und Spiegel	5	104	4211	2	claude-v3-phase8	false
+RIO	Rio	Stadt der Samba	3	104	4214	2	claude-v3-phase8	false
+SENATS	Senats	Beschluss des ...	6	104	4215	2	claude-v3-phase8	false
+ZUTATEN	Zutaten	Mehl, Eier, Zucker	7	104	4218	2	claude-v3-phase8	false
+LEDER	Leder	Gegerbte Haut	5	103	4231	2	claude-v3-phase8	false
+ULM	Ulm	Stadt der Spatzen	3	103	4239	2	claude-v3-phase8	false
+BASS	Bass	Tiefer als Tenor	4	102	4244	2	claude-v3-phase8	false
+KABINE	Kabine	Zum Umziehen	6	102	4256	2	claude-v3-phase8	false
+LARVEN	Larven	Vor der Verpuppung	6	102	4261	2	claude-v3-phase8	false
+REALE	reale	Die ... Welt	5	102	4263	2	claude-v3-phase8	false
+TANTE	Tante	Mamas Schwester	5	102	4269	2	claude-v3-phase8	false
+ZENSUS	Zensus	Bürger werden gezählt	6	102	4272	2	claude-v3-phase8	false
+ENKEL	Enkel	Opas Stolz	5	101	4279	2	claude-v3-phase8	false
+FLUT	Flut	Nach der Ebbe	4	101	4281	2	claude-v3-phase8	false
+HALB	halb	Zwei Viertel	4	101	4285	2	claude-v3-phase8	false
+ABTEI	Abtei	Haus der Mönche	5	100	4306	2	claude-v3-phase8	false
+EVENT	Event	Spektakel	5	100	4310	2	claude-v3-phase8	false
+IRAK	Irak	Land mit Bagdad	4	100	4316	2	claude-v3-phase8	false
+ZUVIEL	zuviel	Mehr als nötig	6	100	4328	2	claude-v3-phase8	false
+ERHOB	erhob	Er ... Einspruch	5	99	4338	2	claude-v3-phase8	false
+LANGEM	langem	Nach ... Warten	6	99	4346	2	claude-v3-phase8	false
+ASCHE	Asche	Vom Feuer übrig	5	98	4364	2	claude-v3-phase8	false
+BAER	Bär	Brummt im Wald	4	98	4365	2	claude-v3-phase8	false
+EROBERT	erobert	Im Sturm genommen	7	98	4368	2	claude-v3-phase8	false
+LAGERN	Lagern	Vorräte ...	6	98	4375	2	claude-v3-phase8	false
+LINZ	Linz	Österreichs Donaustadt	4	98	4376	2	claude-v3-phase8	false
+NOTE	Note	Eins bis sechs	4	98	4377	2	claude-v3-phase8	false
+RUNDET	rundet	Er ... Zahlen	6	98	4379	2	claude-v3-phase8	false
+TEXAS	Texas	Land der Cowboys	5	98	4381	2	claude-v3-phase8	false
+KAESE	Käse	Hat oft Löcher	5	97	4397	2	claude-v3-phase8	false
+ROHR	Rohr	Röhre aus Metall	4	97	4403	2	claude-v3-phase8	false
+SPITAL	Spital	Klinik in Österreich	6	97	4406	2	claude-v3-phase8	false
+WEHR	Wehr	Zur ... setzen	4	97	4411	2	claude-v3-phase8	false
+MENUE	Menü	Vorspeise bis Dessert	5	96	4429	2	claude-v3-phase8	false
+UNI	Uni	Mit Hörsälen	3	96	4437	2	claude-v3-phase8	false
+FARM	Farm	Rinder und Weizen	4	95	4449	2	claude-v3-phase8	false
+GELOBT	gelobt	Bekam Applaus	6	95	4452	2	claude-v3-phase8	false
+HUERDE	Hürde	Zum Überspringen	6	95	4458	2	claude-v3-phase8	false
+ZAHN	Zahn	Hat eine Wurzel	4	95	4465	2	claude-v3-phase8	false
+GENIAL	genial	Hochbegabt	6	94	4473	2	claude-v3-phase8	false
+GNADE	Gnade	... vor Recht	5	94	4474	2	claude-v3-phase8	false
+OFEN	Ofen	Heizt im Winter	4	94	4477	2	claude-v3-phase8	false
+SENKT	senkt	Er ... Kosten	5	94	4481	2	claude-v3-phase8	false
+BRAUNE	braune	... Augen	6	93	4489	2	claude-v3-phase8	false
+EWIG	ewig	Ohne Verfallsdatum	4	93	4497	2	claude-v3-phase8	false
+KANTEN	Kanten	Ecken und ...	6	93	4502	2	claude-v3-phase8	false
+MODULE	Module	Austauschbare Teile	6	93	4506	2	claude-v3-phase8	false
+TAGT	tagt	Der Ausschuss ...	4	93	4515	2	claude-v3-phase8	false
+LOGO	Logo	Zeichen der Marke	4	92	4539	2	claude-v3-phase8	false
+RAST	rast	Mit Vollgas	4	92	4540	2	claude-v3-phase8	false
+REMIS	Remis	Schach ohne Sieger	5	92	4543	2	claude-v3-phase8	false
+NORM	Norm	DIN oder ISO	4	91	4576	2	claude-v3-phase8	false
+ROLLT	rollt	Der Rubel ...	5	91	4579	2	claude-v3-phase8	false
+TAXI	Taxi	Mit Taxameter	4	91	4583	2	claude-v3-phase8	false
+VOTUM	Votum	Abstimmungsergebnis	5	91	4589	2	claude-v3-phase8	false
+ETAGEN	Etagen	Ebenen im Haus	6	90	4597	2	claude-v3-phase8	false
+LAUTE	Laute	Sprechgeräusche	5	90	4607	2	claude-v3-phase8	false
+OBST	Obst	Äpfel und Birnen	4	90	4611	2	claude-v3-phase8	false
+GENF	Genf	Rotkreuz-Stadt	4	89	4630	2	claude-v3-phase8	false
+SCHMAL	schmal	Von geringer Breite	6	89	4641	2	claude-v3-phase8	false
+AGENDA	Agenda	Termine und Themen	6	88	4653	2	claude-v3-phase8	false
+GRAS	Gras	Grünes Halmgewächs	4	88	4662	2	claude-v3-phase8	false
+LASST	Lasst	... uns spielen!	5	88	4668	2	claude-v3-phase8	false
+NIX	nix	Null Komma ...	3	88	4670	2	claude-v3-phase8	false
+RATE	Rate	Pro Monat zahlen	4	88	4671	2	claude-v3-phase8	false
+AACHENER	Aachener	... Dom	8	87	4680	2	claude-v3-phase8	false
+PUR	pur	Whisky ohne Eis	3	87	4702	2	claude-v3-phase8	false
+SEHT	seht	Ihr ... doch	4	87	4703	2	claude-v3-phase8	false
+TEIG	Teig	Vor dem Backen	4	87	4708	2	claude-v3-phase8	false
+GEN	gen	... Himmel	3	86	4721	2	claude-v3-phase8	false
+LAEDEN	Läden	Mit Schaufenstern	6	86	4730	2	claude-v3-phase8	false
+LEIB	Leib	... und Seele	4	86	4731	2	claude-v3-phase8	false
+MATT	Matt	Schach und ...	4	86	4733	2	claude-v3-phase8	false
+RETTET	rettet	Er ... Leben	6	86	4737	2	claude-v3-phase8	false
+WACH	wach	Bei Bewusstsein	4	86	4741	2	claude-v3-phase8	false
+ERTRAG	Ertrag	Ausbeute	6	85	4751	2	claude-v3-phase8	false
+GEIL	geil	Jugendwort: toll	4	85	4754	2	claude-v3-phase8	false
+GROBE	grobe	... Skizze	5	85	4757	2	claude-v3-phase8	false
+HEBEL	Hebel	Hat Drehpunkt	5	85	4758	2	claude-v3-phase8	false
+INTERN	intern	Nur für Mitarbeiter	6	85	4759	2	claude-v3-phase8	false
+MEISTE	meiste	Die ... Stimmen	6	85	4763	2	claude-v3-phase8	false
+REIF	reif	Zum Pflücken bereit	4	85	4767	2	claude-v3-phase8	false
+DRAUF	drauf	... und dran	5	84	4779	2	claude-v3-phase8	false
+ETAT	Etat	Haushaltsplan	4	84	4780	2	claude-v3-phase8	false
+KEHLE	Kehle	Aus voller ...	5	84	4789	2	claude-v3-phase8	false
+RENTEN	Renten	Alterseinkünfte	6	84	4798	2	claude-v3-phase8	false
+UNTERART	Unterart	Biologische Kategorie	8	84	4805	2	claude-v3-phase8	false
+UNWEIT	unweit	Gleich nebenan	6	84	4806	2	claude-v3-phase8	false
+ELBE	Elbe	Fließt zur Nordsee	4	83	4819	2	claude-v3-phase8	false
+FLORA	Flora	Gegenstück zur Fauna	5	83	4821	2	claude-v3-phase8	false
+LUEGE	Lüge	Hat kurze Beine	5	83	4827	2	claude-v3-phase8	false
+ERREGTE	erregte	Er ... Aufsehen	7	82	4847	2	claude-v3-phase8	false
+FIRST	First	Dachspitze	5	82	4851	2	claude-v3-phase8	false
+PAPA	Papa	Mamas Mann	4	82	4855	2	claude-v3-phase8	false
+REZEPTE	Rezepte	Aus dem Kochbuch	7	82	4857	2	claude-v3-phase8	false
+STAB	Stab	Lang und dünn	4	82	4859	2	claude-v3-phase8	false
+AHNUNG	Ahnung	Keine ... haben	6	81	4867	2	claude-v3-phase8	false
+EWIGE	ewige	... Jagdgründe	5	81	4881	2	claude-v3-phase8	false
+KOMA	Koma	Im ... liegen	4	81	4892	2	claude-v3-phase8	false
+PFEIL	Pfeil	Fliegt vom Bogen	5	81	4897	2	claude-v3-phase8	false
+TITELN	Titeln	Doktor und Professor	6	81	4909	2	claude-v3-phase8	false
+AKTE	Akte	... X	4	80	4915	2	claude-v3-phase8	false
+BELEG	Beleg	Kassenzettel	5	80	4919	2	claude-v3-phase8	false
+ILLEGAL	illegal	Gegen das Gesetz	7	80	4932	2	claude-v3-phase8	false
+LOBT	lobt	Er ... Kollegen	4	80	4938	2	claude-v3-phase8	false
+LOK	Lok	Zieht Waggons	3	80	4939	2	claude-v3-phase8	false
+TROST	Trost	Pflaster der Seele	5	80	4948	2	claude-v3-phase8	false
+DOZENT	Dozent	Hält Vorlesungen	6	79	4957	2	claude-v3-phase8	false
+FAHRE	fahre	Ich ... Rad	5	79	4959	2	claude-v3-phase8	false
+IDEALEN	idealen	Im ... Fall	7	79	4964	2	claude-v3-phase8	false
+LAGERS	Lagers	Bewohner des ...	6	79	4969	2	claude-v3-phase8	false
+RAET	rät	Er ... zu	4	79	4973	2	claude-v3-phase8	false
+SENATOR	Senator	Römischer Politiker	7	79	4976	2	claude-v3-phase8	false
+KUSS	Kuss	Auf die Lippen	4	78	4995	2	claude-v3-phase8	false
+LAIEN	Laien	Nicht vom Fach	5	78	4996	2	claude-v3-phase8	false
+NETZE	Netze	Von Spinnen gewebt	5	78	5002	2	claude-v3-phase8	false
+RATES	Rates	Vorsitzender des ...	5	78	5003	2	claude-v3-phase8	false
+SAUNA	Sauna	Mit Aufguss	5	78	5004	2	claude-v3-phase8	false
+CHAT	Chat	Plaudern per Tastatur	4	77	5020	2	claude-v3-phase8	false
+IMMENS	immens	Unermesslich groß	6	77	5033	2	claude-v3-phase8	false
+REIS	Reis	Beilage zu Curry	4	77	5043	2	claude-v3-phase8	false
+STAU	Stau	Nichts geht mehr	4	77	5047	2	claude-v3-phase8	false
+TEHERAN	Teheran	Hauptstadt am Elburs	7	77	5049	2	claude-v3-phase8	false
+UHREN	Uhren	Zeigen die Zeit	5	77	5051	2	claude-v3-phase8	false
+ZONEN	Zonen	Gebiete der Stadt	5	77	5055	2	claude-v3-phase8	false
+BETEN	beten	Zu Gott sprechen	5	76	5059	2	claude-v3-phase8	false
+ELITE	Elite	Obere Zehntausend	5	76	5065	2	claude-v3-phase8	false
+ERLASS	Erlass	Amtliche Anordnung	6	76	5066	2	claude-v3-phase8	false
+LEBER	Leber	Entgiftet den Körper	5	76	5074	2	claude-v3-phase8	false
+TIROL	Tirol	Land mit Innsbruck	5	76	5080	2	claude-v3-phase8	false
+ELEND	Elend	Not und ...	5	75	5103	2	claude-v3-phase8	false
+GEBAUTE	gebaute	Selbst ... Haus	7	75	5107	2	claude-v3-phase8	false
+RAUPEN	Raupen	Werden zu Faltern	6	75	5118	2	claude-v3-phase8	false
+STEG	Steg	Ins Wasser ragend	4	75	5121	2	claude-v3-phase8	false
+ATMEN	atmen	Lungen im Einsatz	5	74	5132	2	claude-v3-phase8	false
+BOSS	Boss	The ... (Springsteen)	4	74	5137	2	claude-v3-phase8	false
+BUTTER	Butter	Aus Sahne gerührt	6	74	5138	2	claude-v3-phase8	false
+DRAENGTE	drängte	Er ... vor	8	74	5140	2	claude-v3-phase8	false
+EXPLIZIT	explizit	Klar ausgesprochen	8	74	5149	2	claude-v3-phase8	false
+KAHL	kahl	Mit Glatze	4	74	5152	2	claude-v3-phase8	false
+LAECHELT	lächelt	Sie ... freundlich	8	74	5154	2	claude-v3-phase8	false
+MORDE	Morde	Fälle für Kommissare	5	74	5157	2	claude-v3-phase8	false
+PATENT	Patent	Schutz für Erfinder	6	74	5161	2	claude-v3-phase8	false
+REISSEN	reißen	In Stücke ...	7	74	5167	2	claude-v3-phase8	false
+RUFE	Rufe	Stimmen im Publikum	4	74	5168	2	claude-v3-phase8	false
+SEIL	Seil	Zum Klettern	4	74	5172	2	claude-v3-phase8	false
+SPAETE	späte	... Reue	6	74	5175	2	claude-v3-phase8	false
+EIERN	Eiern	Mit ... werfen	5	73	5191	2	claude-v3-phase8	false
+FREUTE	freute	Das ... mich	6	73	5195	2	claude-v3-phase8	false
+IRRE	Irre	Im Wahn befangen	4	73	5201	2	claude-v3-phase8	false
+KAISERS	Kaisers	Des ... Reich	7	73	5202	2	claude-v3-phase8	false
+REVIER	Revier	Eigenes Territorium	6	73	5209	2	claude-v3-phase8	false
+VAETER	Väter	Männer mit Kindern	6	73	5215	2	claude-v3-phase8	false
+WERDET	werdet	Ihr ... sehen	6	73	5217	2	claude-v3-phase8	false
+BESAGT	besagt	Das ... nichts	6	72	5225	2	claude-v3-phase8	false
+NAGEL	Nagel	Wird eingeschlagen	5	72	5251	2	claude-v3-phase8	false
+PFAD	Pfad	Wanderweg im Wald	4	72	5255	2	claude-v3-phase8	false
+REDNER	Redner	Steht am Pult	6	72	5258	2	claude-v3-phase8	false
+REEDEREI	Reederei	Betreibt Frachter	8	72	5259	2	claude-v3-phase8	false
+ROSEN	Rosen	Zum Valentinstag	5	72	5262	2	claude-v3-phase8	false
+WAHRES	wahres	Ein ... Wort	6	72	5273	2	claude-v3-phase8	false
+APFEL	Apfel	Wilhelm Tells Ziel	5	71	5282	2	claude-v3-phase8	false
+BEGAB	begab	Es ... sich	5	71	5285	2	claude-v3-phase8	false
+BOARD	Board	Brett auf Rollen	5	71	5288	2	claude-v3-phase8	false
+CHIP	Chip	Winziger Prozessor	4	71	5290	2	claude-v3-phase8	false
+GABE	Gabe	Natürliche Fähigkeit	4	71	5296	2	claude-v3-phase8	false
+LATEIN	Latein	Sprache der Römer	6	71	5303	2	claude-v3-phase8	false
+FAIRE	faire	... Bedingungen	5	70	5322	2	claude-v3-phase8	false
+LIEBTE	liebte	Sie ... einander	6	70	5331	2	claude-v3-phase8	false
+MERKT	merkt	Er ... Unterschied	5	70	5336	2	claude-v3-phase8	false
+SUENDE	Sünde	Verstoß gegen Gebote	6	70	5343	2	claude-v3-phase8	false
+ABGANG	Abgang	Verlassen der Bühne	6	69	5348	2	claude-v3-phase8	false
+ENTFIEL	entfiel	Es ... mir	7	69	5360	2	claude-v3-phase8	false
+ERBTE	erbte	Sie ... Schmuck	5	69	5361	2	claude-v3-phase8	false
+NASS	nass	Wie ein Pudel	4	69	5375	2	claude-v3-phase8	false
+ORDNER	Ordner	Mit Heftmechanik	6	69	5379	2	claude-v3-phase8	false
+PLANE	plane	Ich ... voraus	5	69	5381	2	claude-v3-phase8	false
+TUE	tue	Was ... ich?	3	69	5392	2	claude-v3-phase8	false
+TUGEND	Tugend	Fleiß oder Ehrlichkeit	6	69	5393	2	claude-v3-phase8	false
+BLASS	blass	Wie Kreide	5	68	5401	2	claude-v3-phase8	false
+EURER	eurer	Mit ... Hilfe	5	68	5411	2	claude-v3-phase8	false
+FLORIDA	Florida	Sunshine State	7	68	5412	2	claude-v3-phase8	false
+FOLIE	Folie	Zum Einwickeln	5	68	5413	2	claude-v3-phase8	false
+GASTHOF	Gasthof	Wirt und Zimmer	7	68	5416	2	claude-v3-phase8	false
+GEAHNDET	geahndet	Mit Strafe belegt	8	68	5417	2	claude-v3-phase8	false
+HEIL	Heil	Ski ...	4	68	5422	2	claude-v3-phase8	false
+IRONIE	Ironie	Meint das Gegenteil	6	68	5423	2	claude-v3-phase8	false
+KUH	Kuh	Gibt Milch	3	68	5426	2	claude-v3-phase8	false
+LOSE	lose	Ohne Verpackung	4	68	5429	2	claude-v3-phase8	false
+ORDENS	Ordens	Ritter des ...	6	68	5435	2	claude-v3-phase8	false
+RIESEN	Riesen	Größer als Zwerge	6	68	5437	2	claude-v3-phase8	false
+STANGE	Stange	Zum Festhalten	6	68	5441	2	claude-v3-phase8	false
+TASCHEN	Taschen	Mit Reißverschluss	7	68	5444	2	claude-v3-phase8	false
+DIEB	Dieb	Stiehlt Handtaschen	4	67	5453	2	claude-v3-phase8	false
+JAGT	jagt	Fuchs ... Hasen	4	67	5464	2	claude-v3-phase8	false
+LIGEN	Ligen	Erste und Zweite	5	67	5468	2	claude-v3-phase8	false
+OZEAN	Ozean	Atlantik oder Pazifik	5	67	5472	2	claude-v3-phase8	false
+QUEEN	Queen	Freddie Mercurys Band	5	67	5477	2	claude-v3-phase8	false
+GENRE	Genre	Krimi oder Komödie	5	66	5504	2	claude-v3-phase8	false
+KENNST	Kennst	... du das?	6	66	5510	2	claude-v3-phase8	false
+KRAGEN	Kragen	Am Hemd	6	66	5511	2	claude-v3-phase8	false
+OMA	Oma	Mamas Mutter	3	66	5515	2	claude-v3-phase8	false
+SALAT	Salat	Mit Dressing	5	66	5520	2	claude-v3-phase8	false
+STAUS	Staus	Zäher Verkehr	5	66	5525	2	claude-v3-phase8	false
+TAGS	Tags	... und nachts	4	66	5526	2	claude-v3-phase8	false
+TOBT	tobt	Der Kampf ...	4	66	5530	2	claude-v3-phase8	false
+ZITAT	Zitat	In Anführungszeichen	5	66	5532	2	claude-v3-phase8	false
+AGENT	Agent	007 ist einer	5	65	5535	2	claude-v3-phase8	false
+HARZ	Harz	Gebirge mit Brocken	4	65	5549	2	claude-v3-phase8	false
+HEXE	Hexe	Auf dem Besen	4	65	5550	2	claude-v3-phase8	false
+PAECHTER	Pächter	Nutzt fremden Acker	8	65	5557	2	claude-v3-phase8	false
+PART	Part	Für jede Stimme	4	65	5558	2	claude-v3-phase8	false
+REGES	reges	Ein ... Treiben	5	65	5560	2	claude-v3-phase8	false
+TRAILER	Trailer	Kino-Appetithäppchen	7	65	5564	2	claude-v3-phase8	false
+ALLZU	allzu	... viel	5	64	5570	2	claude-v3-phase8	false
+ANGETAN	angetan	Ganz ... von	7	64	5572	2	claude-v3-phase8	false
+BLOSSE	bloße	Mit ... Händen	6	64	5575	2	claude-v3-phase8	false
+FELS	Fels	In der Brandung	4	64	5583	2	claude-v3-phase8	false
+MALERS	Malers	Atelier des ...	6	64	5598	2	claude-v3-phase8	false
+PORTO	Porto	Für Briefmarken	5	64	5604	2	claude-v3-phase8	false
+RELIEF	Relief	Erhabenes Bild	6	64	5606	2	claude-v3-phase8	false
+AULA	Aula	Zur Schulfeier	4	63	5620	2	claude-v3-phase8	false
+GUNST	Gunst	Huld und ...	5	63	5642	2	claude-v3-phase8	false
+LEHEN	Lehen	Vom Fürsten verliehen	5	63	5648	2	claude-v3-phase8	false
+SEGEL	Segel	Fängt den Wind	5	63	5657	2	claude-v3-phase8	false
+AHNEN	ahnen	Böses ...	5	62	5665	2	claude-v3-phase8	false
+BAUS	Baus	Kosten des ...	4	62	5668	2	claude-v3-phase8	false
+BITTERE	bittere	... Pille	7	62	5673	2	claude-v3-phase8	false
+GETANZT	getanzt	Den Tango ...	7	62	5686	2	claude-v3-phase8	false
+JAGEN	jagen	Zur ... gehen	5	62	5689	2	claude-v3-phase8	false
+KANTE	Kante	Schmale Seitenfläche	5	62	5690	2	claude-v3-phase8	false
+RAEUMT	räumt	Er ... Schnee	6	62	5697	2	claude-v3-phase8	false
+ROLLER	Roller	Trittbrett mit Lenker	6	62	5699	2	claude-v3-phase8	false
+BAUHERR	Bauherr	Zahlt das Haus	7	61	5718	2	claude-v3-phase8	false
+FAX	Fax	Papier per Telefon	3	61	5727	2	claude-v3-phase8	false
+INDIZES	Indizes	Börsenkennzahlen	7	61	5734	2	claude-v3-phase8	false
+KLUG	klug	Mit Köpfchen	4	61	5736	2	claude-v3-phase8	false
+LUD	lud	Er ... Gäste	3	61	5738	2	claude-v3-phase8	false
+MINE	Mine	Im Bleistift	4	61	5740	2	claude-v3-phase8	false
+PASSEND	passend	Wie angegossen	7	61	5744	2	claude-v3-phase8	false
+PERU	Peru	Land der Inka	4	61	5745	2	claude-v3-phase8	false
+RENNER	Renner	Verkaufsschlager	6	61	5749	2	claude-v3-phase8	false
+SATT	satt	Mit vollem Bauch	4	61	5751	2	claude-v3-phase8	false
+VIEH	Vieh	Kühe und Schweine	4	61	5762	2	claude-v3-phase8	false
+DOSIS	Dosis	Auf dem Beipackzettel	5	60	5775	2	claude-v3-phase8	false
+EINIG	einig	Einer Meinung	5	60	5778	2	claude-v3-phase8	false
+HIERHER	hierher	Bitte ... kommen	7	60	5788	2	claude-v3-phase8	false
+HOFES	Hofes	Tor des ...	5	60	5789	2	claude-v3-phase8	false
+IRIS	Iris	Götterbotin	4	60	5791	2	claude-v3-phase8	false
+NENNE	nenne	Ich ... Beispiele	5	60	5795	2	claude-v3-phase8	false
+POESIE	Poesie	Gedichte und Verse	6	60	5800	2	claude-v3-phase8	false
+RAN	ran	Na dann ...	3	60	5803	2	claude-v3-phase8	false
+SET	Set	Beim Tennis	3	60	5809	2	claude-v3-phase8	false
+SOLO	Solo	Ohne Begleitung	4	60	5811	2	claude-v3-phase8	false
+ZEHEN	Zehen	Fünf pro Fuß	5	60	5825	2	claude-v3-phase8	false
+APP	App	Auf dem Smartphone	3	59	5829	2	claude-v3-phase8	false
+BLUEHT	blüht	Der Flieder ...	6	59	5837	2	claude-v3-phase8	false
+EILT	eilt	Es ... nicht	4	59	5839	2	claude-v3-phase8	false
+FASS	Fass	Zum Anzapfen	4	59	5841	2	claude-v3-phase8	false
+HINAB	hinab	Den Berg ...	5	59	5846	2	claude-v3-phase8	false
+LIESSE	ließe	Man ... sich	6	59	5854	2	claude-v3-phase8	false
+MUTIG	mutig	Wie ein Löwe	5	59	5860	2	claude-v3-phase8	false
+ASPHALT	Asphalt	Schwarzer Belag	7	58	5883	2	claude-v3-phase8	false
+BLASE	Blase	Luft in Seifenwasser	5	58	5892	2	claude-v3-phase8	false
+BLOG	Blog	Online-Tagebuch	4	58	5893	2	claude-v3-phase8	false
+FUEGT	fügt	Er ... hinzu	5	58	5904	2	claude-v3-phase8	false
+GEBIETS	Gebiets	Größe des ...	7	58	5905	2	claude-v3-phase8	false
+KORN	Korn	Wird gemahlen	4	58	5912	2	claude-v3-phase8	false
+RAR	rar	Kaum zu finden	3	58	5921	2	claude-v3-phase8	false
+RELIEFS	Reliefs	An Tempelwänden	7	58	5923	2	claude-v3-phase8	false
+SAFT	Saft	Aus Obst gepresst	4	58	5926	2	claude-v3-phase8	false
+AURA	Aura	Unsichtbare Hülle	4	57	5945	2	claude-v3-phase8	false
+EHEN	Ehen	Ringe und Trauzeugen	4	57	5951	2	claude-v3-phase8	false
+FREIES	freies	Ein ... Land	6	57	5958	2	claude-v3-phase8	false
+GALA	Gala	In Abendgarderobe	4	57	5960	2	claude-v3-phase8	false
+GIER	Gier	Nie satt werden	4	57	5963	2	claude-v3-phase8	false
+HASSE	hasse	Ich ... Montage	5	57	5968	2	claude-v3-phase8	false
+KNIE	Knie	Gelenk im Bein	4	57	5975	2	claude-v3-phase8	false
+MAIS	Mais	Popcorn-Basis	4	57	5980	2	claude-v3-phase8	false
+NETTER	netter	Ein ... Kerl	6	57	5988	2	claude-v3-phase8	false
+OSLO	Oslo	Hauptstadt am Fjord	4	57	5990	2	claude-v3-phase8	false
+WEGES	Weges	Länge des ...	5	57	6006	2	claude-v3-phase8	false
+ZIEHE	ziehe	Ich ... um	5	57	6009	2	claude-v3-phase8	false
+AESTE	Äste	Am Stamm gewachsen	5	56	6010	2	claude-v3-phase8	false
+AKUTE	akute	... Gefahr	5	56	6011	2	claude-v3-phase8	false
+HEFTE	Hefte	Für die Schule	5	56	6029	2	claude-v3-phase8	false
+LEGE	lege	Ich ... Karten	4	56	6037	2	claude-v3-phase8	false
+PEST	Pest	Schwarzer Tod	4	56	6045	2	claude-v3-phase8	false
+REGNET	regnet	Es ... Bindfäden	6	56	6048	2	claude-v3-phase8	false
+SIEB	Sieb	Zum Abseihen	4	56	6056	2	claude-v3-phase8	false
+TABAK	Tabak	Für die Pfeife	5	56	6057	2	claude-v3-phase8	false
+ARABER	Araber	Morgenländer	6	55	6067	2	claude-v3-phase8	false
+EICHE	Eiche	Stark und knorrig	5	55	6076	2	claude-v3-phase8	false
+EILE	Eile	In ... sein	4	55	6077	2	claude-v3-phase8	false
+HALTBAR	haltbar	Mindestens ... bis	7	55	6083	2	claude-v3-phase8	false
+KNAPPE	knappe	Eine ... Mehrheit	6	55	6091	2	claude-v3-phase8	false
+LAEGE	läge	Es ... nahe	5	55	6094	2	claude-v3-phase8	false
+LAENGS	längs	Parallel zum Rand	6	55	6095	2	claude-v3-phase8	false
+LIST	List	Trojanisches Pferd	4	55	6096	2	claude-v3-phase8	false
+MEHL	Mehl	Aus Weizen gemahlen	4	55	6097	2	claude-v3-phase8	false
+PATCH	Patch	Update für Software	5	55	6100	2	claude-v3-phase8	false
+SARG	Sarg	Letztes Bett	4	55	6101	2	claude-v3-phase8	false
+TRAKTOR	Traktor	Zieht den Pflug	7	55	6114	2	claude-v3-phase8	false
+UEBTEN	übten	Sie ... fleißig	6	55	6116	2	claude-v3-phase8	false
+KILO	Kilo	Pfund mal zwei	4	54	6153	2	claude-v3-phase8	false
+LOGOS	Logos	Zeichen auf Produkten	5	54	6159	2	claude-v3-phase8	false
+MAFIA	Mafia	Sizilianischer Clan	5	54	6161	2	claude-v3-phase8	false
+NAHT	naht	Der Winter ...	4	54	6165	2	claude-v3-phase8	false
+PANNE	Panne	Auto streikt	5	54	6168	2	claude-v3-phase8	false
+SOFA	Sofa	Zum Fläzen	4	54	6176	2	claude-v3-phase8	false
+SONNIG	sonnig	Ohne Wolken	6	54	6177	2	claude-v3-phase8	false
+STIEL	Stiel	Am Besen	5	54	6180	2	claude-v3-phase8	false
+TIERES	Tieres	Fell des ...	6	54	6182	2	claude-v3-phase8	false
+TITELS	Titels	Verteidiger des ...	6	54	6183	2	claude-v3-phase8	false
+ACKER	Acker	Wird gepflügt	5	53	6186	2	claude-v3-phase8	false
+HARTES	hartes	Ein ... Brot	6	53	6205	2	claude-v3-phase8	false
+HAUPT	Haupt	... und Glieder	5	53	6206	2	claude-v3-phase8	false
+LESE	lese	Ich ... Zeitung	4	53	6214	2	claude-v3-phase8	false
+NEIGEN	neigen	Zu etwas ...	6	53	6219	2	claude-v3-phase8	false
+PFANNE	Pfanne	Für Spiegeleier	6	53	6221	2	claude-v3-phase8	false
+UMHER	umher	Ringsum	5	53	6236	2	claude-v3-phase8	false
+VERSE	Verse	Zeilen im Gedicht	5	53	6239	2	claude-v3-phase8	false
+BANN	Bann	Den ... brechen	4	52	6247	2	claude-v3-phase8	false
+BASIERTE	basierte	Stützte sich	8	52	6248	2	claude-v3-phase8	false
+BINDEND	bindend	Rechtlich ...	7	52	6252	2	claude-v3-phase8	false
+BLANK	blank	Frisch poliert	5	52	6253	2	claude-v3-phase8	false
+BUG	Bug	Gegenteil von Heck	3	52	6255	2	claude-v3-phase8	false
+EROTIK	Erotik	Prickelnde Spannung	6	52	6263	2	claude-v3-phase8	false
+HERD	Herd	Mit Kochplatten	4	52	6275	2	claude-v3-phase8	false
+KRATER	Krater	Hat der Vulkan	6	52	6283	2	claude-v3-phase8	false
+PATER	Pater	Ordensgeistlicher	5	52	6297	2	claude-v3-phase8	false
+RAGEN	ragen	Empor ...	5	52	6304	2	claude-v3-phase8	false
+REFERAT	Referat	Schulvortrag	7	52	6307	2	claude-v3-phase8	false
+RESTLOS	restlos	Bis zum Letzten	7	52	6308	2	claude-v3-phase8	false
+TEUREN	teuren	Die ... Schuhe	6	52	6323	2	claude-v3-phase8	false
+ANDERN	andern	Den ... helfen	6	51	6333	2	claude-v3-phase8	false
+BETRAT	betrat	Er ... Neuland	6	51	6340	2	claude-v3-phase8	false
+EXAMEN	Examen	Vor dem Abschluss	6	51	6344	2	claude-v3-phase8	false
+GASSE	Gasse	Zwischen Häuserzeilen	5	51	6349	2	claude-v3-phase8	false
+HANAU	Hanau	Brüder-Grimm-Stadt	5	51	6357	2	claude-v3-phase8	false
+KARDINAL	Kardinal	Wählt den Papst	8	51	6359	2	claude-v3-phase8	false
+KERZE	Kerze	Wachs mit Docht	5	51	6360	2	claude-v3-phase8	false
+KNABEN	Knaben	Kleine Herren	6	51	6362	2	claude-v3-phase8	false
+NEID	Neid	Gelb vor ...	4	51	6367	2	claude-v3-phase8	false
+OBIGE	obige	Das ... Beispiel	5	51	6369	2	claude-v3-phase8	false
+PURE	pure	... Verschwendung	4	51	6373	2	claude-v3-phase8	false
+RATLOS	ratlos	Weiß nicht weiter	6	51	6374	2	claude-v3-phase8	false
+SAUCE	Sauce	Zur Pasta	5	51	6376	2	claude-v3-phase8	false
+SKALA	Skala	Am Thermometer	5	51	6379	2	claude-v3-phase8	false
+TALER	Taler	Münze im Märchen	5	51	6385	2	claude-v3-phase8	false
+TRESOR	Tresor	Mit Zahlenschloss	6	51	6388	2	claude-v3-phase8	false
+WOG	wog	Es ... schwer	3	51	6397	2	claude-v3-phase8	false
+WUEST	wüst	... und leer	5	51	6398	2	claude-v3-phase8	false
+ZWECKS	zwecks	Mit dem Ziel	6	51	6401	2	claude-v3-phase8	false
+ABHOLEN	abholen	Vom Bahnhof ...	7	50	6403	2	claude-v3-phase8	false
+AFFEN	Affen	Schimpanse und Gorilla	5	50	6404	2	claude-v3-phase8	false
+ANGELN	Angeln	Ruten auswerfen	6	50	6405	2	claude-v3-phase8	false
+DIENE	diene	Ich ... dir	5	50	6414	2	claude-v3-phase8	false
+GASSEN	Gassen	In der Altstadt	6	50	6425	2	claude-v3-phase8	false
+GELEGE	Gelege	Vom Vogel gebrütet	6	50	6429	2	claude-v3-phase8	false
+KRAN	Kran	Hebt Container	4	50	6435	2	claude-v3-phase8	false
+LEHM	Lehm	Gelbbrauner Boden	4	50	6438	2	claude-v3-phase8	false
+LEINE	Leine	Hält den Hund	5	50	6439	2	claude-v3-phase8	false
+SAEURE	Säure	pH unter sieben	6	50	6448	2	claude-v3-phase8	false
+SEKT	Sekt	Prickelt im Glas	4	50	6452	2	claude-v3-phase8	false
+ALGEN	Algen	Grün im Wasser	5	49	6471	2	claude-v3-phase8	false
+ANALOGE	analoge	... Uhr	7	49	6472	2	claude-v3-phase8	false
+ARIE	Arie	Solostück der Oper	4	49	6473	2	claude-v3-phase8	false
+AUE	Aue	Feuchte Flusswiese	3	49	6474	2	claude-v3-phase8	false
+BIT	Bit	Null oder Eins	3	49	6479	2	claude-v3-phase8	false
+ERGEBE	ergebe	Ich ... mich	6	49	6485	2	claude-v3-phase8	false
+HAITI	Haiti	Westteil Hispaniolas	5	49	6492	2	claude-v3-phase8	false
+KOPFES	Kopfes	Spitze des ...	6	49	6498	2	claude-v3-phase8	false
+LATTE	Latte	Liegt beim Hochsprung	5	49	6499	2	claude-v3-phase8	false
+LIEB	lieb	Sei ...!	4	49	6501	2	claude-v3-phase8	false
+LINEAR	linear	Immer geradeaus	6	49	6502	2	claude-v3-phase8	false
+OHIO	Ohio	Im Mittleren Westen	4	49	6509	2	claude-v3-phase8	false
+RELEASE	Release	Veröffentlichung	7	49	6514	2	claude-v3-phase8	false
+AKKU	Akku	Am Ladegerät	4	48	6539	2	claude-v3-phase8	false
+DOSEN	Dosen	Mit Pfand	5	48	6550	2	claude-v3-phase8	false
+FLAIR	Flair	Südliches ...	5	48	6557	2	claude-v3-phase8	false
+HUNDES	Hundes	Halsband des ...	6	48	6568	2	claude-v3-phase8	false
+IMPORT	Import	Aus dem Ausland	6	48	6569	2	claude-v3-phase8	false
+ISST	isst	Er ... Suppe	4	48	6570	2	claude-v3-phase8	false
+MAEDELS	Mädels	Freundinnen unter sich	7	48	6579	2	claude-v3-phase8	false
+RAUB	Raub	Überfall mit Beute	4	48	6595	2	claude-v3-phase8	false
+STILE	Stile	Gotik und Barock	5	48	6608	2	claude-v3-phase8	false
+WAGTE	wagte	Er ... es	5	48	6616	2	claude-v3-phase8	false
+ADELS	Adels	Wappen des ...	5	47	6621	2	claude-v3-phase8	false
+AGIERT	agiert	Er ... geschickt	6	47	6624	2	claude-v3-phase8	false
+AKKUS	Akkus	Am Ladekabel	5	47	6625	2	claude-v3-phase8	false
+AKUT	akut	Plötzlich und heftig	4	47	6626	2	claude-v3-phase8	false
+AROMA	Aroma	Duft und Geschmack	5	47	6629	2	claude-v3-phase8	false
+CHEFIN	Chefin	Weibliche Vorgesetzte	6	47	6635	2	claude-v3-phase8	false
+EKLAT	Eklat	Öffentlicher Zwist	5	47	6640	2	claude-v3-phase8	false
+EUREM	eurem	Mit ... Segen	5	47	6643	2	claude-v3-phase8	false
+GENIE	Genie	Einstein war eins	5	47	6651	2	claude-v3-phase8	false
+HASEN	Hasen	Schlagen Haken	5	47	6657	2	claude-v3-phase8	false
+MENSA	Mensa	Essen für Studenten	5	47	6666	2	claude-v3-phase8	false
+OVAL	oval	Wie ein Ei	4	47	6668	2	claude-v3-phase8	false
+RADLER	Radler	Auf zwei Rädern	6	47	6670	2	claude-v3-phase8	false
+TRAUT	traut	Der Pfarrer ...	5	47	6690	2	claude-v3-phase8	false
+ATLAS	Atlas	Mit Weltkarten	5	46	6698	2	claude-v3-phase8	false
+EISZEIT	Eiszeit	Mit Mammuts	7	46	6714	2	claude-v3-phase8	false
+ENGERE	engere	... Wahl	6	46	6715	2	claude-v3-phase8	false
+FUSSWEG	Fußweg	Nur für Passanten	7	46	6720	2	claude-v3-phase8	false
+GERA	Gera	Elster-Stadt	4	46	6726	2	claude-v3-phase8	false
+GHANA	Ghana	Land der Goldküste	5	46	6727	2	claude-v3-phase8	false
+HASE	Hase	Bringt Ostereier	4	46	6729	2	claude-v3-phase8	false
+MALT	malt	Der Maler ...	4	46	6736	2	claude-v3-phase8	false
+PEGEL	Pegel	Misst den Fluss	5	46	6745	2	claude-v3-phase8	false
+POLE	Pole	Nord und Süd	4	46	6749	2	claude-v3-phase8	false
+RASSEN	Rassen	Kategorien bei Hunden	6	46	6753	2	claude-v3-phase8	false
+RITUALE	Rituale	Feste Bräuche	7	46	6755	2	claude-v3-phase8	false
+TUERE	Türe	Hinter der ...	5	46	6770	2	claude-v3-phase8	false
+WIEGE	Wiege	Wird geschaukelt	5	46	6775	2	claude-v3-phase8	false
+ABRUFEN	abrufen	Daten ...	7	45	6780	2	claude-v3-phase8	false
+CLAN	Clan	Schottische Sippe	4	45	6793	2	claude-v3-phase8	false
+DUBAI	Dubai	Burj-Khalifa-Stadt	5	45	6795	2	claude-v3-phase8	false
+ESEL	Esel	Sagt I-A	4	45	6801	2	claude-v3-phase8	false
+ESSAY	Essay	Kurzer Gedankentext	5	45	6802	2	claude-v3-phase8	false
+NEIGT	neigt	Er ... dazu	5	45	6825	2	claude-v3-phase8	false
+OPERN	Opern	Verdi und Puccini	5	45	6826	2	claude-v3-phase8	false
+AST	Ast	Zweigträger	3	44	6857	2	claude-v3-phase8	false
+BODENS	Bodens	Fläche des ...	6	44	6862	2	claude-v3-phase8	false
+DEKRET	Dekret	Königlicher Befehl	6	44	6865	2	claude-v3-phase8	false
+FIX	fix	Im Handumdrehen	3	44	6874	2	claude-v3-phase8	false
+GEMEIN	gemein	Hinterhältig	6	44	6879	2	claude-v3-phase8	false
+GETRAENK	Getränk	Wasser, Saft, Bier	8	44	6880	2	claude-v3-phase8	false
+HEERES	Heeres	Soldaten des ...	6	44	6883	2	claude-v3-phase8	false
+HELFE	helfe	Ich ... gern	5	44	6884	2	claude-v3-phase8	false
+HEROIN	Heroin	Aus Schlafmohn	6	44	6886	2	claude-v3-phase8	false
+KNOPF	Knopf	Zum Zumachen	5	44	6891	2	claude-v3-phase8	false
+KRIMI	Krimi	Mit Kommissar	5	44	6893	2	claude-v3-phase8	false
+NARREN	Narren	Mit Schellenkappe	6	44	6901	2	claude-v3-phase8	false
+NEUTRALE	neutrale	Eine ... Haltung	8	44	6904	2	claude-v3-phase8	false
+REUE	Reue	Späte ...	4	44	6913	2	claude-v3-phase8	false
+SIEBTER	Siebter	Der ... Zwerg	7	44	6920	2	claude-v3-phase8	false
+STOLZE	stolze	Eine ... Mutter	6	44	6926	2	claude-v3-phase8	false
+WEIDE	Weide	Kühe grasen hier	5	44	6934	2	claude-v3-phase8	false
+WOELFE	Wölfe	Heulen nachts	6	44	6937	2	claude-v3-phase8	false
+BERGAB	bergab	Es geht ...	6	43	6947	2	claude-v3-phase8	false
+BLOED	blöd	Ziemlich dumm	5	43	6951	2	claude-v3-phase8	false
+DIABETES	Diabetes	Mit Insulin behandelt	8	43	6955	2	claude-v3-phase8	false
+DIAET	Diät	Zum Abnehmen	5	43	6956	2	claude-v3-phase8	false
+EID	Eid	Hippokratischer ...	3	43	6957	2	claude-v3-phase8	false
+ENORMES	enormes	Ein ... Ausmaß	7	43	6960	2	claude-v3-phase8	false
+ENTE	Ente	Hat Schwimmhäute	4	43	6961	2	claude-v3-phase8	false
+EVENTS	Events	Konzerte und Festivals	6	43	6965	2	claude-v3-phase8	false
+IREN	Iren	Landsleute von Dublin	4	43	6982	2	claude-v3-phase8	false
+LUSTIGE	lustige	Eine ... Geschichte	7	43	6991	2	claude-v3-phase8	false
+PIANO	Piano	Mit weißen Tasten	5	43	6999	2	claude-v3-phase8	false
+PROSA	Prosa	Kein Gedicht	5	43	7002	3	claude-v3-phase8	false
+REIZT	reizt	Das ... ihn	5	43	7005	3	claude-v3-phase8	false
+RENNT	rennt	Er ... schnell	5	43	7007	3	claude-v3-phase8	false
+TURIN	Turin	Heimat des Grabtuchs	5	43	7022	3	claude-v3-phase8	false
+BEKOMMST	bekommst	Du ... Post	8	42	7038	3	claude-v3-phase8	false
+ERGEHT	ergeht	Es ... ihm	6	42	7053	3	claude-v3-phase8	false
+ERNTEN	Ernten	Früchte der Arbeit	6	42	7054	3	claude-v3-phase8	false
+FARCE	Farce	Lächerliches Spiel	5	42	7056	3	claude-v3-phase8	false
+GEBETE	Gebete	Enden mit Amen	6	42	7060	3	claude-v3-phase8	false
+INDER	Inder	Landsmann Gandhis	5	42	7072	3	claude-v3-phase8	false
+RAETE	Räte	Weise Berater	5	42	7096	3	claude-v3-phase8	false
+SEELEUTE	Seeleute	Mannschaft an Deck	8	42	7101	3	claude-v3-phase8	false
+SEKTE	Sekte	Gruppe mit Guru	5	42	7102	3	claude-v3-phase8	false
+TOMATEN	Tomaten	Zutat für Ketchup	7	42	7117	3	claude-v3-phase8	false
+TRAUUNG	Trauung	Zeremonie mit Ringen	7	42	7121	3	claude-v3-phase8	false
+TRIEBE	Triebe	Im Frühling gewachsen	6	42	7122	3	claude-v3-phase8	false
+BELAUFE	belaufe	Sich ... auf	7	41	7142	3	claude-v3-phase8	false
+DRANGEN	drangen	Sie ... durch	7	41	7148	3	claude-v3-phase8	false
+EDLE	edle	Eine ... Absicht	4	41	7150	3	claude-v3-phase8	false
+FAUNA	Fauna	Gegenstück zur Flora	5	41	7157	3	claude-v3-phase8	false
+FLOP	Flop	Gegenteil von Hit	4	41	7159	3	claude-v3-phase8	false
+HEXEN	Hexen	Brauen Zaubertränke	5	41	7169	3	claude-v3-phase8	false
+KENIA	Kenia	Land mit Nairobi	5	41	7174	3	claude-v3-phase8	false
+KREML	Kreml	Festung in Moskau	5	41	7177	3	claude-v3-phase8	false
+MELDE	melde	Ich ... Vollzug	5	41	7186	3	claude-v3-phase8	false
+TESTET	testet	Sie ... Produkte	6	41	7211	3	claude-v3-phase8	false
+ACH	Ach	... so!	3	40	7229	3	claude-v3-phase8	false
+ARG	arg	Ziemlich ...	3	40	7237	3	claude-v3-phase8	false
+DELTA	Delta	Griechischer Buchstabe	5	40	7247	3	claude-v3-phase8	false
+GEBT	Gebt	... acht!	4	40	7254	3	claude-v3-phase8	false
+HAWAII	Hawaii	Aloha-Staat	6	40	7262	3	claude-v3-phase8	false
+KRACH	Krach	Lautes Poltern	5	40	7273	3	claude-v3-phase8	false
+LIMA	Lima	Hauptstadt Perus	4	40	7279	3	claude-v3-phase8	false
+NETTEN	netten	Ein ... Abend	6	40	7283	3	claude-v3-phase8	false
+PFORTE	Pforte	Am Klostereingang	6	40	7285	3	claude-v3-phase8	false
+REGER	reger	... Betrieb	5	40	7286	3	claude-v3-phase8	false
+RIGA	Riga	Baltische Metropole	4	40	7288	3	claude-v3-phase8	false
+RITT	Ritt	Im Galopp	4	40	7290	3	claude-v3-phase8	false
+SESSEL	Sessel	Mit Armlehnen	6	40	7298	3	claude-v3-phase8	false
+SOUNDS	Sounds	Bass und Beat	6	40	7300	3	claude-v3-phase8	false
+WERTET	wertet	Die Jury ...	6	40	7317	3	claude-v3-phase8	false
+EROSION	Erosion	Vom Wind abgetragen	7	39	7348	3	claude-v3-phase8	false
+ERTOENT	ertönt	Die Glocke ...	7	39	7349	3	claude-v3-phase8	false
+EXTRAS	Extras	Gegen Aufpreis	6	39	7351	3	claude-v3-phase8	false
+FUNKE	Funke	Zündet das Feuer	5	39	7360	3	claude-v3-phase8	false
+LERNTEN	lernten	Sie ... schwimmen	7	39	7382	3	claude-v3-phase8	false
+LINSE	Linse	Im Eintopf	5	39	7383	3	claude-v3-phase8	false
+NARBE	Narbe	Bleibt nach Verletzung	5	39	7388	3	claude-v3-phase8	false
+ORGELN	Orgeln	In Kirchen	6	39	7391	3	claude-v3-phase8	false
+POSTER	Poster	Großformatiges Bild	6	39	7395	3	claude-v3-phase8	false
+RESTEN	Resten	Mit ... verwerten	6	39	7398	3	claude-v3-phase8	false
+RIEGEL	Riegel	Sichert die Tür	6	39	7399	3	claude-v3-phase8	false
+SENSOR	Sensor	Misst und meldet	6	39	7405	3	claude-v3-phase8	false
+SOKRATES	Sokrates	Lehrer von Platon	8	39	7408	3	claude-v3-phase8	false
+TRETE	trete	Ich ... zurück	5	39	7417	3	claude-v3-phase8	false
+ZOOS	Zoos	Mit Giraffengehege	4	39	7422	3	claude-v3-phase8	false
+ABENDE	Abende	Vor dem Schlafengehen	6	38	7425	3	claude-v3-phase8	false
+ADAPTER	Adapter	Für fremde Steckdosen	7	38	7427	3	claude-v3-phase8	false
+ALTEM	altem	Mit ... Charme	5	38	7429	3	claude-v3-phase8	false
+BREAK	Break	Kurze Unterbrechung	5	38	7442	3	claude-v3-phase8	false
+GASE	Gase	Helium und Neon	4	38	7451	3	claude-v3-phase8	false
+GEIGE	Geige	Mit Bogen gespielt	5	38	7457	3	claude-v3-phase8	false
+GENAEHT	genäht	Mit der Maschine	7	38	7459	3	claude-v3-phase8	false
+GOETTERN	Göttern	Opfer an ...	8	38	7464	3	claude-v3-phase8	false
+IRREN	irren	... ist menschlich	5	38	7470	3	claude-v3-phase8	false
+KUTSCHE	Kutsche	Aschenputtels Gefährt	7	38	7476	3	claude-v3-phase8	false
+MANGA	Manga	Mit großen Augen	5	38	7480	3	claude-v3-phase8	false
+OSMANEN	Osmanen	Reich der Sultane	7	38	7488	3	claude-v3-phase8	false
+REIBUNG	Reibung	Bremst jede Bewegung	7	38	7500	3	claude-v3-phase8	false
+SAALE	Saale	Thüringer Fluss	5	38	7502	3	claude-v3-phase8	false
+SCHERE	Schere	Stein, Papier, ...	6	38	7505	3	claude-v3-phase8	false
+TENOR	Tenor	Pavarotti war einer	5	38	7518	3	claude-v3-phase8	false
+BAUE	baue	Ich ... Sandburgen	4	37	7536	3	claude-v3-phase8	false
+BLECH	Blech	Beim Kuchenbacken	5	37	7542	3	claude-v3-phase8	false
+ENDES	Endes	Anfang des ...	5	37	7555	3	claude-v3-phase8	false
+GENUA	Genua	Heimat von Pesto	5	37	7569	3	claude-v3-phase8	false
+GLIED	Glied	Aus der Kette	5	37	7574	3	claude-v3-phase8	false
+KANSAS	Kansas	Heimat von Dorothy	6	37	7577	3	claude-v3-phase8	false
+LAMM	Lamm	Junges Schaf	4	37	7586	3	claude-v3-phase8	false
+LEBEND	lebend	Mit Puls	6	37	7588	3	claude-v3-phase8	false
+NETTO	Netto	Brutto minus Abzüge	5	37	7596	3	claude-v3-phase8	false
+ORDER	Order	Bestellung	5	37	7599	3	claude-v3-phase8	false
+OSTENS	Ostens	Märchen des ...	6	37	7600	3	claude-v3-phase8	false
+SEGLER	Segler	Lenkt die Jolle	6	37	7609	3	claude-v3-phase8	false
+SKRIPT	Skript	Vorlesungsunterlagen	6	37	7611	3	claude-v3-phase8	false
+SPALT	Spalt	Schmale Öffnung	5	37	7612	3	claude-v3-phase8	false
+TABUS	Tabus	Streng gemieden	5	37	7621	3	claude-v3-phase8	false
+TRIBUT	Tribut	An den Eroberer	6	37	7624	3	claude-v3-phase8	false
+WADE	Wade	Hinterm Schienbein	4	37	7636	3	claude-v3-phase8	false
+ARMENIEN	Armenien	Land mit Jerewan	8	36	7653	3	claude-v3-phase8	false
+ENTGELT	Entgelt	Lohn für Arbeit	7	36	7670	3	claude-v3-phase8	false
+KUER	Kür	Nach der Pflicht	4	36	7688	3	claude-v3-phase8	false
+RETTETEN	retteten	Sie ... Schiffbrüchige	8	36	7713	3	claude-v3-phase8	false
+RUEBER	rüber	Geh mal ...	6	36	7716	3	claude-v3-phase8	false
+RUSS	Ruß	Schwarz am Schornstein	4	36	7717	3	claude-v3-phase8	false
+STAMMES	Stammes	Ältester des ...	7	36	7727	3	claude-v3-phase8	false
+TEUFE	Teufe	Im Schacht gemessen	5	36	7729	3	claude-v3-phase8	false
+AESTEN	Ästen	Von ... gefallen	6	35	7739	3	claude-v3-phase8	false
+ALIBI	Alibi	Zur Tatzeit woanders	5	35	7740	3	claude-v3-phase8	false
+ATLANTA	Atlanta	Hauptstadt Georgias	7	35	7743	3	claude-v3-phase8	false
+BELAG	Belag	Auf dem Brot	5	35	7748	3	claude-v3-phase8	false
+BRAV	brav	Ein ... Hund	4	35	7752	3	claude-v3-phase8	false
+ECK	Eck	Ums ... gehen	3	35	7766	3	claude-v3-phase8	false
+EDLEN	edlen	Von ... Geblüt	5	35	7767	3	claude-v3-phase8	false
+FATALE	fatale	Eine ... Wirkung	6	35	7768	3	claude-v3-phase8	false
+GLOSSAR	Glossar	Erklärt Fachwörter	7	35	7777	3	claude-v3-phase8	false
+GRABES	Grabes	Jenseits des ...	6	35	7779	3	claude-v3-phase8	false
+KRAKAU	Krakau	Stadt mit Wawel	6	35	7793	3	claude-v3-phase8	false
+LEADER	Leader	Chef der Gruppe	6	35	7799	3	claude-v3-phase8	false
+LEGITIM	legitim	Rechtlich in Ordnung	7	35	7800	3	claude-v3-phase8	false
+LOGE	Loge	Platz im Theater	4	35	7804	3	claude-v3-phase8	false
+NEULAND	Neuland	Unbetretenes Gebiet	7	35	7814	3	claude-v3-phase8	false
+PAARES	Paares	Tanz des ...	6	35	7819	3	claude-v3-phase8	false
+PINK	Pink	Farbe der Flamingos	4	35	7823	3	claude-v3-phase8	false
+RUIN	Ruin	Pleite und ...	4	35	7830	3	claude-v3-phase8	false
+SIBIRIEN	Sibirien	Eiswüste Russlands	8	35	7836	3	claude-v3-phase8	false
+STAETTE	Stätte	Ort der Andacht	7	35	7838	3	claude-v3-phase8	false
+URIN	Urin	Gelbe Flüssigkeit	4	35	7843	3	claude-v3-phase8	false
+URNE	Urne	Gefäß für Asche	4	35	7844	3	claude-v3-phase8	false
+WURST	Wurst	Grill-Klassiker	5	35	7852	3	claude-v3-phase8	false
+ABLEBEN	Ableben	Letzter Atemzug	7	34	7857	3	claude-v3-phase8	false
+ABSENDER	Absender	Wer schickt's?	8	34	7858	3	claude-v3-phase8	false
+ATMET	atmet	Holt Luft	5	34	7863	3	claude-v3-phase8	false
+AUTONOME	autonome	Eine ... Region	8	34	7865	3	claude-v3-phase8	false
+DIAS	Dias	Für den Projektor	4	34	7879	3	claude-v3-phase8	false
+ELEGANTE	elegante	Eine ... Dame	8	34	7882	3	claude-v3-phase8	false
+EMPOR	empor	Nach oben	5	34	7884	3	claude-v3-phase8	false
+ENTGING	entging	Er ... knapp	7	34	7885	3	claude-v3-phase8	false
+ERSTERE	Erstere	Gegenteil von Letztere	7	34	7887	3	claude-v3-phase8	false
+GEHST	gehst	Du ... voran	5	34	7895	3	claude-v3-phase8	false
+GUSS	Guss	Aus flüssigem Metall	4	34	7901	3	claude-v3-phase8	false
+HINGABE	Hingabe	Mit Leidenschaft	7	34	7909	3	claude-v3-phase8	false
+KELTEN	Kelten	Volk der Druiden	6	34	7916	3	claude-v3-phase8	false
+LOSEN	losen	Per Zettel entscheiden	5	34	7928	3	claude-v3-phase8	false
+PEDAL	Pedal	Am Fahrrad	5	34	7948	3	claude-v3-phase8	false
+REH	Reh	Bambi, zum Beispiel	3	34	7956	3	claude-v3-phase8	false
+SENKE	Senke	Tiefer Geländepunkt	5	34	7960	3	claude-v3-phase8	false
+STUR	stur	Nicht umzustimmen	4	34	7966	3	claude-v3-phase8	false
+VERS	Vers	Zeile im Gedicht	4	34	7970	3	claude-v3-phase8	false
+VITA	Vita	Werdegang	4	34	7972	3	claude-v3-phase8	false
+ZAEH	zäh	Schwer zu kauen	4	34	7980	3	claude-v3-phase8	false
+ABENDEN	Abenden	An lauen ...	7	33	7986	3	claude-v3-phase8	false
+ABRUF	Abruf	Auf ... bereit	5	33	7988	3	claude-v3-phase8	false
+ALB	Alb	Mittelgebirge im Süden	3	33	7990	3	claude-v3-phase8	false
+ANGOLA	Angola	Land mit Luanda	6	33	7992	3	claude-v3-phase8	false
+DEMOS	Demos	Marsch mit Plakaten	5	33	8009	3	claude-v3-phase8	false
+GANS	Gans	Martinsbraten	4	33	8023	3	claude-v3-phase8	false
+HIESIGE	hiesige	Die ... Bäckerei	7	33	8035	3	claude-v3-phase8	false
+JETS	Jets	Mit Turbinen	4	33	8040	3	claude-v3-phase8	false
+LESBAR	lesbar	Gut zu entziffern	6	33	8052	3	claude-v3-phase8	false
+LOT	Lot	Prüft die Senkrechte	3	33	8055	3	claude-v3-phase8	false
+OMEN	Omen	Schlechtes Zeichen	4	33	8066	3	claude-v3-phase8	false
+OPA	Opa	Papas Vater	3	33	8067	3	claude-v3-phase8	false
+RIET	riet	Er ... dazu	4	33	8075	3	claude-v3-phase8	false
+SANGEN	sangen	Sie ... laut	6	33	8078	3	claude-v3-phase8	false
+STATIK	Statik	Wichtig für Brücken	6	33	8089	3	claude-v3-phase8	false
+TANGO	Tango	Buenos-Aires-Tanz	5	33	8095	3	claude-v3-phase8	false
+TEPPICHE	Teppiche	Auf dem Boden	8	33	8096	3	claude-v3-phase8	false
+ADERN	Adern	Blutbahnen	5	32	8116	3	claude-v3-phase8	false
+ANSAGE	Ansage	Lautsprecher-Meldung	6	32	8121	3	claude-v3-phase8	false
+AUTONOM	autonom	Selbst bestimmend	7	32	8125	3	claude-v3-phase8	false
+BEAT	Beat	Takt im Pop	4	32	8126	3	claude-v3-phase8	false
+BOOTES	Bootes	Kiel des ...	6	32	8133	3	claude-v3-phase8	false
+DEAL	Deal	Handel per Handschlag	4	32	8137	3	claude-v3-phase8	false
+ENTEN	Enten	Quaken im Teich	5	32	8144	3	claude-v3-phase8	false
+GRANDIOS	grandios	Einfach fantastisch	8	32	8163	3	claude-v3-phase8	false
+GRAT	Grat	Schmaler Bergrücken	4	32	8164	3	claude-v3-phase8	false
+KAMM	Kamm	Hat Zinken	4	32	8176	3	claude-v3-phase8	false
+KNABE	Knabe	Kleiner Bursche	5	32	8178	3	claude-v3-phase8	false
+OBMANN	Obmann	Leiter des Vereins	6	32	8191	3	claude-v3-phase8	false
+PAKT	Pakt	Teufels-Vertrag	4	32	8193	3	claude-v3-phase8	false
+RAENGE	Ränge	Im Stadion	6	32	8200	3	claude-v3-phase8	false
+REEDER	Reeder	Besitzt Frachter	6	32	8201	3	claude-v3-phase8	false
+SAFE	Safe	Im Hotelzimmer	4	32	8204	3	claude-v3-phase8	false
+SPAGAT	Spagat	Dehnübung am Boden	6	32	8209	3	claude-v3-phase8	false
+SPERRT	sperrt	Sie ... ab	6	32	8210	3	claude-v3-phase8	false
+SPUK	Spuk	Poltern im Schloss	4	32	8211	3	claude-v3-phase8	false
+TOBTE	tobte	Der Sturm ...	5	32	8219	3	claude-v3-phase8	false
+UMWEG	Umweg	Längere Strecke	5	32	8224	3	claude-v3-phase8	false
+VETO	Veto	Nein des Präsidenten	4	32	8226	3	claude-v3-phase8	false
+WINKTE	winkte	Er ... freundlich	6	32	8230	3	claude-v3-phase8	false
+ANTRAT	antrat	Das Amt ...	6	31	8245	3	claude-v3-phase8	false
+AXT	Axt	Zum Holzhacken	3	31	8246	3	claude-v3-phase8	false
+BREI	Brei	Mit Haferflocken	4	31	8251	3	claude-v3-phase8	false
+FROHE	frohe	Eine ... Botschaft	5	31	8279	3	claude-v3-phase8	false
+GILDE	Gilde	Handwerker-Verbund	5	31	8286	3	claude-v3-phase8	false
+IGEL	Igel	Hat Stacheln	4	31	8294	3	claude-v3-phase8	false
+KARATE	Karate	Kampfkunst aus Japan	6	31	8298	3	claude-v3-phase8	false
+MEERE	Meere	Atlantik und Pazifik	5	31	8309	3	claude-v3-phase8	false
+NEIGE	Neige	Zur ... gehen	5	31	8318	3	claude-v3-phase8	false
+NIEREN	Nieren	Reinigen das Blut	6	31	8319	3	claude-v3-phase8	false
+OASE	Oase	Wasserstelle im Sand	4	31	8321	3	claude-v3-phase8	false
+PIER	Pier	Steg am Hafen	4	31	8325	3	claude-v3-phase8	false
+SPOT	Spot	Kurzer Werbefilm	4	31	8352	3	claude-v3-phase8	false
+STIER	Stier	Torero-Gegner	5	31	8355	3	claude-v3-phase8	false
+TALES	Tales	Boden des ...	5	31	8359	3	claude-v3-phase8	false
+TORF	Torf	Brennstoff aus Mooren	4	31	8362	3	claude-v3-phase8	false
+TRAUMA	Trauma	Seelische Verletzung	6	31	8363	3	claude-v3-phase8	false
+TSUNAMI	Tsunami	Riesenwelle nach Beben	7	31	8365	3	claude-v3-phase8	false
+ADELIGE	Adelige	Gräfin zum Beispiel	7	30	8383	3	claude-v3-phase8	false
+AMTS	Amts	Inhaber des ...	4	30	8386	3	claude-v3-phase8	false
+ANIME	Anime	Zeichentrick aus Tokio	5	30	8388	3	claude-v3-phase8	false
+ELSTER	Elster	Diebischer Vogel	6	30	8411	3	claude-v3-phase8	false
+ERHALTET	erhaltet	Ihr ... Post	8	30	8415	3	claude-v3-phase8	false
+GENIALE	geniale	Eine ... Idee	7	30	8430	3	claude-v3-phase8	false
+HAI	Hai	Hat scharfe Zähne	3	30	8434	3	claude-v3-phase8	false
+HEU	Heu	Trockenes Futter	3	30	8437	3	claude-v3-phase8	false
+HIERAN	Hieran	Daran erkennt man	6	30	8438	3	claude-v3-phase8	false
+KEIL	Keil	Spaltet Holz	4	30	8445	3	claude-v3-phase8	false
+MILDER	milder	Ein ... Winter	6	30	8461	3	claude-v3-phase8	false
+NEHMT	Nehmt	Ihr ... Platz	5	30	8464	3	claude-v3-phase8	false
+NETTES	nettes	Ein ... Wort	6	30	8465	3	claude-v3-phase8	false
+PERLE	Perle	Aus der Auster	5	30	8475	3	claude-v3-phase8	false
+PLAZA	Plaza	Platz in Madrid	5	30	8482	3	claude-v3-phase8	false
+RIESE	Riese	Goliath, zum Beispiel	5	30	8486	3	claude-v3-phase8	false
+SCHAM	Scham	Rote Wangen	5	30	8490	3	claude-v3-phase8	false
+SENDERN	Sendern	Von ... ausgestrahlt	7	30	8494	3	claude-v3-phase8	false
+VAKANT	vakant	Noch unbesetzt	6	30	8522	3	claude-v3-phase8	false
+AHNT	ahnt	Sie ... Böses	4	29	8544	3	claude-v3-phase8	false
+BUB	Bub	Bayerischer Junge	3	29	8559	3	claude-v3-phase8	false
+DIVA	Diva	Launische Sängerin	4	29	8566	3	claude-v3-phase8	false
+DUALEN	dualen	Die ... Ausbildung	6	29	8568	3	claude-v3-phase8	false
+EIFER	Eifer	Mit ... dabei	5	29	8570	3	claude-v3-phase8	false
+EIGNER	Eigner	Wem gehört's?	6	29	8571	3	claude-v3-phase8	false
+EILTE	eilte	Er ... herbei	5	29	8573	3	claude-v3-phase8	false
+ELFTE	elfte	Der ... Mann	5	29	8577	3	claude-v3-phase8	false
+ENDUNG	Endung	Am Wortschluss	6	29	8578	3	claude-v3-phase8	false
+ENGES	enges	Ein ... Kleid	5	29	8579	3	claude-v3-phase8	false
+GAGE	Gage	Lohn des Künstlers	4	29	8591	3	claude-v3-phase8	false
+GANGART	Gangart	Trab oder Galopp	7	29	8592	3	claude-v3-phase8	false
+GAU	Gau	Altes Landesgebiet	3	29	8593	3	claude-v3-phase8	false
+KLEMME	Klemme	In der ...	6	29	8614	3	claude-v3-phase8	false
+KREIST	kreist	Der Geier ...	6	29	8622	3	claude-v3-phase8	false
+KUR	Kur	Aufenthalt im Heilbad	3	29	8625	3	claude-v3-phase8	false
+LAEHMUNG	Lähmung	Bewegungsunfähigkeit	8	29	8626	3	claude-v3-phase8	false
+LAGERT	lagert	Wein ... kühl	6	29	8627	3	claude-v3-phase8	false
+LOKS	Loks	Ziehen Züge	4	29	8630	3	claude-v3-phase8	false
+MALERIN	Malerin	Pinselkünstlerin	7	29	8633	3	claude-v3-phase8	false
+MANAGERN	Managern	Von ... geleitet	8	29	8634	3	claude-v3-phase8	false
+NOTLAGE	Notlage	Prekäre Situation	7	29	8644	3	claude-v3-phase8	false
+RAEUMTEN	räumten	Sie ... aus	8	29	8652	3	claude-v3-phase8	false
+RATSAM	ratsam	Es ist ...	6	29	8656	3	claude-v3-phase8	false
+REGALE	Regale	In der Bibliothek	6	29	8658	3	claude-v3-phase8	false
+SCHAR	Schar	Eine ... Kinder	5	29	8660	3	claude-v3-phase8	false
+SOEST	Soest	Börde-Metropole	5	29	8672	3	claude-v3-phase8	false
+SUDAN	Sudan	Land mit Khartum	5	29	8679	3	claude-v3-phase8	false
+SUENDEN	Sünden	Beichtstoff	7	29	8680	3	claude-v3-phase8	false
+ANHOEREN	anhören	Dem Redner ...	8	28	8714	3	claude-v3-phase8	false
+ATEMLUFT	Atemluft	Wird eingeatmet	8	28	8715	3	claude-v3-phase8	false
+BESEN	Besen	Zum Fegen	5	28	8725	3	claude-v3-phase8	false
+BILLIGE	billige	Eine ... Ausrede	7	28	8730	3	claude-v3-phase8	false
+GALGEN	Galgen	Henker-Gerüst	6	28	8760	3	claude-v3-phase8	false
+GEHEGE	Gehege	Im Zoo	6	28	8761	3	claude-v3-phase8	false
+GENEN	Genen	In ... verankert	5	28	8764	3	claude-v3-phase8	false
+HECKE	Hecke	Grüne Grenze	5	28	8772	3	claude-v3-phase8	false
+KAPLAN	Kaplan	Pfarrers Gehilfe	6	28	8787	3	claude-v3-phase8	false
+KOSTBARE	kostbare	Eine ... Vase	8	28	8790	3	claude-v3-phase8	false
+LILA	Lila	Milka-Farbe	4	28	8800	3	claude-v3-phase8	false
+MENUES	Menüs	Mit Vorspeise	6	28	8803	3	claude-v3-phase8	false
+MIES	mies	Gar nicht gut	4	28	8805	3	claude-v3-phase8	false
+OELE	Öle	Aus Oliven gepresst	4	28	8816	3	claude-v3-phase8	false
+RAUE	raue	Eine ... See	4	28	8826	3	claude-v3-phase8	false
+SAITE	Saite	Auf der Gitarre	5	28	8831	3	claude-v3-phase8	false
+TRAUERT	trauert	Sie ... still	7	28	8850	3	claude-v3-phase8	false
+ZAUBEREI	Zauberei	Hexenwerk	8	28	8865	3	claude-v3-phase8	false
+ZIELTE	zielte	Er ... genau	6	28	8869	3	claude-v3-phase8	false
+ABFUHR	Abfuhr	Ein klares Nein	6	27	8873	3	claude-v3-phase8	false
+ALTERN	Altern	Falten bekommen	6	27	8876	3	claude-v3-phase8	false
+ATMETE	atmete	Sie ... erleichtert	6	27	8884	3	claude-v3-phase8	false
+BOTE	Bote	Bringt Nachrichten	4	27	8899	3	claude-v3-phase8	false
+ENDLOS	endlos	Nie aufhörend	6	27	8917	3	claude-v3-phase8	false
+ESSE	esse	Ich ... Pizza	4	27	8922	3	claude-v3-phase8	false
+GEIMPFT	geimpft	Gegen Grippe ...	7	27	8933	3	claude-v3-phase8	false
+GESPENST	Gespenst	Spukt im Schloss	8	27	8936	3	claude-v3-phase8	false
+GETRUEBT	getrübt	Nicht mehr klar	8	27	8938	3	claude-v3-phase8	false
+HELME	Helme	Auf der Baustelle	5	27	8943	3	claude-v3-phase8	false
+IRRT	irrt	Der Mensch ...	4	27	8947	3	claude-v3-phase8	false
+KAUFE	kaufe	Ich ... Brot	5	27	8950	3	claude-v3-phase8	false
+KIEZ	Kiez	Hamburgs Amüsiermeile	4	27	8951	3	claude-v3-phase8	false
+LEISES	leises	Ein ... Flüstern	6	27	8961	3	claude-v3-phase8	false
+LINDAU	Lindau	Stadt am Bodensee	6	27	8964	3	claude-v3-phase8	false
+NERV	Nerv	Leitet Signale	4	27	8969	3	claude-v3-phase8	false
+NUSS	Nuss	Wird geknackt	4	27	8970	3	claude-v3-phase8	false
+OEFEN	Öfen	Zum Heizen	5	27	8972	3	claude-v3-phase8	false
+PATE	Pate	Don Corleone	4	27	8975	3	claude-v3-phase8	false
+REGALEN	Regalen	Bücher in ...	7	27	8981	3	claude-v3-phase8	false
+RUESSEL	Rüssel	Nase des Schweins	7	27	8988	3	claude-v3-phase8	false
+TRAEGE	träge	Ohne Antrieb	6	27	9013	3	claude-v3-phase8	false
+URALTE	uralte	Eine ... Eiche	6	27	9017	3	claude-v3-phase8	false
+YUAN	Yuan	Währung in Peking	4	27	9028	3	claude-v3-phase8	false
+ALASKA	Alaska	Nördlichster US-Staat	6	26	9036	3	claude-v3-phase8	false
+ASSEN	aßen	Sie ... gemeinsam	5	26	9039	3	claude-v3-phase8	false
+ASTEROID	Asteroid	Brocken im All	8	26	9040	3	claude-v3-phase8	false
+DEALER	Dealer	Gibt die Karten	6	26	9063	3	claude-v3-phase8	false
+DREH	Dreh	Den ... raushaben	4	26	9067	3	claude-v3-phase8	false
+EBENDA	ebenda	Am selben Ort	6	26	9068	3	claude-v3-phase8	false
+EDEL	edel	Von hoher Güte	4	26	9069	3	claude-v3-phase8	false
+EITEL	eitel	Immer vorm Spiegel	5	26	9071	3	claude-v3-phase8	false
+ERBGUT	Erbgut	Im Zellkern	6	26	9073	3	claude-v3-phase8	false
+FEE	Fee	Zauberstab-Trägerin	3	26	9076	3	claude-v3-phase8	false
+GEREDE	Gerede	Klatsch	6	26	9089	3	claude-v3-phase8	false
+HEGT	hegt	Er ... Zweifel	4	26	9095	3	claude-v3-phase8	false
+HORT	Hort	Für Schulkinder	4	26	9099	3	claude-v3-phase8	false
+IDOL	Idol	Verehrte Person	4	26	9100	3	claude-v3-phase8	false
+INTIME	intime	Eine ... Feier	6	26	9101	3	claude-v3-phase8	false
+LERNE	lerne	Ich ... Vokabeln	5	26	9112	3	claude-v3-phase8	false
+MATTE	Matte	Beim Yoga	5	26	9124	3	claude-v3-phase8	false
+MITTLER	Mittler	Streitschlichter	7	26	9127	3	claude-v3-phase8	false
+MOLKEREI	Molkerei	Joghurt-Hersteller	8	26	9128	3	claude-v3-phase8	false
+SAAT	Saat	Wird ausgebracht	4	26	9148	3	claude-v3-phase8	false
+SAELE	Säle	Räume zum Feiern	5	26	9149	3	claude-v3-phase8	false
+STARR	starr	Unbeweglich	5	26	9162	3	claude-v3-phase8	false
+TASSE	Tasse	Zum Kaffee	5	26	9171	3	claude-v3-phase8	false
+TORTE	Torte	Zum Geburtstag	5	26	9172	3	claude-v3-phase8	false
+TRUEBEN	trüben	Das Wasser ...	7	26	9173	3	claude-v3-phase8	false
+TRUHE	Truhe	Piratenschatz-Behälter	5	26	9175	3	claude-v3-phase8	false
+VERMAG	vermag	Er ... viel	6	26	9178	3	claude-v3-phase8	false
+AFFE	Affe	Bananenfreund	4	25	9197	3	claude-v3-phase8	false
+ALIAS	alias	Auch bekannt als	5	25	9200	3	claude-v3-phase8	false
+ATOME	Atome	Bausteine der Materie	5	25	9205	3	claude-v3-phase8	false
+BANGE	bange	Mir ist ...	5	25	9208	3	claude-v3-phase8	false
+ELEFANT	Elefant	Hat Stoßzähne	7	25	9226	3	claude-v3-phase8	false
+ERFAND	erfand	Sie ... es	6	25	9231	3	claude-v3-phase8	false
+ERZ	Erz	Aus dem Bergwerk	3	25	9238	3	claude-v3-phase8	false
+GEEHRTER	geehrter	Sehr ... Herr	8	25	9251	3	claude-v3-phase8	false
+HAGELTE	hagelte	Es ... Kritik	7	25	9267	3	claude-v3-phase8	false
+HOERST	hörst	Du ... mich	6	25	9272	3	claude-v3-phase8	false
+LADE	lade	Ich ... ein	4	25	9286	3	claude-v3-phase8	false
+LEST	Lest	Ihr ... Bücher	4	25	9290	3	claude-v3-phase8	false
+NEUSTE	neuste	Das ... Modell	6	25	9296	3	claude-v3-phase8	false
+NICKT	nickt	Sagt Ja stumm	5	25	9297	3	claude-v3-phase8	false
+NIERE	Niere	Spenderorgan	5	25	9298	3	claude-v3-phase8	false
+OVALE	ovale	Eine ... Form	5	25	9300	3	claude-v3-phase8	false
+PALME	Palme	Wächst am Strand	5	25	9301	3	claude-v3-phase8	false
+PUB	Pub	Bar in Dublin	3	25	9311	3	claude-v3-phase8	false
+RASTEN	rasten	Wir ... kurz	6	25	9312	3	claude-v3-phase8	false
+REGNETE	regnete	Es ... stark	7	25	9317	3	claude-v3-phase8	false
+RELIKT	Relikt	Aus alter Zeit	6	25	9319	3	claude-v3-phase8	false
+SKELETTE	Skelette	Beinhaus-Bewohner	8	25	9329	3	claude-v3-phase8	false
+STUBE	Stube	Die gute ...	5	25	9342	3	claude-v3-phase8	false
+WALE	Wale	Singen unter Wasser	4	25	9368	3	claude-v3-phase8	false
+BEIGE	beige	Wie Sand	5	24	9394	3	claude-v3-phase8	false
+BRETTERN	Brettern	Aus ... gezimmert	8	24	9405	3	claude-v3-phase8	false
+BUGS	Bugs	Programmierfehler	4	24	9409	3	claude-v3-phase8	false
+DEPONIE	Deponie	Müllkippe	7	24	9417	3	claude-v3-phase8	false
+EBBE	Ebbe	Wasser läuft ab	4	24	9424	3	claude-v3-phase8	false
+ENGEM	engem	Auf ... Raum	5	24	9428	3	claude-v3-phase8	false
+ESSENZ	Essenz	Konzentrat	6	24	9436	3	claude-v3-phase8	false
+ESSIG	Essig	Für Salatsoße	5	24	9437	3	claude-v3-phase8	false
+HEMMT	hemmt	Sie ... Wachstum	5	24	9465	3	claude-v3-phase8	false
+HUB	Hub	Drehkreuz am Flughafen	3	24	9470	3	claude-v3-phase8	false
+HUFE	Hufe	Beschlagen vom Schmied	4	24	9471	3	claude-v3-phase8	false
+HUHN	Huhn	Legt Eier	4	24	9472	3	claude-v3-phase8	false
+IKONE	Ikone	Orthodoxes Kultbild	5	24	9473	3	claude-v3-phase8	false
+INTERNER	interner	Ein ... Bericht	8	24	9474	3	claude-v3-phase8	false
+KAEUFE	Käufe	Im Warenkorb	6	24	9478	3	claude-v3-phase8	false
+KEIM	Keim	Wird zur Pflanze	4	24	9482	3	claude-v3-phase8	false
+KRIEGS	Kriegs	Opfer des ...	6	24	9492	3	claude-v3-phase8	false
+LAUB	Laub	Fällt im Herbst	4	24	9497	3	claude-v3-phase8	false
+MAUT	Maut	Autobahn-Abgabe	4	24	9506	3	claude-v3-phase8	false
+NUESSE	Nüsse	Im Studentenfutter	6	24	9518	3	claude-v3-phase8	false
+PANDEMIE	Pandemie	Corona, zum Beispiel	8	24	9526	3	claude-v3-phase8	false
+RAGTE	ragte	Der Turm ...	5	24	9539	3	claude-v3-phase8	false
+SAGA	Saga	Isländische Erzählung	4	24	9546	3	claude-v3-phase8	false
+SCHILDE	Schilde	Ritterschutz	7	24	9549	3	claude-v3-phase8	false
+SEEMANN	Seemann	Fährt zur See	7	24	9554	3	claude-v3-phase8	false
+SEILE	Seile	Zum Klettern	5	24	9556	3	claude-v3-phase8	false
+SENF	Senf	Gelbe Würzsoße	4	24	9559	3	claude-v3-phase8	false
+SOMALIA	Somalia	Land am Horn	7	24	9563	3	claude-v3-phase8	false
+STELE	Stele	Steinerne Tafel	5	24	9569	3	claude-v3-phase8	false
+STUTE	Stute	Pferd mit Fohlen	5	24	9577	3	claude-v3-phase8	false
+SYMPTOM	Symptom	Fieber, zum Beispiel	7	24	9581	3	claude-v3-phase8	false
+TALS	Tals	Sohle des ...	4	24	9583	3	claude-v3-phase8	false
+TOTER	toter	Ein ... Winkel	5	24	9588	3	claude-v3-phase8	false
+UFERN	Ufern	An ... entlang	5	24	9591	3	claude-v3-phase8	false
+WEIB	Weib	Veraltet für Dame	4	24	9604	3	claude-v3-phase8	false
+WUERFE	Würfe	Beim Basketball	6	24	9610	3	claude-v3-phase8	false
+ZAREN	Zaren	Herrscher Russlands	5	24	9612	3	claude-v3-phase8	false
+ASS	aß	Er ... Kuchen	3	23	9628	3	claude-v3-phase8	false
+BESAGTE	besagte	Die ... Person	7	23	9640	3	claude-v3-phase8	false
+BIKER	Biker	Auf der Harley	5	23	9646	3	claude-v3-phase8	false
+EHRT	ehrt	Man ... ihn	4	23	9673	3	claude-v3-phase8	false
+EIGEN	eigen	Mein ... Haus	5	23	9674	3	claude-v3-phase8	false
+ERBES	Erbes	Anteil des ...	5	23	9678	3	claude-v3-phase8	false
+GEMUET	Gemüt	Ein sonniges ...	6	23	9698	3	claude-v3-phase8	false
+HOLE	hole	Ich ... Brötchen	4	23	9715	3	claude-v3-phase8	false
+MIETERN	Mietern	Von ... bewohnt	7	23	9742	3	claude-v3-phase8	false
+PANKOW	Pankow	Berliner Nordbezirk	6	23	9748	3	claude-v3-phase8	false
+PILLEN	Pillen	Aus der Apotheke	6	23	9750	3	claude-v3-phase8	false
+RABE	Rabe	Poes Vogel	4	23	9756	3	claude-v3-phase8	false
+RAUEN	rauen	Bei ... Sitten	5	23	9760	3	claude-v3-phase8	false
+RAUER	rauer	Ein ... Ton	5	23	9761	3	claude-v3-phase8	false
+SALZE	Salze	Weiß und körnig	5	23	9772	3	claude-v3-phase8	false
+STAELLE	Ställe	Pferdeunterkünfte	7	23	9779	3	claude-v3-phase8	false
+STIFTEN	stiften	Ein Stipendium ...	7	23	9783	3	claude-v3-phase8	false
+STREBE	strebe	Ich ... nach	6	23	9784	3	claude-v3-phase8	false
+UNIS	Unis	Mit Hörsälen	4	23	9797	3	claude-v3-phase8	false
+URALTEN	uralten	Aus ... Zeiten	7	23	9799	3	claude-v3-phase8	false
+URNEN	Urnen	Aus dem Krematorium	5	23	9800	3	claude-v3-phase8	false
+UTAH	Utah	Mormonen-Staat	4	23	9801	3	claude-v3-phase8	false
+VERSEN	Versen	In ... gedichtet	6	23	9802	3	claude-v3-phase8	false
+ZUENDET	zündet	Sie ... Kerzen	7	23	9812	3	claude-v3-phase8	false
+ALABAMA	Alabama	Sweet Home ...	7	22	9823	3	claude-v3-phase8	false
+ANREDE	Anrede	Sehr geehrte ...	6	22	9826	3	claude-v3-phase8	false
+ARGE	arge	Eine ... Not	4	22	9827	3	claude-v3-phase8	false
+BEUGT	beugt	Er ... sich	5	22	9840	3	claude-v3-phase8	false
+LAHM	lahm	Ohne Schwung	4	32	8183	3	claude-v3-phase8	false
+BIEL	Biel	Uhrenstadt in Bern	4	22	9843	3	claude-v3-phase8	false
+BIENE	Biene	Summt und sammelt	5	22	9844	3	claude-v3-phase8	false
+DEALS	Deals	Handel per Handschlag	5	22	9857	3	claude-v3-phase8	false
+ECHTEM	echtem	Aus ... Leder	6	22	9864	3	claude-v3-phase8	false
+ENGSTE	engste	Die ... Freunde	6	22	9866	3	claude-v3-phase8	false
+EREILTE	ereilte	Es ... ihn	7	22	9869	3	claude-v3-phase8	false
+GESETZTE	gesetzte	Die ... Dame	8	22	9897	3	claude-v3-phase8	false
+HEBELTEN	hebelten	Sie ... auf	8	22	9905	3	claude-v3-phase8	false
+HEIME	Heime	Für Senioren	5	22	9906	3	claude-v3-phase8	false
+HOHN	Hohn	Bittere Verachtung	4	22	9911	3	claude-v3-phase8	false
+KANU	Kanu	Mit Stechpaddel	4	22	9917	3	claude-v3-phase8	false
+KLONEN	Klonen	Erbgutgleich vermehren	6	22	9919	3	claude-v3-phase8	false
+LABORS	Labors	Mit Reagenzgläsern	6	22	9928	3	claude-v3-phase8	false
+OEDE	öde	Kahl und leer	4	22	9957	3	claude-v3-phase8	false
+OTTAWA	Ottawa	Stadt in Ontario	6	22	9959	3	claude-v3-phase8	false
+PARAT	parat	Griffbereit	5	22	9960	3	claude-v3-phase8	false
+PERSER	Perser	Bewohner Teherans	6	22	9962	3	claude-v3-phase8	false
+POSE	Pose	Fürs Foto einnehmen	4	22	9968	3	claude-v3-phase8	false
+REDETE	redete	Er ... lange	6	22	9977	3	claude-v3-phase8	false
+SENSE	Sense	Schnitt das Gras	5	22	9993	3	claude-v3-phase8	false
+SETUP	Setup	Installationsprogramm	5	22	9994	3	claude-v3-phase8	false

@@ -1,0 +1,300 @@
+Anbau|Erweiterung|1x
+Armen|Mittellosen|1x
+Glas|Trinkgefäß|3x
+spät|nicht früh|1x
+desto|umso|3x
+baut|errichtet|1x
+Orgel|Instrument|1x
+Tests|Prüfungen / Kontrollen|3x
+Ufer|Gestade / Küste|7x
+Letztere|die Zweite|2x
+wahr|zutreffend|1x
+teurer|kostbarer|1x
+toll|großartig|2x
+denkt|meint|1x
+dankbar|erkenntlich|1x
+Datei|Dokument|1x
+Mut|Courage / Tapferkeit|4x
+Nase|Riechorgan / Zinken|2x
+Streik|Ausstand|1x
+Stufe|Tritt|1x
+trugen|schleppten|1x
+hohem|großem|1x
+innen|intern / hausintern|2x
+Star|Berühmtheit|4x
+streng|rigoros|1x
+Altar|Opfertisch|1x
+ruft|schreit|2x
+löst|klärt|1x
+Ring|Reif|1x
+Tanz|Ball|2x
+Lob|Anerkennung / Kompliment|4x
+markiert|angestrichen|1x
+Kasse|Zahlstelle|1x
+Sprung|Satz|1x
+Gast|Besucher|4x
+erneute|wiederholte|1x
+Kiel|Förde-Stadt|1x
+Stern|Gestirn|2x
+Oper|Musiktheater|6x
+Ungarn|Magyaren|1x
+Ideal|Leitbild|3x
+Tipps|Ratschläge|1x
+Falls|wenn|1x
+starker|kräftiger|1x
+Email|elektr. Post / digitale Post|4x
+Jungs|Knaben|1x
+Stoff|Gewebe|1x
+warf|schleuderte|1x
+Bar|Theke / Lokal|7x
+Sex|Erotik / Geschlecht|4x
+untere|tiefere|1x
+geborene|gebürtige|1x
+heiß|glühend|1x
+Wozu|Fragewort (Zweck)|1x
+Yen|Währung Japans / Nippon-Währung|3x
+fängt|erwischt|1x
+Gas|Brennstoff / Treibstoff|7x
+anstelle|statt|1x
+Dame|Frau|1x
+obere|höhere|2x
+Ohren|Hörorgane|3x
+Pfarrei|Sprengel|1x
+still|ruhig|1x
+Iran|Persien / Golfstaat|5x
+Sand|Wüstenboden / Strandboden|1x
+Afrika|Erdteil|1x
+harten|festen|1x
+Areal|Gelände|3x
+egal|gleichgültig / einerlei|7x
+inne|... halten / Verbpartikel|9x
+Armut|Not|1x
+eins|Zahl (2−1)|1x
+Malerei|Kunst|1x
+Bauch|Wanst|1x
+Rendite|Ertrag|1x
+trocken|dürr|1x
+Engel|Himmelsbote|3x
+Humor|Witz|1x
+Busse|Reisecars|1x
+Erbe|Nachlass / Thronfolger|4x
+Stars|Prominente|2x
+Antike|Altertum|1x
+Stahl|legiertes Eisen|2x
+stammte|rührte her|1x
+Stress|Hektik|2x
+wider|gegen|1x
+Mund|Maul|1x
+enorme|gewaltige|2x
+Proben|Muster|1x
+öfter|häufiger|1x
+berät|hilft|1x
+Kabel|Leitung|1x
+lernt|paukt|1x
+umso|desto / Konjunktionaladverb|3x
+Bibel|Heilige Schrift|1x
+Aachen|Kaiserstadt|1x
+lebe|existiere|2x
+Legende|Sage|1x
+samt|inklusive|2x
+übte|trainierte / probte|2x
+übrig|restlich|1x
+Welle|Woge|1x
+drückt|presst|1x
+Gitarre|Klampfe|1x
+Asien|Erdteil|3x
+hell|licht|1x
+Lokal|Gaststätte|1x
+half|stand bei|1x
+Heilige|Sankt|1x
+Image|Ansehen / Ruf|2x
+älter|betagter|1x
+engen|schmalen|1x
+Duo|Paar / Tandem|3x
+interne|innere|1x
+siebten|am ... Juli|1x
+via|über / durch|4x
+Leere|Vakuum / Öde|2x
+bat|ersuchte / flehte|6x
+enger|schmaler|2x
+Haar|Strähne / Locke|3x
+Islam|Weltreligion / Religion Mohammeds|1x
+Brot|Laib|2x
+Einbau|Montage|2x
+grau|farblos|1x
+Bein|Stelze|2x
+kenne|weiß|3x
+Siege|Triumphe|2x
+eigens|extra|1x
+Sage|Legende|2x
+Agentur|Vermittlung|1x
+Maus|Nager|2x
+Wen|Fragewort (Akk.)|1x
+kürzer|knapper|1x
+Euer|Possessiv (ihr)|1x
+Kulturen|Lebensweisen|1x
+Gärten|Grünflächen|1x
+Lücke|Spalt|1x
+Probe|Test|1x
+litt|duldete|1x
+Terrasse|Veranda|1x
+hob|stemmte / wuchtete|4x
+Rose|Blume mit Dornen|3x
+Zeuge|Beobachter|1x
+gelbe|die ... Karte|1x
+Hammer|Werkzeug|1x
+Bern|Schweizer Hauptstadt|1x
+Heer|Armee|3x
+Jena|Saalestadt|1x
+redet|spricht|1x
+Akten|Dokumente|2x
+Duell|Zweikampf|1x
+heran|herbei|1x
+riss|zerrte|1x
+leistete|vollbrachte|1x
+Rente|Pension / Ruhestandsgeld|1x
+Drama|Schauspiel|1x
+Feind|Gegner|1x
+setze|stelle|1x
+Trio|Dreiergruppe|1x
+hebt|stemmt|1x
+Kette|Halsschmuck|1x
+Teufel|Satan|1x
+Mond|Erdtrabant|1x
+Rostock|Hansestadt|1x
+sobald|wenn|1x
+Wut|Zorn / Raserei|4x
+konkret|greifbar|1x
+Prag|Moldau-Stadt|2x
+Rad|Velo / Kreisscheibe|5x
+Leid|Kummer / Weh|2x
+Betten|Lager|1x
+Rosa|Pink|2x
+birgt|enthält|1x
+Ämter|Behörden|1x
+begegnet|getroffen|1x
+inmitten|zwischen|1x
+Last|Bürde|3x
+Räder|Reifen|1x
+Tee|Heißgetränk / Aufguss|18x
+Töne|Klänge|2x
+Arena|Stadion / Kolosseum|6x
+Kälte|Frost|1x
+Seen|Gewässer / Wasserflächen|2x
+Gleise|Schienen|1x
+Male|Zeichen|1x
+Abzug|Rückzug|2x
+Alpen|Hochgebirge|1x
+Sterne|Gestirne|1x
+Abt|Klosterchef / Ordensoberer|14x
+Erben|Nachkommen|1x
+nett|freundlich / sympathisch|4x
+Steuer|Abgabe|1x
+Code|Kennung|1x
+Ehre|Würde / Prestige|5x
+exakt|genau|2x
+Akt|Aufzug / Nacktgemälde|4x
+Held|Recke|1x
+Zone|Bereich|1x
+Absage|Ablehnung|1x
+gebucht|reserviert|1x
+Grube|Mine|1x
+Katzen|Miezen|1x
+klarer|deutlicher|1x
+stoßen|schubsen|1x
+Pass|Ausweis|1x
+Ding|Sache|1x
+jene|selbige|2x
+Dom|Kathedrale / Münster|2x
+Flur|Diele|2x
+heuer|dieses Jahr|1x
+lasse|erlaube|1x
+regiert|herrscht|1x
+Stirn|die ... bieten|1x
+Zelle|Kammer|1x
+Adler|Greifvogel|2x
+feine|zarte|2x
+Hass|Abscheu|1x
+rege|lebhaft / geschäftig|1x
+Skepsis|Zweifel|1x
+drin|innen|1x
+fit|gesund / sportlich|5x
+drängen|schieben|1x
+Lesung|Vortrag|1x
+Näheres|Genaueres|1x
+Eisen|Metall / Ferrum|2x
+Hut|Kopfbedeckung / Vorsicht|3x
+Gebot|Weisung|1x
+Labor|Versuchsraum|2x
+sofern|falls|1x
+treu|loyal / anhänglich|7x
+verraten|verpfeifen|1x
+geheim|verborgen|1x
+Box|Kiste / Schachtel|3x
+Paare|Duos|1x
+Phasen|Abschnitte|1x
+Debüt|Erstauftritt|2x
+misst|ermittelt|1x
+singt|trällert|2x
+fein|zart|1x
+Fett|Schmalz|5x
+Laune|Stimmung|3x
+nette|freundliche|3x
+ruht|rastet|1x
+Ernte|Lese|4x
+bezog|erhielt|1x
+Echo|Widerhall|1x
+helle|lichte|2x
+Helm|Kopfschutz|1x
+saßen|hockten|1x
+wiegt|schaukelt|1x
+Beton|Baustoff|1x
+bunte|farbige|1x
+Etage|Stockwerk|5x
+Horn|Hupe|3x
+erfreut|beglückt|1x
+Kochen|Zubereiten|1x
+Stuhl|Sitz|2x
+Blüte|Blume|3x
+enormen|gewaltigen|1x
+erlag|starb an|1x
+Heirat|Hochzeit|1x
+Sees|Ufer des ... / Fläche des ...|4x
+erwarte|erhoffe|1x
+Hose|Beinkleid|1x
+prägen|formen|1x
+Staub|Schmutz|2x
+Zelt|Pavillon|1x
+errang|gewann|1x
+Rasen|Grünfläche|1x
+Athen|griech. Hauptstadt|3x
+Chemnitz|Karl-Marx-Stadt|1x
+Gebet|Andacht|1x
+Neuere|Jüngere|1x
+Möbel|Einrichtung|1x
+Nest|Horst / Kobel|2x
+Römer|Latiner|1x
+sauer|verärgert|1x
+weh|schmerzhaft / wund|4x
+Atem|Luft / Odem|5x
+biete|offeriere|1x
+las|schmökerte / entzifferte|7x
+tabu|verboten|1x
+Ära|Epoche|3x
+Maßstab|Richtschnur|1x
+Rauchen|Qualmen|1x
+trennt|scheidet|1x
+cool|lässig|1x
+klingen|tönen|2x
+reißt|zerrt|1x
+teure|kostspielige|1x
+Defekt|Schaden|1x
+Fell|Pelz|1x
+Reiz|Charme|2x
+soviel|so weit|1x
+Terror|Schrecken|1x
+Wem|Fragewort (Dativ)|3x
+gespart|zurückgelegt|1x
+sang|trällerte|1x
+Zoo|Tierpark / Tiergarten|3x
+extreme|äußerste|1x

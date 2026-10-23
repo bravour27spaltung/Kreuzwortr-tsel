@@ -1,0 +1,300 @@
+Mordes|Motiv des ...|1x
+reist|fährt / tourt|1x
+Takt|Rhythmus|1x
+Treue|Loyalität|2x
+raten|empfehlen|1x
+Garage|Wagenhalle|1x
+Graz|Murstadt|1x
+nah|dicht / unweit|9x
+Studios|Ateliers|1x
+Typs|Art des ...|1x
+weht|bläst|1x
+Ostsee|Baltisches Meer|1x
+Demo|Kundgebung|3x
+malen|pinseln|1x
+Neuerung|Innovation|1x
+schief|krumm|1x
+absehbar|voraussagbar|1x
+Episode|Folge|1x
+Ohr|Hörorgan / Lauscher|13x
+Segen|Gnade|1x
+Gene|Erbanlagen|3x
+übt|trainiert|3x
+achte|nach der siebten|1x
+Irrtum|Fehler|1x
+trage|schleppe|2x
+graue|trübe|1x
+hiervon|davon|1x
+Höfe|Anwesen|1x
+Zunge|Schmeckorgan|1x
+Alarm|Warnsignal|3x
+allemal|sicher|2x
+Amtes|Ende des ...|2x
+fair|gerecht|1x
+Kuba|Karibikinsel|3x
+Rasse|Zuchtlinie|1x
+Schafe|Herdentiere|1x
+Thron|Königssitz|1x
+Adel|Aristokratie / blaues Blut|5x
+Hit|Schlager / Chartstürmer|5x
+Major|Dienstgrad|1x
+Optik|Aussehen|1x
+Rio|Stadt in Brasilien / Zuckerhut-Stadt|12x
+Senats|Sitzung des ...|2x
+Zutaten|Ingredienzen|1x
+Leder|Tierhaut|1x
+Ulm|Münsterstadt / Einstein-Geburtsstadt|5x
+Bass|tiefe Stimme|1x
+Kabine|Kajüte|1x
+Larven|Masken|1x
+reale|wirkliche / echte|5x
+Tante|Muhme|1x
+Zensus|Volkszählung|1x
+Enkel|Kindeskind|2x
+Flut|Hochwasser|2x
+halb|zur Hälfte|1x
+Abtei|Kloster|4x
+Event|Ereignis|4x
+Irak|Land am Tigris / Zweistromland|6x
+zuviel|übermäßig|1x
+erhob|stemmte|2x
+langem|seit ...|1x
+Asche|Glutrest|2x
+Bär|Petz / Raubtier|4x
+erobert|eingenommen|1x
+Lagern|Depots|1x
+Linz|Hauptstadt OÖ|1x
+Note|Zensur / Tonzeichen|3x
+rundet|ergänzt|1x
+Texas|Staat um Houston|1x
+Käse|Milchprodukt|2x
+Rohr|Leitung|2x
+Spital|Krankenhaus|1x
+Wehr|Staustufe|1x
+Menü|Speisenfolge|1x
+Uni|Hochschule / Alma Mater|18x
+Farm|Bauernhof|2x
+gelobt|gepriesen|1x
+Hürde|Hindernis|1x
+Zahn|Beißer|1x
+genial|brillant|1x
+Gnade|Erbarmen|1x
+Ofen|Herd / Wärmequelle|2x
+senkt|reduziert|1x
+braune|brünette|1x
+ewig|endlos / unaufhörlich|2x
+Kanten|Ränder|1x
+Module|Bausteine|1x
+tagt|berät|1x
+Logo|Emblem|1x
+rast|jagt|2x
+Remis|Gleichstand|1x
+Norm|Regel / Standard|1x
+rollt|kullert|1x
+Taxi|Droschke|3x
+Votum|Stimme|1x
+Etagen|Stockwerke|2x
+Laute|Töne|1x
+Obst|Früchte|3x
+Genf|Stadt am Léman|2x
+schmal|eng|1x
+Agenda|Tagesordnung|2x
+Gras|Rasen|1x
+Lasst|erlaubt|2x
+nix|nichts / gar nichts|3x
+Rate|Teilzahlung / Quote|2x
+Aachener|... Printen|1x
+pur|rein / unverfälscht|5x
+seht|schaut|2x
+Teig|Masse|5x
+gen|nach / Erbanlage|16x
+Läden|Geschäfte|2x
+Leib|Körper|4x
+Matt|Schachende|2x
+rettet|birgt|1x
+wach|munter|1x
+Ertrag|Gewinn / Rendite|1x
+geil|toll (ugs.)|4x
+grobe|raue|1x
+Hebel|Griff|1x
+intern|innen|1x
+meiste|größte Teil|1x
+reif|erntefertig|1x
+drauf|darauf|1x
+Etat|Budget / Finanzplan|10x
+Kehle|Gurgel|1x
+Renten|Pensionen / Altersbezüge|2x
+Unterart|Varietät|1x
+unweit|nahe|1x
+Elbe|Strom durch Dresden / Strom durch Hamburg|7x
+Flora|Pflanzenwelt|1x
+Lüge|Unwahrheit|1x
+erregte|weckte|1x
+First|Dachkante|1x
+Papa|Vater|1x
+Rezepte|Verordnungen|1x
+Stab|Stock|3x
+Ahnung|Vorgefühl|1x
+ewige|endlose|3x
+Koma|tiefe Ohnmacht|2x
+Pfeil|Geschoss|1x
+Titeln|Namen|1x
+Akte|Dokument / Vorgang|2x
+Beleg|Quittung|2x
+illegal|verboten|1x
+lobt|preist|1x
+Lok|Zugmaschine / Triebwagen|7x
+Trost|Zuspruch|1x
+Dozent|Lehrender|1x
+fahre|reise|1x
+idealen|perfekten|1x
+Lagers|Leiter des ...|2x
+rät|empfiehlt / tippt|3x
+Senator|Ratsherr|1x
+Kuss|Busserl|1x
+Laien|Amateure|1x
+Netze|Geflechte|1x
+Rates|Mitglied des ...|1x
+Sauna|Schwitzbad|2x
+Chat|Plauderei|3x
+immens|riesig|1x
+Reis|Getreideart / Sushi-Zutat|2x
+Stau|Blechlawine|3x
+Teheran|iran. Hauptstadt|1x
+Uhren|Zeitmesser|1x
+Zonen|Bereiche|1x
+beten|flehen|2x
+Elite|Auslese / Oberschicht|1x
+Erlass|Verordnung|1x
+Leber|große Drüse|1x
+Tirol|Alpenland|4x
+Elend|Jammer / Misere|2x
+gebaute|errichtete|1x
+Raupen|Larven|1x
+Steg|Brücklein / Bootsanleger|7x
+atmen|Luft holen|1x
+Boss|Chef|1x
+Butter|Streichfett|1x
+drängte|schob|1x
+explizit|ausdrücklich|1x
+kahl|glatzköpfig|3x
+lächelt|schmunzelt|1x
+Morde|Tötungen|1x
+Patent|Schutzrecht|1x
+reißen|zerren|1x
+Rufe|Schreie|2x
+Seil|Tau|3x
+späte|vorgerückte|1x
+Eiern|auf ... gehen / schwanken|1x
+freute|beglückte|2x
+Irre|Verrückte / Wahnsinnige|6x
+Kaisers|Bart des ...|1x
+Revier|Bezirk|1x
+Väter|Papas|1x
+werdet|entsteht|1x
+besagt|bedeutet|1x
+Nagel|Stift|2x
+Pfad|Weg|1x
+Redner|Sprecher|2x
+Reederei|Frachtfirma|1x
+Rosen|Dornblumen|1x
+wahres|echtes|1x
+Apfel|Kernobst|1x
+begab|machte sich auf|1x
+Board|Gremium|1x
+Chip|Halbleiter|1x
+Gabe|Geschenk|1x
+Latein|alte Sprache|1x
+faire|gerechte|2x
+liebte|verehrte|2x
+merkt|spürt|2x
+Sünde|Frevel|1x
+Abgang|Abtritt|1x
+entfiel|entglitt|1x
+erbte|übernahm|1x
+nass|feucht|2x
+Ordner|Mappe|1x
+plane|beabsichtige|1x
+tue|mache / verrichte|12x
+Tugend|Moral|1x
+blass|bleich|1x
+eurer|Possessiv (ihr)|1x
+Florida|Staat um Miami|1x
+Folie|Film|1x
+Gasthof|Wirtshaus|1x
+geahndet|bestraft|1x
+Heil|Wohl|1x
+Ironie|Spott|1x
+Kuh|Rind / Milchlieferantin|2x
+lose|locker|1x
+Ordens|Mitglied des ...|1x
+Riesen|Hünen|1x
+Stange|Stab|2x
+Taschen|Beutel|1x
+Dieb|Langfinger|2x
+jagt|verfolgt|1x
+Ligen|Spielklassen|1x
+Ozean|Weltmeer|3x
+Queen|Königin|1x
+Genre|Gattung / Stilrichtung|2x
+Kennst|weißt|1x
+Kragen|Halsbund|1x
+Oma|Großmutter / Omi|17x
+Salat|Rohkost / Durcheinander|1x
+Staus|Blechlawinen|1x
+Tags|... darauf / am nächsten ...|2x
+tobt|wütet|3x
+Zitat|Ausspruch|1x
+Agent|Spion / Geheimdienstler|3x
+Harz|Baumsaft|1x
+Hexe|Zauberin|1x
+Pächter|Mieter|1x
+Part|Rolle|2x
+reges|lebhaftes|2x
+Trailer|Vorschau|1x
+allzu|übermäßig|1x
+angetan|begeistert|1x
+bloße|reine|1x
+Fels|Stein / Klippe|1x
+Malers|Pinsel des ...|1x
+Porto|Postgebühr|2x
+Relief|Flachbild|1x
+Aula|Festsaal / Versammlungssaal|4x
+Gunst|Wohlwollen|1x
+Lehen|Pfründe|1x
+Segel|Tuch am Mast|1x
+ahnen|vermuten|1x
+Baus|Ende des ...|2x
+bittere|herbe|2x
+getanzt|geschwoft|1x
+jagen|hetzen|1x
+Kante|Rand|1x
+räumt|leert|1x
+Roller|Scooter|1x
+Bauherr|Auftraggeber|1x
+Fax|Fernkopie / Telekopie|2x
+Indizes|Kennzahlen|1x
+klug|gescheit|1x
+lud|packte auf / forderte auf|4x
+Mine|Bergwerk / Sprengkörper|3x
+passend|geeignet|1x
+Peru|Andenstaat / Machu-Picchu-Land|2x
+Renner|Bestseller|1x
+satt|gesättigt / vollgestopft|2x
+Vieh|Nutztiere|1x
+Dosis|Menge|1x
+einig|konform|1x
+hierher|herbei|1x
+Hofes|Mitte des ...|2x
+Iris|Schwertlilie / Regenbogenhaut|4x
+nenne|bezeichne|2x
+Poesie|Dichtkunst|1x
+ran|heran / hinzu|9x
+Set|Satz / Ausstattung|18x
+Solo|allein|2x
+Zehen|Fußglieder|1x
+App|Anwendung / Handyprogramm|4x
+blüht|gedeiht|1x
+eilt|hastet|1x
+Fass|Tonne|2x
+Hab|... und Gut / Besitz|4x

@@ -1,0 +1,21 @@
+Biel|Bienne|1x
+Biene|Imme|2x
+Deals|Geschäfte|1x
+echtem|wahrem|1x
+engste|schmalste|1x
+ereilte|traf|3x
+gesetzte|reife|1x
+hebelten|stemmten|1x
+Heime|Anstalten|1x
+Hohn|Spott|1x
+Kanu|Paddelboot|1x
+Klonen|Kopieren|1x
+Labors|Prüfstätten|1x
+öde|langweilig|2x
+Ottawa|kanad. Hauptstadt|1x
+parat|bereit|2x
+Perser|Iraner|2x
+Pose|Haltung|2x
+redete|sprach|1x
+Sense|Mähwerkzeug|1x
+Setup|Einrichtung|1x

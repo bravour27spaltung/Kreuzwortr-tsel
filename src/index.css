@@ -195,6 +195,17 @@ body {
   background: var(--active-cell);
 }
 
+/* Kreuzungsfeld: das jeweils andere Wort dezent mitmarkiert */
+.cw-white.cw-cross {
+  background: color-mix(in srgb, var(--active-word) 40%, transparent);
+}
+
+.cw-kreuz-hinweis {
+  flex-basis: 100%;
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
 .cw-white.cw-correct {
   background: var(--correct) !important;
 }
