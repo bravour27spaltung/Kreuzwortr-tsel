@@ -1006,5 +1006,117 @@
   "cols": 15,
   "schwierigkeit": 2,
   "status": "veroeffentlicht"
+ },
+ {
+  "id": "r127-8x8-02",
+  "titel": "Rätsel 127 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r128-9x9-01",
+  "titel": "Rätsel 128 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r129-9x9-03",
+  "titel": "Rätsel 129 · 9×9",
+  "rows": 9,
+  "cols": 9,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r130-9x13-01",
+  "titel": "Rätsel 130 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r131-9x13-02",
+  "titel": "Rätsel 131 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r132-9x13-03",
+  "titel": "Rätsel 132 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 1,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r133-10x10-01",
+  "titel": "Rätsel 133 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r134-10x10-04",
+  "titel": "Rätsel 134 · 10×10",
+  "rows": 10,
+  "cols": 10,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r135-11x11-01",
+  "titel": "Rätsel 135 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r136-12x12-02",
+  "titel": "Rätsel 136 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r137-12x12-03",
+  "titel": "Rätsel 137 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r138-12x12-04",
+  "titel": "Rätsel 138 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r139-13x13-01",
+  "titel": "Rätsel 139 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r140-13x13-02",
+  "titel": "Rätsel 140 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
  }
 ]
