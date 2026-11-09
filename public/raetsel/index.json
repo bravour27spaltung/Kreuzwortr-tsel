@@ -1174,5 +1174,45 @@
   "cols": 13,
   "schwierigkeit": 2,
   "status": "veroeffentlicht"
+ },
+ {
+  "id": "r148-8x8-02",
+  "titel": "Rätsel 148 · 8×8",
+  "rows": 8,
+  "cols": 8,
+  "schwierigkeit": 3,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r149-9x13-02",
+  "titel": "Rätsel 149 · 9×13",
+  "rows": 9,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r150-11x11-03",
+  "titel": "Rätsel 150 · 11×11",
+  "rows": 11,
+  "cols": 11,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r151-12x12-04",
+  "titel": "Rätsel 151 · 12×12",
+  "rows": 12,
+  "cols": 12,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
+ },
+ {
+  "id": "r152-13x13-01",
+  "titel": "Rätsel 152 · 13×13",
+  "rows": 13,
+  "cols": 13,
+  "schwierigkeit": 2,
+  "status": "veroeffentlicht"
  }
 ]
